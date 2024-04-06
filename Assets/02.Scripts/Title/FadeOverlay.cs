@@ -3,8 +3,8 @@ using UnityEngine.UI;
 using System.Collections;
 //씬이동할때 페이드인 페이드아웃
 // 최초 작성자 : 홍원기
-// 수정자 : 
-// 최종 수정일 : 2024-04-05
+// 수정자 : 홍원기
+// 최종 수정일 : 2024-04-06
 public class FadeOverlay : MonoBehaviour
 {
     [SerializeField]
@@ -72,6 +72,9 @@ public class FadeOverlay : MonoBehaviour
 
         _fadeCoroutine = null;
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+        //씬이동하면 브금 스탑
+        SoundManager._instance.StopBGM();
+        SoundManager._instance.ClearLoadedAudioClip();
     }
 
     private void StopFade()
