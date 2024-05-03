@@ -197,13 +197,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 2059405192947234297}
   rb: {fileID: 305991713805020564}
-  playerSprite: {fileID: 7965328832732509620}
   playerSound:
   - {fileID: 8300000, guid: 4b7a3452909f8dc4aa87ac2f7431ea21, type: 3}
   - {fileID: 8300000, guid: 773745bf302978545bb54bf09a1ef185, type: 3}
   playerAudioSource: {fileID: 7908106396655888749}
-  moveVelocity: {x: 0, y: 0}
-  moveSpeed: 5
+  jumpEffect: {fileID: 1967835574231978638, guid: 3e196c9e632c76841a71cb6e2dc6d010, type: 3}
+  jumpForce: 15
+  swordCollider: {fileID: 1683385614600381668}
+  moveSpeed: 10
 --- !u!82 &7908106396655888749
 AudioSource:
   m_ObjectHideFlags: 0
@@ -392,7 +393,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2252008722272826871}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
