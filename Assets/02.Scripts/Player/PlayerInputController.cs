@@ -2,87 +2,61 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 //플레이어(슬라임) Input관련 컴포넌트
-//플레이어 Input에 따라 State부여하여 상태 부여 (FSM사용)
+//FSM 삭제. ==> 코드 복잡해질 것 같음.
 //현재 이동, 공격 구현
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-01
+// 최종 수정일 : 2024-05-03
 public class PlayerInputController : MonoBehaviour
 {
-    private enum State
-    {
-        Idle,
-        Move,
-        Attack,
-        Die,
-        Jump,
-        Damaged,
-        
-    }
+ 
     [SerializeField] private Animator anim;
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private SpriteRenderer playerSprite;
-    [SerializeField] private List<AudioClip> playerSound=new List<AudioClip>();
+    [SerializeField] private List<AudioClip> playerSound = new List<AudioClip>();
     [SerializeField] private AudioSource playerAudioSource;
     [SerializeField] private GameObject jumpEffect;
+    [SerializeField] public float jumpForce;
+    [SerializeField] private Collider2D swordCollider;
+    private int jumpCnt;
     private Vector2 moveVelocity;
-    public float moveSpeed = 5.0f;
-    private State _state;
-    
-    void Start()
-    {
-        _state = State.Idle;
-    }
+    public float moveSpeed;
+    private bool isAttackEnd;
 
-    void Update()
+    private void Update()
     {
-        switch (_state)
+        if (Input.GetAxisRaw("Horizontal") != 0)
         {
-            case State.Idle:
-                HandleIdleState();
-                break;
-            case State.Move:
-                HandleMoveState();
-                break;
-            case State.Damaged:
-                break;
-            case State.Attack:
-                HandleAttackState();
-                break;
+            HandleMoveState();
         }
-    }
-    private void FixedUpdate()
-    {
-        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
+        if (Input.GetAxisRaw("Horizontal") == 0)
+        {
+            HandleIdleState();
+        }
+
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            HandleAttackState();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && jumpCnt < 2)
+        {
+            HandleJumpState();
+        }
     }
     private void HandleIdleState()
     {
         anim.SetBool("IsMove", false);
-        anim.SetBool("IsAttack",false);
+        anim.SetBool("IsAttack", false);
         anim.SetBool("IsIdle", true);
-     
-        // Check for input to transition to Move state
-        if (Input.GetAxisRaw("Horizontal") != 0)
-        {
-            _state = State.Move;
-        }
-        else if (Input.GetKeyDown(KeyCode.J))
-        {
-            // GameObject j = Instantiate(jumpEffect);
-            // j.transform.parent = gameObject.transform;
-           // j.transform.localPosition = new Vector3(0, -0.1f, 0f);
-            // j.transform.localScale = new Vector3(0.2f,0.2f,0.2f);
-            _state = State.Attack;
-            // Destroy(j,0.4f);
-        }
     }
+
     public void HandleMoveState()
     {
         anim.SetBool("IsIdle", false);
-        // anim.SetBool("IsAttack",false);
         anim.SetBool("IsMove", true);
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
         moveVelocity = moveInput.normalized * moveSpeed;
@@ -95,27 +69,53 @@ public class PlayerInputController : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, -180f, 0);
         }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            anim.SetBool("IsAttack",true);
-        }
-        if (Input.GetAxisRaw("Horizontal") == 0)
-        {
-            _state = State.Idle;
-        }
+
+        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
     }
 
     private void HandleAttackState()
     {
         anim.SetBool("IsAttack", true);
+        swordCollider.enabled = true;
     }
 
-    public void EndAttackAnim()
+    private void EndAttack()
     {
-        _state = State.Idle;
+        anim.SetBool("IsMove", false);
+        anim.SetBool("IsAttack", false);
+        anim.SetBool("IsIdle", true);
+        swordCollider.enabled = false;
     }
-    public void PlayEffect()
+
+    private void StartAttack()
     {
-        playerAudioSource.PlayOneShot(playerSound[1]);
+        PlayEffect(playerSound[1]);
+    }
+
+    public void HandleJumpState()
+    {
+        PlayEffect(playerSound[0]);
+        GameObject jumpVfx = Instantiate(jumpEffect);
+        jumpVfx.transform.parent = gameObject.transform;
+        jumpVfx.transform.localPosition = new Vector2(0, -0.1f);
+        jumpVfx.transform.localScale = new Vector3(0.2f,0.2f,0.2f);
+        
+        rb.velocity = Vector2.zero;
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        jumpCnt++;
+        Destroy(jumpVfx,0.4f);
+    }
+
+    public void PlayEffect(AudioClip effectSound)
+    {
+        playerAudioSource.PlayOneShot(effectSound);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            jumpCnt = 0;
+        }
     }
 }
