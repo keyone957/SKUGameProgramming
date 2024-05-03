@@ -32,6 +32,9 @@ MonoBehaviour:
     assemblyNames:
     - Assembly-CSharp
     - Assembly-CSharp-firstpass
+    - Autodesk.Fbx
+    - Cinemachine
+    - FbxBuildTestAssets
     - UniTask
     - UniTask.Addressables
     - UniTask.DOTween
