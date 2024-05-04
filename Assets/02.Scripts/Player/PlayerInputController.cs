@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 
 //플레이어(슬라임) Input관련 컴포넌트
@@ -13,7 +9,6 @@ using UnityEngine;
 // 최종 수정일 : 2024-05-03
 public class PlayerInputController : MonoBehaviour
 {
- 
     [SerializeField] private Animator anim;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private List<AudioClip> playerSound = new List<AudioClip>();
@@ -25,58 +20,59 @@ public class PlayerInputController : MonoBehaviour
     private Vector2 moveVelocity;
     public float moveSpeed;
     private bool isAttackEnd;
-
     private void Update()
     {
-        if (Input.GetAxisRaw("Horizontal") != 0)
-        {
-            HandleMoveState();
-        }
-        if (Input.GetAxisRaw("Horizontal") == 0)
-        {
-            HandleIdleState();
-        }
-
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            HandleAttackState();
-        }
-
+        Idle();
+        Move();
+        Attack();
         if (Input.GetKeyDown(KeyCode.Space) && jumpCnt < 2)
         {
-            HandleJumpState();
+            Jump();
         }
     }
-    private void HandleIdleState()
+    private void Idle()
     {
         anim.SetBool("IsMove", false);
-        anim.SetBool("IsAttack", false);
         anim.SetBool("IsIdle", true);
     }
 
-    public void HandleMoveState()
+    public void Move()
     {
-        anim.SetBool("IsIdle", false);
-        anim.SetBool("IsMove", true);
-        Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
-        moveVelocity = moveInput.normalized * moveSpeed;
-        float moveHorizontal = Input.GetAxisRaw("Horizontal");
-        if (moveHorizontal < 0)
-        {
+       
+        if (Input.GetKey(KeyCode.A))
+        { 
+            anim.SetBool("IsIdle", false);
+            anim.SetBool("IsMove", true);
+            rb.AddForce(Vector2.left * moveSpeed, ForceMode2D.Impulse);
+            rb.velocity = new Vector2(Mathf.Max(rb.velocity.x, -moveSpeed), rb.velocity.y);//속도제한
             transform.rotation = Quaternion.Euler(0, 0, 0);
+            Attack();
         }
-        else if (moveHorizontal > 0)
-        {
+        else if (Input.GetKey(KeyCode.D)) 
+        {         
+            anim.SetBool("IsIdle", false);
+            anim.SetBool("IsMove", true);
+            rb.AddForce(Vector2.right * moveSpeed, ForceMode2D.Impulse);
+            rb.velocity = new Vector2(Mathf.Min(rb.velocity.x, moveSpeed), rb.velocity.y);
             transform.rotation = Quaternion.Euler(0, -180f, 0);
+            Attack();
         }
-
-        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
+        else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) // 이동 키를 뗀 경우
+        {
+            anim.SetBool("IsIdle", true);
+            anim.SetBool("IsMove", false);
+            rb.velocity = new Vector3(rb.velocity.normalized.x, rb.velocity.y);
+            Attack();
+        }
+     
     }
-
-    private void HandleAttackState()
+    private void Attack()
     {
-        anim.SetBool("IsAttack", true);
-        swordCollider.enabled = true;
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            anim.SetBool("IsAttack", true);
+            swordCollider.enabled = true;
+        }
     }
 
     private void EndAttack()
@@ -92,18 +88,18 @@ public class PlayerInputController : MonoBehaviour
         PlayEffect(playerSound[1]);
     }
 
-    public void HandleJumpState()
+    public void Jump()
     {
+       
         PlayEffect(playerSound[0]);
         GameObject jumpVfx = Instantiate(jumpEffect);
         jumpVfx.transform.parent = gameObject.transform;
         jumpVfx.transform.localPosition = new Vector2(0, -0.1f);
-        jumpVfx.transform.localScale = new Vector3(0.2f,0.2f,0.2f);
-        
-        rb.velocity = Vector2.zero;
+        jumpVfx.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         jumpCnt++;
-        Destroy(jumpVfx,0.4f);
+        Destroy(jumpVfx, 0.4f);
+        Attack();
     }
 
     public void PlayEffect(AudioClip effectSound)
