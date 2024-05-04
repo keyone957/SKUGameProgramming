@@ -2,11 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //플레이어(슬라임) Input관련 컴포넌트
-//FSM 삭제. ==> 코드 복잡해질 것 같음.
-//현재 이동, 공격 구현
+//이동관련 코드 로직 변경
+//이동, 점프, 공격 구현 완료.
+//TODO: 분열 슬라임 구현해야함
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-03
+// 최종 수정일 : 2024-05-04
 public class PlayerInputController : MonoBehaviour
 {
     [SerializeField] private Animator anim;
@@ -16,10 +17,9 @@ public class PlayerInputController : MonoBehaviour
     [SerializeField] private GameObject jumpEffect;
     [SerializeField] public float jumpForce;
     [SerializeField] private Collider2D swordCollider;
+    [SerializeField] private GameObject attackEffect;
     private int jumpCnt;
-    private Vector2 moveVelocity;
     public float moveSpeed;
-    private bool isAttackEnd;
     private void Update()
     {
         Idle();
@@ -80,12 +80,14 @@ public class PlayerInputController : MonoBehaviour
         anim.SetBool("IsMove", false);
         anim.SetBool("IsAttack", false);
         anim.SetBool("IsIdle", true);
+        attackEffect.SetActive(false);
         swordCollider.enabled = false;
     }
 
     private void StartAttack()
     {
         PlayEffect(playerSound[1]);
+        attackEffect.SetActive(true);
     }
 
     public void Jump()
