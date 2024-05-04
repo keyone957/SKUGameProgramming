@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//로비씬 들어갈때 해야할 동작들 
+// 최초 작성자 : 홍원기
+// 수정자 : 
+// 최종 수정일 : 2024-05-04
 public class LobbySystem : MonoBehaviour
 {
     void Start()
@@ -11,9 +14,6 @@ public class LobbySystem : MonoBehaviour
     
     private IEnumerator SceneStartSequence()
     {
-        //게임 시작하면 타이틀씬에서 브금 실행
-        //TODO: 타이틀씬에서 어떤 정보를 받아와야 하는지 고민
-        //예를 들어 유저 스텟, 돈 정보 등.
         SoundManager._instance.LoadBGM(Define._lobbyBgm);
         yield return new WaitForSeconds(0.3f);
 

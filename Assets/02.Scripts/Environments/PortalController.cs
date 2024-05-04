@@ -2,7 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//포탈에 닿았을때 수행해야할 동작들
+// 최초 작성자 : 홍원기
+// 수정자 : 
+// 최종 수정일 : 2024-05-04
 public class PortalController : MonoBehaviour
 {
     [SerializeField] private GameObject keyBoardUI;
