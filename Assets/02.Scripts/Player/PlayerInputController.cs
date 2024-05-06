@@ -2,12 +2,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //플레이어(슬라임) Input관련 컴포넌트
-//이동관련 코드 로직 변경
-//이동, 점프, 공격 구현 완료.
-//TODO: 분열 슬라임 구현해야함
+//슬라임 분열 input 추가
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-04
+// 최종 수정일 : 2024-05-06
 public class PlayerInputController : MonoBehaviour
 {
     [SerializeField] private Animator anim;
@@ -18,6 +16,7 @@ public class PlayerInputController : MonoBehaviour
     [SerializeField] public float jumpForce;
     [SerializeField] private Collider2D swordCollider;
     [SerializeField] private GameObject attackEffect;
+    [SerializeField] private GameObject smallSlime;
     private int jumpCnt;
     public float moveSpeed;
     private void Update()
@@ -29,6 +28,8 @@ public class PlayerInputController : MonoBehaviour
         {
             Jump();
         }
+
+        DivideSlime();
     }
     private void Idle()
     {
@@ -90,7 +91,7 @@ public class PlayerInputController : MonoBehaviour
         attackEffect.SetActive(true);
     }
 
-    public void Jump()
+    private void Jump()
     {
        
         PlayEffect(playerSound[0]);
@@ -104,9 +105,20 @@ public class PlayerInputController : MonoBehaviour
         Attack();
     }
 
-    public void PlayEffect(AudioClip effectSound)
+    private void PlayEffect(AudioClip effectSound)
     {
         playerAudioSource.PlayOneShot(effectSound);
+    }
+
+    private void DivideSlime()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            transform.localScale = new Vector3(6, 6, 6);
+            smallSlime.SetActive(true);
+            gameObject.GetComponent<Collider2D>().enabled = false;
+            // smallSlime.GetComponent<Collider2D>().enabled = true;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)

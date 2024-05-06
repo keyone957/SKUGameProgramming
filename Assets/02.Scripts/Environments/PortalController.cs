@@ -20,15 +20,16 @@ public class PortalController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.gameObject.tag);
-        if (other.gameObject.CompareTag("Player"))
-        {
-            keyBoardUI.SetActive(true);
-            GetComponent<SpriteRenderer>().sprite = portalSpr[1];
-            // doorAudioSource.clip=doorSound
-            doorAudioSource.PlayOneShot(doorSound[0]);
-        }
-        
+        // if (SceneSystem.instance.isClearStage)
+        // {
+            if (other.gameObject.CompareTag("Player"))
+            {
+                keyBoardUI.SetActive(true);
+                GetComponent<SpriteRenderer>().sprite = portalSpr[1];
+                doorAudioSource.PlayOneShot(doorSound[0]);
+            }
+        // }
+
     }
 
     private void OnTriggerExit2D(Collider2D other)
