@@ -2,10 +2,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //플레이어(슬라임) Input관련 컴포넌트
-//슬라임 분열 input 추가
+//분열될 때 이동속도, 점프 가능횟수, 점프 높이 변경
+//분열 쿨타임 2초 부여
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-06
+// 최종 수정일 : 2024-05-07
 public class PlayerInputController : MonoBehaviour
 {
     [SerializeField] private Animator anim;
@@ -14,23 +15,42 @@ public class PlayerInputController : MonoBehaviour
     [SerializeField] private AudioSource playerAudioSource;
     [SerializeField] private GameObject jumpEffect;
     [SerializeField] public float jumpForce;
+    [SerializeField] public float moveSpeed;
     [SerializeField] private Collider2D swordCollider;
     [SerializeField] private GameObject attackEffect;
     [SerializeField] private GameObject smallSlime;
+    [SerializeField] public int maxJumpCnt;
+    [SerializeField] public bool canDivide;//점프맵에서 혹여나 분열을 안쓸수도 있으니 필요한 bool값
+    private bool isDivide;
     private int jumpCnt;
-    public float moveSpeed;
+    private float divideCooldown = 2f;
+    private float nextDivideTime = 0f;
+
     private void Update()
     {
         Idle();
         Move();
         Attack();
-        if (Input.GetKeyDown(KeyCode.Space) && jumpCnt < 2)
+        if (Input.GetKeyDown(KeyCode.Space) && jumpCnt < maxJumpCnt)
         {
             Jump();
         }
 
-        DivideSlime();
+        if (canDivide&&Input.GetKeyDown(KeyCode.K) && Time.time > nextDivideTime)
+        {
+            if (!isDivide)
+            {
+                DivideSlime();
+                nextDivideTime = Time.time + divideCooldown;
+            }
+            else
+            {
+                ResetSlime();
+                nextDivideTime = Time.time + divideCooldown;
+            }
+        }
     }
+
     private void Idle()
     {
         anim.SetBool("IsMove", false);
@@ -39,18 +59,17 @@ public class PlayerInputController : MonoBehaviour
 
     public void Move()
     {
-       
         if (Input.GetKey(KeyCode.A))
-        { 
+        {
             anim.SetBool("IsIdle", false);
             anim.SetBool("IsMove", true);
             rb.AddForce(Vector2.left * moveSpeed, ForceMode2D.Impulse);
-            rb.velocity = new Vector2(Mathf.Max(rb.velocity.x, -moveSpeed), rb.velocity.y);//속도제한
+            rb.velocity = new Vector2(Mathf.Max(rb.velocity.x, -moveSpeed), rb.velocity.y); //속도제한
             transform.rotation = Quaternion.Euler(0, 0, 0);
             Attack();
         }
-        else if (Input.GetKey(KeyCode.D)) 
-        {         
+        else if (Input.GetKey(KeyCode.D))
+        {
             anim.SetBool("IsIdle", false);
             anim.SetBool("IsMove", true);
             rb.AddForce(Vector2.right * moveSpeed, ForceMode2D.Impulse);
@@ -65,8 +84,8 @@ public class PlayerInputController : MonoBehaviour
             rb.velocity = new Vector3(rb.velocity.normalized.x, rb.velocity.y);
             Attack();
         }
-     
     }
+
     private void Attack()
     {
         if (Input.GetKeyDown(KeyCode.J))
@@ -93,16 +112,20 @@ public class PlayerInputController : MonoBehaviour
 
     private void Jump()
     {
-       
-        PlayEffect(playerSound[0]);
-        GameObject jumpVfx = Instantiate(jumpEffect);
-        jumpVfx.transform.parent = gameObject.transform;
-        jumpVfx.transform.localPosition = new Vector2(0, -0.1f);
-        jumpVfx.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
-        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        jumpCnt++;
-        Destroy(jumpVfx, 0.4f);
-        Attack();
+        if (Input.GetKeyDown(KeyCode.Space)&&jumpCnt < maxJumpCnt)
+            {
+                PlayEffect(playerSound[0]);
+                GameObject jumpVfx = Instantiate(jumpEffect);
+                jumpVfx.transform.parent = gameObject.transform;
+                jumpVfx.transform.localPosition = new Vector2(0, -0.1f);
+                jumpVfx.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+        
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                jumpCnt++;
+        
+                Destroy(jumpVfx, 0.4f);
+                Attack();
+            }
     }
 
     private void PlayEffect(AudioClip effectSound)
@@ -116,8 +139,23 @@ public class PlayerInputController : MonoBehaviour
         {
             transform.localScale = new Vector3(6, 6, 6);
             smallSlime.SetActive(true);
-            gameObject.GetComponent<Collider2D>().enabled = false;
-            // smallSlime.GetComponent<Collider2D>().enabled = true;
+            maxJumpCnt = 3;
+            jumpForce = 17f;
+            moveSpeed = 13f;
+            isDivide = true;
+        }
+    }
+
+    private void ResetSlime()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            transform.localScale = new Vector3(8, 8, 8);
+            smallSlime.SetActive(false);
+            maxJumpCnt = 2;
+            jumpForce = 20f;
+            moveSpeed = 10f;
+            isDivide = false;
         }
     }
 
