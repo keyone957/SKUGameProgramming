@@ -204,9 +204,12 @@ MonoBehaviour:
   playerAudioSource: {fileID: 7908106396655888749}
   jumpEffect: {fileID: 1967835574231978638, guid: 3e196c9e632c76841a71cb6e2dc6d010, type: 3}
   jumpForce: 20
+  moveSpeed: 10
   swordCollider: {fileID: 1683385614600381668}
   attackEffect: {fileID: 4498785556326559850}
-  moveSpeed: 10
+  smallSlime: {fileID: 0}
+  maxJumpCnt: 2
+  canDivide: 1
 --- !u!82 &7908106396655888749
 AudioSource:
   m_ObjectHideFlags: 0

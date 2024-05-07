@@ -7433,18 +7433,6 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1567391277803267147, guid: 8a5d70529bdd3974ca3ef8b0dd4a59ed, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1567391277803267147, guid: 8a5d70529bdd3974ca3ef8b0dd4a59ed, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1567391277803267147, guid: 8a5d70529bdd3974ca3ef8b0dd4a59ed, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1567391277803267147, guid: 8a5d70529bdd3974ca3ef8b0dd4a59ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -31.59
       objectReference: {fileID: 0}
@@ -7483,18 +7471,6 @@ PrefabInstance:
     - target: {fileID: 1567391277803267147, guid: 8a5d70529bdd3974ca3ef8b0dd4a59ed, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2613317109736067129, guid: 8a5d70529bdd3974ca3ef8b0dd4a59ed, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3115878424881994413, guid: 8a5d70529bdd3974ca3ef8b0dd4a59ed, type: 3}
-      propertyPath: canDivide
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3115878424881994413, guid: 8a5d70529bdd3974ca3ef8b0dd4a59ed, type: 3}
-      propertyPath: maxJumpCnt
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3115878424881994413, guid: 8a5d70529bdd3974ca3ef8b0dd4a59ed, type: 3}
       propertyPath: smallSlime
