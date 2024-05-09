@@ -67,7 +67,6 @@ public class FadeOverlay : MonoBehaviour
         if (!isOut)
         {
             _Go.SetActive(false);
-           
         }
 
         _fadeCoroutine = null;

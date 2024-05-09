@@ -258,6 +258,7 @@ MonoBehaviour:
   doorSound:
   - {fileID: 8300000, guid: 464b105468f001041b194a69b7a699d8, type: 3}
   - {fileID: 8300000, guid: d2e4b676d57cfa94dbd3051b8b2ecb73, type: 3}
+  - {fileID: 8300000, guid: 6f57730b40132964daabc55e1b616790, type: 3}
 --- !u!82 &6231263570799788081
 AudioSource:
   m_ObjectHideFlags: 0
