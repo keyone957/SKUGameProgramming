@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 // 게임 캐릭터 마우스 클릭시 공격 구현
 // 최초 작성자: 하경림
-// 최종 수정일: 2024-05-10
+// 최종 수정일: 2024-05-11
 public class Player : MonoBehaviour
 {
-
     [SerializeField] private Animator anim;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private List<AudioClip> playerSound = new List<AudioClip>();
@@ -31,6 +30,10 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("IsAttack", true);
             swordCollider.enabled = true;
+            GameObject enemyObject = GameObject.Find("Enemy");
+            Enemy enemy = enemyObject.GetComponent<Enemy>();
+            enemy.TakeDamage(1);
+
         }
     }
 
