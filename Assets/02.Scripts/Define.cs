@@ -10,5 +10,6 @@ public static class Define
     public const string _soundRoot = "Sound";
     public const string _titleBGM = "TitleBgm";
     public const string _lobbyBgm = "LobbyBgm";
+    public const string _clickMenuSound = "BtnClickSound";
 
 }

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 //맵 타입에 따라서 다음이동할 씬을 랜덤으로 이동하는 함수 추가
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-09
+// 최종 수정일 : 2024-05-10
 public class SceneSystem : MonoBehaviour
 {
     public enum NextStageType
@@ -51,6 +51,11 @@ public class SceneSystem : MonoBehaviour
 
         currentStage++;
         isClearStage = false;
+    }
+    //테스트 씬 이동 함수
+    public void TestNextStage(string TestSceneName)
+    {
+        _fadeOverlay.DoFadeOut(1.0f,TestSceneName);
     }
 
     public void EndGame()

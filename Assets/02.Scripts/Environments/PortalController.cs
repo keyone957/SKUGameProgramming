@@ -6,9 +6,10 @@ using UnityEngine;
 
 //포탈에 닿았을때 수행해야할 동작들
 //게임 클리어 조건 추가, 조건이 맞고 W를 누르면 다음 씬으로 이동 가능
+//test 씬이동 함수 추가
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-08
+// 최종 수정일 : 2024-05-10
 public class PortalController : MonoBehaviour
 {
     [SerializeField] private GameObject keyBoardUI;
@@ -17,6 +18,7 @@ public class PortalController : MonoBehaviour
     private AudioSource doorAudioSource;
     private bool isEnter;
     [SerializeField] public SceneSystem.NextStageType nextStageType;
+    [SerializeField] public string TestSceneName;
     private void Start()
     {
         doorAudioSource = GetComponent<AudioSource>();
@@ -27,7 +29,8 @@ public class PortalController : MonoBehaviour
     {
         if (isEnter&&Input.GetKeyDown(KeyCode.W))
         {
-            SceneSystem.instance.GoNextStage(nextStageType);
+            // SceneSystem.instance.GoNextStage(nextStageType);
+            SceneSystem.instance.TestNextStage(TestSceneName);
         }
     }
 

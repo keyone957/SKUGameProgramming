@@ -15,7 +15,7 @@ C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-14390
+6385
 Successfully changed project path to: C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
 C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [43248] Host "[IP] 192.168.175.68 [Port] 0 [Flags] 2 [Guid] 2120320173 [EditorId] 2120320173 [Version] 1048832 [Id] WindowsEditor(7,홍원기) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [30756] Host "[IP] 192.168.0.8 [Port] 0 [Flags] 2 [Guid] 2658846666 [EditorId] 2658846666 [Version] 1048832 [Id] WindowsEditor(7,홍원기) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [43248] Host "[IP] 192.168.175.68 [Port] 0 [Flags] 2 [Guid] 2120320173 [EditorId] 2120320173 [Version] 1048832 [Id] WindowsEditor(7,홍원기) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [30756] Host "[IP] 192.168.0.8 [Port] 0 [Flags] 2 [Guid] 2658846666 [EditorId] 2658846666 [Version] 1048832 [Id] WindowsEditor(7,홍원기) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 23 workers.
-Refreshing native plugins compatible for Editor in 25.89 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 17.00 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.21f1 (bf09ca542b87)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Resources/UnitySubsystems
@@ -70,47 +70,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56720
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.013046 seconds.
-- Loaded All Assemblies, in  0.506 seconds
+Registered in 0.006981 seconds.
+- Loaded All Assemblies, in  0.269 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 464 ms
+Android Extension - Scanning For ADB Devices 244 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.933 seconds
-Domain Reload Profiling: 1436ms
-	BeginReloadAssembly (166ms)
+- Finished resetting the current domain, in  0.497 seconds
+Domain Reload Profiling: 765ms
+	BeginReloadAssembly (87ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (84ms)
-	LoadAllAssembliesAndSetupDomain (192ms)
-		LoadAssemblies (163ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (105ms)
+		LoadAssemblies (85ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (189ms)
-			TypeCache.Refresh (187ms)
-				TypeCache.ScanAssembly (170ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (934ms)
+		AnalyzeDomain (103ms)
+			TypeCache.Refresh (102ms)
+				TypeCache.ScanAssembly (92ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (497ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (855ms)
+		SetupLoadedEditorAssemblies (454ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (622ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (330ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (154ms)
-			ProcessInitializeOnLoadMethodAttributes (70ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (81ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,8 +118,8 @@ Domain Reload Profiling: 1436ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.262 seconds
-Refreshing native plugins compatible for Editor in 15.21 ms, found 9 plugins.
+- Loaded All Assemblies, in  0.887 seconds
+Refreshing native plugins compatible for Editor in 9.27 ms, found 9 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -127,47 +127,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.925 seconds
-Domain Reload Profiling: 3180ms
-	BeginReloadAssembly (240ms)
+- Finished resetting the current domain, in  0.666 seconds
+Domain Reload Profiling: 1550ms
+	BeginReloadAssembly (130ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (49ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (70ms)
-	LoadAllAssembliesAndSetupDomain (880ms)
-		LoadAssemblies (631ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (680ms)
+		LoadAssemblies (462ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (407ms)
-			TypeCache.Refresh (326ms)
-				TypeCache.ScanAssembly (298ms)
-			ScanForSourceGeneratedMonoScriptInfo (59ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (1926ms)
+		AnalyzeDomain (296ms)
+			TypeCache.Refresh (248ms)
+				TypeCache.ScanAssembly (225ms)
+			ScanForSourceGeneratedMonoScriptInfo (38ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (666ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1597ms)
+		SetupLoadedEditorAssemblies (525ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (49ms)
-			SetLoadedEditorAssemblies (11ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (192ms)
-			ProcessInitializeOnLoadAttributes (1060ms)
-			ProcessInitializeOnLoadMethodAttributes (261ms)
-			AfterProcessingInitializeOnLoad (24ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (73ms)
+			ProcessInitializeOnLoadAttributes (346ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (33ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 26.65 ms, found 9 plugins.
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 10.06 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6766 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 136 unused Assets / (1.5 MB). Loaded Objects now: 7224.
-Memory consumption went from 258.3 MB to 256.8 MB.
-Total: 9.636000 ms (FindLiveObjects: 1.568400 ms CreateObjectMapping: 0.656900 ms MarkObjects: 6.158600 ms  DeleteObjects: 1.249700 ms)
+Unloading 136 unused Assets / (1.7 MB). Loaded Objects now: 7224.
+Memory consumption went from 258.5 MB to 256.8 MB.
+Total: 3.813800 ms (FindLiveObjects: 0.328100 ms CreateObjectMapping: 0.197200 ms MarkObjects: 2.676500 ms  DeleteObjects: 0.611400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -185,151 +185,1222 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2347385.934029 seconds.
-  path: Assets/02.Scripts/Managers/SceneSystem.cs
-  artifactKey: Guid(4e44f18975bf1d84fa30b50109dd9de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/02.Scripts/Managers/SceneSystem.cs using Guid(4e44f18975bf1d84fa30b50109dd9de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b7b1181e1879ed63593994ad698885b') in 0.004579 seconds
+  Time since last request: 2433472.473529 seconds.
+  path: Assets/04.ArtResource/Sprite/Pixel Heart Sprite Sheet 32x32.png
+  artifactKey: Guid(51e4fc6637a323249a0e1f785e62d239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sprite/Pixel Heart Sprite Sheet 32x32.png using Guid(51e4fc6637a323249a0e1f785e62d239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f348e1d5e5bff72f98f2e3a16b62458c') in 0.058456 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 5
 ========================================================================
 Received Import Request.
-  Time since last request: 39.500361 seconds.
-  path: Assets/02.Scripts/Managers/SceneSystem.cs
-  artifactKey: Guid(4e44f18975bf1d84fa30b50109dd9de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/02.Scripts/Managers/SceneSystem.cs using Guid(4e44f18975bf1d84fa30b50109dd9de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6695f98cf7a8d372f9815d1a727b69c2') in 0.001649 seconds
+  Time since last request: 3.957016 seconds.
+  path: Assets/04.ArtResource/Sprite/Pixel Heart Sprite Sheet 32x32_2.asset
+  artifactKey: Guid(aadf34f0a5ed01f438a2947a30c8b5a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sprite/Pixel Heart Sprite Sheet 32x32_2.asset using Guid(aadf34f0a5ed01f438a2947a30c8b5a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ef39a0dd0c08b5ad228c43b64e77045') in 0.009925 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 3
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.106 seconds
-Refreshing native plugins compatible for Editor in 17.22 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.778 seconds
-Domain Reload Profiling: 5868ms
-	BeginReloadAssembly (307ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (22ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (60ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (66ms)
-	LoadAllAssembliesAndSetupDomain (650ms)
-		LoadAssemblies (722ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (99ms)
-			TypeCache.Refresh (20ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (50ms)
-			ResolveRequiredComponents (27ms)
-	FinalizeReload (4779ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1808ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (81ms)
-			SetLoadedEditorAssemblies (16ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (336ms)
-			ProcessInitializeOnLoadAttributes (1082ms)
-			ProcessInitializeOnLoadMethodAttributes (259ms)
-			AfterProcessingInitializeOnLoad (32ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (70ms)
-Refreshing native plugins compatible for Editor in 64.29 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6649 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 79 unused Assets / (1.6 MB). Loaded Objects now: 7241.
-Memory consumption went from 231.5 MB to 230.0 MB.
-Total: 13.866900 ms (FindLiveObjects: 1.563700 ms CreateObjectMapping: 0.781100 ms MarkObjects: 9.885700 ms  DeleteObjects: 1.633700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+Received Import Request.
+  Time since last request: 2.372695 seconds.
+  path: Assets/04.ArtResource/Sprite/Pixel Heart Sprite Sheet 32x32_0.asset
+  artifactKey: Guid(0dbdee89bc54e01469bdad971731627a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sprite/Pixel Heart Sprite Sheet 32x32_0.asset using Guid(0dbdee89bc54e01469bdad971731627a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65d39112a4486a8c39acaea874ca962') in 0.013657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.142 seconds
-Refreshing native plugins compatible for Editor in 51.73 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  5.698 seconds
-Domain Reload Profiling: 7807ms
-	BeginReloadAssembly (538ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (34ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (97ms)
-	RebuildCommonClasses (97ms)
-	RebuildNativeTypeToScriptingClass (34ms)
-	initialDomainReloadingComplete (136ms)
-	LoadAllAssembliesAndSetupDomain (1303ms)
-		LoadAssemblies (1473ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (150ms)
-			TypeCache.Refresh (30ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (76ms)
-			ResolveRequiredComponents (41ms)
-	FinalizeReload (5699ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1731ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (78ms)
-			SetLoadedEditorAssemblies (17ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (305ms)
-			ProcessInitializeOnLoadAttributes (1058ms)
-			ProcessInitializeOnLoadMethodAttributes (246ms)
-			AfterProcessingInitializeOnLoad (26ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (55ms)
-Refreshing native plugins compatible for Editor in 39.02 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6649 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 79 unused Assets / (1.6 MB). Loaded Objects now: 7257.
-Memory consumption went from 233.5 MB to 231.9 MB.
-Total: 12.609300 ms (FindLiveObjects: 1.270400 ms CreateObjectMapping: 0.560600 ms MarkObjects: 7.882800 ms  DeleteObjects: 2.893200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+Received Import Request.
+  Time since last request: 104.138834 seconds.
+  path: Assets/04.ArtResource/Sprite/FullHP.asset
+  artifactKey: Guid(0dbdee89bc54e01469bdad971731627a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sprite/FullHP.asset using Guid(0dbdee89bc54e01469bdad971731627a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a16e305b2ea0471f17aef54eb84a6c10') in 0.008993 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.481371 seconds.
+  path: Assets/04.ArtResource/Sprite/FullHear.asset
+  artifactKey: Guid(0dbdee89bc54e01469bdad971731627a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sprite/FullHear.asset using Guid(0dbdee89bc54e01469bdad971731627a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74484b31d5e2fb7a3f8cf2fc324f462') in 0.003971 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.239908 seconds.
+  path: Assets/04.ArtResource/Sprite/FullHeart.asset
+  artifactKey: Guid(0dbdee89bc54e01469bdad971731627a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sprite/FullHeart.asset using Guid(0dbdee89bc54e01469bdad971731627a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b37057f56ae3d4668756e35b29b1cd2') in 0.004482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.438699 seconds.
+  path: Assets/04.ArtResource/Sprite/EmptyHear.asset
+  artifactKey: Guid(aadf34f0a5ed01f438a2947a30c8b5a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sprite/EmptyHear.asset using Guid(aadf34f0a5ed01f438a2947a30c8b5a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ad534fe0bee6268762b7ba59e47d07a') in 0.007725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1459.870920 seconds.
+  path: Assets/04.ArtResource/Sprite/EmptyHeart.asset
+  artifactKey: Guid(aadf34f0a5ed01f438a2947a30c8b5a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sprite/EmptyHeart.asset using Guid(aadf34f0a5ed01f438a2947a30c8b5a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a6ceb208c90e3ad926d373c8b5b9f7') in 0.010767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1908.417913 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Spritesheets/TAB.png
+  artifactKey: Guid(0a92707194cabc24bbc2a13c3257c8ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Spritesheets/TAB.png using Guid(0a92707194cabc24bbc2a13c3257c8ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5db5068b382546fbfd3617141327f00') in 0.085393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.004547 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Dark/Single PNGs/TAB.png
+  artifactKey: Guid(404b27ad588b7d8439349f5b78dc98c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Dark/Single PNGs/TAB.png using Guid(404b27ad588b7d8439349f5b78dc98c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f7dbc75d92fcfa35a578ec05a1a528d') in 0.017247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Single PNGs/T.png
+  artifactKey: Guid(61ea64b79b1461040b1893f542daa3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Single PNGs/T.png using Guid(61ea64b79b1461040b1893f542daa3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c6b6a70f6b50914b9b4555d65fd9abe') in 0.023120 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Single PNGs/TAB.png
+  artifactKey: Guid(9fde2bd8f0b2b4048bf5baf9a2aaa1d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Single PNGs/TAB.png using Guid(9fde2bd8f0b2b4048bf5baf9a2aaa1d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f706219bf36f26fad22fbbd2878bf74') in 0.025059 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Single PNGs/T.png
+  artifactKey: Guid(153d3b74b4ca8cc44b5ac89256fe0c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Single PNGs/T.png using Guid(153d3b74b4ca8cc44b5ac89256fe0c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f7f96d354cfdd0d0e6aa667f59ed21') in 0.025224 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Single PNGs/TABALTERNATIVE.png
+  artifactKey: Guid(d4943fc617465fd428d0458f69c7d6b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Single PNGs/TABALTERNATIVE.png using Guid(d4943fc617465fd428d0458f69c7d6b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f0e8d646855468f6a8e3a30eb76e2a') in 0.021736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Dark/Single PNGs/T.png
+  artifactKey: Guid(dbf5ef61322aa0240a021f9180a25073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Dark/Single PNGs/T.png using Guid(dbf5ef61322aa0240a021f9180a25073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde57817ed8207066726878c98319f50') in 0.064008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Dark/Spritesheets/TABALTERNATIVE.png
+  artifactKey: Guid(798e2627532e6d5458e61229167bfc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Dark/Spritesheets/TABALTERNATIVE.png using Guid(798e2627532e6d5458e61229167bfc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c7c9173c5c48b800231ceedf92d5c5') in 0.023056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.015992 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Spritesheets/T.png
+  artifactKey: Guid(018afcc69de81e64e847591dd1a7683a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Spritesheets/T.png using Guid(018afcc69de81e64e847591dd1a7683a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9180963e81fc0fb773cd97e5bec2ba05') in 0.013953 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Jump/Red/Sprite Sheet - Red Jump to Fall.png
+  artifactKey: Guid(563bbaff281b5a2438c2b0e6652bf92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Jump/Red/Sprite Sheet - Red Jump to Fall.png using Guid(563bbaff281b5a2438c2b0e6652bf92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ee8dfdd852d4d54ac67d3273851ce04') in 0.019129 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Idle/Red/Sprite Sheet - Red Idle.png
+  artifactKey: Guid(d4e8a5c5eececab46942986a743fd7d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Idle/Red/Sprite Sheet - Red Idle.png using Guid(d4e8a5c5eececab46942986a743fd7d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1a949700a398e2493d5ddb5d5c03fd0') in 0.023717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Hurt/Red/Sprite Sheet - Red Hurt.png
+  artifactKey: Guid(5b2a0c1fb0dae424197d767b0ba347b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Hurt/Red/Sprite Sheet - Red Hurt.png using Guid(5b2a0c1fb0dae424197d767b0ba347b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef433a2fa7be01a782d10420fb1c717e') in 0.029226 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.337331 seconds.
+  path: Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Death/Red/Sprite Sheet - Red Death.png
+  artifactKey: Guid(b33ac3f3a0d898543a1b81d8e7bc6925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Death/Red/Sprite Sheet - Red Death.png using Guid(b33ac3f3a0d898543a1b81d8e7bc6925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09dcd0a91ebdff3e343cdf992603762d') in 0.030296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Jump/Green/Sprite Sheet - Green Jump Start-up.png
+  artifactKey: Guid(4f96c4525ce5ae1449814b81cb459d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Jump/Green/Sprite Sheet - Green Jump Start-up.png using Guid(4f96c4525ce5ae1449814b81cb459d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e3fe8aa636e217d9c49c8310cc4e084') in 0.031927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Idle/Green/Sprite Sheet - Green Idle.png
+  artifactKey: Guid(c80534141f80d28489b1ef92f8ff7d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Idle/Green/Sprite Sheet - Green Idle.png using Guid(c80534141f80d28489b1ef92f8ff7d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '059af49847ef94395158edf5af085483') in 0.023355 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Death/Green/Sprite Sheet - Green Death.png
+  artifactKey: Guid(37aa7ae02881d0f4b8b5e32919646456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Death/Green/Sprite Sheet - Green Death.png using Guid(37aa7ae02881d0f4b8b5e32919646456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '881bcc404c0d013e634002183ae7da1c') in 0.030295 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Jump/Green/Sprite Sheet - Green Jump Land.png
+  artifactKey: Guid(ae7b495337938814b97889e26aa59dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Jump/Green/Sprite Sheet - Green Jump Land.png using Guid(ae7b495337938814b97889e26aa59dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42332f3db5c43ff33a4a7891adf9e0e') in 0.022181 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Hurt/Blue/Sprite Sheet - Blue Hurt.png
+  artifactKey: Guid(397bfc6fbd0916e47be3d3809f24c996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Hurt/Blue/Sprite Sheet - Blue Hurt.png using Guid(397bfc6fbd0916e47be3d3809f24c996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54626c48e41fa5a43e16f4d721e41244') in 0.025018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Death/Blue/Sprite Sheet - Blue Death.png
+  artifactKey: Guid(3871162483c4e794e88984c2f1ae6dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Death/Blue/Sprite Sheet - Blue Death.png using Guid(3871162483c4e794e88984c2f1ae6dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a3a0c70c76903f2aa9f59c2242f7127') in 0.027123 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Spark/spark-preview4.png
+  artifactKey: Guid(60b96073820064558b98a49c7a3497db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Spark/spark-preview4.png using Guid(60b96073820064558b98a49c7a3497db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50c60cbf3ce9e676ea1b2f66b94012ed') in 0.012197 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/Brackeys/2D Mega Pack/Items & Icons/Arcade/Spawn.png
+  artifactKey: Guid(d5983714f6e6d7240a55fc92c9d26e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Brackeys/2D Mega Pack/Items & Icons/Arcade/Spawn.png using Guid(d5983714f6e6d7240a55fc92c9d26e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e4b88b0b4e00e0206e54520d0f7ec7') in 0.013170 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Spark/spark-preview3.png
+  artifactKey: Guid(487b10e46753346918225fa5f287a155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Spark/spark-preview3.png using Guid(487b10e46753346918225fa5f287a155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db54aa6ea1e57bf32f2e98ab91e4725') in 0.011553 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Dark/Single PNGs/SPACE.png
+  artifactKey: Guid(4427b1480dcf3e448a694f32b0140f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Dark/Single PNGs/SPACE.png using Guid(4427b1480dcf3e448a694f32b0140f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06c9a1c878cb131f4b34515707bc401') in 0.011986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Spritesheets/SPACE.png
+  artifactKey: Guid(2a108976723d8a847b0e64313acbe78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Spritesheets/SPACE.png using Guid(2a108976723d8a847b0e64313acbe78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7df01c0df717fcab6221873e8fd7d572') in 0.015075 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/Monster/Asset FTTGR/Sprites/VFXs/Snow.png
+  artifactKey: Guid(eb7b04fdfe2a7dc4e895f7a72c07fc22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Monster/Asset FTTGR/Sprites/VFXs/Snow.png using Guid(eb7b04fdfe2a7dc4e895f7a72c07fc22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c12557fbb1b3fd6e05fb65abb268304e') in 0.020415 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/Monster/Asset FTTGR/Sprites/VFXs/Smoke.png
+  artifactKey: Guid(70221feb0deb53446b6941ffdc402f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Monster/Asset FTTGR/Sprites/VFXs/Smoke.png using Guid(70221feb0deb53446b6941ffdc402f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf8d92873fef9c853d98f00c2106cef0') in 0.021980 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Brackeys/2D Mega Pack/UI/SpeechBubble.png
+  artifactKey: Guid(d6ee8f7c2389cd040972fd561db64d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Brackeys/2D Mega Pack/UI/SpeechBubble.png using Guid(d6ee8f7c2389cd040972fd561db64d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28718321a502b329a96126e3ca04ef78') in 0.014072 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/Monster/Asset FTTGR/Sprites/Environment/Tiles/Snow.png
+  artifactKey: Guid(e327d46c8f3d5804d9dffdc35b8c466c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Monster/Asset FTTGR/Sprites/Environment/Tiles/Snow.png using Guid(e327d46c8f3d5804d9dffdc35b8c466c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '258b14ede83b1a9e4f1e34afa6dd1296') in 0.017306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Spark/spark-preview1.png
+  artifactKey: Guid(cf9760a2dafc94f97b705a62ec67e9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Spark/spark-preview1.png using Guid(cf9760a2dafc94f97b705a62ec67e9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e79c1c1ee4c6fed903883d58538d0c') in 0.013378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Single PNGs/SPACE.png
+  artifactKey: Guid(d1d6fce3d78d273489bf528ecf9ba92c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Single PNGs/SPACE.png using Guid(d1d6fce3d78d273489bf528ecf9ba92c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ce913e4ed7b46f9fc42238595b8196') in 0.013818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Start-up.png
+  artifactKey: Guid(f617990383515fb4cbd1d986504bdd76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Player/War/Slime Enemy - Pixel Art/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Start-up.png using Guid(f617990383515fb4cbd1d986504bdd76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b86c5df336ac6c1a7fced3ea5f87f61d') in 0.026685 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.508236 seconds.
+  path: Assets/04.ArtResource/Brackeys/2D Mega Pack/Items & Icons/Pixel Art/Sheep.png
+  artifactKey: Guid(6a6c98a6079537844ab0f7b2b45425b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Brackeys/2D Mega Pack/Items & Icons/Pixel Art/Sheep.png using Guid(6a6c98a6079537844ab0f7b2b45425b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79af881475a25781632a91685253980c') in 0.018758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Dark/Single PNGs/SHIFT.png
+  artifactKey: Guid(c632d05e9c0871d4f82c592a042e47fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Dark/Single PNGs/SHIFT.png using Guid(c632d05e9c0871d4f82c592a042e47fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a40e666a56f4096b478896adc867c7b6') in 0.010015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/SHIFTALTERNATIVE.png
+  artifactKey: Guid(829ac2f4d0eee804191d7ef77b8079e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/SHIFTALTERNATIVE.png using Guid(829ac2f4d0eee804191d7ef77b8079e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010d0e0f4de5701454bdc405d369b092') in 0.013735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Single PNGs/SHIFTALTERNATIVE.png
+  artifactKey: Guid(9ea2918f3a7c9fa4583743ff94f71015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Single PNGs/SHIFTALTERNATIVE.png using Guid(9ea2918f3a7c9fa4583743ff94f71015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6860bf3691532522265c14e0172a4cdd') in 0.012964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Spritesheets/R.png
+  artifactKey: Guid(26cd062c6ecc4034daf88dc5fdf0dca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Spritesheets/R.png using Guid(26cd062c6ecc4034daf88dc5fdf0dca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38cd62858c5e382645e7c670d64c65f5') in 0.008781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Single PNGs/R.png
+  artifactKey: Guid(3d5e30eca7836464aa75ce580baf0215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Single PNGs/R.png using Guid(3d5e30eca7836464aa75ce580baf0215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6148bad8d01a9ea22fa18629a96846ce') in 0.019500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/QUESTIONMARK.png
+  artifactKey: Guid(ae9b80aecec454a40978abfd354221e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/QUESTIONMARK.png using Guid(ae9b80aecec454a40978abfd354221e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8bfd792307242895a68e5a5f2a3f6c4') in 0.009283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Single PNGs/QUOTE.png
+  artifactKey: Guid(8c6465e20d9ef95488703693528be2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Single PNGs/QUOTE.png using Guid(8c6465e20d9ef95488703693528be2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3708f5c9c3dcd4a6d99c9aba60991ba6') in 0.013605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/QUOTE.png
+  artifactKey: Guid(7070d84e7388de04184edbcdf1c42b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/QUOTE.png using Guid(7070d84e7388de04184edbcdf1c42b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a178bb4fec151a032f82cdeee77ceef') in 0.014777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/SHIFT.png
+  artifactKey: Guid(f480859461ade0c4ab77858508fd1a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/SHIFT.png using Guid(f480859461ade0c4ab77858508fd1a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b961db413ab1f9df56a02536f3140de') in 0.014524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/R.png
+  artifactKey: Guid(6f5392eb4d402044993b85c363f08df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/R.png using Guid(6f5392eb4d402044993b85c363f08df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e780d014930610a8130a32879300f40c') in 0.015506 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.451940 seconds.
+  path: Assets/04.ArtResource/Brackeys/2D Mega Pack/Characters/PongPlayer.png
+  artifactKey: Guid(3f5d8b39358f65040ade5d7096bc8085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Brackeys/2D Mega Pack/Characters/PongPlayer.png using Guid(3f5d8b39358f65040ade5d7096bc8085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa6e0ba6deaa42af49357b469b0f24cf') in 0.016100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/Brackeys/2D Mega Pack/Food & Plants/Crops/Potatoes_Done.png
+  artifactKey: Guid(3d9791791d28a9745b616ce8d8113662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Brackeys/2D Mega Pack/Food & Plants/Crops/Potatoes_Done.png using Guid(3d9791791d28a9745b616ce8d8113662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac1b59a2365d2b00906db43f540048e') in 0.010877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Pulse/pulse2.png
+  artifactKey: Guid(2b18d44d6d8244d5bbdbef2b52ba068b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Pulse/pulse2.png using Guid(2b18d44d6d8244d5bbdbef2b52ba068b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10cf42754cdff22462050ac7dd44a6e7') in 0.011261 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Pulse/pulse4.png
+  artifactKey: Guid(a1ff8d71f6d1a4809b4e35fac8d4a7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Pulse/pulse4.png using Guid(a1ff8d71f6d1a4809b4e35fac8d4a7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc7a81d80ae4833f1fb174b84803ab76') in 0.010878 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/04.ArtResource/Brackeys/2D Mega Pack/Characters/Fantasy/Princess.png
+  artifactKey: Guid(48cd8048939cc274dae16a9493829244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Brackeys/2D Mega Pack/Characters/Fantasy/Princess.png using Guid(48cd8048939cc274dae16a9493829244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9872f8b13bd815bf2c42ef0f7b63cce6') in 0.016876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/04.ArtResource/Brackeys/2D Mega Pack/Food & Plants/Crops/Pumpkin_Done.png
+  artifactKey: Guid(b398f31984f975d439ad74fd48570d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Brackeys/2D Mega Pack/Food & Plants/Crops/Pumpkin_Done.png using Guid(b398f31984f975d439ad74fd48570d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f58f498ba6812148340a90ba9f70647') in 0.011238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/04.ArtResource/Brackeys/2D Mega Pack/Food & Plants/Crops/Pumpkin_Dead.png
+  artifactKey: Guid(157cb9b2c093a584fba187ec8d423718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Brackeys/2D Mega Pack/Food & Plants/Crops/Pumpkin_Dead.png using Guid(157cb9b2c093a584fba187ec8d423718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6c9a45110590ea4b87e0a2dcc5fa256') in 0.008805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Pulse/pulse3.png
+  artifactKey: Guid(d7e06cd92a81c4da982d67a807b692b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Pulse/pulse3.png using Guid(d7e06cd92a81c4da982d67a807b692b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd1708812839330443db6e7419e2c1e') in 0.009449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.078466 seconds.
+  path: Assets/04.ArtResource/Brackeys/2D Mega Pack/Characters/MrPickle.png
+  artifactKey: Guid(9caa2d1bf58529846b51604707b587f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Brackeys/2D Mega Pack/Characters/MrPickle.png using Guid(9caa2d1bf58529846b51604707b587f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d1dab776bd1d197ccb04468da20999') in 0.018433 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.946315 seconds.
+  path: Assets/04.ArtResource/Brackeys/2D Mega Pack/Environment/Arcade/Maze.png
+  artifactKey: Guid(8204023f9e360fb46a513b0283f0fc80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Brackeys/2D Mega Pack/Environment/Arcade/Maze.png using Guid(8204023f9e360fb46a513b0283f0fc80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88a2f9ee73da68f7cf5de6b0a25873e3') in 0.017084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.008412 seconds.
+  path: Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Hits/Hit-1/hits-1-1.png
+  artifactKey: Guid(27ff21fb9b7ed4079a65bdb8b0fc27c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Hits/Hit-1/hits-1-1.png using Guid(27ff21fb9b7ed4079a65bdb8b0fc27c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1f658722e6a4af91b785213a3c68d7a') in 0.012802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.045951 seconds.
+  path: Assets/04.ArtResource/Monster/Asset FTTGR/Sprites/Environment/Tiles/GroundInBackground.png
+  artifactKey: Guid(a5050e68ff69b2a4486d77595a244746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Monster/Asset FTTGR/Sprites/Environment/Tiles/GroundInBackground.png using Guid(a5050e68ff69b2a4486d77595a244746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf4c1dacb02a7843b1f5a91c902aaa88') in 0.079110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 0.551882 seconds.
+  path: Assets/Quantum Tek/Quantum UI/Sprites/Buttons/Green Circle Button.png
+  artifactKey: Guid(9bf5fe38fdda04af29528c06a571c837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quantum Tek/Quantum UI/Sprites/Buttons/Green Circle Button.png using Guid(9bf5fe38fdda04af29528c06a571c837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7b1eca2d3e4ac55b2aa8f459c5f24dc') in 0.015378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Quantum Tek/Quantum UI/Sprites/Tabs/Green Round Inactive Tab.png
+  artifactKey: Guid(d0e862efef437402cbac5561e0c41ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quantum Tek/Quantum UI/Sprites/Tabs/Green Round Inactive Tab.png using Guid(d0e862efef437402cbac5561e0c41ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff67402dd9c1a26ba001e22009213c69') in 0.036043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Quantum Tek/Quantum UI/Sprites/Buttons/Green Rounded Button.png
+  artifactKey: Guid(39a35d5e6ddab4e4da9ea5e72286253a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quantum Tek/Quantum UI/Sprites/Buttons/Green Rounded Button.png using Guid(39a35d5e6ddab4e4da9ea5e72286253a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '335b394f5e158381e21d1644559dcb21') in 0.018662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0136.png
+  artifactKey: Guid(36b8022bf50dcb845a5eb9d3e279eb65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0136.png using Guid(36b8022bf50dcb845a5eb9d3e279eb65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8557304667389a1c77bf0a26787aaf5d') in 0.016314 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0137.png
+  artifactKey: Guid(036beeff094fc524ba793906af8596af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0137.png using Guid(036beeff094fc524ba793906af8596af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '464578fc61f8abc2e832c4ca42c65a72') in 0.014483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0138.png
+  artifactKey: Guid(b126578a57af74f4ca50884d653f3ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0138.png using Guid(b126578a57af74f4ca50884d653f3ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c38e0fc2fdd00e1d84727b672bf746c8') in 0.018117 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0139.png
+  artifactKey: Guid(0a49ce5237ca9fb4a8cedb4c9a1e4cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0139.png using Guid(0a49ce5237ca9fb4a8cedb4c9a1e4cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '785cf4289340b4d4b66633528101fa14') in 0.035858 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Quantum Tek/Quantum UI/Sprites/Input Fields/Green Input Field.png
+  artifactKey: Guid(c8f60bd04999c401fa9fd3dbbd0dbb51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quantum Tek/Quantum UI/Sprites/Input Fields/Green Input Field.png using Guid(c8f60bd04999c401fa9fd3dbbd0dbb51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7ffbc096a4db4558ae438c8b8efd78') in 0.017282 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0139.png
+  artifactKey: Guid(73a8ff7fb79c3dc47af393345a80ec0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0139.png using Guid(73a8ff7fb79c3dc47af393345a80ec0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1944d11a78d4ad765c014b42cb75e7f') in 0.032899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Quantum Tek/Quantum UI/Sprites/Buttons/Green Round Button.png
+  artifactKey: Guid(3702a3287128749ccbf7c9bd7c13c871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quantum Tek/Quantum UI/Sprites/Buttons/Green Round Button.png using Guid(3702a3287128749ccbf7c9bd7c13c871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2e53de47b5c09d8f2d85f4a40674996') in 0.014538 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0139.png
+  artifactKey: Guid(09bc31b77e7f268468fba88e5ab63452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0139.png using Guid(09bc31b77e7f268468fba88e5ab63452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a915647f6ac5f9f4db764681861f395') in 0.017381 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0138.png
+  artifactKey: Guid(573fe51855c6c9c4fb7a6d6db14ce110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0138.png using Guid(573fe51855c6c9c4fb7a6d6db14ce110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eb9d86aac7b482d715a92fb2b78bc03') in 0.013733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.064723 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0127.png
+  artifactKey: Guid(6cd6adcc3be157745980d0d958d8ad95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0127.png using Guid(6cd6adcc3be157745980d0d958d8ad95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b120e1d30e6017d19dc43c4dc745ac') in 0.015572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0120.png
+  artifactKey: Guid(8cbc8792441efbf428d9c09cccb3d4a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0120.png using Guid(8cbc8792441efbf428d9c09cccb3d4a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7753d96bd99b80dd7e9876f58a2ba4') in 0.014006 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.682899 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0114.png
+  artifactKey: Guid(84fbd242279fc8748873d4ec35791c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0114.png using Guid(84fbd242279fc8748873d4ec35791c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7789a1af7e6545fd771d509c1425e309') in 0.017896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0114.png
+  artifactKey: Guid(d7a79fffe783b834d8ab4fbe794f4bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0114.png using Guid(d7a79fffe783b834d8ab4fbe794f4bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '516dcc62716ce8f8bb60cd83a0a2b449') in 0.016167 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0116.png
+  artifactKey: Guid(d842fdd5d4aa6654e80f7cc386bac684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0116.png using Guid(d842fdd5d4aa6654e80f7cc386bac684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed34dc74fedd125ea3eac6e21aee2f5a') in 0.022379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0117.png
+  artifactKey: Guid(a3abd61af84c8e447be4645796d0b9fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0117.png using Guid(a3abd61af84c8e447be4645796d0b9fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cee7cd9c6349d5fb6c479b3d443c087') in 0.018849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0078.png
+  artifactKey: Guid(6f36dbcc42b5e3140b942419494061bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0078.png using Guid(6f36dbcc42b5e3140b942419494061bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '186de3689165a5ee5d573235eec5051e') in 0.016452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0079.png
+  artifactKey: Guid(db27dd9db1c7b9647865aa5faaccbeb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0079.png using Guid(db27dd9db1c7b9647865aa5faaccbeb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f8766e4d7afed45c05174a2fb7cc209') in 0.016785 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0080.png
+  artifactKey: Guid(9ce5ab7fb1d1042468226810b08b582b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0080.png using Guid(9ce5ab7fb1d1042468226810b08b582b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c32de9bc6d4a4d940507e792137eac49') in 0.020431 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0081.png
+  artifactKey: Guid(d00398aa2a4c29a43ba506f52345dc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0081.png using Guid(d00398aa2a4c29a43ba506f52345dc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2cfc8715117b50e560ccd95354a1b2b') in 0.016309 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0079.png
+  artifactKey: Guid(c024bfbc9a527e045b45fc205a01005d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0079.png using Guid(c024bfbc9a527e045b45fc205a01005d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3609056f64c30cabe77838c1afa582e') in 0.019670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0116.png
+  artifactKey: Guid(88363df146d81be48a5c4759f29e8c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0116.png using Guid(88363df146d81be48a5c4759f29e8c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d8f8a7d92c01a628a88996826508dd') in 0.018151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0117.png
+  artifactKey: Guid(30ce28a48cf382b42aa9b741d26a5dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0117.png using Guid(30ce28a48cf382b42aa9b741d26a5dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f57a2876152b4801326da5f1694ecf') in 0.018840 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0118.png
+  artifactKey: Guid(aca458243cb37b24a9f3c6f6eccb06fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0118.png using Guid(aca458243cb37b24a9f3c6f6eccb06fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54dce944dc47070a6fc912f54c38d849') in 0.016972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0077.png
+  artifactKey: Guid(7a9db19527a83be4897da39cb2c7387f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0077.png using Guid(7a9db19527a83be4897da39cb2c7387f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '210f4bdde7c533980f855d96707c50af') in 0.021870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.467641 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0068.png
+  artifactKey: Guid(897c55f9b49345043b30e8155d675e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0068.png using Guid(897c55f9b49345043b30e8155d675e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8afac02e7caa451057f06fccdc5b18b') in 0.018507 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0069.png
+  artifactKey: Guid(9df8336d8a29c034b8ce3fb52c403499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0069.png using Guid(9df8336d8a29c034b8ce3fb52c403499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05e3267f42451f7b19b2c9f7343bc9ef') in 0.016458 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0071.png
+  artifactKey: Guid(8bb74a9e588cfbe4cbea750ece243f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0071.png using Guid(8bb74a9e588cfbe4cbea750ece243f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1ebc38bd28fe6e7ae76b5644b899384') in 0.015371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0072.png
+  artifactKey: Guid(431644b7d9cc8354a896fe9c6644d7b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0072.png using Guid(431644b7d9cc8354a896fe9c6644d7b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b602482df44aebf9a89548ccec6200c') in 0.015251 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0017.png
+  artifactKey: Guid(3daa5ad89a0b5e54d85d2e131a0ccb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0017.png using Guid(3daa5ad89a0b5e54d85d2e131a0ccb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44df27a61c14b096bb22605bd2b466cf') in 0.013922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0018.png
+  artifactKey: Guid(3a1d23cbaf36fce4aac962a747753c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0018.png using Guid(3a1d23cbaf36fce4aac962a747753c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fe270f08580af2a7b85c2853bd6d9cc') in 0.014149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0020.png
+  artifactKey: Guid(b1a8eb69ee4cb2d43bb68dd68f8e808e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0020.png using Guid(b1a8eb69ee4cb2d43bb68dd68f8e808e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '967c2634d1b7ed69f342781181321483') in 0.015045 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0019.png
+  artifactKey: Guid(fab7cbe22a464304a8e96b2f637409bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0019.png using Guid(fab7cbe22a464304a8e96b2f637409bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f24f86e4da1a561069d1c8fdd300abbd') in 0.013891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0016.png
+  artifactKey: Guid(ce2d7ab24eaea3046b1963dc4ae15b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0016.png using Guid(ce2d7ab24eaea3046b1963dc4ae15b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a579813073db2e76f83bd42c9be6ea') in 0.015614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0020.png
+  artifactKey: Guid(79349a35724c0554db4f2085f5f94504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0020.png using Guid(79349a35724c0554db4f2085f5f94504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7cfe09210edc17cbaee5beea40fb665') in 0.016356 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0071.png
+  artifactKey: Guid(72dead20587b39346ad1a4ab1b677f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0071.png using Guid(72dead20587b39346ad1a4ab1b677f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7f0addbc56ce381cd6fdc06f5df0108') in 0.015359 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0017.png
+  artifactKey: Guid(d4c01f4961fd95243a23a073a9e1d5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0017.png using Guid(d4c01f4961fd95243a23a073a9e1d5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe5d2615cccca3cb29fb0c712b45931') in 0.040013 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0071.png
+  artifactKey: Guid(1eddd93e297de37449eec8cec7628dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0071.png using Guid(1eddd93e297de37449eec8cec7628dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8292aa2b22d046e6be3c0bd9421d69cd') in 0.026437 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0069.png
+  artifactKey: Guid(04a547eb48e8ffb4ab65480aba537622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0069.png using Guid(04a547eb48e8ffb4ab65480aba537622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b5d2f620706c4901d885d4b4cdba483') in 0.024172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0070.png
+  artifactKey: Guid(b74c66791b296bb43a013abc459a69b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0070.png using Guid(b74c66791b296bb43a013abc459a69b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c6ed0782bbd448731d167c677e0a1bb') in 0.016105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 4/frame0019.png
+  artifactKey: Guid(46ac52c956818364cbf91cf29a52fb96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 4/frame0019.png using Guid(46ac52c956818364cbf91cf29a52fb96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2154651b365cb64b88da52db3c870417') in 0.018246 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0018.png
+  artifactKey: Guid(0600d7ee9904faf4892c90993960285b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 3/frame0018.png using Guid(0600d7ee9904faf4892c90993960285b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27a8719354bd5d25891691b9195d5129') in 0.015483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.343172 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0010.png
+  artifactKey: Guid(5a8a101aab946d447abf055de1543e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0010.png using Guid(5a8a101aab946d447abf055de1543e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c90e409e51fbe6de2442050b5dc5b6') in 0.015815 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0011.png
+  artifactKey: Guid(2b6816dbd4b813a4cafb204ee8928c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0011.png using Guid(2b6816dbd4b813a4cafb204ee8928c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa2e5ac36d90ca6aec0e4323540d1a2') in 0.015367 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0011.png
+  artifactKey: Guid(64d15b402d23ec94c8c1a6cd801fa78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/BackGround/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 1/frame0011.png using Guid(64d15b402d23ec94c8c1a6cd801fa78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '054becc5e2bb89859988fa7de64daf63') in 0.015048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.007057 seconds.
+  path: Assets/04.ArtResource/Brackeys/2D Mega Pack/UI/Cursors/Cursor_Shoot.png
+  artifactKey: Guid(944eece0a3c26194d96c7c96dd48f94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Brackeys/2D Mega Pack/UI/Cursors/Cursor_Shoot.png using Guid(944eece0a3c26194d96c7c96dd48f94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ba8f4fb4a40dbb24f9fdc8d224126a5') in 0.011150 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.049359 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Dark/Single PNGs/CTRL.png
+  artifactKey: Guid(35e0f350e14cc5f41899de375f87cd30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Dark/Single PNGs/CTRL.png using Guid(35e0f350e14cc5f41899de375f87cd30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d150d42fa6fd3e7c0cb93df444d10c') in 0.016286 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Single PNGs/CTRL.png
+  artifactKey: Guid(d5c29031d86e5cc42858e709826991e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Single PNGs/CTRL.png using Guid(d5c29031d86e5cc42858e709826991e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed4f6ec4492abd3e92cd4ebc5e653f7') in 0.015405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/Brackeys/2D Mega Pack/UI/Cursors/Cursor_Normal.png
+  artifactKey: Guid(d673263d78ce47f488b74edbdd14b6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Brackeys/2D Mega Pack/UI/Cursors/Cursor_Normal.png using Guid(d673263d78ce47f488b74edbdd14b6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f28b33abfdd2fe59ee7224b74c6aba0d') in 0.013771 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.736706 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Spritesheets/COLON.png
+  artifactKey: Guid(67ef2b816c5fdc3408c887cec4c19c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Spritesheets/COLON.png using Guid(67ef2b816c5fdc3408c887cec4c19c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '794dc5c36640f5280fc34b363ffb1540') in 0.014179 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002675 seconds.
+  path: Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Crossed/crossed3.png
+  artifactKey: Guid(2923b2bd71b7543f0abec5366236955b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Crossed/crossed3.png using Guid(2923b2bd71b7543f0abec5366236955b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24a7168411195b777444ce1d5d47d040') in 0.014402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Crossed/crossed6.png
+  artifactKey: Guid(5cf070071288f47de93f37f2266c5a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Crossed/crossed6.png using Guid(5cf070071288f47de93f37f2266c5a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fac5d041a33c58eab2decaa9aa6de04') in 0.012938 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.699566 seconds.
+  path: Assets/Quantum Tek/Quantum UI/Sprites/Buttons/Blue Circle Outline Button.png
+  artifactKey: Guid(7d0420c800f674185a20c5f8dd6d3be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quantum Tek/Quantum UI/Sprites/Buttons/Blue Circle Outline Button.png using Guid(7d0420c800f674185a20c5f8dd6d3be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fad9c1851eef55134b4d55787598b5d') in 0.015218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003294 seconds.
+  path: Assets/Quantum Tek/Quantum UI/Sprites/Buttons/Blue Round Outline Button.png
+  artifactKey: Guid(5fa85b6040900479daac222f222158ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quantum Tek/Quantum UI/Sprites/Buttons/Blue Round Outline Button.png using Guid(5fa85b6040900479daac222f222158ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a682214bd2a47e2d67503621efa3b804') in 0.015002 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.025167 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/A.png
+  artifactKey: Guid(70e6b3bcfcdadff42af7f60cad1fc055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/A.png using Guid(70e6b3bcfcdadff42af7f60cad1fc055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7be0472af3b1b0cdb5d39f3ee350e619') in 0.014524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.038125 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/8.png
+  artifactKey: Guid(442dc5804c22724408b2785b8b863568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/8.png using Guid(442dc5804c22724408b2785b8b863568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aecca289246a7b9074264ee8e12e0ca6') in 0.013283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.462103 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/10 Elitist Monster/Little Slim/04.png
+  artifactKey: Guid(c78406ba193e1404eb8f759b1d5df9d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/10 Elitist Monster/Little Slim/04.png using Guid(c78406ba193e1404eb8f759b1d5df9d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ca239d2311a2c7219c0e8f9d7019601') in 0.012925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.005578 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/01 Original/Green/04.png
+  artifactKey: Guid(ef18bf0f3bb56cd4f89f1c62b3d61bc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/01 Original/Green/04.png using Guid(ef18bf0f3bb56cd4f89f1c62b3d61bc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee2da410b3666acadf3718bec7a6147c') in 0.014166 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.021040 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/02 The Forest/Tree/03.png
+  artifactKey: Guid(50ea6f1c5e3e6584dab87427bda9afa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/02 The Forest/Tree/03.png using Guid(50ea6f1c5e3e6584dab87427bda9afa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9cef43ea944f58a03ce8bddc6ca2375') in 0.013134 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.011803 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/09 The Special/Bow/03.png
+  artifactKey: Guid(5ad11999684ea344ba1232f4bc7b8f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/09 The Special/Bow/03.png using Guid(5ad11999684ea344ba1232f4bc7b8f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77047d74a7af1c6f3491b798e52da141') in 0.014081 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.014577 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/01 Original/Red/03.png
+  artifactKey: Guid(1aae1cafdfbf61849a1d22f0d27dc22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/01 Original/Red/03.png using Guid(1aae1cafdfbf61849a1d22f0d27dc22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96832efb5065d06040e6f063b91b8ac4') in 0.014741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001313 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/02 The Forest/Vine/03.png
+  artifactKey: Guid(f338ae6ecd5ca674a9471759ced178f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/02 The Forest/Vine/03.png using Guid(f338ae6ecd5ca674a9471759ced178f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbcb89d15e5efcc2c92f4accea1c9f6a') in 0.012823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.730045 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/01 Original/Green/03.png
+  artifactKey: Guid(fb620fe0f9f46e54ab6a9717eff2c16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/01 Original/Green/03.png using Guid(fb620fe0f9f46e54ab6a9717eff2c16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69626f4c9c9188d0536a8b8e7b19f769') in 0.014842 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002159 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/04 Desret and Ice/Mummy/03.png
+  artifactKey: Guid(04503511bb6bdd64a99b74eb23d46a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/04 Desret and Ice/Mummy/03.png using Guid(04503511bb6bdd64a99b74eb23d46a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0910e184c377249a4ba7e04303c1b942') in 0.013009 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.225816 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Dark/Single PNGs/2.png
+  artifactKey: Guid(cb5e2b277e5b6d44bbdefa5894522bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Dark/Single PNGs/2.png using Guid(cb5e2b277e5b6d44bbdefa5894522bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0404f11e386f51bb6e8ceb7de7c8907') in 0.013424 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.319464 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/09 The Special/Key/02.png
+  artifactKey: Guid(d976eb8f204b40b42b17103174302f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/09 The Special/Key/02.png using Guid(d976eb8f204b40b42b17103174302f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '934126afd73f7c0907e841b3dcb4d970') in 0.012925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.371809 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/04 Desret and Ice/Snow/02.png
+  artifactKey: Guid(d99d02fca84676a43882bb6385ac51af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/04 Desret and Ice/Snow/02.png using Guid(d99d02fca84676a43882bb6385ac51af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9565269ee01c4b19998307c48af32f1') in 0.012644 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.333389 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/05 The Ocean/Water/02.png
+  artifactKey: Guid(d871531f53cd885478dc179046beec83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/05 The Ocean/Water/02.png using Guid(d871531f53cd885478dc179046beec83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '716bdda42d3ed2faefa4ce3cfb57b440') in 0.017440 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.302897 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/07 RPG/Cthulhu/02.png
+  artifactKey: Guid(0d115cfe157035944ba50a5192d4211f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/07 RPG/Cthulhu/02.png using Guid(0d115cfe157035944ba50a5192d4211f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e8cc66c76ef4ba84075e9ee45e769b6') in 0.015765 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.301093 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/09 The Special/Coin/02.png
+  artifactKey: Guid(f1e37fd64b93b8f44b4a2ec38e64989b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/09 The Special/Coin/02.png using Guid(f1e37fd64b93b8f44b4a2ec38e64989b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78cdc7a7b84924a775ee0ec807ce41d9') in 0.013738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.009074 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/10 Elitist Monster/Little Slim/02.png
+  artifactKey: Guid(1b6fbdf2ff0f56e4785f28c735377285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/10 Elitist Monster/Little Slim/02.png using Guid(1b6fbdf2ff0f56e4785f28c735377285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '538e7fb517998e1006cf9e9f197d555a') in 0.019223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.999862 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/07 RPG/Demon/03.png
+  artifactKey: Guid(bdca9049656e7c14cbd31eca159bbc78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/07 RPG/Demon/03.png using Guid(bdca9049656e7c14cbd31eca159bbc78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f07e070397c3c4a267b92f62c891779') in 0.015956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.034866 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/07 RPG/Sky/03.png
+  artifactKey: Guid(ff4a6f96dcb3d2d45a396b88236a0e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/07 RPG/Sky/03.png using Guid(ff4a6f96dcb3d2d45a396b88236a0e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb88312df39fff68778826b1461c4a31') in 0.017531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.187639 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/05 The Ocean/Water/03.png
+  artifactKey: Guid(c472b2b839f90164eb92d1b74a8a14a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/05 The Ocean/Water/03.png using Guid(c472b2b839f90164eb92d1b74a8a14a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bffab07ef596bfc0e0287c0f2ab533fe') in 0.016975 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.262693 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/04 Desret and Ice/sand/04.png
+  artifactKey: Guid(3edb99ede8839994980a4aa2da54203d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/04 Desret and Ice/sand/04.png using Guid(3edb99ede8839994980a4aa2da54203d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a124d5f51982d639a5d857354938293') in 0.014100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.202036 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/07 RPG/Demon/04.png
+  artifactKey: Guid(610806035350b664b8e2aa1eef43581b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/07 RPG/Demon/04.png using Guid(610806035350b664b8e2aa1eef43581b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b807d984ff3c1488b40d2856841cc39e') in 0.014449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.026867 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/05 The Ocean/Crab/04.png
+  artifactKey: Guid(71b11233f346449458edee1a4568d32f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/05 The Ocean/Crab/04.png using Guid(71b11233f346449458edee1a4568d32f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45593755b14aff74f2dc94d4de33481a') in 0.013542 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.191608 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/10 Elitist Monster/Black Hole/04.png
+  artifactKey: Guid(87dc9b777e89c4e4c9928f39bf99b716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/10 Elitist Monster/Black Hole/04.png using Guid(87dc9b777e89c4e4c9928f39bf99b716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ca0bd3b93490e504dd7919bff2bf91') in 0.014444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.439826 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/09 The Special/Bottle/04.png
+  artifactKey: Guid(6f1aca9d335be9e428c55b5594739fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/09 The Special/Bottle/04.png using Guid(6f1aca9d335be9e428c55b5594739fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00c11badc59f28373dd3f915cbaf0cb4') in 0.020706 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.034581 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/07 RPG/Sky/04.png
+  artifactKey: Guid(36272fb388c3ae94fa07c6b5c7cc12db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/07 RPG/Sky/04.png using Guid(36272fb388c3ae94fa07c6b5c7cc12db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ead5cd0be73913e6bd1da674289e8ca') in 0.014843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.859140 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Single PNGs/4.png
+  artifactKey: Guid(98e282741ae358f42b299ff612bde756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Single PNGs/4.png using Guid(98e282741ae358f42b299ff612bde756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67076a14e7e611f186fe4394f61f3085') in 0.015187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.011408 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/5.png
+  artifactKey: Guid(57aac74ac8617ee499b0c9f3025e299a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/5.png using Guid(57aac74ac8617ee499b0c9f3025e299a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38dd2676763ca3bbd7935443a38f92e8') in 0.017276 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.007551 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Spritesheets/ALT.png
+  artifactKey: Guid(bf1369f700e3eb44ba05abbb294f4f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Spritesheets/ALT.png using Guid(bf1369f700e3eb44ba05abbb294f4f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5626eec79a79475eac8487744500a3b8') in 0.036067 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.534244 seconds.
+  path: Assets/Quantum Tek/Quantum UI/Sprites/Toggles/Blue Rounded Switch Off.png
+  artifactKey: Guid(cba7ce4a138bc4fa1be5ea62e1fc17b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quantum Tek/Quantum UI/Sprites/Toggles/Blue Rounded Switch Off.png using Guid(cba7ce4a138bc4fa1be5ea62e1fc17b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00d6034da5dc99aded803aebb1fe052') in 0.018417 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.221390 seconds.
+  path: Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Bolt/bolt4.png
+  artifactKey: Guid(18e43425d25ba4059b0c5ed560a3622d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Bolt/bolt4.png using Guid(18e43425d25ba4059b0c5ed560a3622d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c842ef772725de791dab9412b4baa49') in 0.031768 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.028529 seconds.
+  path: Assets/04.ArtResource/Brackeys/2D Mega Pack/Items & Icons/Arcade/Bullet.png
+  artifactKey: Guid(89676eea46ffbb2499fc4723811a023c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Brackeys/2D Mega Pack/Items & Icons/Arcade/Bullet.png using Guid(89676eea46ffbb2499fc4723811a023c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccdfdd8161a54d1caa353b3856eba330') in 0.013098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.007545 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/C.png
+  artifactKey: Guid(06744d15a8f538a4da591a86f979eced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Light/Spritesheets/C.png using Guid(06744d15a8f538a4da591a86f979eced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b57ccf2505a19713ed18170b5f4545a5') in 0.021861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.013824 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Single PNGs/CAPS.png
+  artifactKey: Guid(ce2d2bb385e3b8c4486579f2763e7754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Dark/Single PNGs/CAPS.png using Guid(ce2d2bb385e3b8c4486579f2763e7754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e2b3eb7a2d39971f49279761183d56') in 0.012371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 스레드 종료 또는 응용 프로그램 요청 때문에 I/O 작업이 취소되었습니다.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

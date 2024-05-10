@@ -2,18 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 //로비씬 들어갈때 해야할 동작들 
+//플레이어 정보 초기화 함수 추가 TODO: 나중에는 플레이어 무기, 돈, 슬라임 색 PlayerPref로 받아올 예정
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-08
+// 최종 수정일 : 2024-05-10
 public class LobbySystem : MonoBehaviour
 {
     
     void Start()
     {
         StartCoroutine(SceneStartSequence());
-        SceneSystem.instance.isClearStage = true;
+        InitializeLobbyScene();
     }
-    
+
+    private void InitializeLobbyScene()
+    {
+        SceneSystem.instance.isClearStage = true;
+        PlayerManager.instance.playerHp = 5;
+        PlayerManager.instance.playerMoney = 0;
+        AllSceneCanvas.instance.PlayerHPChange(PlayerManager.instance.playerHp);
+        AllSceneCanvas.instance.SetMoney(PlayerManager.instance.playerMoney);
+    }
+
     private IEnumerator SceneStartSequence()
     {
         SoundManager._instance.LoadBGM(Define._lobbyBgm);

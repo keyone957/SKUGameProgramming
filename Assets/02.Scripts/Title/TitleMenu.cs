@@ -3,23 +3,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//로비 씬으로 이동하게 변경
+//각 메뉴 버튼들 이벤트 연결
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-06
+// 최종 수정일 : 2024-05-10
 public class TitleMenu : MonoBehaviour
 {
     [SerializeField] private Button _btnStart=null;
     [SerializeField] private FadeOverlay _fadeOverlay=null;
 
+    [SerializeField] private Button settingBtn;
+
+    [SerializeField] private Button quitGameBtn;
     //버튼에 이벤트 연결
     private void Awake()
     {
         _btnStart.onClick.AddListener(OnClickStartBtn);
+        settingBtn.onClick.AddListener(OnClickSettingBtn);
+        quitGameBtn.onClick.AddListener(OnClickQuitGameBtn);
     }
 
     private void OnClickStartBtn()
     {
+        SoundManager._instance.PlaySound(Define._clickMenuSound);
         _fadeOverlay.DoFadeOut(1.5f,"Lobby");
+    }
+
+    private void OnClickSettingBtn()
+    {
+        SoundManager._instance.PlaySound(Define._clickMenuSound);
+    }
+
+    private void OnClickQuitGameBtn()
+    {
+        SoundManager._instance.PlaySound(Define._clickMenuSound);
+        Application.Quit();
+
     }
 }
