@@ -33,10 +33,30 @@ public class Player : MonoBehaviour
             ChildGenerator childGenerator = FindObjectOfType<ChildGenerator>();
             if (childGenerator != null)
             {
+                RemovePrefabWithTag("Skeleton");
                 childGenerator.RemoveFirstChild();
-                Debug.Log("첫번째 자식 제거");
+                Debug.Log("Left mouse button clicked - Skeletons removed");
             }
 
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            anim.SetBool("IsAttack", true);
+            swordCollider.enabled = true;
+            RemovePrefabWithTag("IceGolem");
+            childGenerator.RemoveFirstChild();
+            Debug.Log("Right mouse button clicked - Ice Golems removed");
+        }
+    }
+
+    void RemovePrefabWithTag(string tag)
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag(tag);
+        foreach (GameObject enemy in enemies)
+        {
+            Destroy(enemy);
+            Debug.Log(tag + " destroyed");
         }
     }
 
