@@ -18,6 +18,7 @@ public class LobbySystem : MonoBehaviour
     private void InitializeLobbyScene()
     {
         SceneSystem.instance.isClearStage = true;
+        SceneSystem.instance._fadeOverlay.gameObject.SetActive(false);
         PlayerManager.instance.playerHp = 5;
         PlayerManager.instance.playerMoney = 0;
         AllSceneCanvas.instance.PlayerHPChange(PlayerManager.instance.playerHp);

@@ -7,9 +7,10 @@ using UnityEngine.UI;
 
 //모든 씬에서 사용할 UI관리하는 컴포넌트
 //체력,돈,인게임 메뉴
+//메뉴 비활 활성화 코드 리팩토링 + 인게임 메뉴 활성화 일때 게임일시정지
 //최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-10
+// 최종 수정일 : 2024-05-11
 public class AllSceneCanvas : MonoBehaviour
 {
     public static AllSceneCanvas instance { get; private set; }
@@ -56,38 +57,21 @@ public class AllSceneCanvas : MonoBehaviour
     {
         playerMoneyText.text = money.ToString();
     }
-
     public void OnClickInGameMenu()
     {
-        if (isOpenMenu)
-        {
-            inGameMenu.SetActive(false);
-            isOpenMenu = false; 
-        }
-        else
-        {
-            inGameMenu.SetActive(true);
-            isOpenMenu = true;
-        }
+        isOpenMenu = !isOpenMenu;
+
+        inGameMenu.SetActive(isOpenMenu); 
     }
-    
     private void OnKeyboardInGameMenu()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (!isOpenMenu)
-            {
-                inGameMenu.SetActive(true);
-                isOpenMenu = true;
-            }
-            else
-            {
-                inGameMenu.SetActive(false);
-                isOpenMenu = false;
-            }
+            isOpenMenu = !isOpenMenu;
+
+            inGameMenu.SetActive(isOpenMenu);
         }
     }
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
@@ -101,7 +85,16 @@ public class AllSceneCanvas : MonoBehaviour
             PlayerManager.instance.playerMoney += 10;
             SetMoney(PlayerManager.instance.playerMoney);
         }
-
+        
         OnKeyboardInGameMenu();
+        if (isOpenMenu)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1.0f;
+        }
+
     }
 }

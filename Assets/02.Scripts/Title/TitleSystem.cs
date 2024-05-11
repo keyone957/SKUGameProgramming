@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 //타이틀 씬에 있는 것들 관리. 현재는 테스트 용으로 타이틀 브금 실행(추후에 바뀔수도 있음)
+//타임스케일 조정해서 인게임에서 타이틀씬으로 오면 다시 게임 돌아가게
 // 최초 작성자 : 홍원기
-// 수정자 : 
-// 최종 수정일 : 2024-04-06
+// 수정자 : 홍원기
+// 최종 수정일 : 2024-05-11
 public class TitleSystem : MonoBehaviour
 {
     void Start()
     {
         StartCoroutine(SceneStartSequence());
+        Time.timeScale = 1.0f;
     }
     
     private IEnumerator SceneStartSequence()

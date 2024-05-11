@@ -6,18 +6,29 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 //인게임 메뉴 관리하는 컴포넌트
-//TODO: 로비씬에서 PlayerPref로 현재 가지고 있는 돈을 저장을 해놓고 게임 도중 다시하기, 타이버튼,게임종료 버튼을 누르면 게임 시작전에 돈으로 되돌아가기.
+//팝업 메뉴 뜰때 역할에 맞는 팝업창 띄우기
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-10
+// 최종 수정일 : 2024-05-11
 public class InGameMenuController : MonoBehaviour
 {
+    public static InGameMenuController instance { get; private set; }
     [SerializeField] private Button restartBtn;
     [SerializeField] private Button settingBtn;
     [SerializeField] private Button titleBtn;
     [SerializeField] private Button endGameBtn;
     [SerializeField] private GameObject settingMenu;
+    [SerializeField] private PopUpController popUP;
 
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+            Destroy(this.gameObject);
+    }
     private void Start()
     {
         restartBtn.onClick.AddListener(OnClickRestartBtn);
@@ -28,7 +39,7 @@ public class InGameMenuController : MonoBehaviour
 
     private void OnClickRestartBtn()
     {
-        SceneManager.LoadScene("Lobby");   
+        popUP.SetPopUpMode("restart","경고\n현재까지의 진행사항은 저장이 안됩니다.\n 그래도 다시하시겠습니까?");
     }
 
     private void OnClickSettingBtn()
@@ -38,18 +49,10 @@ public class InGameMenuController : MonoBehaviour
 
     private void OnClickTitleBtn()
     {
-        SceneManager.LoadScene("Title");
-        ResetInstance();
+        popUP.SetPopUpMode("title","경고\n현재까지의 진행사항은 저장이 안됩니다.\n 그래도 타이틀로 돌아가시겠습니까?");
     }
     private void OnClickEndGameBtn()
     {
         Application.Quit();
-    }
-
-    private void ResetInstance()
-    {
-        Destroy(AllSceneCanvas.instance.gameObject);
-        Destroy(SceneSystem.instance.gameObject);
-        Destroy(PlayerManager.instance.gameObject);
     }
 }
