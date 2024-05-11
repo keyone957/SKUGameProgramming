@@ -45,8 +45,13 @@ public class Player : MonoBehaviour
             anim.SetBool("IsAttack", true);
             swordCollider.enabled = true;
             RemovePrefabWithTag("IceGolem");
-            childGenerator.RemoveFirstChild();
-            Debug.Log("Right mouse button clicked - Ice Golems removed");
+            ChildGenerator childGenerator = FindObjectOfType<ChildGenerator>();
+            if (childGenerator != null)
+            {
+                RemovePrefabWithTag("Skeleton");
+                childGenerator.RemoveFirstChild();
+                Debug.Log("RIGHT mouse button clicked - Skeletons removed");
+            }
         }
     }
 
