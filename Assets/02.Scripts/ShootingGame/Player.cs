@@ -30,9 +30,12 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("IsAttack", true);
             swordCollider.enabled = true;
-            GameObject enemyObject = GameObject.Find("Enemy");
-            Enemy enemy = enemyObject.GetComponent<Enemy>();
-            enemy.TakeDamage(1);
+            ChildGenerator childGenerator = FindObjectOfType<ChildGenerator>();
+            if (childGenerator != null)
+            {
+                childGenerator.RemoveFirstChild();
+                Debug.Log("첫번째 자식 제거");
+            }
 
         }
     }
