@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - NPC
+  - Skeleton
+  - IceGolem
   layers:
   - Default
   - TransparentFX
