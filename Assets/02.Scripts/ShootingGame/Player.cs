@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
                 {
                     childGenerator.RemoveFirstChild();
                 }
-                if (childGenerator.GetFirstTag() == "IceGolem")
+                else if (childGenerator.GetFirstTag() == "IceGolem")
                 {
                     Debug.Log("¶¯!");
                     hpUi.SetHp(-1);
@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
                     hpUi.SetHp(-1);
 
                 }
-                if (childGenerator.GetFirstTag() == "IceGolem")
+                else if (childGenerator.GetFirstTag() == "IceGolem")
                 {
                     childGenerator.RemoveFirstChild();
                 }
