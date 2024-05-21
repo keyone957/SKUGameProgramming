@@ -29,7 +29,6 @@ public class TimerText : MonoBehaviour
         else
         {
             // 시간이 다 되었을 때 실행할 동작
-            // 여기에 원하는 동작을 추가하시면 됩니다.
             Debug.Log("Time's up!");
             // TimeOut 씬으로 이동
             SceneManager.LoadScene("TimeOut");
@@ -39,12 +38,12 @@ public class TimerText : MonoBehaviour
     void UpdateTimerText()
     {
         // 타이머 텍스트 업데이트
-        textMesh.text = "Timer : " + Mathf.RoundToInt(timeRemaining).ToString() + "seconds";
+        textMesh.text =  Mathf.RoundToInt(timeRemaining).ToString() + "seconds";
 
         // 텍스트 색상 설정
-        textMesh.color = Color.red;
+        textMesh.color = Color.white;
 
         // 텍스트 크기 설정
-        textMesh.fontSize = 30; // 원하는 크기로 설정
+        //textMesh.fontSize = 20; // 원하는 크기로 설정
     }
 }
