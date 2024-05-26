@@ -27,6 +27,7 @@ public class Timer : MonoBehaviour
                 time -= Time.deltaTime;
                 TimerText.text= Mathf.Ceil(time).ToString();
             }
+            //타이머 끝났을 경우 
             else
             {
                 timerStarted = false;
