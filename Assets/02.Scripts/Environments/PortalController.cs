@@ -6,10 +6,10 @@ using UnityEngine;
 
 //포탈에 닿았을때 수행해야할 동작들
 //게임 클리어 조건 추가, 조건이 맞고 W를 누르면 다음 씬으로 이동 가능
-//test 씬이동 함수 추가
+//보너스 스테이지 구분 함수 추가
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-10
+// 최종 수정일 : 2024-05-24
 public class PortalController : MonoBehaviour
 {
     [SerializeField] private GameObject keyBoardUI;
@@ -23,6 +23,7 @@ public class PortalController : MonoBehaviour
     {
         doorAudioSource = GetComponent<AudioSource>();
         isEnter = false;
+        BeforeBonusStage();
     }
 
     private void Update()
@@ -31,6 +32,14 @@ public class PortalController : MonoBehaviour
         {
             // SceneSystem.instance.GoNextStage(nextStageType);
             SceneSystem.instance.TestNextStage(TestSceneName);
+        }
+    }
+
+    public void BeforeBonusStage()
+    {
+        if (SceneSystem.instance.currentStage == SceneSystem.instance.bonusStageOrder-1)
+        {
+            nextStageType = SceneSystem.NextStageType.Bonus;
         }
     }
 
