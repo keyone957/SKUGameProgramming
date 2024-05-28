@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
-//Å¸ÀÌ¸Ó ±â´É ±¸Çö
-public class Timer : MonoBehaviour
+//íƒ€ì´ë¨¸ ê¸°ëŠ¥ êµ¬í˜„
+public class ShootingTimer : MonoBehaviour
 {
     public TMP_Text TimerText; 
     float time = 30f;
@@ -27,7 +27,7 @@ public class Timer : MonoBehaviour
                 time -= Time.deltaTime;
                 TimerText.text= Mathf.Ceil(time).ToString();
             }
-            //Å¸ÀÌ¸Ó ³¡³µÀ» °æ¿ì 
+            //íƒ€ì´ë¨¸ ëë‚¬ì„ ê²½ìš° 
             else
             {
                 timerStarted = false;
