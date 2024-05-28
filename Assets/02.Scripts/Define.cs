@@ -16,6 +16,7 @@ public static class Define
     //EffectSound
     public const string _clickMenuSound = "BtnClickSound";
     public const string _damagedSkeleton = "DamagedSkeleton";
+    public const string _damagedSlime = "SlimeDamaged";
 
 
 }

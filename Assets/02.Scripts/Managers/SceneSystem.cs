@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 //전체 게임 관리하는 씬 시스템 구성
-//맵 타입에 따라서 다음이동할 씬을 랜덤으로 이동하는 함수 추가
+//몬스터 카운트 프로퍼티
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-22
+// 최종 수정일 : 2024-05-28
 public class SceneSystem : MonoBehaviour
 {
     public enum NextStageType
@@ -23,6 +23,7 @@ public class SceneSystem : MonoBehaviour
     [SerializeField] public int maxStageCnt; //총 스테이지 개수
     [SerializeField] public int bonusStageOrder;
     [SerializeField] public FadeOverlay _fadeOverlay;
+    [SerializeField] public int monsterCnt;
     void Awake()
     {
         if (instance == null)

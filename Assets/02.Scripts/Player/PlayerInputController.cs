@@ -1,11 +1,13 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 //플레이어(슬라임) Input관련 컴포넌트
-//애니메이터 해시테이블사용해 불러오기.
+//플레이어 몬스터한테 맞으면 뒤로 넉백, 무적상태
+//플레이어 애니메이션 이벤트 분리
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-24
+// 최종 수정일 : 2024-05-28
 public class PlayerInputController : MonoBehaviour
 {
     [SerializeField] private Animator anim;
@@ -13,17 +15,21 @@ public class PlayerInputController : MonoBehaviour
     [SerializeField] private List<AudioClip> playerSound = new List<AudioClip>();
     [SerializeField] private AudioSource playerAudioSource;
     [SerializeField] private GameObject jumpEffect;
-    [SerializeField] public float jumpForce;
-    [SerializeField] public float moveSpeed;
+    [SerializeField] private float jumpForce;
+    [SerializeField] private float moveSpeed;
     [SerializeField] private Collider2D swordCollider;
     [SerializeField] private GameObject attackEffect;
     [SerializeField] private GameObject smallSlime;
-    [SerializeField] public int maxJumpCnt;
+    [SerializeField] private int maxJumpCnt;
     [SerializeField] public bool canDivide; //점프맵에서 혹여나 분열을 안쓸수도 있으니 필요한 bool값
+    [SerializeField] private SpriteRenderer slimeSpr;
+    [SerializeField] private SpriteRenderer divideSlimeSpr;
     private bool isDivide;
     private int jumpCnt;
-    private float divideCooldown = 2f;
+    private float divideCooldown = 2f; //분열 스킬 쿨타임
     private float nextDivideTime = 0f;
+
+    private bool isInvincible = false; //무적상태 bool값
 
     //Animator 파라미터의 해시값 추출
     private readonly int hashIdle = Animator.StringToHash("IsIdle");
@@ -95,7 +101,7 @@ public class PlayerInputController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J))
         {
             anim.SetBool(hashAttack, true);
-            swordCollider.enabled = true;
+            
         }
     }
 
@@ -104,12 +110,22 @@ public class PlayerInputController : MonoBehaviour
         anim.SetBool(hashMove, false);
         anim.SetBool(hashAttack, false);
         anim.SetBool(hashIdle, true);
-        attackEffect.SetActive(false);
         swordCollider.enabled = false;
+    }
+
+    private void StartEffect()
+    {
+        attackEffect.SetActive(true);
+    }
+
+    private void EndEffect()
+    {
+        attackEffect.SetActive(false);
     }
 
     private void StartAttack()
     {
+        swordCollider.enabled = true;
         PlayEffect(playerSound[1]);
         attackEffect.SetActive(true);
     }
@@ -141,12 +157,10 @@ public class PlayerInputController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
-            transform.localScale = new Vector3(6, 6, 6);
-            smallSlime.SetActive(true);
-            maxJumpCnt = 3;
-            jumpForce = 17f;
-            moveSpeed = 13f;
-            isDivide = true;
+            Color divideSlimeColor = divideSlimeSpr.color;
+            divideSlimeColor.a = 1.0f;
+            divideSlimeSpr.color = divideSlimeColor;
+            SetSlimeStat(new Vector3(6, 6, 6), true, 3, 17f, 13f, 1, true);
         }
     }
 
@@ -154,13 +168,20 @@ public class PlayerInputController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
-            transform.localScale = new Vector3(8, 8, 8);
-            smallSlime.SetActive(false);
-            maxJumpCnt = 2;
-            jumpForce = 20f;
-            moveSpeed = 10f;
-            isDivide = false;
+            SetSlimeStat(new Vector3(8, 8, 8), false, 2, 20f, 10f, 2, false);
         }
+    }
+
+    private void SetSlimeStat(Vector3 slimeScale, bool slimeActive, int jCnt, float jForce, float mSpeed,
+        int playerPower, bool divide)
+    {
+        transform.localScale = slimeScale;
+        smallSlime.SetActive(slimeActive);
+        maxJumpCnt = jCnt;
+        jumpForce = jForce;
+        moveSpeed = mSpeed;
+        PlayerManager.instance.playerPower = playerPower;
+        isDivide = divide;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -171,13 +192,48 @@ public class PlayerInputController : MonoBehaviour
         }
     }
 
-    private void testDamaged()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.gameObject.CompareTag("MonsterAttackCol") && !isInvincible)
+        {
+            SoundManager._instance.PlaySound(Define._damagedSlime);
+            PlayerManager.instance.playerHp -= other.gameObject.transform.parent.GetComponent<Monster>().damage;
+            AllSceneCanvas.instance.PlayerHPChange(PlayerManager.instance.playerHp);
+            OnDamaged(other.gameObject.transform.position);
+        }
     }
 
-    void OffDamaged()
-    { 
-        GetComponent<SpriteRenderer>().color=new Color(1, 1, 1, 1);
+    //무적상태 활성화
+    private void OnDamaged(Vector2 targetPos)
+    {
+        isInvincible = true;
+        Color slimeColor = slimeSpr.color;
+        slimeColor.a = 0.4f;
+        slimeSpr.color = slimeColor;
+        if (isDivide)
+        {
+            Color divideSlimeColor = divideSlimeSpr.color;
+            divideSlimeColor.a = 0.4f;
+            divideSlimeSpr.color = divideSlimeColor;
+        }
+
+        int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;
+        rb.AddForce(new Vector2(dirc, 1) * 7, ForceMode2D.Impulse);
+        Invoke("ResetInvincibility", 2);
+    }
+
+    //무적상태 원래대로 돌아오게
+    private void ResetInvincibility()
+    {
+        isInvincible = false;
+        Color slimeColor = slimeSpr.color;
+        slimeColor.a = 1.0f;
+        slimeSpr.color = slimeColor;
+        if (isDivide)
+        {
+            Color divideSlimeColor = divideSlimeSpr.color;
+            divideSlimeColor.a = 1.0f;
+            divideSlimeSpr.color = divideSlimeColor;
+        }
     }
 }

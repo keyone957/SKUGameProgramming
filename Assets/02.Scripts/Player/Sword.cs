@@ -10,7 +10,7 @@ public class Sword : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Monster"))
         {
-            SoundManager._instance.PlaySound(Define._damagedSkeleton);
+            // SoundManager._instance.PlaySound(Define._damagedSkeleton);
         }
     }
 }

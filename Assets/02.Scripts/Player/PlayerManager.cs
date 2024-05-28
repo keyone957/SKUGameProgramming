@@ -12,6 +12,7 @@ public class PlayerManager : MonoBehaviour
     private Transform spawnPoint;
     public int playerHp;
     public int playerMoney;
+    public int playerPower;
     void Awake()
     {
         if (instance == null)

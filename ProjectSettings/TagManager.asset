@@ -9,11 +9,13 @@ TagManager:
   - Skeleton
   - IceGolem
   - Monster
+  - MonsterAttackCol
+  - PlayerSword
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Playerdamaged
   - Water
   - UI
   - Player

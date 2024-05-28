@@ -1,11 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//몬스터 AI FSM 사용하여 구현중
-//TODO: 피격 및 공격 구현해야함
+using UnityEngine.UI;
+
+//몬스터 공격할때 에니메이션 이벤트 추가
+//몬스터 피격, 죽음 상태 추가
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-24
+// 최종 수정일 : 2024-05-28
 public class Monster : MonoBehaviour
 {
     public enum State
@@ -17,10 +20,14 @@ public class Monster : MonoBehaviour
     }
 
     [SerializeField] public int hp;
+    private int curHp;
     [SerializeField] public int damage;
     [SerializeField] public float traceDist;
     [SerializeField] public float attackDist;
     [SerializeField] public float moveSpeed;
+    [SerializeField] private Collider2D monsterAttack;
+    [SerializeField] private GameObject hpCanvas;
+    [SerializeField] public Slider monsterHpBarSlider;
     public State state = State.IDLE;
     public bool isDie = false;
 
@@ -28,8 +35,7 @@ public class Monster : MonoBehaviour
     private Transform playerTrans;
     private Animator anim;
     private Rigidbody2D rb;
-
-    // private readonly int hashIdle=Animator.StringToHash("IsMove");
+    
     private readonly int hashMove = Animator.StringToHash("IsMove");
     private readonly int hashAttack = Animator.StringToHash("IsAttack");
     private readonly int hashDead = Animator.StringToHash("Dead");
@@ -41,6 +47,7 @@ public class Monster : MonoBehaviour
         playerTrans = GameObject.FindWithTag("Player").GetComponent<Transform>();
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        curHp = hp;
         StartCoroutine(CheckMonsterStart());
         StartCoroutine(MonsterAction());
     }
@@ -49,7 +56,7 @@ public class Monster : MonoBehaviour
     {
         while (!isDie)
         {
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.05f);
             if (state == State.DIE) yield break;
 
             float distance = Vector2.Distance(playerTrans.position, monsterTrans.position);
@@ -91,10 +98,14 @@ public class Monster : MonoBehaviour
                     FreezePositionX(true);
                     break;
                 case State.DIE:
+                    isDie=true;
+                    Die();
+                    yield return new WaitForSeconds(2.5f);
+                    Destroy(this.gameObject);
                     break;
             }
 
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.05f);
         }
     }
 
@@ -106,14 +117,17 @@ public class Monster : MonoBehaviour
         {
             // 플레이어가 왼쪽에 있을 때
             monsterTrans.localRotation = Quaternion.Euler(0, -180, 0);
+            hpCanvas.transform.localRotation=Quaternion.Euler(0, -180, 0);
         }
         else
         {
             // 플레이어가 오른쪽에 있을 때
             monsterTrans.localRotation = Quaternion.Euler(0, 0, 0);
+            hpCanvas.transform.localRotation=Quaternion.Euler(0, 0, 0);
         }
     }
 
+    //몬스터가 공격할때 밀려나지 않게
     private void FreezePositionX(bool freeze)
     {
         rb.constraints = freeze
@@ -128,5 +142,46 @@ public class Monster : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackDist);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, traceDist);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("PlayerSword"))
+        {
+            SoundManager._instance.PlaySound(Define._damagedSkeleton);
+            OnDamaged();
+            Debug.Log("해골 아파용");
+        }
+    }
+
+    private void OnDamaged()
+    {
+        curHp -= PlayerManager.instance.playerPower;
+        monsterHpBarSlider.value = (float)curHp / hp;
+        if (curHp <= 0)
+        {
+            state = State.DIE;
+        }
+    }
+    
+    private void StartAttack()
+    {
+        monsterAttack.enabled = true;
+    }
+
+    private void Die()
+    {
+        PlayerManager.instance.playerMoney += 10;
+        AllSceneCanvas.instance.SetMoney(PlayerManager.instance.playerMoney);
+        DungeonSystem.instance.monsterCnt--;
+        AllSceneCanvas.instance.SetMonsterCnt(DungeonSystem.instance.monsterCnt);
+        anim.SetTrigger(hashDead);
+        monsterAttack.enabled = false;
+        rb.simulated = false;
+    }
+
+    private void EndAttack()
+    {
+        monsterAttack.enabled = false;
     }
 }
