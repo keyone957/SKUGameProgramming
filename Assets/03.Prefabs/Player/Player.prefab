@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3115878424881994413}
   - component: {fileID: 7908106396655888749}
   - component: {fileID: 7745706743936173932}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -210,6 +210,8 @@ MonoBehaviour:
   smallSlime: {fileID: 0}
   maxJumpCnt: 2
   canDivide: 1
+  slimeSpr: {fileID: 7965328832732509620}
+  divideSlimeSpr: {fileID: 0}
 --- !u!82 &7908106396655888749
 AudioSource:
   m_ObjectHideFlags: 0
@@ -336,9 +338,10 @@ GameObject:
   - component: {fileID: 5074055540627800896}
   - component: {fileID: 8039773374075902913}
   - component: {fileID: 1683385614600381668}
-  m_Layer: 0
+  - component: {fileID: 2560983495652968001}
+  m_Layer: 6
   m_Name: Sword1
-  m_TagString: Untagged
+  m_TagString: PlayerSword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -440,12 +443,24 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.18, y: 0.23233426}
-  m_Size: {x: 0.85857606, y: 0.8585761}
+  m_Offset: {x: -0.2723712, y: 0.31066808}
+  m_Size: {x: 0.60376173, y: 0.60376185}
   m_Direction: 0
+--- !u!114 &2560983495652968001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2252008722272826871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bd449539dda4a47a9ea82497836aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4498785556326559850
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +472,7 @@ GameObject:
   - component: {fileID: 2656656845610710531}
   - component: {fileID: 2141139266813377261}
   - component: {fileID: 8304503367443741146}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitsEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
