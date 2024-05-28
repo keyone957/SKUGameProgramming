@@ -13,6 +13,15 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject jumpEffect;
     [SerializeField] private Collider2D swordCollider;
     [SerializeField] private GameObject attackEffect;
+    private ChildGenerator childGenerator;
+    [SerializeField] private HpUi hpUi;
+    private void Start()
+    {
+        //childGenerator.FindObjectOfType<ChildGenerator>();
+        childGenerator = ChildGenerator.Instance;
+        hpUi = GetComponent<HpUi>();
+    }
+
     private void Update()
     {
         Idle();
@@ -30,12 +39,17 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("IsAttack", true);
             swordCollider.enabled = true;
-            ChildGenerator childGenerator = FindObjectOfType<ChildGenerator>();
             if (childGenerator != null)
             {
-                RemovePrefabWithTag("Skeleton");
-                childGenerator.RemoveFirstChild();
-                Debug.Log("Left mouse button clicked - Skeletons removed");
+                if (childGenerator.GetFirstTag() == "Skeleton")
+                {
+                    childGenerator.RemoveFirstChild();
+                }
+                else if (childGenerator.GetFirstTag() == "IceGolem")
+                {
+                    Debug.Log("¶¯!");
+                    hpUi.SetHp(-1);
+                }
             }
 
         }
@@ -44,26 +58,23 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("IsAttack", true);
             swordCollider.enabled = true;
-            RemovePrefabWithTag("IceGolem");
-            ChildGenerator childGenerator = FindObjectOfType<ChildGenerator>();
             if (childGenerator != null)
             {
-                RemovePrefabWithTag("Skeleton");
-                childGenerator.RemoveFirstChild();
-                Debug.Log("RIGHT mouse button clicked - Skeletons removed");
+                if (childGenerator.GetFirstTag() == "Skeleton")
+                {
+                    Debug.Log("¶¯!");
+                    hpUi.SetHp(-1);
+
+                }
+                else if (childGenerator.GetFirstTag() == "IceGolem")
+                {
+                    childGenerator.RemoveFirstChild();
+                }
             }
         }
     }
 
-    void RemovePrefabWithTag(string tag)
-    {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag(tag);
-        foreach (GameObject enemy in enemies)
-        {
-            Destroy(enemy);
-            Debug.Log(tag + " destroyed");
-        }
-    }
+
 
     private void EndAttack()
     {

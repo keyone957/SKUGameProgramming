@@ -15,7 +15,11 @@ C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
+<<<<<<<< HEAD:Logs/AssetImportWorker5-prev.log
 1401
+========
+2055
+>>>>>>>> Feature/ShootingBonusStage1:Logs/AssetImportWorker3-prev.log
 Successfully changed project path to: C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
 C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +53,21 @@ C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<<< HEAD:Logs/AssetImportWorker5-prev.log
 Player connection [10880] Host "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 1381839262 [EditorId] 1381839262 [Version] 1048832 [Id] WindowsEditor(7,È«¿ø±â) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [10880] Host "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 1381839262 [EditorId] 1381839262 [Version] 1048832 [Id] WindowsEditor(7,È«¿ø±â) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 23 workers.
 Refreshing native plugins compatible for Editor in 13.57 ms, found 9 plugins.
+========
+Player connection [19972] Host "[IP] 172.30.1.39 [Port] 0 [Flags] 2 [Guid] 2770108870 [EditorId] 2770108870 [Version] 1048832 [Id] WindowsEditor(7,È«¿ø±â) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [19972] Host "[IP] 172.30.1.39 [Port] 0 [Flags] 2 [Guid] 2770108870 [EditorId] 2770108870 [Version] 1048832 [Id] WindowsEditor(7,È«¿ø±â) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 23 workers.
+Refreshing native plugins compatible for Editor in 46.14 ms, found 9 plugins.
+>>>>>>>> Feature/ShootingBonusStage1:Logs/AssetImportWorker3-prev.log
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.21f1 (bf09ca542b87)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Resources/UnitySubsystems
@@ -70,11 +83,16 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<<< HEAD:Logs/AssetImportWorker5-prev.log
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56080
+========
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56380
+>>>>>>>> Feature/ShootingBonusStage1:Logs/AssetImportWorker3-prev.log
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+<<<<<<<< HEAD:Logs/AssetImportWorker5-prev.log
 Registered in 0.006773 seconds.
 - Loaded All Assemblies, in  0.268 seconds
 Native extension for WindowsStandalone target not found
@@ -84,10 +102,22 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.620 seconds
 Domain Reload Profiling: 887ms
 	BeginReloadAssembly (80ms)
+========
+Registered in 0.018358 seconds.
+- Loaded All Assemblies, in  0.569 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 583 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.118 seconds
+Domain Reload Profiling: 1684ms
+	BeginReloadAssembly (196ms)
+>>>>>>>> Feature/ShootingBonusStage1:Logs/AssetImportWorker3-prev.log
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+<<<<<<<< HEAD:Logs/AssetImportWorker5-prev.log
 		CreateAndSetChildDomain (0ms)
 	RebuildCommonClasses (22ms)
 	RebuildNativeTypeToScriptingClass (7ms)
@@ -111,6 +141,31 @@ Domain Reload Profiling: 887ms
 			BeforeProcessingInitializeOnLoad (2ms)
 			ProcessInitializeOnLoadAttributes (110ms)
 			ProcessInitializeOnLoadMethodAttributes (41ms)
+========
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (213ms)
+		LoadAssemblies (191ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (209ms)
+			TypeCache.Refresh (207ms)
+				TypeCache.ScanAssembly (189ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1119ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1030ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (755ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (185ms)
+			ProcessInitializeOnLoadMethodAttributes (81ms)
+>>>>>>>> Feature/ShootingBonusStage1:Logs/AssetImportWorker3-prev.log
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,8 +173,13 @@ Domain Reload Profiling: 887ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
+<<<<<<<< HEAD:Logs/AssetImportWorker5-prev.log
 - Loaded All Assemblies, in  0.906 seconds
 Refreshing native plugins compatible for Editor in 7.43 ms, found 9 plugins.
+========
+- Loaded All Assemblies, in  1.338 seconds
+Refreshing native plugins compatible for Editor in 14.44 ms, found 9 plugins.
+>>>>>>>> Feature/ShootingBonusStage1:Logs/AssetImportWorker3-prev.log
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -127,6 +187,7 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
+<<<<<<<< HEAD:Logs/AssetImportWorker5-prev.log
 - Finished resetting the current domain, in  0.669 seconds
 Domain Reload Profiling: 1571ms
 	BeginReloadAssembly (115ms)
@@ -150,10 +211,36 @@ Domain Reload Profiling: 1571ms
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (521ms)
+========
+- Finished resetting the current domain, in  1.466 seconds
+Domain Reload Profiling: 2793ms
+	BeginReloadAssembly (237ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (85ms)
+	LoadAllAssembliesAndSetupDomain (941ms)
+		LoadAssemblies (693ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (402ms)
+			TypeCache.Refresh (326ms)
+				TypeCache.ScanAssembly (297ms)
+			ScanForSourceGeneratedMonoScriptInfo (54ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1467ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1156ms)
+>>>>>>>> Feature/ShootingBonusStage1:Logs/AssetImportWorker3-prev.log
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (42ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
+<<<<<<<< HEAD:Logs/AssetImportWorker5-prev.log
 			BeforeProcessingInitializeOnLoad (70ms)
 			ProcessInitializeOnLoadAttributes (344ms)
 			ProcessInitializeOnLoadMethodAttributes (78ms)
@@ -168,6 +255,22 @@ Unloading 6782 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 136 unused Assets / (1.6 MB). Loaded Objects now: 7240.
 Memory consumption went from 258.8 MB to 257.2 MB.
 Total: 29.358700 ms (FindLiveObjects: 0.526400 ms CreateObjectMapping: 0.435100 ms MarkObjects: 27.392200 ms  DeleteObjects: 1.003700 ms)
+========
+			BeforeProcessingInitializeOnLoad (165ms)
+			ProcessInitializeOnLoadAttributes (772ms)
+			ProcessInitializeOnLoadMethodAttributes (153ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (32ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 18.16 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 136 unused Assets / (1.7 MB). Loaded Objects now: 7236.
+Memory consumption went from 259.4 MB to 257.8 MB.
+Total: 6.579600 ms (FindLiveObjects: 0.463900 ms CreateObjectMapping: 0.297500 ms MarkObjects: 4.655900 ms  DeleteObjects: 1.160500 ms)
+>>>>>>>> Feature/ShootingBonusStage1:Logs/AssetImportWorker3-prev.log
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
