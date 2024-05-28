@@ -2,9 +2,15 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+//사라지는 맵타일 관련 컴포넌트
+//2초 단위로 맵타일 활성 비활성 반복
+// 작성자 : 장현우
+// 수정자 : 장현우
+// 최종 수정일 : 2024-05-21
+
 public class FlickeringTilemap : MonoBehaviour
 {
-    [SerializeField] private Tilemap tilemap; // 타일맵 참조
+    [SerializeField] private Tilemap tilemap;
     [SerializeField] private float activeDuration = 2.0f; // 타일맵이 활성화되는 시간
     [SerializeField] private float inactiveDuration = 2.0f; // 타일맵이 비활성화되는 시간
 
@@ -18,7 +24,6 @@ public class FlickeringTilemap : MonoBehaviour
             tilemap = GetComponent<Tilemap>();
         }
 
-        // 타일맵의 모든 타일을 저장합니다.
         bounds = tilemap.cellBounds;
         originalTiles = tilemap.GetTilesBlock(bounds);
 
