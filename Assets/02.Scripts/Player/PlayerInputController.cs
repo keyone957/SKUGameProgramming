@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //플레이어(슬라임) Input관련 컴포넌트
-//플레이어 몬스터한테 맞으면 뒤로 넉백, 무적상태
-//플레이어 애니메이션 이벤트 분리
+//사운드 매니저 사용하게.
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-28
+// 최종 수정일 : 2024-05-29
 public class PlayerInputController : MonoBehaviour
 {
     [SerializeField] private Animator anim;
@@ -126,7 +125,7 @@ public class PlayerInputController : MonoBehaviour
     private void StartAttack()
     {
         swordCollider.enabled = true;
-        PlayEffect(playerSound[1]);
+        SoundManager._instance.PlaySound(Define._playerAttack);
         attackEffect.SetActive(true);
     }
 
@@ -134,7 +133,7 @@ public class PlayerInputController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && jumpCnt < maxJumpCnt)
         {
-            PlayEffect(playerSound[0]);
+            SoundManager._instance.PlaySound(Define._playerJump);
             GameObject jumpVfx = Instantiate(jumpEffect);
             jumpVfx.transform.parent = gameObject.transform;
             jumpVfx.transform.localPosition = new Vector2(0, -0.1f);
@@ -147,12 +146,10 @@ public class PlayerInputController : MonoBehaviour
             Attack();
         }
     }
-
-    private void PlayEffect(AudioClip effectSound)
-    {
-        playerAudioSource.PlayOneShot(effectSound);
-    }
-
+    // private void PlayEffect(AudioClip effectSound)
+    // {
+    //     playerAudioSource.PlayOneShot(effectSound);
+    // }
     private void DivideSlime()
     {
         if (Input.GetKeyDown(KeyCode.K))

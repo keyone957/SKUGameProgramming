@@ -11,7 +11,6 @@ public class SoundManager : MonoBehaviour
 {
     [SerializeField] private AudioSource _bgmSource = null;
     [SerializeField] private AudioSource _soundSource = null;
-
     public static SoundManager _instance { get; private set; }
 
     private Dictionary<string, AudioClip> _loadedClip = new Dictionary<string, AudioClip>();

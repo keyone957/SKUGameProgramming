@@ -17,6 +17,13 @@ public static class Define
     public const string _clickMenuSound = "BtnClickSound";
     public const string _damagedSkeleton = "DamagedSkeleton";
     public const string _damagedSlime = "SlimeDamaged";
+    public const string _playerJump = "PlayerJump";
+    public const string _playerAttack = "PlayerAttack";
+    public const string _accessDenied = "AccessDenied";
+    public const string _closeDoor = "CloseDoor";
+    public const string _getCoin = "GetCoin";
+    public const string _openDoor = "OpenDoor";
+    
 
 
 }

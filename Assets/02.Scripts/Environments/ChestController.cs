@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 //게임 클리어시 나타나는 보물상자 및 w누르면 돈 추가
+//사운드 매니저 사용
+//애니메이터 프로퍼티값 추가
 // 최초 작성자 : 홍원기
-// 수정자 : 
-// 최종 수정일 : 2024-05-14
+// 수정자 : 홍원기
+// 최종 수정일 : 2024-05-29
 public class ChestController : MonoBehaviour
 {
     public enum CHESTTYPE
@@ -18,14 +20,19 @@ public class ChestController : MonoBehaviour
     [SerializeField] private GameObject keyBoardUI;
     [SerializeField] private List<Sprite> chestSpr = new List<Sprite>();
     [SerializeField] private CHESTTYPE chestType;
-    [SerializeField] private AudioSource chestSound;
     private float duration = 1.0f;
     private int chestMoney;
     private Animator chestAnim;
     private SpriteRenderer chestSprRenderer;
     private bool isFadingIn = false;
     private bool isEnter;
-
+    //Animator 파라미터의 해시값 추출
+    private readonly int hashWoodenIdle = Animator.StringToHash("IdleWooden");
+    private readonly int hashIronIdle = Animator.StringToHash("IdleIron");
+    private readonly int hashGoldenIdle = Animator.StringToHash("IdleGolden");
+    private readonly int hashWoodenOpen = Animator.StringToHash("OpenWooden");
+    private readonly int hashIronOpen = Animator.StringToHash("OpenIron");
+    private readonly int hashGoldenOpen = Animator.StringToHash("OpenGolden");
     private void Start()
     {
         chestSprRenderer = GetComponent<SpriteRenderer>();
@@ -43,20 +50,20 @@ public class ChestController : MonoBehaviour
 
         if (isEnter && Input.GetKeyDown(KeyCode.W))
         {
-            chestSound.Play();
+            SoundManager._instance.PlaySound(Define._getCoin);
             ChestAnim();
         }
 
         switch (chestType)
         {
             case CHESTTYPE.Wooden:
-                chestAnim.SetBool("IdleWooden",true);
+                chestAnim.SetBool(hashWoodenIdle,true);
                 break;
             case CHESTTYPE.Iron :
-                chestAnim.SetBool("IdleIron",true);
+                chestAnim.SetBool(hashIronIdle,true);
                 break;
             case CHESTTYPE.Golden:
-                chestAnim.SetBool("IdleGolden",true);
+                chestAnim.SetBool(hashGoldenIdle,true);
                 break;
         }
     }
@@ -66,13 +73,13 @@ public class ChestController : MonoBehaviour
         switch (chestType)
         {
             case CHESTTYPE.Wooden:
-                chestAnim.SetTrigger("OpenWooden");
+                chestAnim.SetTrigger(hashWoodenOpen);
                 break;
             case CHESTTYPE.Iron:
-                chestAnim.SetTrigger("OpenIron");
+                chestAnim.SetTrigger(hashIronOpen);
                 break;
             case CHESTTYPE.Golden:
-                chestAnim.SetTrigger("OpenGolden");
+                chestAnim.SetTrigger(hashGoldenOpen);
                 break;
         }
     }
