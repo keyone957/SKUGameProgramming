@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//게임 내 bgm 및 효과음 플레이 및 관리 하기 위한 SoundManager
+//환경설정 위한 volume
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-04-12
+// 최종 수정일 : 2024-05-29
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] private AudioSource _bgmSource = null;
@@ -89,4 +89,15 @@ public class SoundManager : MonoBehaviour
     public void ClearLoadedAudioClip() => _loadedClip.Clear();
 
     #endregion
+
+    public void SetSoundVolume(float volume)
+    {
+        _soundVolume = volume;
+        _soundSource.volume = _soundVolume;
+    }
+    public void SetBgmVolume(float volume)
+    {   //배경음 audiosource의 volume 조절
+        _bgmVolume = volume;
+        _bgmSource.volume = _bgmVolume;
+    }
 }

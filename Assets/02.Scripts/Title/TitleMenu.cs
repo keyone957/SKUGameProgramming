@@ -11,10 +11,9 @@ public class TitleMenu : MonoBehaviour
 {
     [SerializeField] private Button _btnStart=null;
     [SerializeField] private FadeOverlay _fadeOverlay=null;
-
     [SerializeField] private Button settingBtn;
-
     [SerializeField] private Button quitGameBtn;
+    [SerializeField] private GameObject settingMenu;
     //버튼에 이벤트 연결
     private void Awake()
     {
@@ -32,6 +31,7 @@ public class TitleMenu : MonoBehaviour
     private void OnClickSettingBtn()
     {
         SoundManager._instance.PlaySound(Define._clickMenuSound);
+        settingMenu.SetActive(true);
     }
 
     private void OnClickQuitGameBtn()
