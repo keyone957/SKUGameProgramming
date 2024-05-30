@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.21f1 (bf09ca542b87) revision 12519882'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'ko' Physical Memory: 32461 MB
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ko' Physical Memory: 12194 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.21f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
+E:/temp/SKUGameProgramming
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-2055
-Successfully changed project path to: C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
-C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
+10796
+Successfully changed project path to: E:/temp/SKUGameProgramming
+E:/temp/SKUGameProgramming
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,68 +49,68 @@ C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [27284] Host "[IP] 172.30.1.39 [Port] 0 [Flags] 2 [Guid] 105122236 [EditorId] 105122236 [Version] 1048832 [Id] WindowsEditor(7,È«¿ø±â) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [52960] Host "[IP] 192.168.1.114 [Port] 0 [Flags] 2 [Guid] 2859838532 [EditorId] 2859838532 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IAPGCP5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [27284] Host "[IP] 172.30.1.39 [Port] 0 [Flags] 2 [Guid] 105122236 [EditorId] 105122236 [Version] 1048832 [Id] WindowsEditor(7,È«¿ø±â) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [52960] Host "[IP] 192.168.1.114 [Port] 0 [Flags] 2 [Guid] 2859838532 [EditorId] 2859838532 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IAPGCP5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-[Physics::Module] Initialized MultithreadedJobDispatcher with 23 workers.
-Refreshing native plugins compatible for Editor in 36.43 ms, found 9 plugins.
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Refreshing native plugins compatible for Editor in 16.70 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.21f1 (bf09ca542b87)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming/Assets
+[Subsystems] Discovering subsystems at path E:/temp/SKUGameProgramming/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28a0)
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 750 (ID=0x1381)
     Vendor:   NVIDIA
-    VRAM:     7972 MB
-    Driver:   31.0.15.4680
+    VRAM:     976 MB
+    Driver:   31.0.15.5152
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56868
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.016606 seconds.
-- Loaded All Assemblies, in  0.533 seconds
+Registered in 0.013946 seconds.
+- Loaded All Assemblies, in  0.506 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 510 ms
+Android Extension - Scanning For ADB Devices 434 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.001 seconds
-Domain Reload Profiling: 1530ms
-	BeginReloadAssembly (169ms)
+- Finished resetting the current domain, in  0.870 seconds
+Domain Reload Profiling: 1374ms
+	BeginReloadAssembly (150ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (93ms)
-	LoadAllAssembliesAndSetupDomain (204ms)
-		LoadAssemblies (166ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (79ms)
+	LoadAllAssembliesAndSetupDomain (209ms)
+		LoadAssemblies (146ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (200ms)
-			TypeCache.Refresh (198ms)
-				TypeCache.ScanAssembly (180ms)
+		AnalyzeDomain (206ms)
+			TypeCache.Refresh (205ms)
+				TypeCache.ScanAssembly (186ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1001ms)
+	FinalizeReload (870ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (921ms)
+		SetupLoadedEditorAssemblies (795ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (677ms)
+			InitializePlatformSupportModulesInManaged (576ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (157ms)
-			ProcessInitializeOnLoadMethodAttributes (78ms)
+			ProcessInitializeOnLoadAttributes (144ms)
+			ProcessInitializeOnLoadMethodAttributes (68ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,8 +118,8 @@ Domain Reload Profiling: 1530ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.417 seconds
-Refreshing native plugins compatible for Editor in 31.72 ms, found 9 plugins.
+- Loaded All Assemblies, in  1.301 seconds
+Refreshing native plugins compatible for Editor in 11.70 ms, found 9 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -127,47 +127,49 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.395 seconds
-Domain Reload Profiling: 2801ms
-	BeginReloadAssembly (227ms)
+- Finished resetting the current domain, in  1.703 seconds
+Domain Reload Profiling: 3001ms
+	BeginReloadAssembly (208ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (27ms)
+		CreateAndSetChildDomain (28ms)
 	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (77ms)
-	LoadAllAssembliesAndSetupDomain (1041ms)
-		LoadAssemblies (754ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (968ms)
+		LoadAssemblies (567ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (428ms)
-			TypeCache.Refresh (340ms)
-				TypeCache.ScanAssembly (310ms)
-			ScanForSourceGeneratedMonoScriptInfo (61ms)
-			ResolveRequiredComponents (25ms)
-	FinalizeReload (1396ms)
+		AnalyzeDomain (528ms)
+			TypeCache.Refresh (448ms)
+				TypeCache.ScanAssembly (412ms)
+			ScanForSourceGeneratedMonoScriptInfo (54ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (1703ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1111ms)
+		SetupLoadedEditorAssemblies (1413ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (39ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (164ms)
-			ProcessInitializeOnLoadAttributes (716ms)
-			ProcessInitializeOnLoadMethodAttributes (146ms)
-			AfterProcessingInitializeOnLoad (37ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (132ms)
+			ProcessInitializeOnLoadAttributes (1056ms)
+			ProcessInitializeOnLoadMethodAttributes (172ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 25.00 ms, found 9 plugins.
+		AwakeInstancesAfterBackupRestoration (18ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 11.21 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6778 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 136 unused Assets / (1.5 MB). Loaded Objects now: 7236.
-Memory consumption went from 259.2 MB to 257.7 MB.
-Total: 5.958000 ms (FindLiveObjects: 0.471000 ms CreateObjectMapping: 0.291900 ms MarkObjects: 4.268300 ms  DeleteObjects: 0.925300 ms)
+Unloading 6786 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 245 unused Assets / (9.2 MB). Loaded Objects now: 7134.
+Memory consumption went from 251.3 MB to 242.0 MB.
+Total: 10.965000 ms (FindLiveObjects: 0.969300 ms CreateObjectMapping: 0.851800 ms MarkObjects: 4.199900 ms  DeleteObjects: 4.941500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -178,32 +180,2264 @@ AssetImportParameters requested are different than current active one (requested
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 953699.659181 seconds.
-  path: Assets/04.ArtResource/SunnyLand Artwork/Sprites/player/idle/player-idle-1.png
-  artifactKey: Guid(72de0c64f2c6a498096698322c976a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/SunnyLand Artwork/Sprites/player/idle/player-idle-1.png using Guid(72de0c64f2c6a498096698322c976a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '432d148218472d279f7b57a9f63bbe49') in 0.110667 seconds
+  Time since last request: 1268568.444858 seconds.
+  path: Assets/02.Scripts/ShootingGame/SceneChanger.cs
+  artifactKey: Guid(6165c600389888c488195edde021b268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/ShootingGame/SceneChanger.cs using Guid(6165c600389888c488195edde021b268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd790f1b71946709dfa3ced6613c7a5ec') in 0.004875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.840 seconds
+Refreshing native plugins compatible for Editor in 7.22 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 19.905 seconds
+Domain Reload Profiling: 20741ms
+	BeginReloadAssembly (265ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (24ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (65ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (470ms)
+		LoadAssemblies (571ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (32ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (19905ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (915ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (41ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (146ms)
+			ProcessInitializeOnLoadAttributes (566ms)
+			ProcessInitializeOnLoadMethodAttributes (136ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 15.69 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 188 unused Assets / (9.2 MB). Loaded Objects now: 7151.
+Memory consumption went from 250.0 MB to 240.8 MB.
+Total: 9.649900 ms (FindLiveObjects: 0.784000 ms CreateObjectMapping: 0.431100 ms MarkObjects: 3.351600 ms  DeleteObjects: 5.081900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.959 seconds
+Refreshing native plugins compatible for Editor in 7.31 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 26.604 seconds
+Domain Reload Profiling: 27559ms
+	BeginReloadAssembly (229ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (633ms)
+		LoadAssemblies (692ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (64ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (28ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (26604ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (767ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (134ms)
+			ProcessInitializeOnLoadAttributes (473ms)
+			ProcessInitializeOnLoadMethodAttributes (109ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 7.17 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 188 unused Assets / (9.3 MB). Loaded Objects now: 7167.
+Memory consumption went from 252.1 MB to 242.8 MB.
+Total: 11.400700 ms (FindLiveObjects: 1.034200 ms CreateObjectMapping: 0.843500 ms MarkObjects: 4.279900 ms  DeleteObjects: 5.241900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.796 seconds
+Refreshing native plugins compatible for Editor in 9.71 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.791 seconds
+Domain Reload Profiling: 2583ms
+	BeginReloadAssembly (259ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (420ms)
+		LoadAssemblies (525ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (36ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (1792ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (776ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (122ms)
+			ProcessInitializeOnLoadAttributes (489ms)
+			ProcessInitializeOnLoadMethodAttributes (105ms)
+			AfterProcessingInitializeOnLoad (19ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (31ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 63.98 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 188 unused Assets / (9.2 MB). Loaded Objects now: 7183.
+Memory consumption went from 253.9 MB to 244.7 MB.
+Total: 12.984700 ms (FindLiveObjects: 0.855500 ms CreateObjectMapping: 1.012100 ms MarkObjects: 3.651300 ms  DeleteObjects: 7.464600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.792 seconds
+Refreshing native plugins compatible for Editor in 8.50 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.140 seconds
+Domain Reload Profiling: 2927ms
+	BeginReloadAssembly (263ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (406ms)
+		LoadAssemblies (505ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (38ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (2141ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1013ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (45ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (155ms)
+			ProcessInitializeOnLoadAttributes (641ms)
+			ProcessInitializeOnLoadMethodAttributes (145ms)
+			AfterProcessingInitializeOnLoad (17ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (30ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 7.52 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 188 unused Assets / (9.2 MB). Loaded Objects now: 7199.
+Memory consumption went from 255.9 MB to 246.7 MB.
+Total: 12.253500 ms (FindLiveObjects: 0.638000 ms CreateObjectMapping: 0.342400 ms MarkObjects: 5.458600 ms  DeleteObjects: 5.813100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.800 seconds
+Refreshing native plugins compatible for Editor in 8.77 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.162 seconds
+Domain Reload Profiling: 2959ms
+	BeginReloadAssembly (256ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (64ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (417ms)
+		LoadAssemblies (520ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (35ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (2163ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1015ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (44ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (160ms)
+			ProcessInitializeOnLoadAttributes (637ms)
+			ProcessInitializeOnLoadMethodAttributes (148ms)
+			AfterProcessingInitializeOnLoad (18ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (32ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 8.31 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 188 unused Assets / (9.1 MB). Loaded Objects now: 7215.
+Memory consumption went from 257.8 MB to 248.6 MB.
+Total: 12.032300 ms (FindLiveObjects: 0.879700 ms CreateObjectMapping: 0.346000 ms MarkObjects: 4.545200 ms  DeleteObjects: 6.260000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.941 seconds
+Refreshing native plugins compatible for Editor in 11.78 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 30.450 seconds
+Domain Reload Profiling: 31387ms
+	BeginReloadAssembly (233ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (67ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (589ms)
+		LoadAssemblies (616ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (89ms)
+			TypeCache.Refresh (30ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (36ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (30450ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (771ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (482ms)
+			ProcessInitializeOnLoadMethodAttributes (109ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Script is not up to date after domain reload: guid(fcf54fb72d7e59a43aae50645da13890) path("Assets/02.Scripts/ShootingGame/CountDown.cs") state(2)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 7.12 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6777 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 188 unused Assets / (9.2 MB). Loaded Objects now: 7230.
+Memory consumption went from 259.8 MB to 250.6 MB.
+Total: 10.273000 ms (FindLiveObjects: 0.602700 ms CreateObjectMapping: 0.296000 ms MarkObjects: 3.570200 ms  DeleteObjects: 5.802900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.768 seconds
+Refreshing native plugins compatible for Editor in 6.53 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.645 seconds
+Domain Reload Profiling: 2410ms
+	BeginReloadAssembly (233ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (421ms)
+		LoadAssemblies (479ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (65ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (29ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (1645ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (775ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (132ms)
+			ProcessInitializeOnLoadAttributes (488ms)
+			ProcessInitializeOnLoadMethodAttributes (101ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 7.22 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 188 unused Assets / (9.2 MB). Loaded Objects now: 7247.
+Memory consumption went from 261.8 MB to 252.5 MB.
+Total: 8.818300 ms (FindLiveObjects: 0.601600 ms CreateObjectMapping: 0.307100 ms MarkObjects: 3.176600 ms  DeleteObjects: 4.723000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1433.372461 seconds.
+  path: Assets/Plugins/Easy Save 3/Editor/checkmarkSmall.png
+  artifactKey: Guid(ca44f6eb870d244cfb1c83054a69ffc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Easy Save 3/Editor/checkmarkSmall.png using Guid(ca44f6eb870d244cfb1c83054a69ffc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b72b5187862b9b264541b7068d81b2d') in 0.151702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Plugins/Easy Save 3/Editor/es3Logo16x16-bw.png
+  artifactKey: Guid(3ae63f85ae558634d83caaf5a332d1ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Easy Save 3/Editor/es3Logo16x16-bw.png using Guid(3ae63f85ae558634d83caaf5a332d1ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc30c8d4dcaed969a787fd384c38a045') in 0.022486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.599672 seconds.
+  path: Assets/Resources/Sound/GetCoin.wav
+  artifactKey: Guid(0bd22aba5732c2d45aa9a5e239bea1d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sound/GetCoin.wav using Guid(0bd22aba5732c2d45aa9a5e239bea1d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fab5f611a7a5c919b8e3f4a0dd2ba65') in 0.165244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 25.339957 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/04.png
+  artifactKey: Guid(b44da608b8fa6e54e8c274aff6339e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/04.png using Guid(b44da608b8fa6e54e8c274aff6339e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a9a806cf1fe5062e5fd2555c4a42342') in 0.071956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.028761 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/06.png
+  artifactKey: Guid(0d86f24f1f088f34cbd7ec509b8b9a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/06.png using Guid(0d86f24f1f088f34cbd7ec509b8b9a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '973dc073517b21c091f1f3ac4af2728a') in 0.086219 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/09.png
+  artifactKey: Guid(611d05e9585616b4ba561c398c636ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/09.png using Guid(611d05e9585616b4ba561c398c636ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc643e5b814049ee433a68347630873c') in 0.076450 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000036 seconds.
-  path: Assets/04.ArtResource/SunnyLand Artwork/Sprites/player/idle
-  artifactKey: Guid(a6784c39dc28a4834b763f55ec9d0408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/SunnyLand Artwork/Sprites/player/idle using Guid(a6784c39dc28a4834b763f55ec9d0408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f02954149b466ab46af512280e21fd0f') in 0.000739 seconds
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/12.png
+  artifactKey: Guid(0ccee697df3967841b030a95ff8dcc8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/12.png using Guid(0ccee697df3967841b030a95ff8dcc8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bceb2dee2d0b1f0ca0c1ce9301bb8d5') in 0.040857 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/13.png
+  artifactKey: Guid(71f0957e74f285b4088f0106d60f2cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/13.png using Guid(71f0957e74f285b4088f0106d60f2cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b8ed552713805340b8507344485b75') in 0.061852 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/14.png
+  artifactKey: Guid(c91964070eb03794b8c033b1bda877fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/14.png using Guid(c91964070eb03794b8c033b1bda877fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '514b2b526ae6f2abb94f5244b3d738da') in 0.046687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000027 seconds.
-  path: Assets/04.ArtResource/SunnyLand Artwork/Sprites/player/idle/player-idle-2.png
-  artifactKey: Guid(c8a742c1f2ebb43b9afe34a47304c051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/SunnyLand Artwork/Sprites/player/idle/player-idle-2.png using Guid(c8a742c1f2ebb43b9afe34a47304c051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41b71274dda538355fdd7f5559059173') in 0.014313 seconds
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/16.png
+  artifactKey: Guid(d8efef7d7d87bed4c95a017e5e6eb11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/16.png using Guid(d8efef7d7d87bed4c95a017e5e6eb11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f5b8548fff9e199c5a31dc13adb9aa') in 0.037755 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/19.png
+  artifactKey: Guid(85d35790677780a4eb7c296519e14601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/19.png using Guid(85d35790677780a4eb7c296519e14601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ab6c46f27bb0f5f1a0217c03c0148e1') in 0.058534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/11.png
+  artifactKey: Guid(f42c2b10b5a48d64e8e3af419c2760f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/11.png using Guid(f42c2b10b5a48d64e8e3af419c2760f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad1c5df4d72524528c6ceb376147c496') in 0.048722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/21.png
+  artifactKey: Guid(228d3e02b0bd016478d544441e140337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/21.png using Guid(228d3e02b0bd016478d544441e140337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8979eff34c5caf0bde19766f80f8f9df') in 0.070815 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/24.png
+  artifactKey: Guid(7eeff564ba2fbbc449f275098713f210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/24.png using Guid(7eeff564ba2fbbc449f275098713f210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95c1bd2f4955353aee3611bb8e558605') in 0.038225 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/26.png
+  artifactKey: Guid(86099d0e4a2251a42bed46a68e3222eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/26.png using Guid(86099d0e4a2251a42bed46a68e3222eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bd559c93842d788a1e4e438eb357f3a') in 0.052962 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/27.png
+  artifactKey: Guid(f1057956967f51e49aff829a1f863a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/27.png using Guid(f1057956967f51e49aff829a1f863a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c85751b7ef8fe03d904b7189fff76368') in 0.050480 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/29.png
+  artifactKey: Guid(78571d0638acae54e979829f2116fa3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/29.png using Guid(78571d0638acae54e979829f2116fa3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bbde88309ddf11a3c05e680d0b2e3e9') in 0.091589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/31.png
+  artifactKey: Guid(7e25a46768c3ae647b70741016da4287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/31.png using Guid(7e25a46768c3ae647b70741016da4287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '770a777cc73964132fd8a5bf8c8312db') in 0.085103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/33.png
+  artifactKey: Guid(c28bfe6b103c31e4eabbf361017b73f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/33.png using Guid(c28bfe6b103c31e4eabbf361017b73f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb807b16396089aad3f9338ce8741b4') in 0.041686 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.443315 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/45.png
+  artifactKey: Guid(dde015792022a914e990508ac19aab08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/45.png using Guid(dde015792022a914e990508ac19aab08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faeb7bdb7cf0986ed4567c1295aba86b') in 0.051098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.061340 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/48.png
+  artifactKey: Guid(2277dc0ebfed3cc4c9b052415a7df0bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/48.png using Guid(2277dc0ebfed3cc4c9b052415a7df0bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d0a6a84fa4facd14aaea28ff4185a6') in 0.024256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.012480 seconds.
+  path: Assets/04.ArtResource/The Legend of Slim/00 Preview all/50.png
+  artifactKey: Guid(efaadfa9f7877b7438893d7b9bacf452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/The Legend of Slim/00 Preview all/50.png using Guid(efaadfa9f7877b7438893d7b9bacf452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8df16160e4e9be598663fa6e4475656c') in 0.051237 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 23.748347 seconds.
+  path: Assets/04.ArtResource/Sprite/LogoSlime.png
+  artifactKey: Guid(a3cd1d3ccd0971a44a5072f80da691aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sprite/LogoSlime.png using Guid(a3cd1d3ccd0971a44a5072f80da691aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df1c64e71995ac6fe181662322e9d9b5') in 0.069976 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 15.737451 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Jumbo/Light/JumboLightMaster.png
+  artifactKey: Guid(a36bbd7a5721b2540b34bfb2e2886415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Jumbo/Light/JumboLightMaster.png using Guid(a36bbd7a5721b2540b34bfb2e2886415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f11f2afcb768ca9f2e878a893dfe7c32') in 0.066537 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.607103 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Dark/ClassicDarkMaster.png
+  artifactKey: Guid(9c2e80ad82910d44388d5f9b17b77d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Dark/ClassicDarkMaster.png using Guid(9c2e80ad82910d44388d5f9b17b77d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b3e07b137fa462b550598b72bb2faf2') in 0.051017 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.292354 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/2.png
+  artifactKey: Guid(59248352c35244241a133bb537df6308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/2.png using Guid(59248352c35244241a133bb537df6308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9b24ab2414455688455a2233d63b907') in 0.019836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/4.png
+  artifactKey: Guid(16094be79409fe142bcb3bfe5e0a3e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/4.png using Guid(16094be79409fe142bcb3bfe5e0a3e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95a142bed5efddb7a0eaf1b71cd33b24') in 0.014193 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/6.png
+  artifactKey: Guid(eae43e3854c50e94ba7970d8ba564be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/6.png using Guid(eae43e3854c50e94ba7970d8ba564be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea0cc2764376082e7207ef800cd6124') in 0.015828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/8.png
+  artifactKey: Guid(44b45788f7bae6c46be887e3b21ee7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/8.png using Guid(44b45788f7bae6c46be887e3b21ee7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c66218c8c8bf4aeeeeae0e2cdccaa3') in 0.024094 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.030402 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/A.png
+  artifactKey: Guid(23d1988c8fbe33c4b8fbff9574e26d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/A.png using Guid(23d1988c8fbe33c4b8fbff9574e26d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7666c8c49c04ad64134db3c1a11e7cea') in 0.023853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/ARROWDOWN.png
+  artifactKey: Guid(5fbf4a72d629a004d866e609c3df5df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/ARROWDOWN.png using Guid(5fbf4a72d629a004d866e609c3df5df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83ffc13fdd398d39a71a7e2644f9e9fd') in 0.013699 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.034185 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/ARROWRIGHT.png
+  artifactKey: Guid(6a31910b0a01b5b409ca0ed0d5dfe077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/ARROWRIGHT.png using Guid(6a31910b0a01b5b409ca0ed0d5dfe077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e9332c9bcebb59eb559bc0d0e744c7') in 0.018571 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/B.png
+  artifactKey: Guid(53cd006e5da06a84a9e4ee33a931f419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/B.png using Guid(53cd006e5da06a84a9e4ee33a931f419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df083516dd89a0bfec6020d1d9e8a80a') in 0.015130 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.051058 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/BACKSPACEALTERNATIVE.png
+  artifactKey: Guid(879d5a94f37a7c143926e803cc112a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/BACKSPACEALTERNATIVE.png using Guid(879d5a94f37a7c143926e803cc112a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3bf374ece00bbae5a945ccb4903db02') in 0.019215 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/CAPS.png
+  artifactKey: Guid(c10528d71a822574185e89d51269b246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/CAPS.png using Guid(c10528d71a822574185e89d51269b246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ae97b62333372b115befb270d609886') in 0.015411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000730 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/CTRL.png
+  artifactKey: Guid(1ba32de46e4715045a2492a9e8b1166d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/CTRL.png using Guid(1ba32de46e4715045a2492a9e8b1166d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea2bca5a4a557ae7a81cda33e78c1e65') in 0.082076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/EMPTY1.png
+  artifactKey: Guid(2b80e532e09e06a479aacca3d7b9ca8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/EMPTY1.png using Guid(2b80e532e09e06a479aacca3d7b9ca8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b49843d27488dc5a170887bc2a08a22e') in 0.022658 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/EMPTY2.png
+  artifactKey: Guid(91420886b5e4bb143b41e5edd1953e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/EMPTY2.png using Guid(91420886b5e4bb143b41e5edd1953e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ab0f67d8e7f4a953dfb64fc4088c37') in 0.022869 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/F.png
+  artifactKey: Guid(0bce49eb85fa8fb4790d2c6d3284bf21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/F.png using Guid(0bce49eb85fa8fb4790d2c6d3284bf21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1c1cb49eb38c18ae0a7dc23d9804e98') in 0.015838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/ENTER.png
+  artifactKey: Guid(b2f0f7b18d624144ab0a9789f6470f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/ENTER.png using Guid(b2f0f7b18d624144ab0a9789f6470f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ea97c151f86c917e0e5262ef5b636c7') in 0.093561 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/GREATERTHAN.png
+  artifactKey: Guid(b487a9816947dff4889e403dce4c2b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/GREATERTHAN.png using Guid(b487a9816947dff4889e403dce4c2b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0832b1f68698eb1db9236afd296e74f5') in 0.018236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/ENTERALTERNATIVE.png
+  artifactKey: Guid(ec4d6586a5f5b244980bf57d46a7ec9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/ENTERALTERNATIVE.png using Guid(ec4d6586a5f5b244980bf57d46a7ec9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5e80e5d3a68dac2adaf405d96fe299b') in 0.041776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/L.png
+  artifactKey: Guid(a12b384ecfad0c845a32b47a483c654c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/L.png using Guid(a12b384ecfad0c845a32b47a483c654c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e025d16ae556bdfe54ace3b28c0394dd') in 0.016112 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.068221 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/N.png
+  artifactKey: Guid(2c935b04a49019f458c00206a96a1ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/N.png using Guid(2c935b04a49019f458c00206a96a1ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d780a1c1b51ab91095419bd851a0e0') in 0.014857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.045497 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/Q.png
+  artifactKey: Guid(5fd6aa4209edc9c4b9308e321606d678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/Q.png using Guid(5fd6aa4209edc9c4b9308e321606d678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d6a421359674dbd05413ba6242905ad') in 0.017738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.084647 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/S.png
+  artifactKey: Guid(6686b13465be0ed40b49046620247018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/S.png using Guid(6686b13465be0ed40b49046620247018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa99e0df952ca649d7ee2faf98d09ebc') in 0.018269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.023345 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/SHIFTALTERNATIVE.png
+  artifactKey: Guid(2f3e3e109905f8046b874b61da0375bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/SHIFTALTERNATIVE.png using Guid(2f3e3e109905f8046b874b61da0375bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e6228415d13d37af0814b8e67fd668') in 0.050550 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/T.png
+  artifactKey: Guid(1d559d7b238037446ac625b2577bce53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/T.png using Guid(1d559d7b238037446ac625b2577bce53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d1451f951fdd9769cfc3032a1c075b7') in 0.020142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/TABALTERNATIVE.png
+  artifactKey: Guid(34b0860d832ced44fa8e2cb1089b7a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Single PNGs/TABALTERNATIVE.png using Guid(34b0860d832ced44fa8e2cb1089b7a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc58e7cf99c30ae8aa4be8ba5187dc3b') in 0.019789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.026990 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/2.png
+  artifactKey: Guid(04b2ca54eb1fb234d86969ac7ddc7c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/2.png using Guid(04b2ca54eb1fb234d86969ac7ddc7c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35a3824219d52e49716c7c86fbb87f2') in 0.025015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.011895 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/4.png
+  artifactKey: Guid(fa085858266a99f4291247bdea9ee3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/4.png using Guid(fa085858266a99f4291247bdea9ee3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '994bc4e3e4b10249542aaaec518f767d') in 0.019441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.009271 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/6.png
+  artifactKey: Guid(03d2c06895a3d2a4597738d9b5415359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/6.png using Guid(03d2c06895a3d2a4597738d9b5415359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef0858916e9fa3b972a6da9898d76b26') in 0.015728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.015182 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/8.png
+  artifactKey: Guid(adc8662d2783b414fa1be8d049decdff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/8.png using Guid(adc8662d2783b414fa1be8d049decdff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf50f5bbd92928b030c92e56b143f4af') in 0.015483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.025016 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/A.png
+  artifactKey: Guid(7e15b7cc10b08f840afd51c595a5cc42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/A.png using Guid(7e15b7cc10b08f840afd51c595a5cc42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cdb35fdb02671ec78d2030f3a1de681') in 0.019671 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.010122 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/ALTGR.png
+  artifactKey: Guid(4ece348c95ba8344ba4e7a9b87408d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/ALTGR.png using Guid(4ece348c95ba8344ba4e7a9b87408d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1271ffc4cd04dab4d38095ffb152d71c') in 0.016541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.079433 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/B.png
+  artifactKey: Guid(a81e02046ef523147bf115a027a6b3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/B.png using Guid(a81e02046ef523147bf115a027a6b3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adfe1a303e8d37c8cf38bbdbc2447f3d') in 0.016619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.020979 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/BACKSPACEALTERNATIVE.png
+  artifactKey: Guid(5af954d823c7d764686a6849251da443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/BACKSPACEALTERNATIVE.png using Guid(5af954d823c7d764686a6849251da443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003daecd3aa6d4eae7350bef77def302') in 0.015615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/CAPS.png
+  artifactKey: Guid(90eb232cc00387f488da18954c3390d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/CAPS.png using Guid(90eb232cc00387f488da18954c3390d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77431a5e13cc79d90e9d787fab246222') in 0.017644 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.109438 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/D.png
+  artifactKey: Guid(f0ba7fe318cb51f4da7a803246e400c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/D.png using Guid(f0ba7fe318cb51f4da7a803246e400c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5934bb542efff8078e442108cd03eb3b') in 0.014603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.024397 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/EMPTY1.png
+  artifactKey: Guid(fd5aa49de47a67943bf610efe74dff2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/EMPTY1.png using Guid(fd5aa49de47a67943bf610efe74dff2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c713c7cee0d9634036fc1773116e9d14') in 0.019574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.040168 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/ENTERALTERNATIVE.png
+  artifactKey: Guid(ac5cb5c57995d184f8996d4b2f8f5859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/ENTERALTERNATIVE.png using Guid(ac5cb5c57995d184f8996d4b2f8f5859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df59652876f6d7b5c49cf408d306d955') in 0.037611 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.022855 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/G.png
+  artifactKey: Guid(3ec3034cfc50a4442b5b05336c4fff3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/G.png using Guid(3ec3034cfc50a4442b5b05336c4fff3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ed665b6005108f0c7d480ac47ff8f48') in 0.015740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.025280 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/H.png
+  artifactKey: Guid(6c6399ab5fda8464880265171db3a276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/H.png using Guid(6c6399ab5fda8464880265171db3a276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1470f2ad91f6c126c7b7a8e20aad95b') in 0.015137 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.032099 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/J.png
+  artifactKey: Guid(f9a5c675056c53c4b87104f713c12ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/J.png using Guid(f9a5c675056c53c4b87104f713c12ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e616b6fff406d8e9865fb60ea8c8683') in 0.013893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.016378 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/L.png
+  artifactKey: Guid(4a7413b384307344babfa3ddb4af5b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/L.png using Guid(4a7413b384307344babfa3ddb4af5b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f54ea567c2914dfdbea2b6143ec96b0b') in 0.028380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.013344 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/M.png
+  artifactKey: Guid(3259d5a85c6c4ab4ca6de6e5a54afd38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/M.png using Guid(3259d5a85c6c4ab4ca6de6e5a54afd38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64cc95d087af8d6280726c66d77fd8ce') in 0.013950 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.019401 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/P.png
+  artifactKey: Guid(b6adaabf2ece68b43b6b2e9f7b67f59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/P.png using Guid(b6adaabf2ece68b43b6b2e9f7b67f59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bbb017d7972460ef40053dea510cad0') in 0.031482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.064166 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/QUESTIONMARK.png
+  artifactKey: Guid(aca0f387eb8bf964e9bd9fe3b0e13dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/QUESTIONMARK.png using Guid(aca0f387eb8bf964e9bd9fe3b0e13dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc75f31caa7f647a3b66d81df418b8b6') in 0.021274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.035794 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/R.png
+  artifactKey: Guid(e85fa0d325f92614f9fa3b3af94494ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/R.png using Guid(e85fa0d325f92614f9fa3b3af94494ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6b37a67ec73e0083353443131f164de') in 0.016844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.021266 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/SPACE.png
+  artifactKey: Guid(b7678382d427b9a45a242af7802c7931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/SPACE.png using Guid(b7678382d427b9a45a242af7802c7931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d4cad53009113f20eba9bd51253c5b0') in 0.037072 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.015365 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/T.png
+  artifactKey: Guid(1d92d062392ed1742b146af6cf53aa0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/T.png using Guid(1d92d062392ed1742b146af6cf53aa0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9664498bdef073b836db111ebddf3076') in 0.041705 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/TABALTERNATIVE.png
+  artifactKey: Guid(d8b6d41a4846b7042bee4b69be2aa466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/TABALTERNATIVE.png using Guid(d8b6d41a4846b7042bee4b69be2aa466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b27888c3d89d25970ed28d8e0a3266b6') in 0.021762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/U.png
+  artifactKey: Guid(1c0c0623a09a0da45b1f3c35e9fed08e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/U.png using Guid(1c0c0623a09a0da45b1f3c35e9fed08e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fcc596f51f1bc1e07d3956ae2245da3') in 0.015365 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.035821 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/X.png
+  artifactKey: Guid(308eac2a6acf84446ab3048694a1156e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/X.png using Guid(308eac2a6acf84446ab3048694a1156e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '405f281eeec656c290bd108fab283ff5') in 0.016238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.038122 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/Z.png
+  artifactKey: Guid(b6bd2209105741842b494847c06fc95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/Classic/Light/Spritesheets/Z.png using Guid(b6bd2209105741842b494847c06fc95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c1b3f0e3fedf02f6b69be3fb5c2aedc') in 0.018892 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 17.017139 seconds.
+  path: Assets/04.ArtResource/Animated Chests/Chests.png
+  artifactKey: Guid(e9a15bdc5a2a46147a5726ca3ac8157b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Animated Chests/Chests.png using Guid(e9a15bdc5a2a46147a5726ca3ac8157b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c3d370bce57f5d3d74de3819da69c98') in 0.021214 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Animated Chests/Chests_Snow.png
+  artifactKey: Guid(842ccbb18b345474ab15a9a8f1b59216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Animated Chests/Chests_Snow.png using Guid(842ccbb18b345474ab15a9a8f1b59216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98bf9d930ffd622311d3b51412adfad0') in 0.047258 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.100992 seconds.
+  path: Assets/03.Prefabs/Environments/Chests.aseprite
+  artifactKey: Guid(941caf2bc607d054fb5a3d030bb3f464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Prefabs/Environments/Chests.aseprite using Guid(941caf2bc607d054fb5a3d030bb3f464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb440198f42e7919a4873cc3697aafe6') in 0.143850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 73
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/03.Prefabs/Environments/Portal.prefab
+  artifactKey: Guid(efbee33340e30824ebe2b8bbed3ffced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Prefabs/Environments/Portal.prefab using Guid(efbee33340e30824ebe2b8bbed3ffced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3474954b1425f92ee37fe59e5cd33588') in 0.025229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 1.716608 seconds.
+  path: Assets/03.Prefabs/Monster/FieldWolf.prefab
+  artifactKey: Guid(c791a132b6fdda945a9600bd1a8bfe04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Prefabs/Monster/FieldWolf.prefab using Guid(c791a132b6fdda945a9600bd1a8bfe04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cee52397a8283653cf88acf8cb689d7') in 0.116838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 38
+========================================================================
+Received Import Request.
+  Time since last request: 15301.691585 seconds.
+  path: Assets/MagicCliffsArtwork/clouds.png
+  artifactKey: Guid(e5bd0397035914333a8d430a1a5d7d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MagicCliffsArtwork/clouds.png using Guid(e5bd0397035914333a8d430a1a5d7d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0aea973404557cdab7b4703c872c09c') in 0.186534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/MagicCliffsArtwork/far-grounds.png
+  artifactKey: Guid(f07713816d1804024959baa9e2f75852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MagicCliffsArtwork/far-grounds.png using Guid(f07713816d1804024959baa9e2f75852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '918cbf64022456277f175dd3278bc4a9') in 0.024689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/MagicCliffsArtwork/tileset.png
+  artifactKey: Guid(e6b6d08ce81654c3bb8887b055fb015d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MagicCliffsArtwork/tileset.png using Guid(e6b6d08ce81654c3bb8887b055fb015d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23f9af43d2684d952f240a64c2ba8f44') in 0.627776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 261
+========================================================================
+Received Import Request.
+  Time since last request: 393.440970 seconds.
+  path: Assets/04.ArtResource/Player/Individual Sprites/slime-attack-0.png
+  artifactKey: Guid(d3549be2dbcf19a4a937a7c122fcda7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Player/Individual Sprites/slime-attack-0.png using Guid(d3549be2dbcf19a4a937a7c122fcda7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb7bcebbcfa0017780cb089e5398db1') in 0.018413 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.061 seconds
+Refreshing native plugins compatible for Editor in 10.09 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 30.090 seconds
+Domain Reload Profiling: 31149ms
+	BeginReloadAssembly (380ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (37ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (146ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (563ms)
+		LoadAssemblies (647ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (39ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (30091ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (735ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (122ms)
+			ProcessInitializeOnLoadAttributes (456ms)
+			ProcessInitializeOnLoadMethodAttributes (100ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 6.41 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 188 unused Assets / (9.2 MB). Loaded Objects now: 7341.
+Memory consumption went from 263.2 MB to 254.0 MB.
+Total: 10.632100 ms (FindLiveObjects: 0.609500 ms CreateObjectMapping: 0.309600 ms MarkObjects: 4.463000 ms  DeleteObjects: 5.248700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1644.024937 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_0.asset
+  artifactKey: Guid(799ab18cce53b1e47971b4d06a2554ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_0.asset using Guid(799ab18cce53b1e47971b4d06a2554ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16055ed32f4b5d01a82c4fdb29889a7a') in 0.094763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_24.asset
+  artifactKey: Guid(79440d03573477d46b5568e4554bacab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_24.asset using Guid(79440d03573477d46b5568e4554bacab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d0f0e39fc11a97881731f044a72aa7') in 0.037635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_34.asset
+  artifactKey: Guid(bf4bee27961ca6141a2004c951f6f417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_34.asset using Guid(bf4bee27961ca6141a2004c951f6f417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b14fb4b92c6cb62263e734a94f9702c3') in 0.055066 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_25.asset
+  artifactKey: Guid(36fb0130368824e4181e03b295992418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_25.asset using Guid(36fb0130368824e4181e03b295992418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f315c23e47c413d991bb1346bfb4bb17') in 0.021499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_22.asset
+  artifactKey: Guid(32ca5e197712bc7428b968c682eae639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_22.asset using Guid(32ca5e197712bc7428b968c682eae639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d5f6e66f85d586f80de4e0125cc69de') in 0.019083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_43.asset
+  artifactKey: Guid(5ebc77f3e233cb943955f0e55002185c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_43.asset using Guid(5ebc77f3e233cb943955f0e55002185c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3888ac3b2a094812f9481d7b74111435') in 0.011192 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_21.asset
+  artifactKey: Guid(69af02d81703edb44aab9b3670ea621e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_21.asset using Guid(69af02d81703edb44aab9b3670ea621e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32dc9de61bd64c1cedd93928018e4eb5') in 0.012871 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_3.asset
+  artifactKey: Guid(d609db6e4a2059b4c8658f45ae586609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_3.asset using Guid(d609db6e4a2059b4c8658f45ae586609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaf1e44cb659411818dfba1e6d9a30a2') in 0.014288 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_28.asset
+  artifactKey: Guid(0b229e20d9025394ca4b3b94ffa6a1fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_28.asset using Guid(0b229e20d9025394ca4b3b94ffa6a1fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '283352f93b1def7b5d3e7c226bb40ca6') in 0.011311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_44.asset
+  artifactKey: Guid(ba262b0374c2b3a4a849d68e90a3fcf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_44.asset using Guid(ba262b0374c2b3a4a849d68e90a3fcf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f33dec8d4b7a6f6be0184e01d586c74d') in 0.013538 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_15.asset
+  artifactKey: Guid(e7aa76fe5edfb554fb8c34589bee1922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_15.asset using Guid(e7aa76fe5edfb554fb8c34589bee1922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8463dc65c5b6b5dc0cef5628272cb3ef') in 0.015897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_36.asset
+  artifactKey: Guid(b8e1a42a23ef91340a4a48134e5dfa01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_36.asset using Guid(b8e1a42a23ef91340a4a48134e5dfa01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9846867ecf2827f58cbc779839ed8f8') in 0.012411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_29.asset
+  artifactKey: Guid(b378097e59e7c7a458c86d9a44a0a580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_29.asset using Guid(b378097e59e7c7a458c86d9a44a0a580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '067f021f58e375b3ac32fd2c05f1c1e2') in 0.012364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_7.asset
+  artifactKey: Guid(6c08c55e55edcb346a693d45a67571ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_7.asset using Guid(6c08c55e55edcb346a693d45a67571ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eec552ace1259a5eeb40316e2b1a8b8') in 0.022574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_46.asset
+  artifactKey: Guid(a9b6ea9659f90354c8f46395804049c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_46.asset using Guid(a9b6ea9659f90354c8f46395804049c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66467ddeadf78dad6b1b554377a7cb22') in 0.013773 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_27.asset
+  artifactKey: Guid(4a9c5e1f9db676e448e5ffa21e8232f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_27.asset using Guid(4a9c5e1f9db676e448e5ffa21e8232f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3e6cd62c06c5c23f4edd0b7ef981cc') in 0.012940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_31.asset
+  artifactKey: Guid(0b95d5f160fb2e1419dba782e06bdf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_31.asset using Guid(0b95d5f160fb2e1419dba782e06bdf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '383b6e85bbefc4de2fe37bf01cd608a9') in 0.007138 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_5.asset
+  artifactKey: Guid(9b9aee8f1d71cec4abbffa3251b2d737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_5.asset using Guid(9b9aee8f1d71cec4abbffa3251b2d737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd94b5dcf784ce515baf1a6683af77d83') in 0.012216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_17.asset
+  artifactKey: Guid(3fb08bbe4b7b012468c658a45f322f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_17.asset using Guid(3fb08bbe4b7b012468c658a45f322f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c17df59a4c738dfa6ad2339815b3863') in 0.009775 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_14.asset
+  artifactKey: Guid(69e69fceb9d403041ad87148056c3157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_14.asset using Guid(69e69fceb9d403041ad87148056c3157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43fafe4a332604851f62e966840a9ddd') in 0.031019 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_45.asset
+  artifactKey: Guid(57096272f46cbb44c8a5ad22a0114976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_45.asset using Guid(57096272f46cbb44c8a5ad22a0114976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2bc4b24f88b7a480fe1e2f319a184af') in 0.015134 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_39.asset
+  artifactKey: Guid(9c61bb0aec8e1924a9451f48750865a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_39.asset using Guid(9c61bb0aec8e1924a9451f48750865a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0669a0247f0ea1bb9ea54877e0c125e3') in 0.013851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_40.asset
+  artifactKey: Guid(310f692f9234f444ebf0e7d66a404807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_40.asset using Guid(310f692f9234f444ebf0e7d66a404807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f891b7fe9b5416fb71a305351f6d8e2e') in 0.013438 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_4.asset
+  artifactKey: Guid(ed46770d7ba8af84ba771c8f7584cc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_4.asset using Guid(ed46770d7ba8af84ba771c8f7584cc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1415c729d10367e61e60f93c5f77205') in 0.007354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_33.asset
+  artifactKey: Guid(790b8c287b4dcd941b9f5f85e8b084af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_33.asset using Guid(790b8c287b4dcd941b9f5f85e8b084af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '075f141e6b62a8c0ce8bd47ad2fb57c1') in 0.013028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_6.asset
+  artifactKey: Guid(52d23c1126aa79e47bfacae87804afe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_6.asset using Guid(52d23c1126aa79e47bfacae87804afe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4257b827a354590015442c541e48d36a') in 0.014315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 299.268366 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/shootingmap.prefab
+  artifactKey: Guid(acff73c34d10b7b49a27d777fccc8744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/shootingmap.prefab using Guid(acff73c34d10b7b49a27d777fccc8744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5345e7b2e1ec0e824cafbf8249a63726') in 0.122681 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 527
+========================================================================
+Received Import Request.
+  Time since last request: 131.836604 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_50.asset
+  artifactKey: Guid(fae91a3059fd8144d96379d31c67be3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_50.asset using Guid(fae91a3059fd8144d96379d31c67be3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97465c3ad5171281772c42788ee39020') in 0.015348 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_52.asset
+  artifactKey: Guid(b5dcd4186d711074c8442b260e1ac143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_52.asset using Guid(b5dcd4186d711074c8442b260e1ac143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bcfc6bc88e8199ff7a21c1e5b2be20e') in 0.007155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_73.asset
+  artifactKey: Guid(f588c51ab31441f4a94055b857479b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_73.asset using Guid(f588c51ab31441f4a94055b857479b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac305c98513e13675d960101766dac6') in 0.012925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_57.asset
+  artifactKey: Guid(32582a328ad22984dad8d6eeeeb65bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_57.asset using Guid(32582a328ad22984dad8d6eeeeb65bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f98a1c7c0b61bca51b9aab4ab541c7') in 0.014209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_70.asset
+  artifactKey: Guid(b54762a6adcd15d4e9a187b422365fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_70.asset using Guid(b54762a6adcd15d4e9a187b422365fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2cff64699ec758d6c9a4cb18310cd7') in 0.021527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_66.asset
+  artifactKey: Guid(033a09401c81d2e4c81cc4f3a0e23fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_66.asset using Guid(033a09401c81d2e4c81cc4f3a0e23fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea7dea45caa402907e18713b8c2e24aa') in 0.015966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_54.asset
+  artifactKey: Guid(acee551bf77d2a549975a2a2ffa03079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_54.asset using Guid(acee551bf77d2a549975a2a2ffa03079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23064cb02dd5ec9f432aa6cb55f9be8b') in 0.014289 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_63.asset
+  artifactKey: Guid(2a18bc5267a5f4247a368a016e595617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_63.asset using Guid(2a18bc5267a5f4247a368a016e595617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '537f964ff0bde02197c1262404672c9f') in 0.015958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_65.asset
+  artifactKey: Guid(0cc2dda33240ada4da593b30b02963ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_65.asset using Guid(0cc2dda33240ada4da593b30b02963ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30ddc13bfd7db27008e0d5bcbf3b0ee4') in 0.013860 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_58.asset
+  artifactKey: Guid(c6e5f4f5560971c4ca18cb72e61b4b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_58.asset using Guid(c6e5f4f5560971c4ca18cb72e61b4b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '649f015e70ce76f0c6fa4261485f317a') in 0.014580 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_72.asset
+  artifactKey: Guid(380b94879ccad95478fd57dd36de12aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_72.asset using Guid(380b94879ccad95478fd57dd36de12aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f77d824c2afd3fc2b9f994f05bf77ee') in 0.012972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_62.asset
+  artifactKey: Guid(cab7fb593e783684dbc57bf5b67134ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_62.asset using Guid(cab7fb593e783684dbc57bf5b67134ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21ffa3cbb083a5d1ffdf15e389c3cbee') in 0.007679 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_74.asset
+  artifactKey: Guid(8f932a58365e00446bf75551468567d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_74.asset using Guid(8f932a58365e00446bf75551468567d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e4c4b5da437bbfb71102995672e106') in 0.013824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_61.asset
+  artifactKey: Guid(a21607f63ef0ebf40a9cf07adf59d0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_61.asset using Guid(a21607f63ef0ebf40a9cf07adf59d0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18d61bf15ea7903ff17aa22f234179b2') in 0.011396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001950 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_77.asset
+  artifactKey: Guid(0f749c07c3fde1a489fd72ed0b7010b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_77.asset using Guid(0f749c07c3fde1a489fd72ed0b7010b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03e674c717ff011c9f90ce85145a08eb') in 0.013421 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_86.asset
+  artifactKey: Guid(89fb946d50a852646b075e73278c6b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_86.asset using Guid(89fb946d50a852646b075e73278c6b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e2d6a5d5628fd7f80a3527861e83fe5') in 0.013557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_81.asset
+  artifactKey: Guid(c3477feba049fa6499af0e9e788d37dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_81.asset using Guid(c3477feba049fa6499af0e9e788d37dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dc09f226106f96a8bb956892310e060') in 0.014394 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_82.asset
+  artifactKey: Guid(2c51e90247fd3434c8a3db3fcdfeb11f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_82.asset using Guid(2c51e90247fd3434c8a3db3fcdfeb11f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f87a9412466d45e8a39950bedb2d7e9') in 0.015218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_92.asset
+  artifactKey: Guid(8f90d92ca9571e64e885c8949f47a10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_92.asset using Guid(8f90d92ca9571e64e885c8949f47a10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '793a4188bf55c4395d48b3c38c86cf09') in 0.013261 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_103.asset
+  artifactKey: Guid(ca5e7af1bff9fae4886b82509a2adbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_103.asset using Guid(ca5e7af1bff9fae4886b82509a2adbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a3eae8a677ab29a303eaf4a5d19e02d') in 0.012281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_106.asset
+  artifactKey: Guid(a9c5819eaf769f249bab4a83759b6264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_106.asset using Guid(a9c5819eaf769f249bab4a83759b6264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e94b7915e8b3a96e43b07210b1dfc48a') in 0.012853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_115.asset
+  artifactKey: Guid(26618de3b00bc6a4fb752d509c57802c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_115.asset using Guid(26618de3b00bc6a4fb752d509c57802c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d5966d12ff49b945aa2e981f67faab9') in 0.011332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_90.asset
+  artifactKey: Guid(9724a10edbfe75b4c8e70dc943014a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_90.asset using Guid(9724a10edbfe75b4c8e70dc943014a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de9049266c6facc44ca067e219f19131') in 0.008273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_109.asset
+  artifactKey: Guid(f75da7bbe62c91845ab8b87848e650ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_109.asset using Guid(f75da7bbe62c91845ab8b87848e650ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55472df40c928fdf05b70906cf0215ae') in 0.014820 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_83.asset
+  artifactKey: Guid(91182d79099d70a4094d1dc6700e54d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_83.asset using Guid(91182d79099d70a4094d1dc6700e54d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd706d0d848e61b62c76f8847b197fbb8') in 0.007838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_122.asset
+  artifactKey: Guid(398be7ef9eefa7c44b5f6b251326078b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_122.asset using Guid(398be7ef9eefa7c44b5f6b251326078b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adbb77e78fa3c09ea83ec454879b6d72') in 0.015568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_126.asset
+  artifactKey: Guid(73850067ee57fe44b82edb7fe1fc3d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_126.asset using Guid(73850067ee57fe44b82edb7fe1fc3d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f07b6f4c488dbffaf36e2820226a744') in 0.015765 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_130.asset
+  artifactKey: Guid(7c965fa1893b5d343a468e75551d0855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_130.asset using Guid(7c965fa1893b5d343a468e75551d0855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d42826104d268e8da78d12ddda093a') in 0.013905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_125.asset
+  artifactKey: Guid(716229885d6624e4b9cd68a0ebd69ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_125.asset using Guid(716229885d6624e4b9cd68a0ebd69ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c107090db3db0768db29211cb6ffb1f') in 0.007613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_80.asset
+  artifactKey: Guid(cd9e003bc176af44e96782032fb829f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_80.asset using Guid(cd9e003bc176af44e96782032fb829f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f4a10516cdf3ec07852287d52eb319') in 0.012705 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_107.asset
+  artifactKey: Guid(8b7ae0114de381e4ab593a850b5ba68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_107.asset using Guid(8b7ae0114de381e4ab593a850b5ba68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5a5733ef15fda9e3796e3c5467646ca') in 0.012995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_112.asset
+  artifactKey: Guid(79c00bd709f000c42a1f5be1a17b62cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_112.asset using Guid(79c00bd709f000c42a1f5be1a17b62cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b070bf62a13c96d3349902a82c85d041') in 0.012903 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_118.asset
+  artifactKey: Guid(ed430b9e8142ad149b66f59c6392325d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_118.asset using Guid(ed430b9e8142ad149b66f59c6392325d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a44635e6dd5c66bb7ba621d22d95a5e') in 0.007625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_120.asset
+  artifactKey: Guid(1db9000cbf916a5409cbd31be3f955d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_120.asset using Guid(1db9000cbf916a5409cbd31be3f955d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58956ae240168c816943f11b376eb29a') in 0.011211 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_108.asset
+  artifactKey: Guid(d21bed9f2bcfa2c4f91086ef016d4a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_108.asset using Guid(d21bed9f2bcfa2c4f91086ef016d4a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfcde79257adfe5c810db0d3cc8ca497') in 0.006512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_116.asset
+  artifactKey: Guid(e14ce2e14d824404e82696dba40c5295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_116.asset using Guid(e14ce2e14d824404e82696dba40c5295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c199092693019442683fee4c876eac48') in 0.006547 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_99.asset
+  artifactKey: Guid(25aaae69435a97042a3b676d692bc506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_99.asset using Guid(25aaae69435a97042a3b676d692bc506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6d4213f5aa3cb64a5137da1470113c7') in 0.016040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_105.asset
+  artifactKey: Guid(d795be9eab6ed6c4fa0aed10fad4a1aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_105.asset using Guid(d795be9eab6ed6c4fa0aed10fad4a1aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b85cf45e4d060ff61d3e7c75019e212') in 0.012484 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_131.asset
+  artifactKey: Guid(f8c2541e370ee824fa88f6b4246966c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_131.asset using Guid(f8c2541e370ee824fa88f6b4246966c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '413e7c390f85de57117e89095300547f') in 0.011461 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_111.asset
+  artifactKey: Guid(bc138c4b573cb8b4a846d597fd103e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_111.asset using Guid(bc138c4b573cb8b4a846d597fd103e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf9322cfd5b48661b3d5f51f4d8bf15a') in 0.012642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_123.asset
+  artifactKey: Guid(98eb7ea1e089c564188a14eff07687d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_123.asset using Guid(98eb7ea1e089c564188a14eff07687d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c4086b35c0232f6c49ab721c3f4f31') in 0.013091 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.018627 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_133.asset
+  artifactKey: Guid(5d9a95c52dd468c448127ec9898eea7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_133.asset using Guid(5d9a95c52dd468c448127ec9898eea7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e1fc9065bfbe41518027dfa42eb029') in 0.005817 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_140.asset
+  artifactKey: Guid(0268f58eeec7c7a48b2cb0dd8c336838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_140.asset using Guid(0268f58eeec7c7a48b2cb0dd8c336838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb1ce1ade11a3387f615d9a225077a7') in 0.012914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_134.asset
+  artifactKey: Guid(dd5d1a070e97e8944b3762ee2bd5143c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_134.asset using Guid(dd5d1a070e97e8944b3762ee2bd5143c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ace64d79946010ff8a31189e7a0b46') in 0.006374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_143.asset
+  artifactKey: Guid(20fa520326175bd46aede40a7eacc723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_143.asset using Guid(20fa520326175bd46aede40a7eacc723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7fccbc23eaf81f40cda0a1444124779') in 0.013089 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_146.asset
+  artifactKey: Guid(86396cb761c340248b1593a0f4663513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_146.asset using Guid(86396cb761c340248b1593a0f4663513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85abf3f059548fafa327464008ea96d7') in 0.014786 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_166.asset
+  artifactKey: Guid(1b76e023fdc6fee4393d4f81d7e65f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_166.asset using Guid(1b76e023fdc6fee4393d4f81d7e65f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92c5b6ca0f4247c7e945d427a556e8d4') in 0.013941 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_157.asset
+  artifactKey: Guid(08e313b9aade04d4ab88d0d77b70a886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_157.asset using Guid(08e313b9aade04d4ab88d0d77b70a886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0073934fad39bfb6bf446e93fa07a030') in 0.012483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_150.asset
+  artifactKey: Guid(2006fe59658c8ef448e3a8a28f6dcced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_150.asset using Guid(2006fe59658c8ef448e3a8a28f6dcced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3adf4deb02bde4106865c5601a74712e') in 0.012875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_178.asset
+  artifactKey: Guid(2e6200f327148f7429e8b552dc8d416d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_178.asset using Guid(2e6200f327148f7429e8b552dc8d416d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf8d6535d6a8d30a37aeaa38adc9e34') in 0.017809 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_162.asset
+  artifactKey: Guid(41329f48ec9ab3b479d3dac6337b4f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_162.asset using Guid(41329f48ec9ab3b479d3dac6337b4f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5a059f20ce38b61e72914cabb61a836') in 0.013460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_171.asset
+  artifactKey: Guid(44fa161c60ef34740b42c0cb6a01be3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_171.asset using Guid(44fa161c60ef34740b42c0cb6a01be3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '184eb986ceec506d6ba6f6084b248fad') in 0.012998 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_186.asset
+  artifactKey: Guid(6221fd9d74cd89143b24249cab53b603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_186.asset using Guid(6221fd9d74cd89143b24249cab53b603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b435b544d7435f15740595e887c841') in 0.013076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_187.asset
+  artifactKey: Guid(c791898554ddd894a9a0d22b074cd2ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_187.asset using Guid(c791898554ddd894a9a0d22b074cd2ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a15080ea2e4662a06a89a429e959e6a') in 0.007389 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_163.asset
+  artifactKey: Guid(8a18dd9a537051141a503c3ec87afc89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_163.asset using Guid(8a18dd9a537051141a503c3ec87afc89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4079b8bd8aa5f4baccddaf6349552788') in 0.016800 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_181.asset
+  artifactKey: Guid(ce767f51663d63c45840c75661c012cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_181.asset using Guid(ce767f51663d63c45840c75661c012cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '490dab07c17e7517784f786dd921629f') in 0.014274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_144.asset
+  artifactKey: Guid(bcfd3afed201ce940a48ffcd270fdbc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_144.asset using Guid(bcfd3afed201ce940a48ffcd270fdbc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c3d8fb0b137f95b00694aaf3968da04') in 0.013012 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_149.asset
+  artifactKey: Guid(357af6ddbd83ff2449aaf8aa2946df09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_149.asset using Guid(357af6ddbd83ff2449aaf8aa2946df09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e948076b895e02e26a6b4f130d11ae21') in 0.007997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_164.asset
+  artifactKey: Guid(e25346f5106596e47a9a903f71d1637a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_164.asset using Guid(e25346f5106596e47a9a903f71d1637a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71ddf8d96bfdd32647d80bf6f3402582') in 0.012825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_142.asset
+  artifactKey: Guid(8f2d13d25d52f874694526e9f9f1be50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_142.asset using Guid(8f2d13d25d52f874694526e9f9f1be50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aaeb7506163218fa006b430453c41fe') in 0.007120 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_138.asset
+  artifactKey: Guid(cfa18a4f807096f488ba7f6b6a4afab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_138.asset using Guid(cfa18a4f807096f488ba7f6b6a4afab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b75a95949d1897ed48c747f7ee960c') in 0.012882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_184.asset
+  artifactKey: Guid(e81376abf07e3d64cbf63d41a4e37071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_184.asset using Guid(e81376abf07e3d64cbf63d41a4e37071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9396e506e1e42816670ae876dd14431f') in 0.006755 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_147.asset
+  artifactKey: Guid(f90efad8bd6535f4484a4b8fd0423e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_147.asset using Guid(f90efad8bd6535f4484a4b8fd0423e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd11ea0aceb7c57cd1cc55a5be3c1b1eb') in 0.012145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_154.asset
+  artifactKey: Guid(cf17394782f1f8647b080f1afc6d377f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_154.asset using Guid(cf17394782f1f8647b080f1afc6d377f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd68b29872627a8bb93e00c7459c79d0d') in 0.012126 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_135.asset
+  artifactKey: Guid(7989cc4d08cccf54fa9959314ba8868f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_135.asset using Guid(7989cc4d08cccf54fa9959314ba8868f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84ae5b7fbb8c48b6521c0aa350ae7b63') in 0.013324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_179.asset
+  artifactKey: Guid(c4427f7a4e79c8f419dd7492c6ec1e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_179.asset using Guid(c4427f7a4e79c8f419dd7492c6ec1e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a876772f5ac48b4e4d3d61a6069536b8') in 0.025708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_173.asset
+  artifactKey: Guid(120752b472f7f164c973489571405cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_173.asset using Guid(120752b472f7f164c973489571405cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '561d3184582d1341acc8ef2177854454') in 0.006675 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_172.asset
+  artifactKey: Guid(ebf432db7143ecd44a318d4db520ec30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_172.asset using Guid(ebf432db7143ecd44a318d4db520ec30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ec670f116773e98394f455e1c121f0') in 0.012977 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.578891 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_189.asset
+  artifactKey: Guid(a784ab93c6147c34283b2ed9446cf2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_189.asset using Guid(a784ab93c6147c34283b2ed9446cf2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f57f86cfe77906e7c4934f8d62bc2cb5') in 0.015330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_193.asset
+  artifactKey: Guid(f3884922dcb3e6548a2e587d3bf359a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_193.asset using Guid(f3884922dcb3e6548a2e587d3bf359a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee1d3ca3fb75be7e4e54af832080b587') in 0.014182 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_202.asset
+  artifactKey: Guid(f355a2f0acdcd6a4c8fffcc8f9490a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_202.asset using Guid(f355a2f0acdcd6a4c8fffcc8f9490a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a2b2e01370ccffaa0aa075537ab6f7') in 0.015400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_215.asset
+  artifactKey: Guid(d3fcd237171c0774cb3b9cd12839e24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_215.asset using Guid(d3fcd237171c0774cb3b9cd12839e24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa979cc0d13c26eef05056d685e2a04') in 0.014234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_242.asset
+  artifactKey: Guid(55cc55335509c4d4982d8cec7c2d33b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_242.asset using Guid(55cc55335509c4d4982d8cec7c2d33b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ee51700786a85aba9101f9d2556560') in 0.014512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_241.asset
+  artifactKey: Guid(7facf0b8266bbf342952ced96cadcd4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_241.asset using Guid(7facf0b8266bbf342952ced96cadcd4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249015afea622fdb493e8280a60a54da') in 0.013395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_257.asset
+  artifactKey: Guid(eb7f6ef843c0d404d831af63fb08cb11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_257.asset using Guid(eb7f6ef843c0d404d831af63fb08cb11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd73c717d1199931d5f1ba3578fcf1a7e') in 0.014828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_256.asset
+  artifactKey: Guid(eef0e60b8ac1b004d9613bf9a940180a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_256.asset using Guid(eef0e60b8ac1b004d9613bf9a940180a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62c167ac718afbc5e7fb2106238e4570') in 0.013250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_227.asset
+  artifactKey: Guid(367d686a4b87d22408de72244f1023f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_227.asset using Guid(367d686a4b87d22408de72244f1023f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21593b3e74bfb4baec00d9c2fb03b107') in 0.006670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_216.asset
+  artifactKey: Guid(e72f9b7eb55e7a9478df6f8ac812deb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_216.asset using Guid(e72f9b7eb55e7a9478df6f8ac812deb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '810335a676e70273cd90bf7a36f0cac0') in 0.014297 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_233.asset
+  artifactKey: Guid(a999aab89ff56e146b7e2a46948b1622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_233.asset using Guid(a999aab89ff56e146b7e2a46948b1622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e16f643a371f7132e4aeae36e8403fe') in 0.009039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_218.asset
+  artifactKey: Guid(f56385f500eddeb43a551170c6359106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_218.asset using Guid(f56385f500eddeb43a551170c6359106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0320696d800dde852c98a777d65ce3b') in 0.012252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_204.asset
+  artifactKey: Guid(178154475193cbb4ba7b5f618c95d537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_204.asset using Guid(178154475193cbb4ba7b5f618c95d537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3db60cca707e132daf711e1f6af1c94') in 0.012552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_194.asset
+  artifactKey: Guid(dbae5fd8aa15e4c4287d78055c4e41ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_194.asset using Guid(dbae5fd8aa15e4c4287d78055c4e41ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81c27b6904aa89fb5dfc2d598aefda88') in 0.014062 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_240.asset
+  artifactKey: Guid(76937818b125f6145942997ce3d41e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_240.asset using Guid(76937818b125f6145942997ce3d41e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a488373ed6f447ff3aeab2592296876') in 0.006302 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_254.asset
+  artifactKey: Guid(61d11b0abce86cb4ebe11c9fc775f1da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_254.asset using Guid(61d11b0abce86cb4ebe11c9fc775f1da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6852203e1e7376138fb9a1b801d142b3') in 0.013331 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_198.asset
+  artifactKey: Guid(5e6591be82aff4a4da11e3ff512b389a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_198.asset using Guid(5e6591be82aff4a4da11e3ff512b389a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd1522ddedf351b9d95b3e58a3fdfbe4') in 0.007735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_222.asset
+  artifactKey: Guid(d5b19824653652b4e96ecaefb8f6e87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_222.asset using Guid(d5b19824653652b4e96ecaefb8f6e87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b6a20ea28fb65d12bb1c5781b986e2d') in 0.014391 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_191.asset
+  artifactKey: Guid(5513d5e380af1d5428603e144393d9be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_191.asset using Guid(5513d5e380af1d5428603e144393d9be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d71096a1dcbfa24141ec24ae0050d4c') in 0.013737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_209.asset
+  artifactKey: Guid(488a9ac06aed5454fa4ababe96939d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_209.asset using Guid(488a9ac06aed5454fa4ababe96939d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '966c46eb756b9bc04d7d13f352764306') in 0.013613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_195.asset
+  artifactKey: Guid(27bdd276eca565f4e922988f66328617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_195.asset using Guid(27bdd276eca565f4e922988f66328617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5fafda098732edf008c013953f5f416') in 0.014879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_229.asset
+  artifactKey: Guid(9180a9821f9350548998a3476673ae7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_229.asset using Guid(9180a9821f9350548998a3476673ae7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b6127da7a166e1c38a24fc904b7bb9e') in 0.024854 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_250.asset
+  artifactKey: Guid(f187339d4b6d3f54e9878af2b3ba5c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_250.asset using Guid(f187339d4b6d3f54e9878af2b3ba5c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f576ab92b11276e3c1e9e6cbfc33ee3f') in 0.013684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_199.asset
+  artifactKey: Guid(a5dc81eb7c97aea46aa52512f93b9add) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_199.asset using Guid(a5dc81eb7c97aea46aa52512f93b9add) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349e7b545b164d5a8cc1882d80d73df8') in 0.006935 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_252.asset
+  artifactKey: Guid(a2caa399e604f414bbd6f9fb892bc81b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_252.asset using Guid(a2caa399e604f414bbd6f9fb892bc81b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a7c92b4b25f71dac681cb0aa1ff9f49') in 0.008065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_208.asset
+  artifactKey: Guid(9765de698dfb2d24f9f1a41af47fb504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_208.asset using Guid(9765de698dfb2d24f9f1a41af47fb504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c16acca8103987e0d3b36d9fdf9743de') in 0.013929 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_196.asset
+  artifactKey: Guid(58e2d35d0d6cec64aae818299d83906e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_196.asset using Guid(58e2d35d0d6cec64aae818299d83906e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1448ec35083d4e1617bd0cef0dc0cdbd') in 0.012642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_248.asset
+  artifactKey: Guid(e855ad45bab06784bb03075b8db03ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_248.asset using Guid(e855ad45bab06784bb03075b8db03ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2009c2079c2fecf28994b42dba55aa82') in 0.017070 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_212.asset
+  artifactKey: Guid(cbee92fe81f560e45abacd5d2b0e269f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_212.asset using Guid(cbee92fe81f560e45abacd5d2b0e269f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '399f8e79241cb140697c55a444a0525a') in 0.008868 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_203.asset
+  artifactKey: Guid(ffbbc561bf96eee4590ab8c6938f9438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_203.asset using Guid(ffbbc561bf96eee4590ab8c6938f9438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9616ea6c7a42de0775a9c459504b0507') in 0.015773 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_224.asset
+  artifactKey: Guid(927f06fc731afed4992307a7aacbcdea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_224.asset using Guid(927f06fc731afed4992307a7aacbcdea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ed33f079344ac1cb9fafef6d0b26a1a') in 0.014520 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_192.asset
+  artifactKey: Guid(b7601d4e18b01ad43921afc5f7b75ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_192.asset using Guid(b7601d4e18b01ad43921afc5f7b75ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47bcaf10020cec01216b17e19d1f57c') in 0.012462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/tileset_243.asset
+  artifactKey: Guid(0cab15653f760ef40a04ee24c8b9fd00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/tileset_243.asset using Guid(0cab15653f760ef40a04ee24c8b9fd00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebb866f57c852db716c74ecb68b1ef89') in 0.008127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 610.759055 seconds.
+  path: Assets/04.ArtResource/MagicCliffsArtwork/test.prefab
+  artifactKey: Guid(f4ba6759ed5668f478ab1027ea2bce3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/MagicCliffsArtwork/test.prefab using Guid(f4ba6759ed5668f478ab1027ea2bce3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8601b98adaaf12f026b7f9d2a8d2b49') in 0.261476 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 270

@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
+// 게임 시작전 3,2,1, GO 게임신 정지 함수
+// 최초 작성자: 하경림
+// 수정자: 하경림
+// 최종 수정일: 2024-05-30
 
 public class CountDown : MonoBehaviour
 {
-public Text countdownText;
+public TMP_Text countdownText;
     public float countdownTime = 3.0f; // 카운트다운 시간
 
     private void Start()
@@ -32,7 +36,6 @@ public Text countdownText;
 
         countdownText.gameObject.SetActive(false); 
 
-        // 게임을 다시 시작합니다.
         Time.timeScale = 1;
     }
 }
