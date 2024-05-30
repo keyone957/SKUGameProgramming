@@ -21,7 +21,7 @@ public class SceneSystem : MonoBehaviour
     public int currentStage;
     public bool isClearStage;//현재 스테이지 클리어 했는지 bool값
     [SerializeField] public int maxStageCnt; //총 스테이지 개수
-    [SerializeField] public int bonusStageOrder;
+    [SerializeField] public int bonusStageOrder;//보너스 스테이지 몇번째에 실행할지
     [SerializeField] public FadeOverlay _fadeOverlay;
     [SerializeField] public int monsterCnt;
     void Awake()

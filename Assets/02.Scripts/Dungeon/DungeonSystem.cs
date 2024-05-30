@@ -1,11 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
+
 //던전 씬에 사용될 시스템 컴포넌트추가
 //몬스터 갯수에 따라 ui띄우기
+//몬스터 다 죽이면 맵 클리어
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-28
+// 최종 수정일 : 2024-05-30
 public class DungeonSystem : MonoBehaviour
 {
     public static DungeonSystem instance { get; private set; }
@@ -18,7 +22,6 @@ public class DungeonSystem : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
         }
         else
             Destroy(this.gameObject);
@@ -30,6 +33,14 @@ public class DungeonSystem : MonoBehaviour
         SpawnMonster();
         monsterCnt = monsterSpawnPoint.Length;
         AllSceneCanvas.instance.SetMonsterCnt(monsterCnt);
+        InitializeDungeonScene();
+    }
+    private void Update()
+    {
+        if (monsterCnt <= 0)
+        {
+            SceneSystem.instance.isClearStage = true;
+        }
     }
 
     private void InitializeDungeonScene()
@@ -57,5 +68,5 @@ public class DungeonSystem : MonoBehaviour
             Instantiate(monsterPrefab[randomMonsterPrefab], monsterSpawnPoint[i].position,monsterSpawnPoint[i].rotation);
         }
     }
-
+    
 }

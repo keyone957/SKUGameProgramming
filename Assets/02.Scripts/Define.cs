@@ -16,7 +16,10 @@ public static class Define
     //EffectSound
     public const string _clickMenuSound = "BtnClickSound";
     public const string _damagedSkeleton = "DamagedSkeleton";
+    public const string _deathSkeleton = "SkeletonDeath";
     public const string _damagedSlime = "SlimeDamaged";
+    public const string _damagedWolf = "WolfDamaged";
+    public const string _deathWolf = "WolfDeath";
     public const string _playerJump = "PlayerJump";
     public const string _playerAttack = "PlayerAttack";
     public const string _accessDenied = "AccessDenied";

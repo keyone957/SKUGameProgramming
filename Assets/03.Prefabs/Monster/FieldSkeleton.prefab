@@ -359,6 +359,7 @@ MonoBehaviour:
   monsterAttack: {fileID: 6536908481203010067}
   hpCanvas: {fileID: 5925834048526143925}
   monsterHpBarSlider: {fileID: 1354867453701397125}
+  monsterType: 1
   state: 0
   isDie: 0
 --- !u!70 &51082331372435559

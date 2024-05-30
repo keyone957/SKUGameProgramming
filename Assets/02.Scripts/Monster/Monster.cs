@@ -6,9 +6,10 @@ using UnityEngine.UI;
 
 //몬스터 공격할때 에니메이션 이벤트 추가
 //몬스터 피격, 죽음 상태 추가
+//몬스터 타입에 따라 효과음다르게
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-28
+// 최종 수정일 : 2024-05-30
 public class Monster : MonoBehaviour
 {
     public enum State
@@ -17,6 +18,12 @@ public class Monster : MonoBehaviour
         TRACE,
         ATTACK,
         DIE
+    }
+
+    public enum MonsterType
+    {
+        Wolf,
+        Skeleton
     }
 
     [SerializeField] public int hp;
@@ -28,6 +35,7 @@ public class Monster : MonoBehaviour
     [SerializeField] private Collider2D monsterAttack;
     [SerializeField] private GameObject hpCanvas;
     [SerializeField] public Slider monsterHpBarSlider;
+    [SerializeField] public MonsterType monsterType;
     public State state = State.IDLE;
     public bool isDie = false;
 
@@ -35,7 +43,8 @@ public class Monster : MonoBehaviour
     private Transform playerTrans;
     private Animator anim;
     private Rigidbody2D rb;
-    
+   
+
     private readonly int hashMove = Animator.StringToHash("IsMove");
     private readonly int hashAttack = Animator.StringToHash("IsAttack");
     private readonly int hashDead = Animator.StringToHash("Dead");
@@ -98,7 +107,7 @@ public class Monster : MonoBehaviour
                     FreezePositionX(true);
                     break;
                 case State.DIE:
-                    isDie=true;
+                    isDie = true;
                     Die();
                     yield return new WaitForSeconds(2.5f);
                     Destroy(this.gameObject);
@@ -117,13 +126,13 @@ public class Monster : MonoBehaviour
         {
             // 플레이어가 왼쪽에 있을 때
             monsterTrans.localRotation = Quaternion.Euler(0, -180, 0);
-            hpCanvas.transform.localRotation=Quaternion.Euler(0, -180, 0);
+            hpCanvas.transform.localRotation = Quaternion.Euler(0, -180, 0);
         }
         else
         {
             // 플레이어가 오른쪽에 있을 때
             monsterTrans.localRotation = Quaternion.Euler(0, 0, 0);
-            hpCanvas.transform.localRotation=Quaternion.Euler(0, 0, 0);
+            hpCanvas.transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
@@ -148,7 +157,6 @@ public class Monster : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PlayerSword"))
         {
-            SoundManager._instance.PlaySound(Define._damagedSkeleton);
             OnDamaged();
             Debug.Log("해골 아파용");
         }
@@ -156,6 +164,16 @@ public class Monster : MonoBehaviour
 
     private void OnDamaged()
     {
+        if (monsterType == MonsterType.Skeleton)
+        {
+            SoundManager._instance.PlaySound(Define._damagedSkeleton);
+        }
+        else if (monsterType == MonsterType.Wolf)
+        {
+            SoundManager._instance.PlaySound(Define._damagedWolf);
+        }
+
+
         curHp -= PlayerManager.instance.playerPower;
         monsterHpBarSlider.value = (float)curHp / hp;
         if (curHp <= 0)
@@ -163,7 +181,7 @@ public class Monster : MonoBehaviour
             state = State.DIE;
         }
     }
-    
+
     private void StartAttack()
     {
         monsterAttack.enabled = true;
@@ -171,6 +189,14 @@ public class Monster : MonoBehaviour
 
     private void Die()
     {
+        if (monsterType == MonsterType.Skeleton)
+        {
+            SoundManager._instance.PlaySound(Define._deathSkeleton);
+        }
+        else if (monsterType == MonsterType.Wolf)
+        {
+            SoundManager._instance.PlaySound(Define._deathWolf);
+        }
         PlayerManager.instance.playerMoney += 10;
         AllSceneCanvas.instance.SetMoney(PlayerManager.instance.playerMoney);
         DungeonSystem.instance.monsterCnt--;
