@@ -10,17 +10,10 @@ public class TitleSystem : MonoBehaviour
 {
     void Start()
     {
-        InitialGameSetting();
         StartCoroutine(SceneStartSequence());
         Time.timeScale = 1.0f;
     }
-
-    private void InitialGameSetting()
-    {
-        SoundManager._instance.SetBgmVolume(float.Parse(PlayerPrefs.GetString("bgmVolume")));
-        SoundManager._instance.SetSoundVolume(float.Parse(PlayerPrefs.GetString("soundVolume")));
-    }
-
+    
     private IEnumerator SceneStartSequence()
     {
         //게임 시작하면 타이틀씬에서 브금 실행

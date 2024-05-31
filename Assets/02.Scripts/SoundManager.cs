@@ -31,8 +31,8 @@ public class SoundManager : MonoBehaviour
 
     private void Start()
     {
-        //TODO : 환경설정에 따라서 사용자가 설정한 음량에 따라 배경,효과음 실행
-        //PlayerPrefs 사용 바람.
+        _bgmSource.volume = float.Parse(PlayerPrefs.GetString("bgmVolume"));
+        _soundSource.volume = float.Parse(PlayerPrefs.GetString("soundVolume"));
     }
 
     private AudioClip LoadAudioClip(string fullPath)
