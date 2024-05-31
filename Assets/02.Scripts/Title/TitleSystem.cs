@@ -1,19 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//타이틀 씬에 있는 것들 관리. 현재는 테스트 용으로 타이틀 브금 실행(추후에 바뀔수도 있음)
-//타임스케일 조정해서 인게임에서 타이틀씬으로 오면 다시 게임 돌아가게
+//타이틀 씬에 있는 것들 관리.
+//타이틀씬 들어올때 저장된 브금, 효과음 볼륨 세팅
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-11
+// 최종 수정일 : 2024-05-31
 public class TitleSystem : MonoBehaviour
 {
     void Start()
     {
+        InitialGameSetting();
         StartCoroutine(SceneStartSequence());
         Time.timeScale = 1.0f;
     }
-    
+
+    private void InitialGameSetting()
+    {
+        SoundManager._instance.SetBgmVolume(float.Parse(PlayerPrefs.GetString("bgmVolume")));
+        SoundManager._instance.SetSoundVolume(float.Parse(PlayerPrefs.GetString("soundVolume")));
+    }
+
     private IEnumerator SceneStartSequence()
     {
         //게임 시작하면 타이틀씬에서 브금 실행

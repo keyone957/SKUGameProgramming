@@ -5,10 +5,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 //포탈에 닿았을때 수행해야할 동작들
-//사운드 매니저 사용
+//클리어시 현재 스테이지 ++
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-29
+// 최종 수정일 : 2024-05-31
 public class PortalController : MonoBehaviour
 {
     [SerializeField] private GameObject keyBoardUI;
@@ -27,6 +27,7 @@ public class PortalController : MonoBehaviour
         if (isEnter&&Input.GetKeyDown(KeyCode.W))
         {
             // SceneSystem.instance.GoNextStage(nextStageType);
+            SceneSystem.instance.currentStage++;
             SceneSystem.instance.TestNextStage(TestSceneName);
         }
     }
@@ -47,7 +48,6 @@ public class PortalController : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = portalSpr[1];
             SoundManager._instance.PlaySound(Define._openDoor);
             isEnter = true;
-
         }
         else if(other.gameObject.CompareTag("Player")&& !SceneSystem.instance.isClearStage)
         {

@@ -26,7 +26,9 @@ public static class Define
     public const string _closeDoor = "CloseDoor";
     public const string _getCoin = "GetCoin";
     public const string _openDoor = "OpenDoor";
-    
+    public const string _warningSound = "WarningSound";
+    public const string _gameStartBtn = "GameStartBtn";
+
 
 
 }

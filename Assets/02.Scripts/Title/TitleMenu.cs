@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 //각 메뉴 버튼들 이벤트 연결
+//메뉴 버튼들의 효과음 나오게
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-10
+// 최종 수정일 : 2024-05-31
 public class TitleMenu : MonoBehaviour
 {
     [SerializeField] private Button _btnStart=null;
@@ -24,7 +25,7 @@ public class TitleMenu : MonoBehaviour
 
     private void OnClickStartBtn()
     {
-        SoundManager._instance.PlaySound(Define._clickMenuSound);
+        SoundManager._instance.PlaySound(Define._gameStartBtn);
         _fadeOverlay.DoFadeOut(1.5f,"Lobby");
     }
 

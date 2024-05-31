@@ -6,10 +6,10 @@ using Random = UnityEngine.Random;
 
 //던전 씬에 사용될 시스템 컴포넌트추가
 //몬스터 갯수에 따라 ui띄우기
-//몬스터 다 죽이면 맵 클리어
+//현재 씬 몇스테이지인지 띄움
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-30
+// 최종 수정일 : 2024-05-31
 public class DungeonSystem : MonoBehaviour
 {
     public static DungeonSystem instance { get; private set; }
@@ -48,7 +48,7 @@ public class DungeonSystem : MonoBehaviour
         AllSceneCanvas.instance.SetMonsterCnt(monsterSpawnPoint.Length);
         SceneSystem.instance.isClearStage = false;
         SceneSystem.instance._fadeOverlay.gameObject.SetActive(false);
-        
+        AllSceneCanvas.instance.SetStageText("Stage "+SceneSystem.instance.currentStage);
     }
 
     private IEnumerator SceneStartSequence()

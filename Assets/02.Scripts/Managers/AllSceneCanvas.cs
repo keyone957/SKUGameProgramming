@@ -6,11 +6,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 //모든 씬에서 사용할 UI관리하는 컴포넌트
-//체력,돈,인게임 메뉴
-//몬스터 개수 ui추가
+//현 스테이지 어디인지 띄움
 //최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-28
+// 최종 수정일 : 2024-05-31
 public class AllSceneCanvas : MonoBehaviour
 {
     public static AllSceneCanvas instance { get; private set; }
@@ -21,6 +20,7 @@ public class AllSceneCanvas : MonoBehaviour
     [SerializeField] private Button exitMenuBtn;
     [SerializeField] public GameObject monsterCnt;
     [SerializeField] private TMP_Text monsterCntText;
+    [SerializeField] private TMP_Text stageText;
     public bool isOpenMenu;
     void Awake()
     {
@@ -38,6 +38,7 @@ public class AllSceneCanvas : MonoBehaviour
         isOpenMenu = false;
         inGameMenuBtn.onClick.AddListener(OnClickInGameMenu);
         exitMenuBtn.onClick.AddListener(OnClickInGameMenu);
+        
     }
     
     public void PlayerHPChange(int playerHP)
@@ -55,14 +56,20 @@ public class AllSceneCanvas : MonoBehaviour
         }
     }
 
+    public void SetStageText(string stageText)
+    {
+        this.stageText.text = stageText;
+    }
+
     public void SetMoney(int money)
     {
         playerMoneyText.text = money.ToString();
     }
     public void OnClickInGameMenu()
     {
+        SoundManager._instance.PlaySound(Define._clickMenuSound);
         isOpenMenu = !isOpenMenu;
-
+        
         inGameMenu.SetActive(isOpenMenu); 
     }
 
@@ -82,12 +89,6 @@ public class AllSceneCanvas : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            PlayerManager.instance.playerHp--;
-            PlayerHPChange(PlayerManager.instance.playerHp);
-        }
-
         if (Input.GetKeyDown(KeyCode.M))
         {
             PlayerManager.instance.playerMoney += 5000;
