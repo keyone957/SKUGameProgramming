@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     private bool gameStarted = false;  // 게임이 시작되었는지 여부를 나타내는 플래그
 
-    void Start()
+    public void Start()
     {
         // 항상 초기 UI 설정 실행
         countdownText.gameObject.SetActive(false);  // 카운트다운 텍스트 비활성화
@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("start");
     }
 
-    void OnStartButtonClicked()
+    public void OnStartButtonClicked()
     {
         if (!gameStarted)  // 게임이 시작되지 않았을 때만 실행
         {

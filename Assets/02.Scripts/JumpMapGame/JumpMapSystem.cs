@@ -11,16 +11,17 @@ using TMPro;
 
 public class JumpMapSystem : MonoBehaviour
 {
-    public GameObject popupPanel;      // 팝업창 오브젝트
-    public TextMeshProUGUI countdownText;         // 카운트다운 텍스트
-    public Button startButton;         // Start 버튼
-    public Image timerImage;           // Timer 이미지
+    public GameObject popupPanel;
+    public TextMeshProUGUI countdownText;
+    public Button startButton;
+    public Image timerImage;
 
-    public static JumpMapSystem Instance;  // 싱글톤 인스턴스
+    private bool isPlayerMovementRestricted = true;
+
+    public static JumpMapSystem Instance;
 
     private void Awake()
     {
-        // JumpMapSystem 인스턴스를 설정
         Instance = this;
     }
 
@@ -30,50 +31,79 @@ public class JumpMapSystem : MonoBehaviour
         ActivatePopupPanel();
     }
 
-    // 씬의 초기화
     private void InitializeScene()
     {
-        // 여기에 씬 초기화 로직 추가
+        // 씬 초기화 로직 추가
     }
 
-    // 팝업 패널 활성화
     private void ActivatePopupPanel()
     {
         popupPanel.SetActive(true);
-        Time.timeScale = 0f;  // 팝업창이 열릴 때 시간을 멈춤
+        Time.timeScale = 0f;
         startButton.onClick.AddListener(StartButtonClicked);
     }
 
-    // Start 버튼 클릭 시 호출되는 메서드
     private void StartButtonClicked()
     {
-        popupPanel.SetActive(false);  // 팝업창 비활성화
-        Time.timeScale = 1f;           // 시간 다시 시작
-        countdownText.gameObject.SetActive(true);  // 카운트다운 텍스트 활성화
+        popupPanel.SetActive(false);
+        Time.timeScale = 1f;
+        countdownText.gameObject.SetActive(true);
         StartCoroutine(StartCountdown());
     }
 
-    // 카운트다운을 시작하는 코루틴
     private IEnumerator StartCountdown()
     {
         for (int i = 3; i > 0; i--)
         {
-            countdownText.text = i.ToString();  // 카운트다운 숫자 표시
-            yield return new WaitForSeconds(1f);  // 1초 대기
+            countdownText.text = i.ToString();
+            yield return new WaitForSeconds(1f);
         }
 
-        countdownText.text = "Start!!";  // 카운트다운 완료 메시지
-        yield return new WaitForSeconds(1f);  // 1초 대기
+        countdownText.text = "Start!!";
+        yield return new WaitForSeconds(1f);
 
-        countdownText.gameObject.SetActive(false);  // 카운트다운 텍스트 비활성화
-
-        // 타이머 이미지 활성화
+        countdownText.gameObject.SetActive(false);
         timerImage.gameObject.SetActive(true);
+
+        // 플레이어의 움직임 제한 해제
+        isPlayerMovementRestricted = false;
+
+        // 게임 시작 메서드 호출
+        StartGame();
     }
 
     // 게임 시작 메서드
     public void StartGame()
     {
-        // 게임 시작 관련 로직 추가
+
+    }
+
+    // 플레이어의 움직임을 제한하는 메서드
+    public void RestrictPlayerMovement(bool restrict)
+    {
+        isPlayerMovementRestricted = restrict;
+    }
+
+    // Update 메서드에서 플레이어의 움직임을 제한하는 로직 추가
+    private void Update()
+    {
+        if (isPlayerMovementRestricted)
+        {
+            // 플레이어의 움직임을 제한하는 로직 추가
+            PlayerInputController playerInputController = FindObjectOfType<PlayerInputController>();
+            if (playerInputController != null)
+            {
+                playerInputController.enabled = false;
+            }
+        }
+        else
+        {
+            // 플레이어의 움직임이 제한되지 않은 경우, 움직임을 허용합니다.
+            PlayerInputController playerInputController = FindObjectOfType<PlayerInputController>();
+            if (playerInputController != null)
+            {
+                playerInputController.enabled = true;
+            }
+        }
     }
 }
