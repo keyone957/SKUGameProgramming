@@ -4,6 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+// 팝업창 관리 및 초기 3초카운트 컴포넌트
+// 시작 시 팝업창 생성 및 설명. 시작버튼 누르면 3초뒤 게임씬 로드
+// 작성자 : 장현우
+// 수정자 : 장현우
+// 최종 수정일 : 2024-06-02
+
 public class GameStartManager : MonoBehaviour
 {
     public GameObject popupPanel;  // Panel 오브젝트
