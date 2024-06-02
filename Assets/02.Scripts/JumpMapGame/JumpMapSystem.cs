@@ -3,6 +3,12 @@ using UnityEngine.UI;
 using System.Collections;
 using TMPro;
 
+// 점프맵을 담당하는 컴포넌트 구성
+// 점프맵 인스턴스
+// 최초 작성자 : 장현우
+// 수정자 : 장현우
+// 최종 수정일 : 2024-06-02
+
 public class JumpMapSystem : MonoBehaviour
 {
     public GameObject popupPanel;      // 팝업창 오브젝트
