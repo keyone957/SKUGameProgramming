@@ -1,0 +1,1666 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.21f1 (bf09ca542b87) revision 12519882'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ko' Physical Memory: 12194 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.21f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+E:/temp/SKUGameProgramming
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+6730
+Successfully changed project path to: E:/temp/SKUGameProgramming
+E:/temp/SKUGameProgramming
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [9924] Host "[IP] 192.168.1.114 [Port] 0 [Flags] 2 [Guid] 3351476756 [EditorId] 3351476756 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IAPGCP5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [9924] Host "[IP] 192.168.1.114 [Port] 0 [Flags] 2 [Guid] 3351476756 [EditorId] 3351476756 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IAPGCP5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Refreshing native plugins compatible for Editor in 15.39 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.21f1 (bf09ca542b87)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/temp/SKUGameProgramming/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 750 (ID=0x1381)
+    Vendor:   NVIDIA
+    VRAM:     976 MB
+    Driver:   31.0.15.5152
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56984
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.012679 seconds.
+- Loaded All Assemblies, in  0.547 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 361 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.780 seconds
+Domain Reload Profiling: 1324ms
+	BeginReloadAssembly (186ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (79ms)
+	LoadAllAssembliesAndSetupDomain (207ms)
+		LoadAssemblies (184ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (204ms)
+			TypeCache.Refresh (202ms)
+				TypeCache.ScanAssembly (184ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (780ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (713ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (493ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (148ms)
+			ProcessInitializeOnLoadMethodAttributes (63ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.996 seconds
+Refreshing native plugins compatible for Editor in 5.97 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.032 seconds
+Domain Reload Profiling: 2025ms
+	BeginReloadAssembly (185ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (706ms)
+		LoadAssemblies (470ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (347ms)
+			TypeCache.Refresh (286ms)
+				TypeCache.ScanAssembly (258ms)
+			ScanForSourceGeneratedMonoScriptInfo (44ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1032ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (802ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (114ms)
+			ProcessInitializeOnLoadAttributes (530ms)
+			ProcessInitializeOnLoadMethodAttributes (114ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 7.21 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6786 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 245 unused Assets / (9.2 MB). Loaded Objects now: 7134.
+Memory consumption went from 251.2 MB to 242.0 MB.
+Total: 9.913500 ms (FindLiveObjects: 0.621600 ms CreateObjectMapping: 0.320700 ms MarkObjects: 4.426900 ms  DeleteObjects: 4.543300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 255010.764249 seconds.
+  path: Assets/03.Prefabs/Monster
+  artifactKey: Guid(d1e95fd82e1150343a7470cc3a1cbd15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Prefabs/Monster using Guid(d1e95fd82e1150343a7470cc3a1cbd15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e8330e38ef6fc5061a35564f55a5c1b') in 0.004633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 470.477472 seconds.
+  path: Assets/04.ArtResource/KeyboardUI/master.png
+  artifactKey: Guid(840c80725ef371f4789ca44954a8deba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/KeyboardUI/master.png using Guid(840c80725ef371f4789ca44954a8deba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '239559459e911591b4512765d4e25303') in 0.137273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.754 seconds
+Refreshing native plugins compatible for Editor in 6.40 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.829 seconds
+Domain Reload Profiling: 2580ms
+	BeginReloadAssembly (240ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (403ms)
+		LoadAssemblies (496ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (33ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (1830ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (882ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (39ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (151ms)
+			ProcessInitializeOnLoadAttributes (552ms)
+			ProcessInitializeOnLoadMethodAttributes (117ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (29ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 8.77 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 188 unused Assets / (9.3 MB). Loaded Objects now: 7156.
+Memory consumption went from 250.1 MB to 240.9 MB.
+Total: 13.400600 ms (FindLiveObjects: 0.961700 ms CreateObjectMapping: 0.999000 ms MarkObjects: 5.382200 ms  DeleteObjects: 6.056500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.706 seconds
+Refreshing native plugins compatible for Editor in 6.22 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.828 seconds
+Domain Reload Profiling: 2531ms
+	BeginReloadAssembly (209ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (389ms)
+		LoadAssemblies (466ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1829ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (915ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (43ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (152ms)
+			ProcessInitializeOnLoadAttributes (573ms)
+			ProcessInitializeOnLoadMethodAttributes (127ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (29ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 8.11 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 188 unused Assets / (9.2 MB). Loaded Objects now: 7172.
+Memory consumption went from 252.0 MB to 242.8 MB.
+Total: 13.227400 ms (FindLiveObjects: 0.902500 ms CreateObjectMapping: 1.062300 ms MarkObjects: 5.048800 ms  DeleteObjects: 6.212500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.708 seconds
+Refreshing native plugins compatible for Editor in 6.18 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.877 seconds
+Domain Reload Profiling: 2582ms
+	BeginReloadAssembly (216ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (379ms)
+		LoadAssemblies (460ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (32ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (1878ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (884ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (40ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (153ms)
+			ProcessInitializeOnLoadAttributes (547ms)
+			ProcessInitializeOnLoadMethodAttributes (122ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 8.77 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 188 unused Assets / (9.3 MB). Loaded Objects now: 7188.
+Memory consumption went from 254.0 MB to 244.7 MB.
+Total: 12.580000 ms (FindLiveObjects: 0.892500 ms CreateObjectMapping: 0.683000 ms MarkObjects: 5.069400 ms  DeleteObjects: 5.933900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.718 seconds
+Refreshing native plugins compatible for Editor in 7.06 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.858 seconds
+Domain Reload Profiling: 2573ms
+	BeginReloadAssembly (226ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (57ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (383ms)
+		LoadAssemblies (468ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1858ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (940ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (44ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (150ms)
+			ProcessInitializeOnLoadAttributes (591ms)
+			ProcessInitializeOnLoadMethodAttributes (133ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (29ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 8.26 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 188 unused Assets / (9.3 MB). Loaded Objects now: 7204.
+Memory consumption went from 256.0 MB to 246.7 MB.
+Total: 13.313400 ms (FindLiveObjects: 0.731400 ms CreateObjectMapping: 1.147100 ms MarkObjects: 5.021200 ms  DeleteObjects: 6.412500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 987.808505 seconds.
+  path: Assets/Resources/BGM/Jumpmap1BGM.mp3
+  artifactKey: Guid(0b1db4ddb624c594f882dab218b5a68a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/BGM/Jumpmap1BGM.mp3 using Guid(0b1db4ddb624c594f882dab218b5a68a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a144f0c88dd08d4f9d72b746cea485f9') in 0.121593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 245.155858 seconds.
+  path: Assets/04.ArtResource/Sound/CasualGameBGM05/BGM_02.wav
+  artifactKey: Guid(90eae78e8ce85a849b5b0ca11b2de641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/CasualGameBGM05/BGM_02.wav using Guid(90eae78e8ce85a849b5b0ca11b2de641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da4e7237a5829fae9e08f76badb1a66') in 0.159161 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/CasualGameBGM05/BGM_03.wav
+  artifactKey: Guid(47f45ef7b5767674393cc401fc325705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/CasualGameBGM05/BGM_03.wav using Guid(47f45ef7b5767674393cc401fc325705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff57a41bec1e157d2865ca3f863119c8') in 0.101565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/04.ArtResource/Sound/CasualGameBGM05/BGM_04.wav
+  artifactKey: Guid(1532c7e67c2d60c4c8780da14b7e8fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/CasualGameBGM05/BGM_04.wav using Guid(1532c7e67c2d60c4c8780da14b7e8fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69dff5786b875ad182ab7cc8491f28e2') in 0.175220 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 156.087181 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied02.wav
+  artifactKey: Guid(dd5867e9d3c988c448188a83d1cffd3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied02.wav using Guid(dd5867e9d3c988c448188a83d1cffd3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66951e4e9415746a75988a1f3a7b7415') in 0.047735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied04.wav
+  artifactKey: Guid(200f0824669da4648aee2536a5888717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied04.wav using Guid(200f0824669da4648aee2536a5888717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9c78edb4bf797f22e7a0ed1a7f40c88') in 0.042777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied06.wav
+  artifactKey: Guid(accb78cfcfaf85d4191780b8196b52b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied06.wav using Guid(accb78cfcfaf85d4191780b8196b52b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b90f56dd264aebe75dce84b24c9b96db') in 0.080791 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied10.wav
+  artifactKey: Guid(efd8e1e3d9c7cd4459cb6ea67cd94d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied10.wav using Guid(efd8e1e3d9c7cd4459cb6ea67cd94d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bac1a5741fdfb9d3c68ab6cb4d6ecb6') in 0.116246 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied13.wav
+  artifactKey: Guid(b0417e4164c06b44cb2c750dd24d0c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied13.wav using Guid(b0417e4164c06b44cb2c750dd24d0c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7d44edeb39616488329c197b77336d1') in 0.053102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied16.wav
+  artifactKey: Guid(8353b917f4142bd4e9fbee1ec83565eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied16.wav using Guid(8353b917f4142bd4e9fbee1ec83565eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38141a8aa06a202d64321e7014d26e3c') in 0.063526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied22.wav
+  artifactKey: Guid(6429745041c3e44469ca1ec29989a22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied22.wav using Guid(6429745041c3e44469ca1ec29989a22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbd0cf3139387fddea1b555cb80f5286') in 0.074002 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied24.wav
+  artifactKey: Guid(d83a7de599a2dea4d8ea3bb4cf95197e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied24.wav using Guid(d83a7de599a2dea4d8ea3bb4cf95197e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5720fc81e84479f8a0b830d5b1ccf99') in 0.032217 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied28.wav
+  artifactKey: Guid(810a84541721f964c9dc34a161b81891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied28.wav using Guid(810a84541721f964c9dc34a161b81891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd328b39f241b437533cfc5dcdb73440d') in 0.025682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied14.wav
+  artifactKey: Guid(3e32e4c3ff6471d4cac00bf8be08b81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied14.wav using Guid(3e32e4c3ff6471d4cac00bf8be08b81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4092294c4b44471e5c217d86dc680f5') in 0.055617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied11.wav
+  artifactKey: Guid(72d36cd287368a547bbcbfce02c72d8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied11.wav using Guid(72d36cd287368a547bbcbfce02c72d8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c65e3a32738dca8f2f0fccaeced810') in 0.061739 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied17.wav
+  artifactKey: Guid(c3ed326929641fb4c92e391d0d99d08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied17.wav using Guid(c3ed326929641fb4c92e391d0d99d08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc0c7fafcb747ab6d5d4dd9ebe336907') in 0.079703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied33.wav
+  artifactKey: Guid(53f7d21f46d0ef841b6f19850f9982f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied33.wav using Guid(53f7d21f46d0ef841b6f19850f9982f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eeb7e39f9419886eabd15d26d1c2777') in 0.066547 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied25.wav
+  artifactKey: Guid(514c2f9e18c32684ea103bcff1e38691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied25.wav using Guid(514c2f9e18c32684ea103bcff1e38691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '421750fbd28aa8317e91b067db0553cd') in 0.200890 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002430 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied27.wav
+  artifactKey: Guid(bbb10b8cc4e6dfd40b8279afa1dbf69e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied27.wav using Guid(bbb10b8cc4e6dfd40b8279afa1dbf69e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216accf56cd5801483800f43758e89c4') in 0.042250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied32.wav
+  artifactKey: Guid(90c9f59ac7528ed489cd0b2bd35832fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/AccessDenied/8BitRetroSFXPack1_Contemporary_AccessDenied32.wav using Guid(90c9f59ac7528ed489cd0b2bd35832fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b730b032e00847acccc0147dae3edd') in 0.047380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 14.343138 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Boss/8BitRetroSFXPack1_Contemporary_Boss02.wav
+  artifactKey: Guid(542110e82a89fd34697edf72cb3f9019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Boss/8BitRetroSFXPack1_Contemporary_Boss02.wav using Guid(542110e82a89fd34697edf72cb3f9019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b4214643dd94e13de6027e9ff1d8ae') in 0.022640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Boss/8BitRetroSFXPack1_Contemporary_Boss04.wav
+  artifactKey: Guid(cbfb108392845eb478c26d949cc96c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Boss/8BitRetroSFXPack1_Contemporary_Boss04.wav using Guid(cbfb108392845eb478c26d949cc96c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef54c9016dd6454976a0e5621b6fe90') in 0.052312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Boss/8BitRetroSFXPack1_Contemporary_Boss06.wav
+  artifactKey: Guid(2543a2624e9bc4049b1737965c41e77d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Boss/8BitRetroSFXPack1_Contemporary_Boss06.wav using Guid(2543a2624e9bc4049b1737965c41e77d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '826a291dbf59b46c58e0d4e279263ef5') in 0.051309 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.659457 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp02.wav
+  artifactKey: Guid(d2b77f169332883419eedbc77f35a8dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp02.wav using Guid(d2b77f169332883419eedbc77f35a8dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1cbb7a889136abbd78a8d70275071a3') in 0.074415 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp06.wav
+  artifactKey: Guid(9ad195cc71b12d14d94673cb2cedbe1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp06.wav using Guid(9ad195cc71b12d14d94673cb2cedbe1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c76c0f5732cabbfcc29cd0b1fe8addde') in 0.044114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp08.wav
+  artifactKey: Guid(d4355e54f212f554d98d72a088d81082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp08.wav using Guid(d4355e54f212f554d98d72a088d81082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c64b6ac34ef1b4555cbc925d8f0590') in 0.064337 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp10.wav
+  artifactKey: Guid(92eeffe5e5b7ee846b466b0c7b111be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp10.wav using Guid(92eeffe5e5b7ee846b466b0c7b111be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d55392af547738866879de822b4016f') in 0.081541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp15.wav
+  artifactKey: Guid(86da84e4d930e0848a0b248ee14e665e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp15.wav using Guid(86da84e4d930e0848a0b248ee14e665e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd319e9bf8102dbdc028dbbf6960c60c7') in 0.033497 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp16.wav
+  artifactKey: Guid(2f70b7ea814cf334383ffc73f7ed4725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp16.wav using Guid(2f70b7ea814cf334383ffc73f7ed4725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a2e569f7f6c6e233c25fd7418f65278') in 0.052481 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp20.wav
+  artifactKey: Guid(5416f031da2c9e24497ca4daafbceda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp20.wav using Guid(5416f031da2c9e24497ca4daafbceda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f45d8cad47de7de947f510aedae9d7cb') in 0.075995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp25.wav
+  artifactKey: Guid(b32652541b3c3f84a803b846def8593b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp25.wav using Guid(b32652541b3c3f84a803b846def8593b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bff9621c0d0962f66b8a2cc74e6cc0e') in 0.032431 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp17.wav
+  artifactKey: Guid(a4541b069b258374a96abbe937a63263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp17.wav using Guid(a4541b069b258374a96abbe937a63263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7de0ff79af61f3147e1c6b28e6742370') in 0.065285 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp29.wav
+  artifactKey: Guid(ef8ffb7a36d14ad44a3f7b65ffa9f669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp29.wav using Guid(ef8ffb7a36d14ad44a3f7b65ffa9f669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c666df40912c335e33a63eca35473d8') in 0.059078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp33.wav
+  artifactKey: Guid(20e81b0fcc8797743beb7e74e8cac502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp33.wav using Guid(20e81b0fcc8797743beb7e74e8cac502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e055b3c03a38d578c1c30c9be2e3b0') in 0.041276 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp32.wav
+  artifactKey: Guid(9c25df03b890ce9489b3767381582dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp32.wav using Guid(9c25df03b890ce9489b3767381582dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0bd67818c6e5b70ba329df7f15cb5e8') in 0.073800 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp30.wav
+  artifactKey: Guid(ce669262b21e36c40bee0205f1fd28b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp30.wav using Guid(ce669262b21e36c40bee0205f1fd28b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b216641caaabf83cf45be328c1e02dd8') in 0.026877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp12.wav
+  artifactKey: Guid(5e9744dd3bea57844a622b5ffe901909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp12.wav using Guid(5e9744dd3bea57844a622b5ffe901909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f36570b8694f2685e5a98166110bbfa7') in 0.056584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp05.wav
+  artifactKey: Guid(d179fa0248fad1e46990c5d986762624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp05.wav using Guid(d179fa0248fad1e46990c5d986762624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdbbb5b0a453101182ed0a99241d3de7') in 0.034297 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp23.wav
+  artifactKey: Guid(0257e492540cd254fa5fec82c784ad3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PowerUp/8BitRetroSFXPack1_Contemporary_PowerUp23.wav using Guid(0257e492540cd254fa5fec82c784ad3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21a1dd3d5e55bc454664a57c1f542d5e') in 0.048375 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.370173 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PunchKick/8BitRetroSFXPack1_Contemporary_KickPunch05.wav
+  artifactKey: Guid(b17c096f3f100814ab882b5801499d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PunchKick/8BitRetroSFXPack1_Contemporary_KickPunch05.wav using Guid(b17c096f3f100814ab882b5801499d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324fbb4c70bf3937c3b21eead1e355a3') in 0.048854 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PunchKick/8BitRetroSFXPack1_Contemporary_KickPunch07.wav
+  artifactKey: Guid(327432374af1f3f4787f6d429a16301d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PunchKick/8BitRetroSFXPack1_Contemporary_KickPunch07.wav using Guid(327432374af1f3f4787f6d429a16301d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69bd1a6a77c0c3015bdb2894de3193f0') in 0.046103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PunchKick/8BitRetroSFXPack1_Contemporary_KickPunch12.wav
+  artifactKey: Guid(638e786a25a1ada45946569051074264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PunchKick/8BitRetroSFXPack1_Contemporary_KickPunch12.wav using Guid(638e786a25a1ada45946569051074264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0df4244208e4f9ce9fc997e5c57ce7e2') in 0.039222 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PunchKick/8BitRetroSFXPack1_Contemporary_KickPunch09.wav
+  artifactKey: Guid(b47ec0a469aa815419c2b52041aaf4c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/PunchKick/8BitRetroSFXPack1_Contemporary_KickPunch09.wav using Guid(b47ec0a469aa815419c2b52041aaf4c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e969dc510b2073188e73a131bd11862a') in 0.031007 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.912041 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/QuestAccepted/8BitRetroSFXPack1_Contemporary_QuestAccepted02.wav
+  artifactKey: Guid(9a3a95487a4706c4aa971daf82a5cb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/QuestAccepted/8BitRetroSFXPack1_Contemporary_QuestAccepted02.wav using Guid(9a3a95487a4706c4aa971daf82a5cb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e791083a3aacd0c625806fe2e1275a24') in 0.042898 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.016580 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/QuestAccepted/8BitRetroSFXPack1_Contemporary_QuestAccepted04.wav
+  artifactKey: Guid(63177f4f700443342b09a2e66cc2bf6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/QuestAccepted/8BitRetroSFXPack1_Contemporary_QuestAccepted04.wav using Guid(63177f4f700443342b09a2e66cc2bf6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c2c87f2706d382f070e05b50c1e4da7') in 0.043082 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.004490 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/QuestAccepted/8BitRetroSFXPack1_Contemporary_QuestAccepted06.wav
+  artifactKey: Guid(532f415b607afd74caa137f0a6bc4721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/QuestAccepted/8BitRetroSFXPack1_Contemporary_QuestAccepted06.wav using Guid(532f415b607afd74caa137f0a6bc4721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5febdaac52d68bd55a4aad43f012aad1') in 0.039530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/QuestAccepted/8BitRetroSFXPack1_Contemporary_QuestAccepted08.wav
+  artifactKey: Guid(46ef3db8443f6534da0a4d6d79d8a695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/QuestAccepted/8BitRetroSFXPack1_Contemporary_QuestAccepted08.wav using Guid(46ef3db8443f6534da0a4d6d79d8a695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '316f118e5453b73094667d07aa82f271') in 0.044685 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.657658 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/QuestCompleted/8BitRetroSFXPack1_Contemporary_QuestCompleted02.wav
+  artifactKey: Guid(b2c601b9647cd414caf7d391129f35fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/QuestCompleted/8BitRetroSFXPack1_Contemporary_QuestCompleted02.wav using Guid(b2c601b9647cd414caf7d391129f35fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e137de3d6b2d3f2c54693d96efbd9f') in 0.069156 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/QuestCompleted/8BitRetroSFXPack1_Contemporary_QuestCompleted04.wav
+  artifactKey: Guid(3988e7f886847ae43adaa32382d422f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/QuestCompleted/8BitRetroSFXPack1_Contemporary_QuestCompleted04.wav using Guid(3988e7f886847ae43adaa32382d422f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ba393f0c07d221897f7dc7d05d7d725') in 0.043371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.446586 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun02.wav
+  artifactKey: Guid(aee36d7dca73e6842bcaeae8972e0411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun02.wav using Guid(aee36d7dca73e6842bcaeae8972e0411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8293931d16eef9c7f7668c8c0b39848c') in 0.052708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun05.wav
+  artifactKey: Guid(fe0fb3b97a06ded4bbbb606334d36bbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun05.wav using Guid(fe0fb3b97a06ded4bbbb606334d36bbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '732606bf6dcfee8922650fc955758ffb') in 0.030144 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun07.wav
+  artifactKey: Guid(29e24a692868083419e3fa18f33cb603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun07.wav using Guid(29e24a692868083419e3fa18f33cb603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '235a41b98f6144d30bbb988acbcd7c32') in 0.037474 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun04.wav
+  artifactKey: Guid(ee7b30777c0c5ae4eac25bb81e02b898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun04.wav using Guid(ee7b30777c0c5ae4eac25bb81e02b898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec23e855e9b66fe5a375184372e9e33a') in 0.038964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun09.wav
+  artifactKey: Guid(d3b464dd2b87efb4fac095903b8ce75b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun09.wav using Guid(d3b464dd2b87efb4fac095903b8ce75b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bdf8c38c37d6bf40665aab351c2f02d') in 0.033380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun13.wav
+  artifactKey: Guid(902978af54b750f4f9827f231d8049b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun13.wav using Guid(902978af54b750f4f9827f231d8049b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40413c4b819f7702d3f9df8627b06c4a') in 0.070368 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun17.wav
+  artifactKey: Guid(67178446235181b4a8f918fde984fe25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun17.wav using Guid(67178446235181b4a8f918fde984fe25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2687c3ab6ac11dc5694e6e2d231a45ac') in 0.029866 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun21.wav
+  artifactKey: Guid(7733419b1dd1b034da72a3ac8ef85b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun21.wav using Guid(7733419b1dd1b034da72a3ac8ef85b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c66d06996c58fc32a686aa8657ba9755') in 0.036286 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun14.wav
+  artifactKey: Guid(878dca4466a9f9a4da00297f035da896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun14.wav using Guid(878dca4466a9f9a4da00297f035da896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '354ca6cc3a6edbfa07d3e903ed3545b2') in 0.030695 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun18.wav
+  artifactKey: Guid(a2b6d48b2398a2c4492eafc97b33c620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun18.wav using Guid(a2b6d48b2398a2c4492eafc97b33c620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0829fc4dcbb4e16f730abab9c5d9624') in 0.032212 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun16.wav
+  artifactKey: Guid(a2ad1a0453d201e4686fc831aa51862d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun16.wav using Guid(a2ad1a0453d201e4686fc831aa51862d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c15df5e532e95e44b5edf6a9e67deedc') in 0.040138 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun28.wav
+  artifactKey: Guid(42323a02d7f49214ab3c1bc137ce34c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun28.wav using Guid(42323a02d7f49214ab3c1bc137ce34c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59bca327a4304f7fe20241159e0bd361') in 0.032115 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun32.wav
+  artifactKey: Guid(46ee5e65987cee64ab8f86f99b30fb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun32.wav using Guid(46ee5e65987cee64ab8f86f99b30fb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e21d48e718cf6e3b05fdf38819b5b5d') in 0.026856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun34.wav
+  artifactKey: Guid(af50272457cfa264dacebec8de14c36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun34.wav using Guid(af50272457cfa264dacebec8de14c36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d16e84511d11063cf88517a2abe762a') in 0.055492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun29.wav
+  artifactKey: Guid(d6165d9a20e400645b3f9df5de144ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun29.wav using Guid(d6165d9a20e400645b3f9df5de144ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4fdf0e4647f99ba6c560e2d903372f4') in 0.054014 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun38.wav
+  artifactKey: Guid(37e5bba82c6b04e40b4691a5097f77d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun38.wav using Guid(37e5bba82c6b04e40b4691a5097f77d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3e80e83feac14af6d164af72fe7be58') in 0.025584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun42.wav
+  artifactKey: Guid(4e8a857c88c2dcf499d4b6e9674dfc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun42.wav using Guid(4e8a857c88c2dcf499d4b6e9674dfc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e620430ebc1645cc2510ef7952f2c9b7') in 0.045637 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun44.wav
+  artifactKey: Guid(9ae6ccc43fd41a7458b004157bc91b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun44.wav using Guid(9ae6ccc43fd41a7458b004157bc91b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '453c4184c1604045e0fedad2c131b44b') in 0.035376 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun47.wav
+  artifactKey: Guid(bc14652503c1a7542bca341329cf24b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun47.wav using Guid(bc14652503c1a7542bca341329cf24b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0af62bcdee246fd3fce8d88c794ccc57') in 0.041422 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun45.wav
+  artifactKey: Guid(2a1fb1a5b2d6e4d47ac0da0d1c4ba801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun45.wav using Guid(2a1fb1a5b2d6e4d47ac0da0d1c4ba801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '466378e289beb8194659b60253544e21') in 0.057169 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun46.wav
+  artifactKey: Guid(3d654d22e4f45f043ae945515f6efd3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun46.wav using Guid(3d654d22e4f45f043ae945515f6efd3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b44feb3a3b5da57b9ea02e4a02d3c5') in 0.043611 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun48.wav
+  artifactKey: Guid(03c74906a33d94449a221ed4dc9fa2be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun48.wav using Guid(03c74906a33d94449a221ed4dc9fa2be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3faaf6ae2583f0bb404838b33cbc9ca5') in 0.042245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun15.wav
+  artifactKey: Guid(4d0130fa2877b9c4ea2fe1ea0000aeba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Weapons/Gun/8BitRetroSFXPack1_Contemporary_Weapon_Gun15.wav using Guid(4d0130fa2877b9c4ea2fe1ea0000aeba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eaffae16148461be5a52a6d4095ccc5') in 0.068607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7031.843707 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting02.wav
+  artifactKey: Guid(cecf5304d22f72e41a4e900713615c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting02.wav using Guid(cecf5304d22f72e41a4e900713615c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dacdd46c01c3c7d8b0d3bfef40d815c') in 0.057329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting03.wav
+  artifactKey: Guid(5a07e167109d5124d9b2d28bd0a8938b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting03.wav using Guid(5a07e167109d5124d9b2d28bd0a8938b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee34363feffba2a11980056da08ea55') in 0.051831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting07.wav
+  artifactKey: Guid(9bd79bfcc914b574db2c5371cab8960f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting07.wav using Guid(9bd79bfcc914b574db2c5371cab8960f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4783a9a7a264e9228b13dd93ec1a594') in 0.032122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting08.wav
+  artifactKey: Guid(84ac5b649488e614697f68d6192622ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting08.wav using Guid(84ac5b649488e614697f68d6192622ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e4196b0dcd5416b61ba0aa0e4d473df') in 0.046636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting10.wav
+  artifactKey: Guid(4e34f4784335dbe4ea50284897f1de11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting10.wav using Guid(4e34f4784335dbe4ea50284897f1de11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3276e3565f82589d9b18804508f3bc1') in 0.049738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting14.wav
+  artifactKey: Guid(b890c8bd1bb00cb42a993890b1e66315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting14.wav using Guid(b890c8bd1bb00cb42a993890b1e66315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c5071e52d891bb3df6306fde779ea4d') in 0.059984 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting16.wav
+  artifactKey: Guid(050d50b7f5a6afb439dd0a7c3ec5b1af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting16.wav using Guid(050d50b7f5a6afb439dd0a7c3ec5b1af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aaf4ba5e7873105dd67b94e42739dfb') in 0.048642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting15.wav
+  artifactKey: Guid(6f31be6318e99ae45b97836dea200d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting15.wav using Guid(6f31be6318e99ae45b97836dea200d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f21610b9dd5035867fcfcf8b3bb45a5') in 0.052606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting20.wav
+  artifactKey: Guid(9a72b72d41a20ba409e8e31aac20f4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting20.wav using Guid(9a72b72d41a20ba409e8e31aac20f4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be9279969d0b9fd08048505b4a3d09ff') in 0.042958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting26.wav
+  artifactKey: Guid(e2e17480223d3d34aab555801448adfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting26.wav using Guid(e2e17480223d3d34aab555801448adfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c70bb54be14bfbb42c8d2910e5a3ea5') in 0.051860 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting18.wav
+  artifactKey: Guid(def6af60b1919a04e8d815bdbabe7a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting18.wav using Guid(def6af60b1919a04e8d815bdbabe7a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72f1d1826d6eea23ca365c1da0697d9f') in 0.072310 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting17.wav
+  artifactKey: Guid(7651169893b8fdd4092054c5096db2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting17.wav using Guid(7651169893b8fdd4092054c5096db2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f806b798cab12b889f66a5e38c0dbc70') in 0.048813 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting22.wav
+  artifactKey: Guid(238ae43aa4efbf241960a9e4781cc0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting22.wav using Guid(238ae43aa4efbf241960a9e4781cc0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c3753f2c6fd8ce8bb0bd64dec0053a5') in 0.072592 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting13.wav
+  artifactKey: Guid(b118f37930c159540bd9e8a261b3233c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameStarting/8BitRetroSFXPack1_Contemporary_GameStarting13.wav using Guid(b118f37930c159540bd9e8a261b3233c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84baac9f39726032d130fda9bd28d026') in 0.039004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 12.603359 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp02.wav
+  artifactKey: Guid(2963b8f0509f1b14091115871f3db100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp02.wav using Guid(2963b8f0509f1b14091115871f3db100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6d6d99e33bce415ec4e625fa84ab840') in 0.054702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp05.wav
+  artifactKey: Guid(91a3f79bc173b34498661839b3fcea97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp05.wav using Guid(91a3f79bc173b34498661839b3fcea97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10168e50dd748510b3e49a3ebab9b163') in 0.051682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp07.wav
+  artifactKey: Guid(3875747c83ada114c88a0b090555b6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp07.wav using Guid(3875747c83ada114c88a0b090555b6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac557480490ffb0ee6da0cac3f0642bb') in 0.053935 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp08.wav
+  artifactKey: Guid(6ab1ed3cd69fb674cb87a24ec95401a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp08.wav using Guid(6ab1ed3cd69fb674cb87a24ec95401a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2154b35f4b9dfb1d89133b5fb50e8e0') in 0.033701 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp12.wav
+  artifactKey: Guid(e6ea8772bbd3bd6409d022e22d2accdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp12.wav using Guid(e6ea8772bbd3bd6409d022e22d2accdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3565d8f3d6b241cf672f21ae47746226') in 0.037364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp14.wav
+  artifactKey: Guid(7bc165b4444b67140a85fced57acb4df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp14.wav using Guid(7bc165b4444b67140a85fced57acb4df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '744ce03450b62506fdade76dd1d99389') in 0.028602 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp10.wav
+  artifactKey: Guid(cf3b7fd2aa9f8384f866278497bcee16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp10.wav using Guid(cf3b7fd2aa9f8384f866278497bcee16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06f35c81d461823d6a63431ab62fbcf5') in 0.068805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp22.wav
+  artifactKey: Guid(9138a57f67f3f964c923012ec21bc480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp22.wav using Guid(9138a57f67f3f964c923012ec21bc480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73f8c318c213845a3d5e6be666fba76a') in 0.035722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp21.wav
+  artifactKey: Guid(0258c1e20f03eba41a8a17d26c919eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp21.wav using Guid(0258c1e20f03eba41a8a17d26c919eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '049e574d557f9530240b7cb1bb04fa0a') in 0.035761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp25.wav
+  artifactKey: Guid(5bea8d73d5ae56540804f855f97e0ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp25.wav using Guid(5bea8d73d5ae56540804f855f97e0ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f4bc2749cd3a75bbe6f5edf5fd39ac4') in 0.022801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp27.wav
+  artifactKey: Guid(f3d11bd3d85948445aa8e9c9dd9cd5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp27.wav using Guid(f3d11bd3d85948445aa8e9c9dd9cd5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51b0b3a451793c786257c559fdbd38cb') in 0.029976 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp28.wav
+  artifactKey: Guid(01bbbf7d9192d1c44ba96abe2d790616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp28.wav using Guid(01bbbf7d9192d1c44ba96abe2d790616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5db84aa5c61b519c78aa6fc5e6d4a56') in 0.020374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp17.wav
+  artifactKey: Guid(5d06a12f1e5158248b74b59a36e5e576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp17.wav using Guid(5d06a12f1e5158248b74b59a36e5e576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d963869bf5d627c01f699c360b6c5f7') in 0.032510 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp32.wav
+  artifactKey: Guid(8e93cf49c2fd0a1459fc8b2fd56531f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp32.wav using Guid(8e93cf49c2fd0a1459fc8b2fd56531f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549bcf92eddda15c5875f96142532ba1') in 0.035324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp34.wav
+  artifactKey: Guid(2c193f68d6986ba45aaeb544b25d10cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp34.wav using Guid(2c193f68d6986ba45aaeb544b25d10cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11aa6106d74c4c37a49d4df0d4dee80f') in 0.087720 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp04.wav
+  artifactKey: Guid(7f59ba364846ecc449bc03f96d0d4d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp04.wav using Guid(7f59ba364846ecc449bc03f96d0d4d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36d971947776af6e17ecf5759f837293') in 0.030752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp20.wav
+  artifactKey: Guid(3972643ca013cde4f97b858bda3535a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp20.wav using Guid(3972643ca013cde4f97b858bda3535a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ee60895495ba70f27304a627dda777') in 0.053070 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp31.wav
+  artifactKey: Guid(e6641eae41458bd488c6c78d7fab04e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp31.wav using Guid(e6641eae41458bd488c6c78d7fab04e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7892aae4c2f1d1019a8e14691289fef3') in 0.026123 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp36.wav
+  artifactKey: Guid(08b65e87faf9ab54fbba3e9a213d23f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp36.wav using Guid(08b65e87faf9ab54fbba3e9a213d23f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42581fdd7e39530892e15421beff9ddb') in 0.032771 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 31.714800 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver02.wav
+  artifactKey: Guid(b7ebb16172ce96d4384ed4a5d914fb32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver02.wav using Guid(b7ebb16172ce96d4384ed4a5d914fb32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6070b4b1accb2d60e95d28d70b86d999') in 0.039787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.027241 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver04.wav
+  artifactKey: Guid(3ccffe7b68d79364dae3840c7d394283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver04.wav using Guid(3ccffe7b68d79364dae3840c7d394283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24a8a95524df298e95b8beb6d3810427') in 0.024877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver06.wav
+  artifactKey: Guid(61c2387b4860be64ab9c84147d2ed198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver06.wav using Guid(61c2387b4860be64ab9c84147d2ed198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8745d638e2626596b1c9300a1c327b04') in 0.027898 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver07.wav
+  artifactKey: Guid(d2eb660a8434ad048bd97bdf0214d040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver07.wav using Guid(d2eb660a8434ad048bd97bdf0214d040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0fce5bac932cf0442a19abf794b3f2c') in 0.021625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver10.wav
+  artifactKey: Guid(cb3eaf202446a36479000762c7fb5785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver10.wav using Guid(cb3eaf202446a36479000762c7fb5785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cc273892dcb27a485fce288e00b6bef') in 0.049088 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver09.wav
+  artifactKey: Guid(4f2632e1ad1c02b408cd7bc62e685c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver09.wav using Guid(4f2632e1ad1c02b408cd7bc62e685c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '340e79a3f3824faee87557312508b1e6') in 0.034873 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver16.wav
+  artifactKey: Guid(9dd98be5874d2c94b9bb17a77429a7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver16.wav using Guid(9dd98be5874d2c94b9bb17a77429a7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2f7ef6216fb7f01f17af04144598939') in 0.036068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver18.wav
+  artifactKey: Guid(5b3a2745539d9e846a07116785c7cd22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver18.wav using Guid(5b3a2745539d9e846a07116785c7cd22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe54f0ea49d4f1825e236d9735877d72') in 0.022486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver11.wav
+  artifactKey: Guid(564e72a5a5b2baa4293c4108223c964c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver11.wav using Guid(564e72a5a5b2baa4293c4108223c964c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '797e9673aae8d699500681d392d4ac38') in 0.038031 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver15.wav
+  artifactKey: Guid(1a49e83735ccb70439b3f07b034ffe48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/GameOver/8BitRetroSFXPack1_Contemporary_GameOver15.wav using Guid(1a49e83735ccb70439b3f07b034ffe48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66b53772364a9851d3cf74150f35ca3') in 0.053037 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 52.424474 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_Full Tail - 2.wav
+  artifactKey: Guid(3e6820dff333f7540a9e08f2fa891731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_Full Tail - 2.wav using Guid(3e6820dff333f7540a9e08f2fa891731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0a5ddcca0191b9d6631879a2f4f540f') in 0.067185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_Full Tail - 5.wav
+  artifactKey: Guid(73b4d277e71e09a449f7c1916ca79582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_Full Tail - 5.wav using Guid(73b4d277e71e09a449f7c1916ca79582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0072ada31f1c413fd31a60ef94731547') in 0.030407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_Full Tail - 8.wav
+  artifactKey: Guid(1db3afa671f11c74a9692c6b9b0a37d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_Full Tail - 8.wav using Guid(1db3afa671f11c74a9692c6b9b0a37d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c812e8a45edb0e10f157794300cdfa82') in 0.033303 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_Full Tail - 10.wav
+  artifactKey: Guid(a9f9ce4d9f59c494daa38505efc63e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_Full Tail - 10.wav using Guid(a9f9ce4d9f59c494daa38505efc63e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c549f23b75cce6aee70c471d462e5d22') in 0.021511 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_Full Tail - 9.wav
+  artifactKey: Guid(44100589dbc29304282f572efd2de954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_Full Tail - 9.wav using Guid(44100589dbc29304282f572efd2de954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ae91fd6e3e739e02b55e5d5e6635586') in 0.036519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_No Tail - 2.wav
+  artifactKey: Guid(c27b1101cccbde54996f883c74346077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_No Tail - 2.wav using Guid(c27b1101cccbde54996f883c74346077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70bf355a977cd314ceb97e073914c5a6') in 0.023343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_Full Tail - 3.wav
+  artifactKey: Guid(357ff6dc74d3e4c489612a6848e77594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_Full Tail - 3.wav using Guid(357ff6dc74d3e4c489612a6848e77594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46c4a0c05ca29aa2f0113c1f12b9171b') in 0.040322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_No Tail - 5.wav
+  artifactKey: Guid(8cb8e43bc236cde4593f52f1fcdab4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_No Tail - 5.wav using Guid(8cb8e43bc236cde4593f52f1fcdab4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a27959d0d99374e4504f41b7d4ab685') in 0.018635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_No Tail - 7.wav
+  artifactKey: Guid(8339ded74716ae54db62f419e23cb32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_No Tail - 7.wav using Guid(8339ded74716ae54db62f419e23cb32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '464a663c0a83b8f9ac347eaca6b6f0b3') in 0.023876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_No Tail - 8.wav
+  artifactKey: Guid(c343674f9c7406340909d7c56c16239d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Single Shot_No Tail - 8.wav using Guid(c343674f9c7406340909d7c56c16239d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '370b64ed97491e3ffccd63762658415e') in 0.029420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Spray FX_Full Tail 1.1.wav
+  artifactKey: Guid(cadde2fa1bb8e7d4da4734fb59074127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Spray FX_Full Tail 1.1.wav using Guid(cadde2fa1bb8e7d4da4734fb59074127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c91c0d65a4ff5862b0b42fdf29ee1a1') in 0.026208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Spray FX_Full Tail 2.2.wav
+  artifactKey: Guid(d53124540d9ee004cadf4a6e6c871080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Spray FX_Full Tail 2.2.wav using Guid(d53124540d9ee004cadf4a6e6c871080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03f684ba93410615c9ec404fef8809fb') in 0.028036 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Spray FX_Full Tail 3.2.wav
+  artifactKey: Guid(96d35ebc33a1db046aca8616d082f60e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Spray FX_Full Tail 3.2.wav using Guid(96d35ebc33a1db046aca8616d082f60e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1918bbcfa36b3f920d795c8f8ae0f0f') in 0.042879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Spray FX_No Tail 3.1.wav
+  artifactKey: Guid(373f3a55f6a1fc74f87776b61ad13f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Spray FX_No Tail 3.1.wav using Guid(373f3a55f6a1fc74f87776b61ad13f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cceca874791ed16e93fc43b76b64b078') in 0.030667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Spray FX_No Tail 3.2.wav
+  artifactKey: Guid(23c67f4eedce014448bd4bf577087fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Spray FX_No Tail 3.2.wav using Guid(23c67f4eedce014448bd4bf577087fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e5b4252ad04893684d2b45a5ebdce8') in 0.026055 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Spray FX_Full Tail 2.1.wav
+  artifactKey: Guid(2c67e1471c2db494aa24eae3577b4fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 28/FG 28_Spray FX_Full Tail 2.1.wav using Guid(2c67e1471c2db494aa24eae3577b4fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18732a72410d61cc819fb0a36e21b9cf') in 0.034482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.196027 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_Full Tail 2.wav
+  artifactKey: Guid(cf89fb1cdf5a4cf4c88e65bed5cb5221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_Full Tail 2.wav using Guid(cf89fb1cdf5a4cf4c88e65bed5cb5221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '700700653c192e12d090887a8a4047b7') in 0.039230 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_Full Tail 4.wav
+  artifactKey: Guid(b7fe2e205c69c3e49944a6509afb6183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_Full Tail 4.wav using Guid(b7fe2e205c69c3e49944a6509afb6183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90e4a92710438b2a37dbe817955f54e6') in 0.037907 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_Full Tail 6.wav
+  artifactKey: Guid(8a9bd52dff0bc8546a7ccbc50ad6e7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_Full Tail 6.wav using Guid(8a9bd52dff0bc8546a7ccbc50ad6e7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd85fd1d326ab9131ad1c79c782a4f9b') in 0.059128 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_Full Tail 9.wav
+  artifactKey: Guid(148cbbf410d8c274da86b29886e886be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_Full Tail 9.wav using Guid(148cbbf410d8c274da86b29886e886be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '834f09a71b248278ca423a19154ae43a') in 0.030380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003341 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_No Tail - 1.wav
+  artifactKey: Guid(7e7228cc84d34cf4481e197806c62126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_No Tail - 1.wav using Guid(7e7228cc84d34cf4481e197806c62126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0acc0b5e95eb20ee67cbd00dc4b105e') in 0.022228 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_No Tail - 3.wav
+  artifactKey: Guid(2af933f42e9dd5a41bdb9b71d50e05d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_No Tail - 3.wav using Guid(2af933f42e9dd5a41bdb9b71d50e05d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73ad21e82096a6318c9b82ee94905c66') in 0.020069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_No Tail - 4.wav
+  artifactKey: Guid(f324ce9e7156218409e27d4cd367516e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_No Tail - 4.wav using Guid(f324ce9e7156218409e27d4cd367516e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '434d2f7f0361256df9e1571fb1ffe0c4') in 0.024442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.021063 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_No Tail - 6.wav
+  artifactKey: Guid(ddaff694c07a2c247bb39974b5b18a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_No Tail - 6.wav using Guid(ddaff694c07a2c247bb39974b5b18a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c967a2f71f22fae52b5bb1da2ee2afae') in 0.035234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_No Tail - 10.wav
+  artifactKey: Guid(ca5a803de50c0a74ea59fca2f2365f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_No Tail - 10.wav using Guid(ca5a803de50c0a74ea59fca2f2365f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90069f374bc4a87743f862718b8e305e') in 0.031478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Spray FX_Full Tail 1.2.wav
+  artifactKey: Guid(63a4907857c91f34dadb1cab6e1f30d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Spray FX_Full Tail 1.2.wav using Guid(63a4907857c91f34dadb1cab6e1f30d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8368cc8cf3ff53cf7977707ecc29c3c') in 0.031296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Spray FX_Full Tail 2.2.wav
+  artifactKey: Guid(1652a76f26f459447a5f49eb0ce60b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Spray FX_Full Tail 2.2.wav using Guid(1652a76f26f459447a5f49eb0ce60b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f773866a778e1667db77381323466137') in 0.041878 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Spray FX_No Tail 2.1.wav
+  artifactKey: Guid(cacbebe9891e4d645a50a9fec780002a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Spray FX_No Tail 2.1.wav using Guid(cacbebe9891e4d645a50a9fec780002a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f68e678c46a99d7908d0f8eab4538eb') in 0.022983 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Spray FX_No Tail 3.1.wav
+  artifactKey: Guid(323f9eb3b3592bc4da3798876748aabd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Spray FX_No Tail 3.1.wav using Guid(323f9eb3b3592bc4da3798876748aabd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa424373873dff38be2361be02bfd2fe') in 0.035408 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Spray FX_No Tail 3.2.wav
+  artifactKey: Guid(658efe7e1066efc4fb43b3054f8462a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Spray FX_No Tail 3.2.wav using Guid(658efe7e1066efc4fb43b3054f8462a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ae3daa601e321516615521da0c7dd7') in 0.023047 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_No Tail - 9.wav
+  artifactKey: Guid(19942c82265cff34ab6ea9fdff29d246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Single Shot_No Tail - 9.wav using Guid(19942c82265cff34ab6ea9fdff29d246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5225898f2528b1f0828f0500097b15ae') in 0.039683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Spray FX_Full Tail 2.1.wav
+  artifactKey: Guid(2e5cc58d5c50a6849bfd16ab4449c2ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/03Bonus/Futuristic Guns Sound FX Pack 1/Futuristic Gun 2/FG 2_Spray FX_Full Tail 2.1.wav using Guid(2e5cc58d5c50a6849bfd16ab4449c2ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b9710ffa0982c2823cc067ddc5c65e2') in 0.036238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 854.640676 seconds.
+  path: Assets/May Genko/Retro Tracks by May Genko unity ver/2 gimme five and battle me WAV.wav
+  artifactKey: Guid(8afe66a3d535ace459b56f7b97e191dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/May Genko/Retro Tracks by May Genko unity ver/2 gimme five and battle me WAV.wav using Guid(8afe66a3d535ace459b56f7b97e191dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5bb2afc29c23de59dda1108455635c0') in 0.288818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/May Genko/Retro Tracks by May Genko unity ver/6 so this is what lost feels like WAV.wav
+  artifactKey: Guid(593a72e100a129545bb4ac86b3b92883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/May Genko/Retro Tracks by May Genko unity ver/6 so this is what lost feels like WAV.wav using Guid(593a72e100a129545bb4ac86b3b92883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9803ca38e123539d26790229dfe7b75f') in 0.474203 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2

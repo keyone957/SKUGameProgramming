@@ -10,7 +10,7 @@ using TMPro;
 
 public class CountDown : MonoBehaviour
 {
-public TMP_Text countdownText;
+    public TMP_Text countdownText;
     public float countdownTime = 3.0f; // 카운트다운 시간
 
     private void Start()
@@ -27,14 +27,14 @@ public TMP_Text countdownText;
         while (realTimeCountdown > 0)
         {
             countdownText.text = realTimeCountdown.ToString("0"); // 남은 시간을 텍스트로 표시
-            yield return new WaitForSecondsRealtime(1.0f); 
+            yield return new WaitForSecondsRealtime(1.0f);
             realTimeCountdown--;
         }
 
-        countdownText.text = "Go!"; 
-        yield return new WaitForSecondsRealtime(1.0f); 
+        countdownText.text = "Go!";
+        yield return new WaitForSecondsRealtime(1.0f);
 
-        countdownText.gameObject.SetActive(false); 
+        countdownText.gameObject.SetActive(false);
 
         Time.timeScale = 1;
     }
