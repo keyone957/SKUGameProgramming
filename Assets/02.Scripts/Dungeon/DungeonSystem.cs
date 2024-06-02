@@ -34,6 +34,7 @@ public class DungeonSystem : MonoBehaviour
         monsterCnt = monsterSpawnPoint.Length;
         AllSceneCanvas.instance.SetMonsterCnt(monsterCnt);
         InitializeDungeonScene();
+        StartCoroutine(SceneStartSequence());
     }
     private void Update()
     {
