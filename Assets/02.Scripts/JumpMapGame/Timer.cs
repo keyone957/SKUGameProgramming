@@ -18,16 +18,21 @@ public class Timer : MonoBehaviour
     // UI 요소들을 연결할 SerializedField 변수들
     [SerializeField] private Image UiFill; // 카운트 다운 시간을 시각적으로 나타내는 이미지
     [SerializeField] private TextMeshProUGUI UiText; // 카운트 다운 시간을 표시하는 TextMeshProUGUI 텍스트
+    [SerializeField] private Color warningColor = Color.red; // 남은 시간이 10초 미만일 때의 색상
 
     // 카운트 다운의 총 시간을 저장하는 변수
     public int Duration;
-
     // 남은 시간을 저장하는 변수
     public int remainingDuration;
+
+    private Color defaultColor; // 기본 색상을 저장하는 변수
+    private Color defaultTextColor; // 기본 텍스트 색상을 저장하는 변수
+    private bool isBlinking = false; // 깜빡임 효과 여부를 저장하는 변수
 
     // 스크립트가 시작될 때 호출되는 메서드
     private void Start()
     {
+        defaultColor = UiFill.color;
         // 카운트 다운을 시작하는 메서드 호출
         Being(Duration);
     }
@@ -51,6 +56,13 @@ public class Timer : MonoBehaviour
             UiText.text = $"{remainingDuration / 60:00} : {remainingDuration % 60:00}";
             // 이미지의 fillAmount를 시간의 경과에 따라 조절하여 시각적으로 표시
             UiFill.fillAmount = Mathf.InverseLerp(0, Duration, remainingDuration);
+
+            // 남은 시간이 10초 미만이고 깜빡임이 시작되지 않았다면 깜빡임 코루틴 시작
+            if (remainingDuration < 10 && !isBlinking)
+            {
+                StartCoroutine(BlinkWarning());
+            }
+
             // 남은 시간을 1초 감소
             remainingDuration--;
             // 1초 대기
@@ -72,5 +84,24 @@ public class Timer : MonoBehaviour
         // 시간초가 경과하면 해당 게임씬의 초기화면으로 회귀
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private IEnumerator BlinkWarning()
+    {
+        isBlinking = true;
+
+        while (remainingDuration > 0 && remainingDuration < 10)
+        {
+            UiFill.color = warningColor;
+            UiText.color = warningColor;
+            yield return new WaitForSeconds(0.5f);
+            UiFill.color = defaultColor;
+            UiText.color = defaultTextColor;
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        UiFill.color = defaultColor;
+        UiText.color = defaultTextColor;
+        isBlinking = false;
     }
 }
