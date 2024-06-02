@@ -4,13 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-// 팝업창 관리 및 초기 3초카운트 컴포넌트
-// 시작 시 팝업창 생성 및 설명. 시작버튼 누르면 3초뒤 게임씬 로드
-// 작성자 : 장현우
-// 수정자 : 장현우
-// 최종 수정일 : 2024-06-02
-
-public class GameStartManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public GameObject popupPanel;  // Panel 오브젝트
     public TextMeshProUGUI countdownText;  // 카운트다운 텍스트
@@ -32,33 +26,8 @@ public class GameStartManager : MonoBehaviour
     {
         if (!gameStarted)  // 게임이 시작되지 않았을 때만 실행
         {
-            StartCoroutine(StartCountdown());  // 카운트다운 시작
+            // JumpMapSystem으로 시작을 위임
+            JumpMapSystem.Instance.StartGame();
         }
-    }
-
-    IEnumerator StartCountdown()
-    {
-        popupPanel.SetActive(false);  // 팝업창을 비활성화
-        countdownText.gameObject.SetActive(true);  // 카운트다운 텍스트 활성화
-
-        for (int i = 3; i > 0; i--)
-        {
-            countdownText.text = i.ToString();  // 카운트다운 숫자 표시
-            yield return new WaitForSeconds(1);  // 1초 대기
-        }
-
-        countdownText.text = "Start!!";  // 카운트다운 완료 메시지
-        yield return new WaitForSeconds(1);  // 1초 대기
-
-        countdownText.gameObject.SetActive(false);  // 카운트다운 텍스트 비활성화
-
-        // 게임 시작 로직 추가
-        StartGame();
-    }
-
-    void StartGame()
-    {
-        gameStarted = true;  // 게임이 시작되었음을 표시
-        SceneManager.LoadScene("JumpMapBonus");
     }
 }
