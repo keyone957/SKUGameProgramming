@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //환경설정 위한 volume
+//playerprefab값 초기화
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-29
+// 최종 수정일 : 2024-06-04
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] private AudioSource _bgmSource = null;
@@ -31,6 +32,15 @@ public class SoundManager : MonoBehaviour
 
     private void Start()
     {
+        if (!PlayerPrefs.HasKey("bgmVolume"))
+        {
+            PlayerPrefs.SetString("bgmVolume", "1.0"); 
+        }
+        if (!PlayerPrefs.HasKey("soundVolume"))
+        {
+            PlayerPrefs.SetString("soundVolume", "1.0");
+        }
+
         _bgmSource.volume = float.Parse(PlayerPrefs.GetString("bgmVolume"));
         _soundSource.volume = float.Parse(PlayerPrefs.GetString("soundVolume"));
     }

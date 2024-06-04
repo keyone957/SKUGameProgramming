@@ -3,10 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//상점 ui관련
+//상점 버튼 탭 관련
+//플레이어 이미지 초기화 
 // 최초 작성자 : 홍원기
-// 수정자 : 
-// 최종 수정일 : 2024-06-02
+// 수정자 : 홍원기
+// 최종 수정일 : 2024-06-04
 public class ShopController : MonoBehaviour
 {
     [SerializeField] private Button swordTab;
@@ -24,6 +25,7 @@ public class ShopController : MonoBehaviour
             SoundManager._instance.PlaySound(Define._clickMenuSound);
             gameObject.SetActive(false);
         });
+        PlayerManager.instance.AssignSpriteRenderers();
     }
 
     private void OnClickSwordTab()

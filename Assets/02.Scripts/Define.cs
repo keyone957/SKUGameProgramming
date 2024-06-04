@@ -28,6 +28,9 @@ public static class Define
     public const string _openDoor = "OpenDoor";
     public const string _warningSound = "WarningSound";
     public const string _gameStartBtn = "GameStartBtn";
+    public const string _buySuccess = "BuySuccess";
+    public const string _buyDenied = "BuyDenied";
+    public const string _equip = "Equip";
 
 
 

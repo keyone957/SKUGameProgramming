@@ -9,7 +9,7 @@ using Random = UnityEngine.Random;
 //현재 씬 몇스테이지인지 띄움
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-31
+// 최종 수정일 : 2024-06-04
 public class DungeonSystem : MonoBehaviour
 {
     public static DungeonSystem instance { get; private set; }
@@ -28,12 +28,12 @@ public class DungeonSystem : MonoBehaviour
     }
     void Start()
     {
-        // StartCoroutine(SceneStartSequence());
-        // InitializeDungeonScene();
         SpawnMonster();
         monsterCnt = monsterSpawnPoint.Length;
         AllSceneCanvas.instance.SetMonsterCnt(monsterCnt);
         InitializeDungeonScene();
+        PlayerManager.instance.AssignSpriteRenderers();
+        PlayerManager.instance.AnotherScenePlayer();
         StartCoroutine(SceneStartSequence());
     }
     private void Update()
