@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// 적 생성 함수 구현
+// 최초 작성자: 하경림
+// 수정자: 하경림
+// 최종 수정일: 2024-06-03
 public class EnemyGenerator : MonoBehaviour
 {
     public GameObject EnemyPrefab;
