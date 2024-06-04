@@ -35,6 +35,10 @@ public class Player : MonoBehaviour
 
     private void Attack()
     {
+        if (Time.timeScale == 0)
+        {
+            return; // 게임이 멈춰 있을 때는 입력을 무시합니다.
+        }
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("마우스 왼쪽 버튼 입력");
@@ -74,11 +78,11 @@ public class Player : MonoBehaviour
 
     public void EndAttack()
     {
-    Debug.Log("공격 종료");
-    anim.SetBool("IsAttack", false);
-    swordCollider.enabled = false;
-    attackEffect.SetActive(false);
-    Idle(); 
+        Debug.Log("공격 종료");
+        anim.SetBool("IsAttack", false);
+        swordCollider.enabled = false;
+        attackEffect.SetActive(false);
+        Idle();
     }
 
     private void StartAttack()

@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+
 // 30초 타이머 기능 구현
 // 최초 작성자: 하경림
 // 수정자: 하경림
@@ -32,11 +33,21 @@ public class ShootingTimer : MonoBehaviour
             }
             else
             {
+                time = 0;
+                TimerText.text = "0";
+                timerStarted = false;
                 if (ChildGenerator.Instance != null)
                 {
                     ChildGenerator.Instance.DestroyAllChildren();
                 }
             }
+        }
     }
-}
+
+    public void SetTimerToZero()
+    {
+        time = 0;
+        TimerText.text = "0";
+        timerStarted = false;
+    }
 }
