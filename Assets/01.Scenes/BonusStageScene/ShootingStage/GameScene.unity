@@ -4374,7 +4374,7 @@ MonoBehaviour:
   jumpEffect: {fileID: 1967835574231978638, guid: 3e196c9e632c76841a71cb6e2dc6d010, type: 3}
   swordCollider: {fileID: 1304197179}
   attackEffect: {fileID: 482752493}
-  hpUi: {fileID: 0}
+  hpUi: {fileID: 1975573700}
 --- !u!50 &1975573694 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 305991713805020564, guid: 8a5d70529bdd3974ca3ef8b0dd4a59ed, type: 3}
@@ -4392,6 +4392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59fe3b96497065489d23a58e5c8be63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootingTimer: {fileID: 414460518}
   Heart:
   - {fileID: 2010103032}
   - {fileID: 568080651}
