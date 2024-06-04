@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/01.Scenes/BonusStageScene/ShootingStage/GameScene.unity
     guid: 9afc42933dd357f48880200698eff74b
   - enabled: 1
-    path: Assets/01.Scenes/TestScene/DungeonTest.unity
+    path: Assets/01.Scenes/StageScene/DungeonStage1.unity
     guid: d38a7cbbf810a4e4785c9cebb1b6c6cd
+  - enabled: 1
+    path: Assets/01.Scenes/StageScene/DungeonStage2.unity
+    guid: c6a7b3122cd628347ba4eff02a79e47e
   m_configObjects: {}

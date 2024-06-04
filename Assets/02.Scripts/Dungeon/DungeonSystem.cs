@@ -29,8 +29,6 @@ public class DungeonSystem : MonoBehaviour
     void Start()
     {
         SpawnMonster();
-        monsterCnt = monsterSpawnPoint.Length;
-        AllSceneCanvas.instance.SetMonsterCnt(monsterCnt);
         InitializeDungeonScene();
         PlayerManager.instance.AssignSpriteRenderers();
         PlayerManager.instance.AnotherScenePlayer();
@@ -46,7 +44,9 @@ public class DungeonSystem : MonoBehaviour
 
     private void InitializeDungeonScene()
     {
-        AllSceneCanvas.instance.SetMonsterCnt(monsterSpawnPoint.Length);
+        PlayerManager.instance.playerPower = 2;
+        monsterCnt = monsterSpawnPoint.Length;
+        AllSceneCanvas.instance.SetMonsterCnt(monsterCnt);
         SceneSystem.instance.isClearStage = false;
         SceneSystem.instance._fadeOverlay.gameObject.SetActive(false);
         AllSceneCanvas.instance.SetStageText("Stage "+SceneSystem.instance.currentStage);

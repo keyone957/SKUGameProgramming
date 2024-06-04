@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 //전체 게임 관리하는 씬 시스템 구성
-//몬스터 카운트 프로퍼티
+//이동할 씬이름 변경
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-28
+// 최종 수정일 : 2024-06-04
 public class SceneSystem : MonoBehaviour
 {
     public enum NextStageType
@@ -46,8 +46,8 @@ public class SceneSystem : MonoBehaviour
         }
         else if (stageType == NextStageType.Normal)
         {
-            int randomNoramlStage = Random.Range(1, 6);
-            _fadeOverlay.DoFadeOut(1.0f, "NormalStage" + randomNoramlStage);
+            int randomDungeonStage = Random.Range(1, 3);//나중에 맵 개수에 따라 랜덤한 스테이지 나오게
+            _fadeOverlay.DoFadeOut(1.0f, "DungeonStage" + randomDungeonStage);
         }
 
         currentStage++;
