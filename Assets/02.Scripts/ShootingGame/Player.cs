@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
     {
         if (Time.timeScale == 0)
         {
-            return; // 게임이 멈춰 있을 때는 입력을 무시합니다.
+            return;
         }
         if (Input.GetMouseButtonDown(0))
         {

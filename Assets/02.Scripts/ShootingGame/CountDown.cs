@@ -10,7 +10,7 @@ using TMPro;
 
 public class CountDown : MonoBehaviour
 {
- public GameObject Panel;
+    public GameObject Panel;
     public TMP_Text Count;
     public float countdownTime = 3.0f;
 
