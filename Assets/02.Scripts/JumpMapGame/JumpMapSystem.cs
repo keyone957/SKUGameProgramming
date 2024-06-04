@@ -17,6 +17,7 @@ public class JumpMapSystem : MonoBehaviour
     public Image timerImage;
 
     private bool isPlayerMovementRestricted = true;
+    private PlayerInputController playerInputController;
 
     public static JumpMapSystem Instance;
 
@@ -29,6 +30,10 @@ public class JumpMapSystem : MonoBehaviour
     {
         InitializeScene();
         ActivatePopupPanel();
+        // Find the PlayerInputController once at the start
+        playerInputController = FindObjectOfType<PlayerInputController>();
+        // Restrict player movement at the start
+        RestrictPlayerMovement(true);
     }
 
     private void InitializeScene()
@@ -66,7 +71,7 @@ public class JumpMapSystem : MonoBehaviour
         timerImage.gameObject.SetActive(true);
 
         // 플레이어의 움직임 제한 해제
-        isPlayerMovementRestricted = false;
+        RestrictPlayerMovement(false);
 
         // 게임 시작 메서드 호출
         StartGame();
@@ -75,35 +80,22 @@ public class JumpMapSystem : MonoBehaviour
     // 게임 시작 메서드
     public void StartGame()
     {
-
+        // 게임 시작 로직 추가
     }
 
     // 플레이어의 움직임을 제한하는 메서드
     public void RestrictPlayerMovement(bool restrict)
     {
         isPlayerMovementRestricted = restrict;
+        if (playerInputController != null)
+        {
+            playerInputController.enabled = !restrict;
+        }
     }
 
     // Update 메서드에서 플레이어의 움직임을 제한하는 로직 추가
     private void Update()
     {
-        if (isPlayerMovementRestricted)
-        {
-            // 플레이어의 움직임을 제한하는 로직 추가
-            PlayerInputController playerInputController = FindObjectOfType<PlayerInputController>();
-            if (playerInputController != null)
-            {
-                playerInputController.enabled = false;
-            }
-        }
-        else
-        {
-            // 플레이어의 움직임이 제한되지 않은 경우, 움직임을 허용합니다.
-            PlayerInputController playerInputController = FindObjectOfType<PlayerInputController>();
-            if (playerInputController != null)
-            {
-                playerInputController.enabled = true;
-            }
-        }
+
     }
 }

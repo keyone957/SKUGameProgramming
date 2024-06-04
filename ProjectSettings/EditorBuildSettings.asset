@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01.Scenes/TestScene/DungeonTest.unity
     guid: d38a7cbbf810a4e4785c9cebb1b6c6cd
+  - enabled: 1
+    path: Assets/01.Scenes/BonusStageScene/JumpMapScene/JumpMapBonus.unity
+    guid: 4fc4c1f28e94e7a449f248fe37ca04af
   m_configObjects: {}
