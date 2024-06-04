@@ -109,7 +109,7 @@ public class Monster : MonoBehaviour
                 case State.DIE:
                     isDie = true;
                     Die();
-                    yield return new WaitForSeconds(2.5f);
+                    yield return new WaitForSeconds(1.25f);
                     Destroy(this.gameObject);
                     break;
             }
