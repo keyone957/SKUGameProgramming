@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01.Scenes/BonusStageScene/JumpMapScene/JumpMapBonus.unity
     guid: 4fc4c1f28e94e7a449f248fe37ca04af
+  - enabled: 1
+    path: Assets/01.Scenes/BonusStageScene/JumpMapScene/JumpMapBonus2.unity
+    guid: 6d2e3bfaeee265b4cbb53176b56ff4df
   m_configObjects: {}
