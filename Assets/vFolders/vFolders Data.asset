@@ -21,14 +21,17 @@ MonoBehaviour:
     - b8d64c9899c81cd4884805e64dd4c0ab
     - 5e9a49efec1780b489999beb5b3dc375
     - a8e1dcc6f996c524d9a0dbdad5be7689
+    - b635102e95b7cf54e919a0abc9a91f63
     values:
     - colorIndex: 1
       iconNameOrGuid: 
     - colorIndex: 2
-      iconNameOrGuid: 
+      iconNameOrGuid: cs Script Icon
     - colorIndex: 3
-      iconNameOrGuid: 
+      iconNameOrGuid: Prefab Icon
     - colorIndex: 5
+      iconNameOrGuid: Shader Icon
+    - colorIndex: 10
       iconNameOrGuid: 
     - colorIndex: 10
       iconNameOrGuid: 
