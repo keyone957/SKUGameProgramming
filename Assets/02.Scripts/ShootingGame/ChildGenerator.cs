@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// 적생성 함수 구현
+// 최초 작성자: 하경림
+// 수정자: 하경림
+// 최종 수정일: 2024-06-03
 public class ChildGenerator : MonoBehaviour
 {
     public Transform gridLayout;
@@ -22,7 +26,9 @@ public class ChildGenerator : MonoBehaviour
             instance = value;
         }
     }
-    public void Awake()
+    private bool stopGeneration = false;
+
+    private void Awake()
     {
         if (instance == null)
         {
@@ -35,15 +41,14 @@ public class ChildGenerator : MonoBehaviour
         }
     }
 
-
     public string GetFirstTag()
     {
-        return childList[0].tag;
+        return childList.Count > 0 ? childList[0].tag : string.Empty;
     }
 
-    void Update()
+    private void Update()
     {
-        if (childList.Count <= 7)
+        if (!stopGeneration && childList.Count <= 7)
         {
             GameObject newChild = Instantiate(childPrefabs[Random.Range(0, childPrefabs.Length)], gridLayout);
             childList.Add(newChild);
@@ -75,5 +80,13 @@ public class ChildGenerator : MonoBehaviour
         }
     }
 
-
+    public void DestroyAllChildren()
+    {
+        foreach (var child in childList)
+        {
+            Destroy(child);
+        }
+        childList.Clear();
+        stopGeneration = true;
+    }
 }

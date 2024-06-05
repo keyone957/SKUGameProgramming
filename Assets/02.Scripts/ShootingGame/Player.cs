@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// °ÔÀÓ Ä³¸¯ÅÍ ¸¶¿ì½º Å¬¸¯½Ã °ø°İ ±¸Çö
-// ÃÖÃÊ ÀÛ¼ºÀÚ: ÇÏ°æ¸²
-// ÃÖÁ¾ ¼öÁ¤ÀÏ: 2024-05-11
+// ï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ì½º Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½ï¿½: ï¿½Ï°æ¸²
+// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: 2024-06-04
 public class Player : MonoBehaviour
 {
     [SerializeField] private Animator anim;
@@ -15,28 +15,33 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject attackEffect;
     private ChildGenerator childGenerator;
     [SerializeField] private HpUi hpUi;
+
     private void Start()
     {
-        //childGenerator.FindObjectOfType<ChildGenerator>();
         childGenerator = ChildGenerator.Instance;
         hpUi = GetComponent<HpUi>();
+        Idle();
     }
 
     private void Update()
     {
-        Idle();
         Attack();
     }
+
     private void Idle()
     {
-        anim.SetBool("IsMove", false);
         anim.SetBool("IsIdle", true);
     }
 
     private void Attack()
     {
+        if (Time.timeScale == 0)
+        {
+            return;
+        }
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("ë§ˆìš°ìŠ¤ ì™¼ìª½ ë²„íŠ¼ ì…ë ¥");
             anim.SetBool("IsAttack", true);
             swordCollider.enabled = true;
             if (childGenerator != null)
@@ -47,24 +52,21 @@ public class Player : MonoBehaviour
                 }
                 else if (childGenerator.GetFirstTag() == "IceGolem")
                 {
-                    Debug.Log("¶¯!");
                     hpUi.SetHp(-1);
                 }
             }
-
         }
 
         if (Input.GetMouseButtonDown(1))
         {
+            Debug.Log("ë§ˆìš°ìŠ¤ ì˜¤ë¥¸ìª½ ë²„íŠ¼ ì…ë ¥");
             anim.SetBool("IsAttack", true);
             swordCollider.enabled = true;
             if (childGenerator != null)
             {
                 if (childGenerator.GetFirstTag() == "Skeleton")
                 {
-                    Debug.Log("¶¯!");
                     hpUi.SetHp(-1);
-
                 }
                 else if (childGenerator.GetFirstTag() == "IceGolem")
                 {
@@ -74,15 +76,13 @@ public class Player : MonoBehaviour
         }
     }
 
-
-
-    private void EndAttack()
+    public void EndAttack()
     {
-        anim.SetBool("IsMove", false);
+        Debug.Log("ê³µê²© ì¢…ë£Œ");
         anim.SetBool("IsAttack", false);
-        anim.SetBool("IsIdle", true);
-        attackEffect.SetActive(false);
         swordCollider.enabled = false;
+        attackEffect.SetActive(false);
+        Idle();
     }
 
     private void StartAttack()
@@ -91,11 +91,11 @@ public class Player : MonoBehaviour
         attackEffect.SetActive(true);
     }
 
-    //¼Ò¸®¿¡¼­ ÀÚ²Ù ¿À·ù ³ª¼­ ÁÖ¼® Ã³¸®
-   // public void PlayEffect(AudioClip effectSound)
-   // {
-   //     playerAudioSource.PlayOneShot(effectSound);
-    //}
+    // íš¨ê³¼ìŒì„ ì¬ìƒí•˜ëŠ” í•¨ìˆ˜
+    // public void PlayEffect(AudioClip effectSound)
+    // {
+    //     playerAudioSource.PlayOneShot(effectSound);
+    // }
 
     private void OnCollisionEnter2D(Collision2D other)
     {

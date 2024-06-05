@@ -6,35 +6,53 @@ using TMPro;
 // 게임 시작전 3,2,1, GO 게임신 정지 함수
 // 최초 작성자: 하경림
 // 수정자: 하경림
-// 최종 수정일: 2024-05-30
+// 최종 수정일: 2024-06-03
 
 public class CountDown : MonoBehaviour
 {
-    public TMP_Text countdownText;
-    public float countdownTime = 3.0f; // 카운트다운 시간
+    public GameObject Panel;
+    public TMP_Text Count;
+    public float countdownTime = 3.0f;
 
     private void Start()
     {
+        Time.timeScale = 0;
+
+        Panel.SetActive(true);
+        Count.gameObject.SetActive(false);
+
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StartGame();
+        }
+    }
+
+    private void StartGame()
+    {
+        Panel.SetActive(false);
         StartCoroutine(StartCountdown());
     }
 
     private IEnumerator StartCountdown()
     {
-        // 게임을 멈춥니다.
-        Time.timeScale = 0;
+        Count.gameObject.SetActive(true);
+
         float realTimeCountdown = countdownTime;
 
         while (realTimeCountdown > 0)
         {
-            countdownText.text = realTimeCountdown.ToString("0"); // 남은 시간을 텍스트로 표시
+            Count.text = realTimeCountdown.ToString("0");
             yield return new WaitForSecondsRealtime(1.0f);
             realTimeCountdown--;
         }
 
-        countdownText.text = "Go!";
+        Count.text = "Go!";
         yield return new WaitForSecondsRealtime(1.0f);
 
-        countdownText.gameObject.SetActive(false);
+        Count.gameObject.SetActive(false);
 
         Time.timeScale = 1;
     }

@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4027abe32c5bf864d838747bc2ea297c, type: 3}
+  m_Name: RetroMusic
+  m_EditorClassIdentifier: 
+  m_sfxConfig: {fileID: 11400000, guid: 582205c53a887b64d9cba95844764952, type: 2}
+  m_musicTracks:
+  - Name: Trailer
+    Loop: 0
+    Parts:
+    - PartName: Intro
+      PartIdx: 0
+    - PartName: A
+      PartIdx: 1
+    - PartName: B
+      PartIdx: 2
+    - PartName: B
+      PartIdx: 2
+    - PartName: D
+      PartIdx: 4
+    - PartName: C
+      PartIdx: 3
+    - PartName: C
+      PartIdx: 3
+    - PartName: B
+      PartIdx: 2
+    - PartName: B
+      PartIdx: 2
+    - PartName: Outro
+      PartIdx: 5
+    Duration: 288
+  m_musicParts:
+  - Name: Intro
+    Color: {r: 0.1254902, g: 0.32208195, b: 0.5019608, a: 1}
+    TimeGrid: 2
+    Duration: 16
+    Tracks: 2
+    Volume: 2
+    TrackMuted: 0000
+    Snippets:
+    - TimePosition: 0
+      TrackPosition: 0
+      SFXName: Beat
+      SFXIdx: 7
+    - TimePosition: 12
+      TrackPosition: 1
+      SFXName: Drop
+      SFXIdx: 6
+  - Name: A
+    Color: {r: 0.125, g: 0.5, b: 0.28335243, a: 1}
+    TimeGrid: 16
+    Duration: 32
+    Tracks: 3
+    Volume: 1.25
+    TrackMuted: 000000
+    Snippets:
+    - TimePosition: 0
+      TrackPosition: 2
+      SFXName: Drone
+      SFXIdx: 10
+    - TimePosition: 0
+      TrackPosition: 0
+      SFXName: BeatHH
+      SFXIdx: 4
+    - TimePosition: 16
+      TrackPosition: 2
+      SFXName: Drone
+      SFXIdx: 10
+    - TimePosition: 0
+      TrackPosition: 1
+      SFXName: Beat
+      SFXIdx: 7
+    - TimePosition: 16
+      TrackPosition: 1
+      SFXName: Beat 2
+      SFXIdx: 8
+    - TimePosition: 16
+      TrackPosition: 0
+      SFXName: BeatHH2
+      SFXIdx: 5
+  - Name: B
+    Color: {r: 0.5, g: 0.125, b: 0.23715335, a: 1}
+    TimeGrid: 16
+    Duration: 32
+    Tracks: 5
+    Volume: 1.3
+    TrackMuted: 0000000000
+    Snippets:
+    - TimePosition: 16
+      TrackPosition: 0
+      SFXName: BeatHH2
+      SFXIdx: 5
+    - TimePosition: 16
+      TrackPosition: 1
+      SFXName: Beat 2
+      SFXIdx: 8
+    - TimePosition: 0
+      TrackPosition: 3
+      SFXName: Melody A
+      SFXIdx: 9
+    - TimePosition: 16
+      TrackPosition: 3
+      SFXName: Melody B
+      SFXIdx: 11
+    - TimePosition: 0
+      TrackPosition: 4
+      SFXName: BassBeat
+      SFXIdx: 15
+    - TimePosition: 16
+      TrackPosition: 4
+      SFXName: BassBeat2
+      SFXIdx: 16
+    - TimePosition: 0
+      TrackPosition: 2
+      SFXName: Drone
+      SFXIdx: 10
+    - TimePosition: 16
+      TrackPosition: 2
+      SFXName: Drone
+      SFXIdx: 10
+    - TimePosition: 0
+      TrackPosition: 0
+      SFXName: BeatHH
+      SFXIdx: 4
+    - TimePosition: 0
+      TrackPosition: 1
+      SFXName: Beat
+      SFXIdx: 7
+  - Name: C
+    Color: {r: 0.5019608, g: 0.23179676, b: 0.1254902, a: 1}
+    TimeGrid: 16
+    Duration: 32
+    Tracks: 5
+    Volume: 1.5
+    TrackMuted: 0000000000
+    Snippets:
+    - TimePosition: 16
+      TrackPosition: 0
+      SFXName: Beat 2
+      SFXIdx: 8
+    - TimePosition: 16
+      TrackPosition: 1
+      SFXName: Melady Fast B
+      SFXIdx: 13
+    - TimePosition: 0
+      TrackPosition: 1
+      SFXName: Melady Fast A
+      SFXIdx: 12
+    - TimePosition: 0
+      TrackPosition: 2
+      SFXName: BassBeat
+      SFXIdx: 15
+    - TimePosition: 16
+      TrackPosition: 2
+      SFXName: BassBeat2
+      SFXIdx: 16
+    - TimePosition: 16
+      TrackPosition: 3
+      SFXName: BeatHH2
+      SFXIdx: 5
+    - TimePosition: 0
+      TrackPosition: 3
+      SFXName: BeatHH
+      SFXIdx: 4
+    - TimePosition: 0
+      TrackPosition: 4
+      SFXName: Bass Fast A
+      SFXIdx: 14
+    - TimePosition: 16
+      TrackPosition: 4
+      SFXName: Bass Fast A
+      SFXIdx: 14
+    - TimePosition: 0
+      TrackPosition: 0
+      SFXName: Beat
+      SFXIdx: 7
+  - Name: D
+    Color: {r: 0.5, g: 0.35416418, b: 0.125, a: 1}
+    TimeGrid: 16
+    Duration: 32
+    Tracks: 2
+    Volume: 2
+    TrackMuted: 0000
+    Snippets:
+    - TimePosition: 16
+      TrackPosition: 0
+      SFXName: Melady Fast B
+      SFXIdx: 13
+    - TimePosition: 0
+      TrackPosition: 1
+      SFXName: Drone
+      SFXIdx: 10
+    - TimePosition: 0
+      TrackPosition: 0
+      SFXName: Melady Fast A
+      SFXIdx: 12
+    - TimePosition: 16
+      TrackPosition: 1
+      SFXName: Drone
+      SFXIdx: 10
+  - Name: Outro
+    Color: {r: 0.5, g: 0.125, b: 0.38488513, a: 1}
+    TimeGrid: 16
+    Duration: 16
+    Tracks: 2
+    Volume: 1.5
+    TrackMuted: 0000
+    Snippets:
+    - TimePosition: 0
+      TrackPosition: 1
+      SFXName: Drone
+      SFXIdx: 10
+    - TimePosition: 0
+      TrackPosition: 0
+      SFXName: Drop
+      SFXIdx: 6
+  LimitVolume: 1

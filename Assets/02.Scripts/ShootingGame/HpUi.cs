@@ -3,45 +3,54 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// ÇÏÆ® hp °ü·Ã ÇÔ¼ö
+// í•˜íŠ¸ ì†Œë©¸ í•¨ìˆ˜
+// ìµœì´ˆ ì‘ì„±ì: í•˜ê²½ë¦¼
+// ìˆ˜ì •ì: í•˜ê²½ë¦¼
+// ìµœì¢… ìˆ˜ì •ì¼: 2024-06-04
 public class HpUi : MonoBehaviour
 {
+    public ShootingTimer shootingTimer;
     public Image[] Heart;
-    public int Hp { get; private set;}
+    public int Hp { get; private set; }
     private int Hp_Max;
     public Sprite Back, Front;
 
     private void Awake()
     {
         Hp_Max = Heart.Length;
-
         Hp = Hp_Max;
 
         for (int i = 0; i < Hp_Max; i++)
+        {
             if (Hp > i)
             {
                 Heart[i].sprite = Front;
             }
+        }
     }
 
     public void SetHp(int val)
     {
         Hp += val;
-
         Hp = Mathf.Clamp(Hp, 0, Hp_Max);
 
-        // ÀüÃ¼ ÇÏÆ®¸¦ ¸ÕÀú 'Back' ÀÌ¹ÌÁö·Î ¼³Á¤
         for (int i = 0; i < Hp_Max; i++)
         {
             Heart[i].sprite = Back;
         }
 
-        // ÇöÀç Ã¼·Â¿¡ ÇØ´çÇÏ´Â ÇÏÆ®¸¸ 'Front' ÀÌ¹ÌÁö·Î ¼³Á¤
         for (int i = 0; i < Hp; i++)
         {
             Heart[i].sprite = Front;
         }
+
+        if (Hp == 0)
+        {
+            if (shootingTimer != null)
+            {
+                shootingTimer.SetTimerToZero();
+            }
+            ChildGenerator.Instance.DestroyAllChildren();
+        }
     }
 }
-
-
