@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+
 // 게임 시작전 3,2,1, GO 게임신 정지 함수
 // 최초 작성자: 하경림
 // 수정자: 하경림
@@ -13,18 +14,20 @@ public class CountDown : MonoBehaviour
     public GameObject Panel;
     public TMP_Text Count;
     public float countdownTime = 3.0f;
+    public GameObject Finish;
+    private bool gameStarted = false;
 
     private void Start()
     {
         Time.timeScale = 0;
-
+        Finish.SetActive(false);
         Panel.SetActive(true);
         Count.gameObject.SetActive(false);
-
     }
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !gameStarted)
         {
             StartGame();
         }
@@ -34,6 +37,7 @@ public class CountDown : MonoBehaviour
     {
         Panel.SetActive(false);
         StartCoroutine(StartCountdown());
+        gameStarted = true;
     }
 
     private IEnumerator StartCountdown()

@@ -41,7 +41,6 @@ public class Player : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("마우스 왼쪽 버튼 입력");
             anim.SetBool("IsAttack", true);
             swordCollider.enabled = true;
             if (childGenerator != null)
@@ -59,7 +58,6 @@ public class Player : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            Debug.Log("마우스 오른쪽 버튼 입력");
             anim.SetBool("IsAttack", true);
             swordCollider.enabled = true;
             if (childGenerator != null)

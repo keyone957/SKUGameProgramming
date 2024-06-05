@@ -15,6 +15,7 @@ public class ChildGenerator : MonoBehaviour
 
     private List<GameObject> childList = new List<GameObject>();
     private static ChildGenerator instance;
+    private int destroyedChildCount = 0;
     public static ChildGenerator Instance
     {
         get
@@ -77,6 +78,7 @@ public class ChildGenerator : MonoBehaviour
         {
             Destroy(childList[0].gameObject);
             childList.RemoveAt(0);
+            destroyedChildCount++;
         }
     }
 
@@ -88,5 +90,10 @@ public class ChildGenerator : MonoBehaviour
         }
         childList.Clear();
         stopGeneration = true;
+    }
+
+    public int GetMonsterAttackCount()
+    {
+        return destroyedChildCount;
     }
 }

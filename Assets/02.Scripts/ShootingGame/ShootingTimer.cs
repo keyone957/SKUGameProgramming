@@ -7,13 +7,21 @@ using TMPro;
 // 최종 수정일: 2024-06-03
 public class ShootingTimer : MonoBehaviour
 {
+    public GameObject Finish;
+    public TMP_Text monsterText;
+
+    private ChildGenerator childGenerator;
     public TMP_Text TimerText;
     float time = 30f;
     bool timerStarted = false;
+    public TMP_Text Coin;
+    int num;
 
     void Start()
     {
         StartTimer();
+        childGenerator = ChildGenerator.Instance;
+
     }
 
     void StartTimer()
@@ -40,6 +48,15 @@ public class ShootingTimer : MonoBehaviour
                 {
                     ChildGenerator.Instance.DestroyAllChildren();
                 }
+                if (childGenerator != null)
+                {
+                    int destroyedChildCount = childGenerator.GetMonsterAttackCount();
+                    Debug.Log("삭제된 몬스터 수: " + destroyedChildCount);
+                    monsterText.text = destroyedChildCount.ToString();
+                    num = destroyedChildCount * 50;
+                    Coin.text = num.ToString();
+                }
+                Finish.SetActive(true);
             }
         }
     }
