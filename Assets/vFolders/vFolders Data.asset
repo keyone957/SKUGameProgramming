@@ -13,5 +13,26 @@ MonoBehaviour:
   m_Name: vFolders Data
   m_EditorClassIdentifier: 
   folderDatas_byGuid:
-    keys: []
-    values: []
+    keys:
+    - 2242a0bc3eeafea4481ecad0d6258976
+    - 673803bd295b6fa4b9095ed45d32d4aa
+    - 218fa8b376cda664c9c3ded34bed77d4
+    - 21fcf44e87411d0468b39579de23826a
+    - b8d64c9899c81cd4884805e64dd4c0ab
+    - 5e9a49efec1780b489999beb5b3dc375
+    - a8e1dcc6f996c524d9a0dbdad5be7689
+    values:
+    - colorIndex: 1
+      iconNameOrGuid: 
+    - colorIndex: 2
+      iconNameOrGuid: 
+    - colorIndex: 3
+      iconNameOrGuid: 
+    - colorIndex: 5
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
