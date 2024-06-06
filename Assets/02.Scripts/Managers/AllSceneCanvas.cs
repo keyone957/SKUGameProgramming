@@ -6,14 +6,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 //모든 씬에서 사용할 UI관리하는 컴포넌트
-//현 스테이지 어디인지 띄움
+//playerHpUI public으로 선언
 //최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-31
+// 최종 수정일 : 2024-06-06
 public class AllSceneCanvas : MonoBehaviour
 {
     public static AllSceneCanvas instance { get; private set; }
-    [SerializeField] private GameObject playerHpUI;
+    [SerializeField] public GameObject playerHpUI;
     [SerializeField] private TMP_Text playerMoneyText;
     [SerializeField] private Button inGameMenuBtn;
     [SerializeField] private GameObject inGameMenu;

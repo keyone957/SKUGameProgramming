@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // 적생성 함수 구현
+//Dondestroy삭제
 // 최초 작성자: 하경림
-// 수정자: 하경림
-// 최종 수정일: 2024-06-03
+// 수정자: 홍원기
+// 최종 수정일: 2024-06-06
 public class ChildGenerator : MonoBehaviour
 {
     public Transform gridLayout;
     public GameObject[] childPrefabs;
     public float xOffset = 2f;
     public int hp = 1;
-
     private List<GameObject> childList = new List<GameObject>();
     private static ChildGenerator instance;
     private int destroyedChildCount = 0;
@@ -34,7 +34,6 @@ public class ChildGenerator : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
         }
         else
         {

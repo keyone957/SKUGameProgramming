@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,9 +6,10 @@ using UnityEngine.UI;
 using TMPro;
 
 // 게임 시작전 3,2,1, GO 게임신 정지 함수
+//코드 리팩토링
 // 최초 작성자: 하경림
-// 수정자: 하경림
-// 최종 수정일: 2024-06-03
+// 수정자: 홍원기
+// 최종 수정일: 2024-06-06
 
 public class CountDown : MonoBehaviour
 {
@@ -15,11 +17,11 @@ public class CountDown : MonoBehaviour
     public TMP_Text Count;
     public float countdownTime = 3.0f;
     public GameObject Finish;
-    private bool gameStarted = false;
+    [SerializeField] private bool gameStarted;
 
     private void Start()
     {
-        Time.timeScale = 0;
+        gameStarted = false;
         Finish.SetActive(false);
         Panel.SetActive(true);
         Count.gameObject.SetActive(false);
@@ -55,9 +57,9 @@ public class CountDown : MonoBehaviour
 
         Count.text = "Go!";
         yield return new WaitForSecondsRealtime(1.0f);
-
         Count.gameObject.SetActive(false);
 
-        Time.timeScale = 1;
+        AllSceneCanvas.instance.isOpenMenu = false;
+
     }
 }

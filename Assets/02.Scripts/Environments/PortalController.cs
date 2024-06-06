@@ -5,10 +5,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 //포탈에 닿았을때 수행해야할 동작들
-//현재 스테이지 ++하는거 두번되어서 여기있는거 삭제
+//테스트코드
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-06-04
+// 최종 수정일 : 2024-06-06
 public class PortalController : MonoBehaviour
 {
     [SerializeField] private GameObject keyBoardUI;
@@ -26,7 +26,8 @@ public class PortalController : MonoBehaviour
     {
         if (isEnter&&Input.GetKeyDown(KeyCode.W))
         {
-            SceneSystem.instance.GoNextStage(nextStageType);
+            SceneSystem.instance.TestNextStage(TestSceneName);
+            // SceneSystem.instance.GoNextStage(nextStageType);
         }
     }
 

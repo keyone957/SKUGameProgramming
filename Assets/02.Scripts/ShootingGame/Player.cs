@@ -1,30 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// ���� ĳ���� ���콺 Ŭ���� ���� ����
-// ���� �ۼ���: �ϰ渲
-// ���� ������: 2024-06-04
+// 코드 리팩토링 및 이펙트 사운드 추가
+// 최초 작성자: 하경림
+// 수정자: 홍원기
+// 최종 수정일: 2024-06-06
 public class Player : MonoBehaviour
 {
     [SerializeField] private Animator anim;
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private List<AudioClip> playerSound = new List<AudioClip>();
-    [SerializeField] private AudioSource playerAudioSource;
-    [SerializeField] private GameObject jumpEffect;
-    [SerializeField] private Collider2D swordCollider;
-    [SerializeField] private GameObject attackEffect;
-    private ChildGenerator childGenerator;
     [SerializeField] private HpUi hpUi;
 
     private void Start()
     {
-        childGenerator = ChildGenerator.Instance;
         hpUi = GetComponent<HpUi>();
         Idle();
     }
 
     private void Update()
     {
+        Idle();
         Attack();
     }
 
@@ -35,71 +29,45 @@ public class Player : MonoBehaviour
 
     private void Attack()
     {
-        if (Time.timeScale == 0)
+        if (Time.timeScale == 0f)
         {
             return;
         }
         if (Input.GetMouseButtonDown(0))
         {
             anim.SetBool("IsAttack", true);
-            swordCollider.enabled = true;
-            if (childGenerator != null)
+            if (ChildGenerator.Instance.GetFirstTag() == "Skeleton")
             {
-                if (childGenerator.GetFirstTag() == "Skeleton")
-                {
-                    childGenerator.RemoveFirstChild();
-                }
-                else if (childGenerator.GetFirstTag() == "IceGolem")
-                {
-                    hpUi.SetHp(-1);
-                }
+                SoundManager._instance.PlaySound(Define._shootingSkeleton);
+                ChildGenerator.Instance.RemoveFirstChild();
+            }
+            else if (ChildGenerator.Instance.GetFirstTag() == "IceGolem")
+            {
+                SoundManager._instance.PlaySound(Define._shootingDamaged);
+                hpUi.SetHp(-1);
             }
         }
 
         if (Input.GetMouseButtonDown(1))
         {
             anim.SetBool("IsAttack", true);
-            swordCollider.enabled = true;
-            if (childGenerator != null)
+            if (ChildGenerator.Instance.GetFirstTag() == "Skeleton")
             {
-                if (childGenerator.GetFirstTag() == "Skeleton")
-                {
-                    hpUi.SetHp(-1);
-                }
-                else if (childGenerator.GetFirstTag() == "IceGolem")
-                {
-                    childGenerator.RemoveFirstChild();
-                }
+                SoundManager._instance.PlaySound(Define._shootingDamaged);
+                hpUi.SetHp(-1);
+            }
+            else if (ChildGenerator.Instance.GetFirstTag() == "IceGolem")
+            {
+                SoundManager._instance.PlaySound(Define._shootingGolem);
+                ChildGenerator.Instance.RemoveFirstChild();
             }
         }
     }
 
     public void EndAttack()
     {
-        Debug.Log("공격 종료");
         anim.SetBool("IsAttack", false);
-        swordCollider.enabled = false;
-        attackEffect.SetActive(false);
         Idle();
-    }
-
-    private void StartAttack()
-    {
-        //PlayEffect(playerSound[0]);
-        attackEffect.SetActive(true);
-    }
-
-    // 효과음을 재생하는 함수
-    // public void PlayEffect(AudioClip effectSound)
-    // {
-    //     playerAudioSource.PlayOneShot(effectSound);
-    // }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Ground"))
-        {
-        }
     }
 }
 

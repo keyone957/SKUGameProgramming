@@ -1,27 +1,31 @@
+using System;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 // 30초 타이머 기능 구현
+// 코드 리팩토링 and 얻는 코인 수 변경
 // 최초 작성자: 하경림
-// 수정자: 하경림
-// 최종 수정일: 2024-06-03
+// 수정자: 홍원기
+// 최종 수정일: 2024-06-06
 public class ShootingTimer : MonoBehaviour
 {
     public GameObject Finish;
     public TMP_Text monsterText;
-
-    private ChildGenerator childGenerator;
     public TMP_Text TimerText;
     float time = 30f;
-    bool timerStarted = false;
+    private bool timerStarted;
     public TMP_Text Coin;
     int num;
+
+    private void Awake()
+    {
+        timerStarted = false;
+    }
 
     void Start()
     {
         StartTimer();
-        childGenerator = ChildGenerator.Instance;
-
     }
 
     void StartTimer()
@@ -48,14 +52,13 @@ public class ShootingTimer : MonoBehaviour
                 {
                     ChildGenerator.Instance.DestroyAllChildren();
                 }
-                if (childGenerator != null)
-                {
-                    int destroyedChildCount = childGenerator.GetMonsterAttackCount();
-                    Debug.Log("삭제된 몬스터 수: " + destroyedChildCount);
-                    monsterText.text = destroyedChildCount.ToString();
-                    num = destroyedChildCount * 50;
-                    Coin.text = num.ToString();
-                }
+
+                int destroyedChildCount = ChildGenerator.Instance.GetMonsterAttackCount();
+                Debug.Log("삭제된 몬스터 수: " + destroyedChildCount);
+                monsterText.text = destroyedChildCount.ToString();
+                num = destroyedChildCount * 10;
+                Coin.text = num.ToString();
+
                 Finish.SetActive(true);
             }
         }
