@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 // 트리거 스크립트
-// 도달하면 다음 씬 로드, 우선 점프맵 2번 씬으로 설정
+// 엔드팝업 관련 내용 추가
 // 최초 작성자 : 장현우
 // 수정자 : 장현우
-// 최종 수정일 : 2024-06-05
+// 최종 수정일 : 2024-06-06
 
-public class Triggerr : MonoBehaviour
+public class Trigger : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -26,8 +26,8 @@ public class Triggerr : MonoBehaviour
     private void GameOver()
     {
         Debug.Log("Game Over!");
-        // 게임 종료 관련 로직을 여기에 추가
-        // 예: 메인 메뉴로 돌아가기, 특정 씬 로드하기 등
-        SceneManager.LoadScene("JumpMapBonus2");
+
+        // JumpMapSystem의 TriggerFlag 메서드 호출하여 엔드 패널 활성화
+        JumpMapSystem.Instance.TriggerFlag();
     }
 }

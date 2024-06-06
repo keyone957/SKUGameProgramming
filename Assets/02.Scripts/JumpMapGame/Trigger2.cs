@@ -26,8 +26,7 @@ public class Trigger2 : MonoBehaviour
     private void GameOver()
     {
         Debug.Log("Game Over!");
-        // 게임 종료 관련 로직을 여기에 추가
-        // 예: 메인 메뉴로 돌아가기, 특정 씬 로드하기 등
         SceneManager.LoadScene("");
+        JumpMapSystem.Instance.TriggerFlag();
     }
 }
