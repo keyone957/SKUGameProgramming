@@ -13,6 +13,7 @@ public static class Define
     public const string _lobbyBgm = "LobbyBgm";
     public const string _dungeonBGM = "DungeonBgm";
     public const string _shootingBGM = "ShootingGameBgm";
+    public const string _gameOverBGM = "GameOver";
     
     //EffectSound
     public const string _clickMenuSound = "BtnClickSound";
@@ -36,7 +37,7 @@ public static class Define
     public const string _shootingDamaged = "ShootingDamaged";
     public const string _shootingGolem = "ShootingGolem";
     public const string _clearDungeonStage = "ClearStage";
-
+    public const string _playerDie = "PlayerDie";
 
 
 }

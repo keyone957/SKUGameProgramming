@@ -6,10 +6,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 //모든 씬에서 사용할 UI관리하는 컴포넌트
-//playerHpUI public으로 선언
+//GAMEOVER패널 선언
 //최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-06-06
+// 최종 수정일 : 2024-06-07
 public class AllSceneCanvas : MonoBehaviour
 {
     public static AllSceneCanvas instance { get; private set; }
@@ -21,6 +21,7 @@ public class AllSceneCanvas : MonoBehaviour
     [SerializeField] public GameObject monsterCnt;
     [SerializeField] private TMP_Text monsterCntText;
     [SerializeField] private TMP_Text stageText;
+    [SerializeField] public GameObject gameOverPanel;
     public bool isOpenMenu;
     void Awake()
     {

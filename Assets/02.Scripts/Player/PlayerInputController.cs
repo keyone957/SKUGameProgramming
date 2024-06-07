@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //플레이어(슬라임) Input관련 컴포넌트
-//사운드 매니저 사용하게.
+//플레이어 사망함수 추가
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-05-29
+// 최종 수정일 : 2024-06-07
 public class PlayerInputController : MonoBehaviour
 {
     [SerializeField] private Animator anim;
@@ -37,6 +37,11 @@ public class PlayerInputController : MonoBehaviour
 
     private void Update()
     {
+        if (PlayerManager.instance.isDiePlayer)
+        {
+            return;
+        }
+
         Idle();
         Move();
         Attack();
@@ -146,10 +151,7 @@ public class PlayerInputController : MonoBehaviour
             Attack();
         }
     }
-    // private void PlayEffect(AudioClip effectSound)
-    // {
-    //     playerAudioSource.PlayOneShot(effectSound);
-    // }
+
     private void DivideSlime()
     {
         if (Input.GetKeyDown(KeyCode.K))
@@ -197,6 +199,13 @@ public class PlayerInputController : MonoBehaviour
             PlayerManager.instance.playerHp -= other.gameObject.transform.parent.GetComponent<Monster>().damage;
             AllSceneCanvas.instance.PlayerHPChange(PlayerManager.instance.playerHp);
             OnDamaged(other.gameObject.transform.position);
+            if (PlayerManager.instance.playerHp <= 0)
+            {
+                PlayerManager.instance.isDiePlayer = true;
+                PlayerManager.instance.DestroyAllMonsters();
+                SoundManager._instance.PlaySound(Define._playerDie);
+                SceneSystem.instance._fadeOverlay.DoFadeOutDie(1.0f);
+            }
         }
     }
 
@@ -232,5 +241,10 @@ public class PlayerInputController : MonoBehaviour
             divideSlimeColor.a = 1.0f;
             divideSlimeSpr.color = divideSlimeColor;
         }
+    }
+
+    private void EndDie()
+    {
+        Destroy(this.gameObject);
     }
 }

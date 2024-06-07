@@ -5,10 +5,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 //모든씬에서 플레이어 정보를 가져와야하므로 DontDestroyOnLoad로 생성 하여 플레이어 정보 가져옴
-//플레이어 색바꾸는 함수 + 무기 바꾸는 함수
+//플레이어 죽었을때 씬에 있는 몬스터 다 삭제해버리기
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-06-04
+// 최종 수정일 : 2024-06-07
 public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager instance { get; private set; }
@@ -21,6 +21,7 @@ public class PlayerManager : MonoBehaviour
     public int playerPower;
     public Color playerColor;
     public Sprite playerSwordSpr;
+    public bool isDiePlayer;
     void Awake()
     { 
         if (instance == null)
@@ -35,8 +36,19 @@ public class PlayerManager : MonoBehaviour
     private void Start()
     {
         AssignSpriteRenderers();
+        isDiePlayer = false;
     }
-    
+
+    public void DestroyAllMonsters()
+    {
+        Monster[] monsters = FindObjectsOfType<Monster>();
+
+        foreach (Monster monster in monsters)
+        {
+            Destroy(monster.gameObject);
+        }
+    }
+
     public void InitializePlayer()
     {
         playerColor = slimeImg.color;
