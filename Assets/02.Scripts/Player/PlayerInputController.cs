@@ -243,8 +243,4 @@ public class PlayerInputController : MonoBehaviour
         }
     }
 
-    private void EndDie()
-    {
-        Destroy(this.gameObject);
-    }
 }

@@ -26,8 +26,8 @@ public class PortalController : MonoBehaviour
     {
         if (isEnter&&Input.GetKeyDown(KeyCode.W))
         {
-            SceneSystem.instance.TestNextStage(TestSceneName);
-            // SceneSystem.instance.GoNextStage(nextStageType);
+            // SceneSystem.instance.TestNextStage(TestSceneName);
+            SceneSystem.instance.GoNextStage(nextStageType);
         }
     }
 
