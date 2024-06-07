@@ -16,7 +16,7 @@ public class DungeonSystem : MonoBehaviour
     [SerializeField] private Transform[] monsterSpawnPoint;
     [SerializeField] private GameObject[] monsterPrefab;
     [SerializeField] public int monsterCnt;
-    
+    private bool soundPlayed;
     void Awake()
     {
         if (instance == null)
@@ -36,16 +36,24 @@ public class DungeonSystem : MonoBehaviour
     }
     private void Update()
     {
-        if (monsterCnt <= 0)
+        if (monsterCnt <= 0 && !soundPlayed)
         {
             SceneSystem.instance.isClearStage = true;
+            PlayClearStageSound();
         }
+    }
+    
+    private void PlayClearStageSound()
+    {
+        SoundManager._instance.PlaySound(Define._clearDungeonStage);
+        soundPlayed = true;
     }
 
     private void InitializeDungeonScene()
     {
         PlayerManager.instance.playerPower = 2;
         monsterCnt = monsterSpawnPoint.Length;
+        soundPlayed = false;
         AllSceneCanvas.instance.monsterCnt.SetActive(true);
         AllSceneCanvas.instance.playerHpUI.SetActive(true);
         AllSceneCanvas.instance.SetMonsterCnt(monsterCnt);

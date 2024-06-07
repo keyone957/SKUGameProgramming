@@ -35,6 +35,7 @@ public static class Define
     public const string _shootingSkeleton = "ShootingSkeleton";
     public const string _shootingDamaged = "ShootingDamaged";
     public const string _shootingGolem = "ShootingGolem";
+    public const string _clearDungeonStage = "ClearStage";
 
 
 
