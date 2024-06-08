@@ -14,8 +14,19 @@ public class CoinTrigger : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && !collided)
         {
             collided = true;
-            Destroy(gameObject);
-
+            CoinManager coinManager = FindObjectOfType<CoinManager>();
+            if (coinManager != null)
+            {
+                Debug.Log("CoinManager found, removing coin.");
+                coinManager.RemoveCoin(gameObject);  // 리스트에서 코인을 제거
+                Destroy(gameObject);  // 코인 오브젝트 파괴
+                coinManager.CheckAllCoinsCollected();
+            }
+            else
+            {
+                Debug.Log("CoinManager not found.");
+                Destroy(gameObject); 
+            }
 
         }
     }

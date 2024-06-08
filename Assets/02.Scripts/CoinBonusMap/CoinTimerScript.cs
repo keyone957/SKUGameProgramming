@@ -13,10 +13,17 @@ public class CoinTimerScript : MonoBehaviour
     public float countdownTime = 10f;
     public GameObject finishPanel;
     public List<GameObject> coins = new List<GameObject>();
+    private CoinManager coinManager;
+    public TextMeshProUGUI fail;
+    public TextMeshProUGUI earned;
+
+
 
     public void StartCountdown()
     {
         StartCoroutine(CountdownRoutine());
+        coinManager = CoinManager.Instance;
+
     }
 
     private IEnumerator CountdownRoutine()
@@ -29,7 +36,11 @@ public class CoinTimerScript : MonoBehaviour
             timer -= 1f;
         }
         countdownText.text = "0";
-        
+        coinManager.DeactivateAllCoins();
+        //실패로 바꿔주기
+        fail.text = "실 패 !";
+        earned.text = "0";
+
         finishPanel.SetActive(true);
 
 
