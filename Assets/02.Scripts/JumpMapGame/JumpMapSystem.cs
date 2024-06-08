@@ -5,10 +5,10 @@ using TMPro;
 using UnityEngine.SceneManagement;
 
 // 점프맵을 담당하는 컴포넌트 구성
-// 게임종료 팝업창 관련 코드 추가, 남은 시간에 따라 점수 부여
+// 게임종료 팝업창 관련 코드 추가, 남은 시간에 따라 점수 부여, 점수별로 다른 색상적용
 // 최초 작성자 : 장현우
 // 수정자 : 장현우
-// 최종 수정일 : 2024-06-06
+// 최종 수정일 : 2024-06-08
 
 public class JumpMapSystem : MonoBehaviour
 {
@@ -16,8 +16,8 @@ public class JumpMapSystem : MonoBehaviour
     public GameObject endPanel;
     public TextMeshProUGUI countdownText;
     public TextMeshProUGUI remainingTimeText;
+    public TextMeshProUGUI resultText;
     public Button startButton;
-    public Button retryButton;
     public Button nextStageButton;
     public Image timerImage;
     public GameObject bombPrefab;
@@ -25,22 +25,41 @@ public class JumpMapSystem : MonoBehaviour
     private bool isPlayerMovementRestricted = true;
     private PlayerInputController playerInputController;
     private float timer = 0f;
-    public float duration = 100f; // 타이머의 총 시간, 인스펙터 창에서 설정 가능
+    public float duration;
+    public static Vector3 InitialPlayerPosition { get; private set; }
 
-    public static JumpMapSystem Instance;
+    // 싱글톤 인스턴스
+    private static JumpMapSystem instance;
+    public static JumpMapSystem Instance
+    {
+        get { return instance; }
+    }
 
     private void Awake()
     {
-        Instance = this;
+        // 인스턴스가 존재하지 않으면 현재 인스턴스로 설정
+        if (instance == null)
+        {
+            instance = this;
+        }
+        // 인스턴스가 이미 존재하고 현재 인스턴스가 아니라면 이 인스턴스를 파괴
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        // 다음 씬으로 이동해도 파괴되지 않도록 설정
+        DontDestroyOnLoad(gameObject);
+
+        InitialPlayerPosition = transform.position;
     }
 
     private void Start()
     {
-        InitializeScene();
         ActivatePopupPanel();
         playerInputController = FindObjectOfType<PlayerInputController>();
         RestrictPlayerMovement(true);
-        endPanel.SetActive(false); // 엔드 패널 초기 비활성화
+        endPanel.SetActive(false);
     }
 
     private void Update()
@@ -50,18 +69,22 @@ public class JumpMapSystem : MonoBehaviour
             timer += Time.deltaTime;
             timerImage.fillAmount = timer / duration;
 
-            // 타이머가 모두 소진되었을 때 처리
             if (timer >= duration)
             {
-                timer = duration; // Ensure timer does not exceed duration
+                timer = duration;
                 TriggerFlag();
             }
         }
+
+        if (timer >= duration)
+        {
+            ActivateEndPanel();
+        }
     }
 
-    private void InitializeScene()
+    public void StartGame()
     {
-        // 씬 초기화 로직 추가
+
     }
 
     private void ActivatePopupPanel()
@@ -94,13 +117,6 @@ public class JumpMapSystem : MonoBehaviour
         timerImage.gameObject.SetActive(true);
 
         RestrictPlayerMovement(false);
-
-        StartGame();
-    }
-
-    public void StartGame()
-    {
-        // 게임 시작 로직 추가
     }
 
     public void RestrictPlayerMovement(bool restrict)
@@ -123,41 +139,44 @@ public class JumpMapSystem : MonoBehaviour
         if (remainingTime <= 0)
         {
             message = "Fail...";
+            remainingTimeText.color = Color.red;
+            resultText.color = Color.red;
+            remainingTimeText.text = "Fail";
         }
         else if (remainingTime <= 10f)
         {
             message = "Not bad";
+            remainingTimeText.color = Color.yellow;
+            resultText.color = Color.blue;
         }
         else if (remainingTime <= 20f)
         {
             message = "Good";
+            remainingTimeText.color = Color.green;
+            resultText.color = Color.blue;
         }
         else
         {
             message = "Excellent";
+            remainingTimeText.color = Color.blue;
+            resultText.color = Color.blue;
         }
 
-        remainingTimeText.text = $"당신의 기록은 : {timer.ToString("F2")}초입니다. {message}";
-        endPanel.SetActive(true);
-
-        retryButton.onClick.AddListener(RetryGame);
-        nextStageButton.onClick.AddListener(NextStage);
+        remainingTimeText.text = message;
+        resultText.text = (timer >= duration) ? "GameOver" : "Clear!!!";
+        remainingTimeText.text = $" Rank : {message} \n\n 당신의 기록은 : {timer.ToString("F2")}초입니다. ";
+        ActivateEndPanel();
     }
 
-    private void RetryGame()
+    public void ActivateEndPanel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        endPanel.SetActive(true);
+        resultText.text = (timer >= duration) ? "GameOver" : "Clear!!!";
+        nextStageButton.onClick.AddListener(NextStage);
     }
 
     private void NextStage()
     {
-        SceneManager.LoadScene("JumpMapBonus2");
         Debug.Log("다음 스테이지로 넘어감");
-    }
-
-    public void ResetScene()
-    {
-        Debug.Log("처음으로");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

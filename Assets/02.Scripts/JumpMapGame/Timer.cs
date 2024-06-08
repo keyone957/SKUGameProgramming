@@ -6,11 +6,11 @@ using TMPro;
 using UnityEngine.SceneManagement;
 
 //제한시간 관련 컴포넌트
-//타이머 수정 완료
+//타이머 소진 시 초기화 하는 부분 제거
 //타임아웃 시 리스폰 컴포넌트 작성완료
 // 작성자 : 장현우
 // 수정자 : 장현우
-// 최종 수정일 : 2024-05-21
+// 최종 수정일 : 2024-06-08
 
 
 public class Timer : MonoBehaviour
@@ -70,21 +70,17 @@ public class Timer : MonoBehaviour
         }
         // 카운트 다운 종료 시 호출되는 메서드
         OnEnd();
-        InitializeGame();
+
     }
 
     // 카운트 다운이 종료될 때 호출되는 메서드
     private void OnEnd()
     {
-        print("Time Over");
+        // 타이머가 소진되면 엔드 팝업 패널을 활성화
+        JumpMapSystem.Instance.ActivateEndPanel();
     }
 
-    private void InitializeGame()
-    {
-        // 시간초가 경과하면 해당 게임씬의 초기화면으로 회귀
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
 
     private IEnumerator BlinkWarning()
     {
