@@ -6,19 +6,16 @@ using UnityEngine;
 // 수정자: 하경림
 // 최종 수정일: 2024-06-06
 public class CoinTrigger : MonoBehaviour
-{ private bool collided = false;
+{
+    private bool collided = false;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && !collided)
         {
             collided = true;
+            Destroy(gameObject);
 
-            CoinManager coinManager = FindObjectOfType<CoinManager>();
-            if (coinManager != null)
-            {
-                coinManager.ActivateAllCoins();
-            }
 
         }
     }
