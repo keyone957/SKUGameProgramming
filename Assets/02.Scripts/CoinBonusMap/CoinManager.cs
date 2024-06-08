@@ -8,14 +8,14 @@ using UnityEngine;
 public class CoinManager : MonoBehaviour
 {
     public List<GameObject> coins = new List<GameObject>();
-    public GameObject panel;  // 패널 오브젝트를 드래그 앤 드롭으로 할당하세요.
+    public GameObject finishPanel;
 
     void Start()
     {
         DeactivateAllCoins();
-        if (panel != null)
+        if (finishPanel != null)
         {
-            panel.SetActive(false);  // 게임 시작 시 패널 비활성화
+            finishPanel.SetActive(false); 
         }
     }
 
@@ -46,12 +46,12 @@ public class CoinManager : MonoBehaviour
         {
             if (coin.activeInHierarchy)
             {
-                return;  // 활성화된 코인이 아직 남아있음
+                return;
             }
         }
-        if (panel != null)
+        if (finishPanel != null)
         {
-            panel.SetActive(true);  // 모든 코인이 사라졌다면 패널 활성화
+            finishPanel.SetActive(true); 
         }
     }
 }

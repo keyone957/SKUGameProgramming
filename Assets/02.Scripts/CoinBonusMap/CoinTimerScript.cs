@@ -11,6 +11,8 @@ public class CoinTimerScript : MonoBehaviour
 {
     public TextMeshProUGUI countdownText;
     public float countdownTime = 10f;
+    public GameObject finishPanel;
+    public List<GameObject> coins = new List<GameObject>();
 
     public void StartCountdown()
     {
@@ -27,5 +29,9 @@ public class CoinTimerScript : MonoBehaviour
             timer -= 1f;
         }
         countdownText.text = "0";
+        
+        finishPanel.SetActive(true);
+
+
     }
 }
