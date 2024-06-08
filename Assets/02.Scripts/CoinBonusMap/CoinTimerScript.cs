@@ -39,8 +39,7 @@ public class CoinTimerScript : MonoBehaviour
         coinManager.DeactivateAllCoins();
         //실패로 바꿔주기
         fail.text = "실 패 !";
-        earned.text = "0";
-
+        countdownTime = 0f;
         finishPanel.SetActive(true);
 
 

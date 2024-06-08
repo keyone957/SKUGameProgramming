@@ -1015,7 +1015,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -43.5, y: 8.1}
+  m_AnchoredPosition: {x: 154.2, y: 9.1}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &293241714
@@ -1174,7 +1174,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -119, y: 4.8}
+  m_AnchoredPosition: {x: -30, y: 7}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &353234458
@@ -3113,7 +3113,7 @@ GameObject:
   - component: {fileID: 807928559}
   - component: {fileID: 807928558}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Earned
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3135,7 +3135,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 103.8, y: 0}
+  m_AnchoredPosition: {x: 126.300026, y: 13}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &807928558
@@ -3160,15 +3160,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1500
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54718de5aae05444f9cb082e9ff2749b, type: 2}
+  m_sharedMaterial: {fileID: -2467652180328494061, guid: 54718de5aae05444f9cb082e9ff2749b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3185,8 +3185,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4126,7 +4126,6 @@ GameObject:
   - component: {fileID: 1178117106}
   - component: {fileID: 1178117105}
   - component: {fileID: 1178117103}
-  - component: {fileID: 1178117104}
   m_Layer: 5
   m_Name: Counter
   m_TagString: Untagged
@@ -4223,22 +4222,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1178117104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178117102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc9d808976bcd0f4a9d5ca072582127a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 0}
-  Count: {fileID: 0}
-  countdownTime: 3
-  Finish: {fileID: 0}
 --- !u!222 &1178117105
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4887,8 +4870,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countdownText: {fileID: 2099266382}
   countdownTime: 10
-  finishPanel: {fileID: 0}
+  finishPanel: {fileID: 1403653319}
   coins: []
+  fail: {fileID: 1494820016}
+  earned: {fileID: 807928558}
 --- !u!4 &1376825981
 Transform:
   m_ObjectHideFlags: 0
@@ -5462,7 +5447,7 @@ GameObject:
   - component: {fileID: 1494820017}
   - component: {fileID: 1494820016}
   m_Layer: 5
-  m_Name: Title
+  m_Name: Success
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5873,7 +5858,7 @@ MonoBehaviour:
   - {fileID: 1461527272}
   - {fileID: 1267480421}
   - {fileID: 653389826}
-  finishPanel: {fileID: 0}
+  finishPanel: {fileID: 1403653319}
 --- !u!4 &1539276113
 Transform:
   m_ObjectHideFlags: 0
@@ -5904,7 +5889,7 @@ MonoBehaviour:
   Panel: {fileID: 1492523150}
   Count: {fileID: 1178117103}
   countdownTime: 3
-  Finish: {fileID: 0}
+  Finish: {fileID: 1403653319}
 --- !u!1 &1595333161
 GameObject:
   m_ObjectHideFlags: 0

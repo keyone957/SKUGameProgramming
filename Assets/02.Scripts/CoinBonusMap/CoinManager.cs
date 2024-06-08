@@ -10,7 +10,8 @@ public class CoinManager : MonoBehaviour
 {
     public List<GameObject> coins = new List<GameObject>();
     public GameObject finishPanel;
-    public TextMeshProUGUI countdownText;
+
+    private CoinTimerScript coinTimerScript;
     private static CoinManager _instance;
 
     public static CoinManager Instance
@@ -79,8 +80,10 @@ public class CoinManager : MonoBehaviour
         if (finishPanel != null)
         {
 
+            coinTimerScript.countdownTime = 0f;
+            //다른 패널로 만들기
             finishPanel.SetActive(true);
-            countdownText.text = "0";
+
         }
     }
 }
