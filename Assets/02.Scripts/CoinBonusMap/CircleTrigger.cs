@@ -7,16 +7,34 @@ using TMPro;
 // 최초 작성자: 하경림
 // 수정자: 하경림
 // 최종 수정일: 2024-06-06
-
 public class CircleTrigger : MonoBehaviour
 {
     private bool collided = false;
+    public AudioClip newBackgroundMusic;
+    private static AudioSource bgmAudioSource;
+
+    void Start()
+    {
+        if (bgmAudioSource == null)
+        {
+            GameObject bgmObject = new GameObject("BackgroundMusic");
+            bgmAudioSource = bgmObject.AddComponent<AudioSource>();
+            bgmAudioSource.loop = true;
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && !collided)
         {
             collided = true;
+
+            if (newBackgroundMusic != null)
+            {
+                bgmAudioSource.clip = newBackgroundMusic;
+                bgmAudioSource.Play();
+            }
+
             Destroy(gameObject);
 
             CoinManager coinManager = FindObjectOfType<CoinManager>();
@@ -24,7 +42,6 @@ public class CircleTrigger : MonoBehaviour
             {
                 coinManager.ActivateAllCoins();
             }
-            
 
             CoinTimerScript timerComponent = FindObjectOfType<CoinTimerScript>();
             if (timerComponent != null)

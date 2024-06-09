@@ -8,26 +8,36 @@ using UnityEngine;
 public class CoinTrigger : MonoBehaviour
 {
     private bool collided = false;
+    public AudioClip coinSound; 
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = gameObject.AddComponent<AudioSource>();
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && !collided)
         {
             collided = true;
+            PlayCoinSound();
+            Destroy(gameObject, coinSound.length); 
+
             CoinManager coinManager = FindObjectOfType<CoinManager>();
             if (coinManager != null)
             {
-                Debug.Log("CoinManager found, removing coin.");
-                coinManager.RemoveCoin(gameObject);  // 리스트에서 코인을 제거
-                Destroy(gameObject);  // 코인 오브젝트 파괴
-                coinManager.CheckAllCoinsCollected();
+                coinManager.ActivateAllCoins();
             }
-            else
-            {
-                Debug.Log("CoinManager not found.");
-                Destroy(gameObject); 
-            }
+        }
+    }
 
+    private void PlayCoinSound()
+    {
+        if (coinSound != null)
+        {
+            audioSource.clip = coinSound;
+            audioSource.Play();
         }
     }
 }
