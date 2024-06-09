@@ -24,16 +24,6 @@ public class GameManager : MonoBehaviour
         // 항상 초기 UI 설정 실행
         countdownText.gameObject.SetActive(false);  // 카운트다운 텍스트 비활성화
         popupPanel.SetActive(true);  // 팝업창을 활성화
-        startButton.onClick.AddListener(OnStartButtonClicked);  // Start 버튼 클릭 이벤트 등록
         Debug.Log("start");
-    }
-
-    public void OnStartButtonClicked()
-    {
-        if (!gameStarted)  // 게임이 시작되지 않았을 때만 실행
-        {
-            // JumpMapSystem으로 시작을 위임
-            JumpMapSystem.Instance.StartGame();
-        }
     }
 }

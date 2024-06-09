@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 
 // 점프맵을 담당하는 컴포넌트 구성
 // 게임종료 팝업창 관련 코드 추가, 남은 시간에 따라 점수 부여, 점수별로 다른 색상적용
+// 버튼 이벤트리스너 코드 수정, initial 함수 추가
 // 최초 작성자 : 장현우
-// 수정자 : 장현우
-// 최종 수정일 : 2024-06-08
+// 수정자 : 홍원기
+// 최종 수정일 : 2024-06-09
 
 public class JumpMapSystem : MonoBehaviour
 {
@@ -29,11 +30,7 @@ public class JumpMapSystem : MonoBehaviour
     public static Vector3 InitialPlayerPosition { get; private set; }
 
     // 싱글톤 인스턴스
-    private static JumpMapSystem instance;
-    public static JumpMapSystem Instance
-    {
-        get { return instance; }
-    }
+    public static JumpMapSystem instance;
 
     private void Awake()
     {
@@ -47,10 +44,6 @@ public class JumpMapSystem : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        // 다음 씬으로 이동해도 파괴되지 않도록 설정
-        DontDestroyOnLoad(gameObject);
-
         InitialPlayerPosition = transform.position;
     }
 
@@ -60,6 +53,8 @@ public class JumpMapSystem : MonoBehaviour
         playerInputController = FindObjectOfType<PlayerInputController>();
         RestrictPlayerMovement(true);
         endPanel.SetActive(false);
+        nextStageButton.onClick.AddListener(NextStage);
+        startButton.onClick.AddListener(StartButtonClicked);
     }
 
     private void Update()
@@ -82,16 +77,18 @@ public class JumpMapSystem : MonoBehaviour
         }
     }
 
-    public void StartGame()
+    public void InitializeJumpMap()
     {
-
+        SceneSystem.instance._fadeOverlay.gameObject.SetActive(false);
+        AllSceneCanvas.instance.isOpenMenu = true;
+        AllSceneCanvas.instance.monsterCnt.SetActive(false);
+        AllSceneCanvas.instance.SetStageText("BonusStage!");
     }
 
     private void ActivatePopupPanel()
     {
         popupPanel.SetActive(true);
         Time.timeScale = 0f;
-        startButton.onClick.AddListener(StartButtonClicked);
     }
 
     private void StartButtonClicked()
@@ -172,7 +169,6 @@ public class JumpMapSystem : MonoBehaviour
     {
         endPanel.SetActive(true);
         resultText.text = (timer >= duration) ? "GameOver" : "Clear!!!";
-        nextStageButton.onClick.AddListener(NextStage);
     }
 
     private void NextStage()

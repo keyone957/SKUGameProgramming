@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 // 트리거 스크립트
-// 엔드팝업 관련 내용 추가
+// 싱글톤 수정
 // 최초 작성자 : 장현우
-// 수정자 : 장현우
-// 최종 수정일 : 2024-06-06
+// 수정자 : 홍원기
+// 최종 수정일 : 2024-06-09
 
 public class Trigger : MonoBehaviour
 {
@@ -28,6 +28,6 @@ public class Trigger : MonoBehaviour
         Debug.Log("Game Over!");
 
         // JumpMapSystem의 TriggerFlag 메서드 호출하여 엔드 패널 활성화
-        JumpMapSystem.Instance.TriggerFlag();
+        JumpMapSystem.instance.TriggerFlag();
     }
 }
