@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-// 코인 전체 관리 
+// 코인 전체 관리 및 코인 다먹었을때 로직
 // 최초 작성자: 하경림
 // 수정자: 하경림
 // 최종 수정일: 2024-06-06
 public class CoinManager : MonoBehaviour
 {
     public List<GameObject> coins = new List<GameObject>();
-    public GameObject finishPanel;
+    public GameObject successPanel;
 
     private CoinTimerScript coinTimerScript;
     private static CoinManager _instance;
@@ -31,12 +31,13 @@ public class CoinManager : MonoBehaviour
             return _instance;
         }
     }
+
     void Start()
     {
         DeactivateAllCoins();
-        if (finishPanel != null)
+        if (successPanel != null)
         {
-            finishPanel.SetActive(false);
+            successPanel.SetActive(false);
         }
     }
 
@@ -60,30 +61,52 @@ public class CoinManager : MonoBehaviour
             coin.SetActive(false);
         }
     }
+
     public void RemoveCoin(GameObject coin)
     {
         if (coins.Contains(coin))
         {
-            coins.Remove(coin);
+            coin.SetActive(false); 
+            coins.Remove(coin); 
+        }
+        CheckAllCoinsCollected();
+    }
+
+    public bool AreAllCoinsCollected()
+    {
+        foreach (GameObject coin in coins)
+        {
+            if (coin != null && coin.activeInHierarchy)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public void ShowSuccessPanel()
+    {
+        if (successPanel != null)
+        {
+            successPanel.SetActive(true);
         }
     }
 
     public void CheckAllCoinsCollected()
     {
-        foreach (GameObject coin in coins)
+        if (AreAllCoinsCollected())
         {
-            if (coin.activeInHierarchy)
+            if (coinTimerScript == null)
             {
-                return;
+                coinTimerScript = FindObjectOfType<CoinTimerScript>();
             }
-        }
-        if (finishPanel != null)
-        {
 
-            coinTimerScript.countdownTime = 0f;
-            //다른 패널로 만들기
-            finishPanel.SetActive(true);
+            if (coinTimerScript != null)
+            {
+                coinTimerScript.StopCountdown(); 
+            }
 
+            ShowSuccessPanel();
         }
     }
 }

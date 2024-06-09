@@ -11,19 +11,20 @@ public class CoinTimerScript : MonoBehaviour
 {
     public TextMeshProUGUI countdownText;
     public float countdownTime = 10f;
-    public GameObject finishPanel;
+    public GameObject failPanel;
     public List<GameObject> coins = new List<GameObject>();
     private CoinManager coinManager;
-    public TextMeshProUGUI fail;
-    public TextMeshProUGUI earned;
+    private AudioSource backgroundMusicSource;
 
-
+    void Start()
+    {
+        backgroundMusicSource = GameObject.FindWithTag("BackgroundMusic").GetComponent<AudioSource>();
+    }
 
     public void StartCountdown()
     {
         StartCoroutine(CountdownRoutine());
         coinManager = CoinManager.Instance;
-
     }
 
     private IEnumerator CountdownRoutine()
@@ -36,12 +37,28 @@ public class CoinTimerScript : MonoBehaviour
             timer -= 1f;
         }
         countdownText.text = "0";
-        coinManager.DeactivateAllCoins();
-        //실패로 바꿔주기
-        fail.text = "실 패 !";
-        countdownTime = 0f;
-        finishPanel.SetActive(true);
+        StopCountdown();
+    }
 
+    public void StopCountdown()
+    {
+        Time.timeScale = 0f;
 
+        if (backgroundMusicSource != null)
+        {
+            backgroundMusicSource.Stop();
+        }
+
+        if (coinManager.AreAllCoinsCollected())
+        {
+            coinManager.ShowSuccessPanel();
+        }
+        else
+        {
+            if (failPanel != null)
+            {
+                failPanel.SetActive(true);
+            }
+        }
     }
 }

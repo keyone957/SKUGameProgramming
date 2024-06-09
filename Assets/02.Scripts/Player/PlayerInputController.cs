@@ -37,10 +37,10 @@ public class PlayerInputController : MonoBehaviour
 
     private void Update()
     {
-        if (PlayerManager.instance.isDiePlayer)
-        {
-            return;
-        }
+//        if (PlayerManager.instance.isDiePlayer)
+//        {
+//            return;
+//        }
 
         Idle();
         Move();

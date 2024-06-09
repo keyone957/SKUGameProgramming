@@ -11,13 +11,16 @@ public class CoinBonuCounter : MonoBehaviour
     public GameObject Panel;
     public TMP_Text Count;
     public float countdownTime = 3.0f;
-    public GameObject Finish;
+    public GameObject failPanel;
+    public GameObject successPanel;
+
     private bool gameStarted = false;
 
     private void Start()
     {
         Time.timeScale = 0;
-        Finish.SetActive(false);
+        failPanel.SetActive(false);
+        successPanel.SetActive(false);
         Panel.SetActive(true);
         Count.gameObject.SetActive(false);
     }
