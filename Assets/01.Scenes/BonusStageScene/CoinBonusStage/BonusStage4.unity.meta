@@ -1,11 +1,6 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/03.Prefabs/Environments/FieldChest.prefab.meta
-guid: 8f1cbba4141dec84d97cdf23270e32f5
-PrefabImporter:
-========
-guid: 859362339e3ed4146903ae7eb8b32b0a
+guid: 1c65e8c29dc39df47ad91b0c73912c90
 DefaultImporter:
->>>>>>>> Feature/CoinBonusStage:Assets/01.Scenes/BonusStageScene/CoinBonusStage/BonusStage4.unity.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
