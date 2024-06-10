@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 //전체 게임 관리하는 씬 시스템 구성
-//이동할 씬이름 변경
+//보너스 스테이지는 전체 스테이지 ++안함
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-06-04
+// 최종 수정일 : 2024-06-010
 public class SceneSystem : MonoBehaviour
 {
     public enum NextStageType
@@ -48,17 +48,14 @@ public class SceneSystem : MonoBehaviour
         {
             int randomDungeonStage = Random.Range(1, 3);//나중에 맵 개수에 따라 랜덤한 스테이지 나오게
             _fadeOverlay.DoFadeOut(1.0f, "DungeonStage" + randomDungeonStage);
+            currentStage++;
         }
-
-        currentStage++;
+        
         isClearStage = false;
     }
     //테스트 씬 이동 함수
     public void TestNextStage(string TestSceneName)
     {
         _fadeOverlay.DoFadeOut(1.0f,TestSceneName);
-    }
-    public void EndGame()
-    {
     }
 }

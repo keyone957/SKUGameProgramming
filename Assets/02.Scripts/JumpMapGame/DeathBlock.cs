@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // 추락시 팝업창을 활성화하는 컴포넌트
-// 떨어지면 팝업창 활성화
+// 죽었을때 효과음
 // 최초 작성자 : 장현우
-// 수정자 : 장현우
-// 최종 수정일 : 2024-06-07
+// 수정자 : 홍원기
+// 최종 수정일 : 2024-06-10
 
 public class DeathBlock : MonoBehaviour
 {
@@ -18,6 +18,7 @@ public class DeathBlock : MonoBehaviour
         {
             // 플레이어 위치 초기화
             ResetPlayerPosition(collision.gameObject);
+            SoundManager._instance.PlaySound(Define._restartJumpMap);
         }
     }
 

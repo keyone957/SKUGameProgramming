@@ -6,13 +6,17 @@ using UnityEngine.SceneManagement;
 
 // 점프맵을 담당하는 컴포넌트 구성
 // 게임종료 팝업창 관련 코드 추가, 남은 시간에 따라 점수 부여, 점수별로 다른 색상적용
-// 버튼 이벤트리스너 코드 수정, initial 함수 추가
+// 플레이어 초기화 함수 및 재화 얻는거
 // 최초 작성자 : 장현우
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-06-09
+// 최종 수정일 : 2024-06-10
 
 public class JumpMapSystem : MonoBehaviour
 {
+    [SerializeField] private SpriteRenderer slimeSpr;
+    [SerializeField] private SpriteRenderer playerSwordImg;
+    [SerializeField] private TMP_Text moneyText;
+    private int clearMoney;
     public GameObject popupPanel;
     public GameObject endPanel;
     public TextMeshProUGUI countdownText;
@@ -21,7 +25,6 @@ public class JumpMapSystem : MonoBehaviour
     public Button startButton;
     public Button nextStageButton;
     public Image timerImage;
-    public GameObject bombPrefab;
 
     private bool isPlayerMovementRestricted = true;
     private PlayerInputController playerInputController;
@@ -44,6 +47,7 @@ public class JumpMapSystem : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
         InitialPlayerPosition = transform.position;
     }
 
@@ -55,6 +59,8 @@ public class JumpMapSystem : MonoBehaviour
         endPanel.SetActive(false);
         nextStageButton.onClick.AddListener(NextStage);
         startButton.onClick.AddListener(StartButtonClicked);
+        StartCoroutine(SceneStartSequence());
+        InitializeJumpMap();
     }
 
     private void Update()
@@ -80,21 +86,31 @@ public class JumpMapSystem : MonoBehaviour
     public void InitializeJumpMap()
     {
         SceneSystem.instance._fadeOverlay.gameObject.SetActive(false);
-        AllSceneCanvas.instance.isOpenMenu = true;
         AllSceneCanvas.instance.monsterCnt.SetActive(false);
         AllSceneCanvas.instance.SetStageText("BonusStage!");
+        slimeSpr.color = PlayerManager.instance.playerColor;
+        playerSwordImg.sprite = PlayerManager.instance.playerSwordSpr;
+    }
+
+    private IEnumerator SceneStartSequence()
+    {
+        SoundManager._instance.LoadBGM(Define._jumpMapBGM);
+        yield return new WaitForSeconds(0.3f);
+
+        yield return new WaitForSeconds(0.5f);
+        SoundManager._instance.PlayBGM(Define._jumpMapBGM);
     }
 
     private void ActivatePopupPanel()
     {
         popupPanel.SetActive(true);
-        Time.timeScale = 0f;
+        AllSceneCanvas.instance.isOpenMenu = true;
     }
 
     private void StartButtonClicked()
     {
         popupPanel.SetActive(false);
-        Time.timeScale = 1f;
+        AllSceneCanvas.instance.isOpenMenu = false;
         countdownText.gameObject.SetActive(true);
         StartCoroutine(StartCountdown());
     }
@@ -108,6 +124,7 @@ public class JumpMapSystem : MonoBehaviour
         }
 
         countdownText.text = "Start!!";
+        SoundManager._instance.PlaySound(Define._jumpMapStart);
         yield return new WaitForSeconds(1f);
 
         countdownText.gameObject.SetActive(false);
@@ -139,24 +156,32 @@ public class JumpMapSystem : MonoBehaviour
             remainingTimeText.color = Color.red;
             resultText.color = Color.red;
             remainingTimeText.text = "Fail";
+            clearMoney = 0;
+            moneyText.text = clearMoney.ToString();
         }
         else if (remainingTime <= 10f)
         {
             message = "Not bad";
             remainingTimeText.color = Color.yellow;
             resultText.color = Color.blue;
+            clearMoney = 200;
+            moneyText.text = clearMoney.ToString();
         }
         else if (remainingTime <= 20f)
         {
             message = "Good";
             remainingTimeText.color = Color.green;
             resultText.color = Color.blue;
+            clearMoney = 400;
+            moneyText.text = clearMoney.ToString();
         }
         else
         {
             message = "Excellent";
             remainingTimeText.color = Color.blue;
             resultText.color = Color.blue;
+            clearMoney = 800;
+            moneyText.text = clearMoney.ToString();
         }
 
         remainingTimeText.text = message;
@@ -173,6 +198,8 @@ public class JumpMapSystem : MonoBehaviour
 
     private void NextStage()
     {
-        Debug.Log("다음 스테이지로 넘어감");
+        PlayerManager.instance.playerMoney += clearMoney;
+        AllSceneCanvas.instance.SetMoney(PlayerManager.instance.playerMoney);
+        SceneSystem.instance.GoNextStage(SceneSystem.NextStageType.Normal);
     }
 }

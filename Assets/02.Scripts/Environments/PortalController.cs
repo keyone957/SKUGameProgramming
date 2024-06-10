@@ -5,10 +5,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 //포탈에 닿았을때 수행해야할 동작들
-//테스트코드
+//테스트코드, 포탈탈때 사운드
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-06-06
+// 최종 수정일 : 2024-06-10
 public class PortalController : MonoBehaviour
 {
     [SerializeField] private GameObject keyBoardUI;
@@ -26,8 +26,9 @@ public class PortalController : MonoBehaviour
     {
         if (isEnter&&Input.GetKeyDown(KeyCode.W))
         {
-            // SceneSystem.instance.TestNextStage(TestSceneName);
-            SceneSystem.instance.GoNextStage(nextStageType);
+            SceneSystem.instance.TestNextStage(TestSceneName);
+            // SceneSystem.instance.GoNextStage(nextStageType);
+            SoundManager._instance.PlaySound(Define._portalSound);
         }
     }
 

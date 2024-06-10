@@ -14,6 +14,7 @@ public static class Define
     public const string _dungeonBGM = "DungeonBgm";
     public const string _shootingBGM = "ShootingGameBgm";
     public const string _gameOverBGM = "GameOver";
+    public const string _jumpMapBGM = "JumpmapBGM";
     
     //EffectSound
     public const string _clickMenuSound = "BtnClickSound";
@@ -38,6 +39,10 @@ public static class Define
     public const string _shootingGolem = "ShootingGolem";
     public const string _clearDungeonStage = "ClearStage";
     public const string _playerDie = "PlayerDie";
+    public const string _bombSound = "BombSound";
+    public const string _restartJumpMap = "RestartJumpMapSound";
+    public const string _jumpMapStart = "JumpMapStart";
+    public const string _portalSound = "PortalSound";
 
 
 }

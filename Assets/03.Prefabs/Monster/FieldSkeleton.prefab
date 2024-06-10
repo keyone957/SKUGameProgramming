@@ -327,7 +327,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 30
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -355,7 +355,7 @@ MonoBehaviour:
   damage: 1
   traceDist: 15
   attackDist: 3.2
-  moveSpeed: 5
+  moveSpeed: 10
   monsterAttack: {fileID: 6536908481203010067}
   hpCanvas: {fileID: 5925834048526143925}
   monsterHpBarSlider: {fileID: 1354867453701397125}
