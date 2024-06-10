@@ -11,6 +11,7 @@ TagManager:
   - Monster
   - MonsterAttackCol
   - PlayerSword
+  - BackgroundMusic
   layers:
   - Default
   - TransparentFX
