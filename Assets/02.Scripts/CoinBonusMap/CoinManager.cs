@@ -2,52 +2,52 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 // 코인 전체 관리 및 코인 다 먹었을 때 로직
+//코드 리팩토링
 // 최초 작성자: 하경림
-// 수정자: 하경림
-// 최종 수정일: 2024-06-10
+// 수정자: 홍원기
+// 최종 수정일: 2024-06-11
 public class CoinManager : MonoBehaviour
-{
+{ 
+    [SerializeField] private int collectedCoinsCount = 0;
+    [SerializeField] private SpriteRenderer slimeSpr;
+    [SerializeField] private SpriteRenderer playerSwordImg;
+    [SerializeField] private Button failBtn;
+    [SerializeField] private Button successBtn;
     public List<GameObject> coins = new List<GameObject>();
     public GameObject successPanel;
-    public GameObject failPanel;
-
-    private int collectedCoinsCount = 0;
-
     private CoinTimerScript coinTimerScript;
-    private static CoinManager _instance;
+    public static CoinManager instance;
 
-    public static CoinManager Instance
+
+    void Awake()
     {
-        get
+        if (instance == null)
         {
-            if (_instance == null)
-            {
-                _instance = FindObjectOfType<CoinManager>();
-
-                if (_instance == null)
-                {
-                    GameObject go = new GameObject("CoinManager");
-                    _instance = go.AddComponent<CoinManager>();
-                }
-            }
-            return _instance;
+            instance = this;
         }
+        else
+            Destroy(this.gameObject);
     }
 
     void Start()
     {
         DeactivateAllCoins();
-        if (successPanel != null)
-        {
-            successPanel.SetActive(false);
-        }
+        successPanel.SetActive(false);
+        failBtn.onClick.AddListener(OnClickFailBtn);
+        successBtn.onClick.AddListener(OnClicKSuccessBtn);
+        InitialCoinMap();
     }
 
-    public void ActivateCoin(GameObject coin)
+    private void InitialCoinMap()
     {
-        coin.SetActive(true);
+        SceneSystem.instance._fadeOverlay.gameObject.SetActive(false);
+        AllSceneCanvas.instance.monsterCnt.SetActive(false);
+        AllSceneCanvas.instance.SetStageText("BonusStage!");
+        slimeSpr.color = PlayerManager.instance.playerColor;
+        playerSwordImg.sprite = PlayerManager.instance.playerSwordSpr;
     }
 
     public void ActivateAllCoins()
@@ -78,7 +78,7 @@ public class CoinManager : MonoBehaviour
 
     public bool AreAllCoinsCollected()
     {
-        return collectedCoinsCount == coins.Count;
+        return collectedCoinsCount == 6;
     }
 
 
@@ -91,5 +91,19 @@ public class CoinManager : MonoBehaviour
                 coinTimerScript.StopCountdown();
             }
         }
+    }
+
+    private void OnClickFailBtn()
+    {
+        AllSceneCanvas.instance.isOpenMenu = false;
+        SceneSystem.instance.GoNextStage(SceneSystem.NextStageType.Normal);
+    }
+
+    private void OnClicKSuccessBtn()
+    {
+        AllSceneCanvas.instance.isOpenMenu = false;
+        PlayerManager.instance.playerMoney += 1500;
+        AllSceneCanvas.instance.SetMoney(PlayerManager.instance.playerMoney);
+        SceneSystem.instance.GoNextStage(SceneSystem.NextStageType.Normal);
     }
 }

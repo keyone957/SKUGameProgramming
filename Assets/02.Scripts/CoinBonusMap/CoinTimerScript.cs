@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+
 // 원 닿게 될시 타이머 시작
+//코드 리팩토링
 // 최초 작성자: 하경림
-// 수정자: 하경림
-// 최종 수정일: 2024-06-06
+// 수정자: 홍원기
+// 최종 수정일: 2024-06-11
 
 public class CoinTimerScript : MonoBehaviour
 {
@@ -13,13 +15,10 @@ public class CoinTimerScript : MonoBehaviour
     public float countdownTime = 10f;
     public GameObject failPanel;
     public GameObject successPanel;
-    public List<GameObject> coins = new List<GameObject>();
-    private CoinManager coinManager;
 
     public void StartCountdown()
     {
         StartCoroutine(CountdownRoutine());
-        coinManager = CoinManager.Instance;
     }
 
     private IEnumerator CountdownRoutine()
@@ -27,28 +26,33 @@ public class CoinTimerScript : MonoBehaviour
         float timer = countdownTime;
         while (timer > 0f)
         {
+            if (CoinManager.instance.AreAllCoinsCollected())
+            {
+                successPanel.SetActive(true);
+                AllSceneCanvas.instance.isOpenMenu = true;
+                yield break;
+            }
+
             countdownText.text = Mathf.RoundToInt(timer).ToString();
             yield return new WaitForSeconds(1f);
             timer -= 1f;
         }
+
         countdownText.text = "0";
         StopCountdown();
     }
 
     public void StopCountdown()
     {
-        Time.timeScale = 0f;
+        AllSceneCanvas.instance.isOpenMenu = true;
 
-        if (coinManager.AreAllCoinsCollected())
+        if (CoinManager.instance.AreAllCoinsCollected())
         {
             successPanel.SetActive(true);
         }
         else
         {
-            if (failPanel != null)
-            {
-                failPanel.SetActive(true);
-            }
+            failPanel.SetActive(true);
         }
     }
 }

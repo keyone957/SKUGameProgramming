@@ -21,8 +21,8 @@ public class Ground : MonoBehaviour
         {
             failPanel.SetActive(true);
         }
-
-        Time.timeScale = 0f;
+        
+        AllSceneCanvas.instance.isOpenMenu = true;
 
         if (timerScript != null)
         {
