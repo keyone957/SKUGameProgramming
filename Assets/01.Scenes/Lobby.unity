@@ -14844,7 +14844,8 @@ MonoBehaviour:
   currentStage: 0
   isClearStage: 0
   maxStageCnt: 0
-  bonusStageOrder: 0
+  bonusStageOrder: 1
+  bossStageOrder: 5
   _fadeOverlay: {fileID: 886896112}
   monsterCnt: 0
 --- !u!1 &1630367573
@@ -24026,7 +24027,7 @@ PrefabInstance:
       objectReference: {fileID: 886896112}
     - target: {fileID: 5464740923586564734, guid: efbee33340e30824ebe2b8bbed3ffced, type: 3}
       propertyPath: TestSceneName
-      value: BonusStage4
+      value: DungeonStage1
       objectReference: {fileID: 0}
     - target: {fileID: 5464740923586564734, guid: efbee33340e30824ebe2b8bbed3ffced, type: 3}
       propertyPath: nextStageType

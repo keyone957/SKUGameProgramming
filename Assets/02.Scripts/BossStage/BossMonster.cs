@@ -3,7 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+// 보스 몬스터
+// 최초 작성자: 홍원기
+// 수정자: 
+// 최종 수정일: 2024-06-11
 public class BossMonster : MonoBehaviour
 {
     [SerializeField] private Slider bossHp;

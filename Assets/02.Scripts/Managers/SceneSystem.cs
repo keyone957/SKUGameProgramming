@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 //전체 게임 관리하는 씬 시스템 구성
-//보너스 스테이지는 전체 스테이지 ++안함
+//테스트코드 추가
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-06-010
+// 최종 수정일 : 2024-06-11
 public class SceneSystem : MonoBehaviour
 {
     public enum NextStageType
@@ -22,6 +22,7 @@ public class SceneSystem : MonoBehaviour
     public bool isClearStage;//현재 스테이지 클리어 했는지 bool값
     [SerializeField] public int maxStageCnt; //총 스테이지 개수
     [SerializeField] public int bonusStageOrder;//보너스 스테이지 몇번째에 실행할지
+    [SerializeField] public int bossStageOrder;
     [SerializeField] public FadeOverlay _fadeOverlay;
     [SerializeField] public int monsterCnt;
     void Awake()
@@ -41,7 +42,7 @@ public class SceneSystem : MonoBehaviour
     {
         if (stageType == NextStageType.Bonus)
         {
-            int randomBonusStage = Random.Range(1, 3);
+            int randomBonusStage = Random.Range(1, 5);
             _fadeOverlay.DoFadeOut(1.0f, "BonusStage" + randomBonusStage);
         }
         else if (stageType == NextStageType.Normal)
@@ -50,12 +51,27 @@ public class SceneSystem : MonoBehaviour
             _fadeOverlay.DoFadeOut(1.0f, "DungeonStage" + randomDungeonStage);
             currentStage++;
         }
-        
+        else if (stageType == NextStageType.Boss)
+        {
+            _fadeOverlay.DoFadeOut(1.0f,"BossStage");
+            currentStage++;
+        }
+
         isClearStage = false;
     }
     //테스트 씬 이동 함수
     public void TestNextStage(string TestSceneName)
     {
         _fadeOverlay.DoFadeOut(1.0f,TestSceneName);
+        if (TestSceneName.Contains("BonusStage"))
+        {
+            Debug.Log("아멀라");
+        }
+        else
+        {
+            currentStage++;
+        }
+        
+        isClearStage = false;
     }
 }

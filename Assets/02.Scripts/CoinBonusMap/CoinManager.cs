@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 
 // 코인 전체 관리 및 코인 다 먹었을 때 로직
-//코드 리팩토링
+//코드 리팩토링, 테스트코드 추가
 // 최초 작성자: 하경림
 // 수정자: 홍원기
 // 최종 수정일: 2024-06-11
@@ -97,6 +97,7 @@ public class CoinManager : MonoBehaviour
     {
         AllSceneCanvas.instance.isOpenMenu = false;
         SceneSystem.instance.GoNextStage(SceneSystem.NextStageType.Normal);
+        // SceneSystem.instance.TestNextStage("BossStage");
     }
 
     private void OnClicKSuccessBtn()
@@ -105,5 +106,6 @@ public class CoinManager : MonoBehaviour
         PlayerManager.instance.playerMoney += 1500;
         AllSceneCanvas.instance.SetMoney(PlayerManager.instance.playerMoney);
         SceneSystem.instance.GoNextStage(SceneSystem.NextStageType.Normal);
+        // SceneSystem.instance.TestNextStage("BossStage");
     }
 }

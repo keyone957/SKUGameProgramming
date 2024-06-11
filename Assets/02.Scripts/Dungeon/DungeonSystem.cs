@@ -6,10 +6,10 @@ using Random = UnityEngine.Random;
 
 //던전 씬에 사용될 시스템 컴포넌트추가
 //몬스터 갯수에 따라 ui띄우기
-//캔버스 초기화
+//테스트코드 추가
 // 최초 작성자 : 홍원기
 // 수정자 : 홍원기
-// 최종 수정일 : 2024-06-06
+// 최종 수정일 : 2024-06-11
 public class DungeonSystem : MonoBehaviour
 {
     public static DungeonSystem instance { get; private set; }
@@ -52,6 +52,7 @@ public class DungeonSystem : MonoBehaviour
     private void InitializeDungeonScene()
     {
         PlayerManager.instance.playerPower = 2;
+         // PlayerManager.instance.playerPower = 10;
         monsterCnt = monsterSpawnPoint.Length;
         soundPlayed = false;
         AllSceneCanvas.instance.monsterCnt.SetActive(true);

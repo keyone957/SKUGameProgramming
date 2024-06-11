@@ -644,6 +644,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &232311967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 232311968}
+  m_Layer: 0
+  m_Name: Point3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &232311968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232311967}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 68.6, y: 3.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 349689808}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &349689807
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,6 +706,7 @@ Transform:
   m_Children:
   - {fileID: 776392639}
   - {fileID: 473647580}
+  - {fileID: 232311968}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &370524396
@@ -870,7 +902,7 @@ Transform:
   m_GameObject: {fileID: 473647579}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15, y: 1.7, z: 0}
+  m_LocalPosition: {x: 32.7, y: 8.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8832,7 +8864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5464740923586564734, guid: efbee33340e30824ebe2b8bbed3ffced, type: 3}
       propertyPath: TestSceneName
-      value: SampleScene
+      value: DungeonStage2
       objectReference: {fileID: 0}
     - target: {fileID: 5464740923586564734, guid: efbee33340e30824ebe2b8bbed3ffced, type: 3}
       propertyPath: nextStageType
@@ -10077,6 +10109,7 @@ MonoBehaviour:
   monsterSpawnPoint:
   - {fileID: 776392639}
   - {fileID: 473647580}
+  - {fileID: 232311968}
   monsterPrefab:
   - {fileID: 3440869345954834524, guid: e51d7448a258edb40ad29e41b1da3f9a, type: 3}
   - {fileID: 5709910184101655306, guid: c791a132b6fdda945a9600bd1a8bfe04, type: 3}

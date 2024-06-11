@@ -3,7 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
-
+// 보스맵 시스템
+// 최초 작성자: 홍원기
+// 수정자: 
+// 최종 수정일: 2024-06-11
 public class BossStageSystem : MonoBehaviour
 {
     public static BossStageSystem instance { get; private set; }
@@ -11,7 +14,7 @@ public class BossStageSystem : MonoBehaviour
     [SerializeField] private GameObject bulletObj;
     [SerializeField] private float spawnInterval;
     [SerializeField] public PlayerInputController playerInput;
-    [SerializeField] private GameObject spawner;
+    [SerializeField] public GameObject spawner;
     [SerializeField] private GameObject clearChatPanel;
     public bool startBossStage;
     private bool isSpawning = false;
@@ -36,6 +39,7 @@ public class BossStageSystem : MonoBehaviour
     {
         SceneSystem.instance.isClearStage = false;
         SceneSystem.instance._fadeOverlay.gameObject.SetActive(false);
+        AllSceneCanvas.instance.playerHpUI.SetActive(true);
         AllSceneCanvas.instance.monsterCnt.SetActive(false);
         PlayerManager.instance.AssignSpriteRenderers();
         PlayerManager.instance.AnotherScenePlayer();
