@@ -15,6 +15,7 @@ public static class Define
     public const string _shootingBGM = "ShootingGameBgm";
     public const string _gameOverBGM = "GameOver";
     public const string _jumpMapBGM = "JumpmapBGM";
+    public const string _bossStageBGM = "BossStageBGM";
     
     //EffectSound
     public const string _clickMenuSound = "BtnClickSound";
@@ -43,6 +44,9 @@ public static class Define
     public const string _restartJumpMap = "RestartJumpMapSound";
     public const string _jumpMapStart = "JumpMapStart";
     public const string _portalSound = "PortalSound";
+    public const string _textSound = "TextSound";
+    public const string _damagedBoss = "DamagedBoss";
+    public const string _shootBullet = "ShootBullet";
 
 
 }

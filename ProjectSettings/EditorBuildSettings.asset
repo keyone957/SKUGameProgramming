@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01.Scenes/BonusStageScene/JumpMapScene/BonusStage3.unity
     guid: 6d2e3bfaeee265b4cbb53176b56ff4df
+  - enabled: 1
+    path: Assets/01.Scenes/TestScene/BossStage.unity
+    guid: ce768b17f7d78194e8b5c97f85f105e8
   m_configObjects: {}
