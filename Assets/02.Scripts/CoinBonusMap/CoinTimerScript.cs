@@ -12,14 +12,9 @@ public class CoinTimerScript : MonoBehaviour
     public TextMeshProUGUI countdownText;
     public float countdownTime = 10f;
     public GameObject failPanel;
+    public GameObject successPanel;
     public List<GameObject> coins = new List<GameObject>();
     private CoinManager coinManager;
-    private AudioSource backgroundMusicSource;
-
-    void Start()
-    {
-        backgroundMusicSource = GameObject.FindWithTag("BackgroundMusic").GetComponent<AudioSource>();
-    }
 
     public void StartCountdown()
     {
@@ -44,14 +39,9 @@ public class CoinTimerScript : MonoBehaviour
     {
         Time.timeScale = 0f;
 
-        if (backgroundMusicSource != null)
-        {
-            backgroundMusicSource.Stop();
-        }
-
         if (coinManager.AreAllCoinsCollected())
         {
-            coinManager.ShowSuccessPanel();
+            successPanel.SetActive(true);
         }
         else
         {

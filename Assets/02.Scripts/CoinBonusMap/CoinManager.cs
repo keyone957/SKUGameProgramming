@@ -11,6 +11,8 @@ public class CoinManager : MonoBehaviour
 {
     public List<GameObject> coins = new List<GameObject>();
     public GameObject successPanel;
+    public GameObject failPanel;
+
     private int collectedCoinsCount = 0;
 
     private CoinTimerScript coinTimerScript;
@@ -68,8 +70,7 @@ public class CoinManager : MonoBehaviour
     {
         if (coins.Contains(coin))
         {
-            coin.SetActive(false); 
-            coins.Remove(coin); 
+            coin.SetActive(false);
             collectedCoinsCount++;
             CheckAllCoinsCollected();
         }
@@ -80,29 +81,15 @@ public class CoinManager : MonoBehaviour
         return collectedCoinsCount == coins.Count;
     }
 
-    public void ShowSuccessPanel()
-    {
-        if (successPanel != null)
-        {
-            successPanel.SetActive(true);
-        }
-    }
 
     public void CheckAllCoinsCollected()
     {
         if (AreAllCoinsCollected())
         {
-            if (coinTimerScript == null)
-            {
-                coinTimerScript = FindObjectOfType<CoinTimerScript>();
-            }
-
             if (coinTimerScript != null)
             {
                 coinTimerScript.StopCountdown();
             }
-
-            ShowSuccessPanel();
         }
     }
 }
