@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-// 코인 전체 관리 및 코인 다먹었을때 로직
+
+// 코인 전체 관리 및 코인 다 먹었을 때 로직
 // 최초 작성자: 하경림
 // 수정자: 하경림
-// 최종 수정일: 2024-06-06
+// 최종 수정일: 2024-06-10
 public class CoinManager : MonoBehaviour
 {
     public List<GameObject> coins = new List<GameObject>();
     public GameObject successPanel;
+    public GameObject failPanel;
+
+    private int collectedCoinsCount = 0;
 
     private CoinTimerScript coinTimerScript;
     private static CoinManager _instance;
@@ -66,47 +70,26 @@ public class CoinManager : MonoBehaviour
     {
         if (coins.Contains(coin))
         {
-            coin.SetActive(false); 
-            coins.Remove(coin); 
+            coin.SetActive(false);
+            collectedCoinsCount++;
+            CheckAllCoinsCollected();
         }
-        CheckAllCoinsCollected();
     }
 
     public bool AreAllCoinsCollected()
     {
-        foreach (GameObject coin in coins)
-        {
-            if (coin != null && coin.activeInHierarchy)
-            {
-                return false;
-            }
-        }
-        return true;
+        return collectedCoinsCount == coins.Count;
     }
 
-    public void ShowSuccessPanel()
-    {
-        if (successPanel != null)
-        {
-            successPanel.SetActive(true);
-        }
-    }
 
     public void CheckAllCoinsCollected()
     {
         if (AreAllCoinsCollected())
         {
-            if (coinTimerScript == null)
-            {
-                coinTimerScript = FindObjectOfType<CoinTimerScript>();
-            }
-
             if (coinTimerScript != null)
             {
-                coinTimerScript.StopCountdown(); 
+                coinTimerScript.StopCountdown();
             }
-
-            ShowSuccessPanel();
         }
     }
 }

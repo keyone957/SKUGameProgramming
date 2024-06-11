@@ -10,10 +10,10 @@ using TMPro;
 public class CircleTrigger : MonoBehaviour
 {
     private bool collided = false;
-    public AudioClip newBackgroundMusic;
-    private static AudioSource bgmAudioSource;
+//    public AudioClip newBackgroundMusic;
+//    private static AudioSource bgmAudioSource;
 
-    void Start()
+/*    void Start()
     {
         if (bgmAudioSource == null)
         {
@@ -21,20 +21,20 @@ public class CircleTrigger : MonoBehaviour
             bgmAudioSource = bgmObject.AddComponent<AudioSource>();
             bgmAudioSource.loop = true;
         }
-    }
+    }*/
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && !collided)
         {
             collided = true;
-
+/*
             if (newBackgroundMusic != null)
             {
                 bgmAudioSource.clip = newBackgroundMusic;
                 bgmAudioSource.Play();
             }
-
+*/
             Destroy(gameObject);
 
             CoinManager coinManager = FindObjectOfType<CoinManager>();
