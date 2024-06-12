@@ -2,10 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//Å¬¸®¾î¾À ½Ã½ºÅÛ
-// ÃÖÃÊ ÀÛ¼ºÀÚ : È«¿ø±â
-// ¼öÁ¤ÀÚ : 
-// ÃÖÁ¾ ¼öÁ¤ÀÏ : 2024-06-12
+//í´ë¦¬ì–´ì”¬ ì‹œìŠ¤í…œ
+// ìµœì´ˆ ì‘ì„±ì : í™ì›ê¸°
+// ìˆ˜ì •ì : 
+// ìµœì¢… ìˆ˜ì •ì¼ : 2024-06-12
 public class ClearSceneSystem : MonoBehaviour
 {
     private void Start()

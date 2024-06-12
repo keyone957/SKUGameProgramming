@@ -15,7 +15,7 @@ C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-8873
+12841
 Successfully changed project path to: C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
 C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/keyon/OneDrive/Desktop/SKUGameProgramming4/SKUGameProgramming
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [33140] Host "[IP] 192.168.0.52 [Port] 0 [Flags] 2 [Guid] 3814438322 [EditorId] 3814438322 [Version] 1048832 [Id] WindowsEditor(7,È«¿ø±â) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [24452] Host "[IP] 192.168.0.52 [Port] 0 [Flags] 2 [Guid] 3570736812 [EditorId] 3570736812 [Version] 1048832 [Id] WindowsEditor(7,È«¿ø±â) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [33140] Host "[IP] 192.168.0.52 [Port] 0 [Flags] 2 [Guid] 3814438322 [EditorId] 3814438322 [Version] 1048832 [Id] WindowsEditor(7,È«¿ø±â) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24452] Host "[IP] 192.168.0.52 [Port] 0 [Flags] 2 [Guid] 3570736812 [EditorId] 3570736812 [Version] 1048832 [Id] WindowsEditor(7,È«¿ø±â) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 23 workers.
-Refreshing native plugins compatible for Editor in 16.33 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 17.95 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.21f1 (bf09ca542b87)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Resources/UnitySubsystems
@@ -70,46 +70,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56652
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008455 seconds.
-- Loaded All Assemblies, in  0.388 seconds
+Registered in 0.006901 seconds.
+- Loaded All Assemblies, in  0.381 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 246 ms
+Android Extension - Scanning For ADB Devices 267 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.514 seconds
-Domain Reload Profiling: 901ms
-	BeginReloadAssembly (147ms)
+- Finished resetting the current domain, in  0.531 seconds
+Domain Reload Profiling: 911ms
+	BeginReloadAssembly (143ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (53ms)
-	LoadAllAssembliesAndSetupDomain (149ms)
-		LoadAssemblies (148ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (148ms)
+		LoadAssemblies (143ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (145ms)
-			TypeCache.Refresh (144ms)
-				TypeCache.ScanAssembly (127ms)
+		AnalyzeDomain (144ms)
+			TypeCache.Refresh (143ms)
+				TypeCache.ScanAssembly (126ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (514ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (531ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (473ms)
+		SetupLoadedEditorAssemblies (492ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (328ms)
+			InitializePlatformSupportModulesInManaged (352ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (96ms)
+			ProcessInitializeOnLoadAttributes (92ms)
 			ProcessInitializeOnLoadMethodAttributes (43ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -118,8 +118,8 @@ Domain Reload Profiling: 901ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.896 seconds
-Refreshing native plugins compatible for Editor in 10.05 ms, found 9 plugins.
+- Loaded All Assemblies, in  0.889 seconds
+Refreshing native plugins compatible for Editor in 9.16 ms, found 9 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -127,47 +127,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.668 seconds
-Domain Reload Profiling: 1560ms
-	BeginReloadAssembly (145ms)
+- Finished resetting the current domain, in  0.712 seconds
+Domain Reload Profiling: 1597ms
+	BeginReloadAssembly (127ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (15ms)
-	RebuildCommonClasses (28ms)
+		CreateAndSetChildDomain (17ms)
+	RebuildCommonClasses (24ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (677ms)
-		LoadAssemblies (474ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (690ms)
+		LoadAssemblies (473ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (294ms)
-			TypeCache.Refresh (247ms)
-				TypeCache.ScanAssembly (226ms)
-			ScanForSourceGeneratedMonoScriptInfo (36ms)
+		AnalyzeDomain (296ms)
+			TypeCache.Refresh (248ms)
+				TypeCache.ScanAssembly (223ms)
+			ScanForSourceGeneratedMonoScriptInfo (38ms)
 			ResolveRequiredComponents (10ms)
-	FinalizeReload (669ms)
+	FinalizeReload (712ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (525ms)
+		SetupLoadedEditorAssemblies (568ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
+			InitializePlatformSupportModulesInManaged (20ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (321ms)
-			ProcessInitializeOnLoadMethodAttributes (99ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (359ms)
+			ProcessInitializeOnLoadMethodAttributes (103ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 7.79 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 10.74 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6828 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 136 unused Assets / (1.6 MB). Loaded Objects now: 7286.
-Memory consumption went from 260.7 MB to 259.1 MB.
-Total: 4.523500 ms (FindLiveObjects: 0.480400 ms CreateObjectMapping: 0.223700 ms MarkObjects: 3.214200 ms  DeleteObjects: 0.604300 ms)
+Unloading 6829 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 136 unused Assets / (1.7 MB). Loaded Objects now: 7287.
+Memory consumption went from 260.9 MB to 259.3 MB.
+Total: 5.611700 ms (FindLiveObjects: 0.342100 ms CreateObjectMapping: 0.224800 ms MarkObjects: 4.163500 ms  DeleteObjects: 0.879700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -185,613 +185,162 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 100228.069089 seconds.
-  path: Assets/01.Scenes/ClearScene.unity
-  artifactKey: Guid(41ffc06f22ecb544d8ce99cc5ebbf4ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01.Scenes/ClearScene.unity using Guid(41ffc06f22ecb544d8ce99cc5ebbf4ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c9bba0c2bd078866a707330270c69a') in 0.001950 seconds
+  Time since last request: 104120.700856 seconds.
+  path: Assets/01.Scenes/StageScene/DungeonStage5.unity
+  artifactKey: Guid(debddb40792914e4d8eba83094e89218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01.Scenes/StageScene/DungeonStage5.unity using Guid(debddb40792914e4d8eba83094e89218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38523b77489279887ac54b82b16f372f') in 0.017603 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 415.282641 seconds.
-  path: Assets/04.ArtResource/Quantum Tek
-  artifactKey: Guid(62396122c9442954cbffcf7e58440425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Quantum Tek using Guid(62396122c9442954cbffcf7e58440425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d666058c6dbd218844f702d4f8012d8') in 0.001173 seconds
+  Time since last request: 0.000025 seconds.
+  path: Assets/01.Scenes/StageScene/DungeonStage3.unity
+  artifactKey: Guid(2d48832a9c1609c46aea72e5a6a44b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01.Scenes/StageScene/DungeonStage3.unity using Guid(2d48832a9c1609c46aea72e5a6a44b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9812110fba65f8d086241dd863c8b6e2') in 0.000457 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 1.096169 seconds.
-  path: Assets/04.ArtResource/Pixel Cursors
-  artifactKey: Guid(230c2352d6527da449040afe0a41dd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Pixel Cursors using Guid(230c2352d6527da449040afe0a41dd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1835a85db2d9b1592dea5377974d203e') in 0.000531 seconds
+  Time since last request: 0.000013 seconds.
+  path: Assets/01.Scenes/StageScene/DungeonStage6.unity
+  artifactKey: Guid(9b6bb4fb4bfdacd4faf96df883a0beb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01.Scenes/StageScene/DungeonStage6.unity using Guid(9b6bb4fb4bfdacd4faf96df883a0beb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87564db68f88907e9cbd7f7f23b5629') in 0.000430 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.053161 seconds.
-  path: Assets/04.ArtResource/Modotool
-  artifactKey: Guid(b8c4a6694cbae9a41ba7be1cd074b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Modotool using Guid(b8c4a6694cbae9a41ba7be1cd074b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5012725132c8415282dd691c6a20a16') in 0.001008 seconds
+  Time since last request: 2.774264 seconds.
+  path: Assets/01.Scenes/StageScene/Dunger.unity
+  artifactKey: Guid(1fdc2f392c31a3b4c96e02dd0c83ecb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01.Scenes/StageScene/Dunger.unity using Guid(1fdc2f392c31a3b4c96e02dd0c83ecb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ae3cf7db4b69504256c47b25b2c1c97') in 0.000523 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.058038 seconds.
-  path: Assets/04.ArtResource/May Genko
-  artifactKey: Guid(da3f35d5daecd9041a71be185e77be55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/May Genko using Guid(da3f35d5daecd9041a71be185e77be55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8d389d1fc7700ab93aeb1fb606a0c7') in 0.000948 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.053998 seconds.
-  path: Assets/04.ArtResource/MagicCliffsArtwork
-  artifactKey: Guid(cbe230438c93d0e4ca5da6d3d748a2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/MagicCliffsArtwork using Guid(cbe230438c93d0e4ca5da6d3d748a2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be2b09415dec727adaa4d0b9acf62f3e') in 0.000454 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.071387 seconds.
-  path: Assets/04.ArtResource/Heart
-  artifactKey: Guid(ff1d138842544914eaf316010a56bb75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Heart using Guid(ff1d138842544914eaf316010a56bb75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '798ce008d6b6cae3ee1be80db06ef556') in 0.000451 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 26.454713 seconds.
-  path: Assets/04.ArtResource/FX/Prefabs/FX002_01.prefab
-  artifactKey: Guid(d6d04e4b024a73147a9b9f10d607f384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/FX/Prefabs/FX002_01.prefab using Guid(d6d04e4b024a73147a9b9f10d607f384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e9e8192aad8c960dbc02f32783e571') in 0.084743 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 0.367078 seconds.
-  path: Assets/04.ArtResource/FX/Prefabs/FX001_01.prefab
-  artifactKey: Guid(3e196c9e632c76841a71cb6e2dc6d010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/FX/Prefabs/FX001_01.prefab using Guid(3e196c9e632c76841a71cb6e2dc6d010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0079ab8411cb93568e2c868327dc569d') in 0.013747 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 45.316365 seconds.
-  path: Assets/04.ArtResource/SunnyLand Artwork/Music tracks/Maniac.ogg
-  artifactKey: Guid(596e0f53d0760684897f73aa6d85324a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/SunnyLand Artwork/Music tracks/Maniac.ogg using Guid(596e0f53d0760684897f73aa6d85324a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66a972886c15d65e6556d79fc94ce4ef') in 0.190203 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.591790 seconds.
-  path: Assets/04.ArtResource/SunnyLand Artwork/Music tracks/Hurt_and_heart.ogg
-  artifactKey: Guid(6979d52fda0579441a2122b95abaf337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/SunnyLand Artwork/Music tracks/Hurt_and_heart.ogg using Guid(6979d52fda0579441a2122b95abaf337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23195ef1cb9482bc63d403dd8fd06f7f') in 0.140506 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.047276 seconds.
-  path: Assets/04.ArtResource/SunnyLand Artwork/Music tracks/hurry_up_and_run.mp3
-  artifactKey: Guid(b6dc04f2884eb5b46b675390b1e75e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/SunnyLand Artwork/Music tracks/hurry_up_and_run.mp3 using Guid(b6dc04f2884eb5b46b675390b1e75e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4219a2fe2669b499bc55e8400603adbd') in 0.141576 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.972050 seconds.
-  path: Assets/04.ArtResource/SunnyLand Artwork/Music tracks/under the rainbow.ogg
-  artifactKey: Guid(0c2f5e196afe4644d9b1ffb8d644851d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/SunnyLand Artwork/Music tracks/under the rainbow.ogg using Guid(0c2f5e196afe4644d9b1ffb8d644851d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6da0c5269e6e97e2b2a31de7e79924e') in 0.136512 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.822429 seconds.
-  path: Assets/04.ArtResource/SunnyLand Artwork/Music tracks/up_and_right.ogg
-  artifactKey: Guid(57f12d84ebf04324e92e37dc70ac26b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/SunnyLand Artwork/Music tracks/up_and_right.ogg using Guid(57f12d84ebf04324e92e37dc70ac26b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0461c71bfea405583e4bc2f8c8159cc') in 0.133690 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 11.948897 seconds.
-  path: Assets/04.ArtResource/SunnyLand Artwork/Sprites/Fx/enemy-death
-  artifactKey: Guid(8e410531b0ca844b79228da6d076824c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/SunnyLand Artwork/Sprites/Fx/enemy-death using Guid(8e410531b0ca844b79228da6d076824c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ad47e6312c6a70d3717ee84b01ba78d') in 0.000451 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 3.868326 seconds.
-  path: Assets/04.ArtResource/SunnyLand Artwork/Sprites/Fx/item-feedback/item-feedback-1.controller
-  artifactKey: Guid(6dab642fce51f72458f1cfacf5d45d8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/SunnyLand Artwork/Sprites/Fx/item-feedback/item-feedback-1.controller using Guid(6dab642fce51f72458f1cfacf5d45d8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eedc6b6b31466c9d94c1b0bfe3cc370') in 0.001782 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.713588 seconds.
-  path: Assets/04.ArtResource/SunnyLand Artwork/Sprites/Fx/item-feedback/Item-feedback-Animation.anim
-  artifactKey: Guid(e4c163fc6a44f1443ab07ca694ca102f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/SunnyLand Artwork/Sprites/Fx/item-feedback/Item-feedback-Animation.anim using Guid(e4c163fc6a44f1443ab07ca694ca102f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be63a4e75ed9ceef29ba76418a0a3ada') in 0.001083 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 135.485730 seconds.
-  path: Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Waveform
-  artifactKey: Guid(ed1faaa22c5544896bb371077806cf48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Waveform using Guid(ed1faaa22c5544896bb371077806cf48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf6c1ed01797857c6cff054d81f6fcb') in 0.000650 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 6.529444 seconds.
-  path: Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Hits/Hit-3
-  artifactKey: Guid(08ebc9dd373ab4b43b62ebf7f416b7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Warped Shooting Fx/Pixel Art/Hits/Hit-3 using Guid(08ebc9dd373ab4b43b62ebf7f416b7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9db3d9d1c4cf47d65b7177b8d17722aa') in 0.000950 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 137.687474 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp33.wav
-  artifactKey: Guid(11f661ec391cb5c4ebb92b41056e1660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/01Contemporary/Item PickUp/8BitRetroSFXPack1_Contemporary_ItemPickUp33.wav using Guid(11f661ec391cb5c4ebb92b41056e1660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a69263e5912ed9125ef1e9977b7f218f') in 0.018329 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 12.234780 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp07.wav
-  artifactKey: Guid(889a0f58b0671fb43a2cb9513e65f70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp07.wav using Guid(889a0f58b0671fb43a2cb9513e65f70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e35eab4418882722dc39bae4975b93f') in 0.015460 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.198963 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp06.wav
-  artifactKey: Guid(8409ff9e8f4f2024e9ebeb9d028a76d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp06.wav using Guid(8409ff9e8f4f2024e9ebeb9d028a76d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cba1c9ec3c286a9b37b23252fc1511c') in 0.013559 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.426374 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp02.wav
-  artifactKey: Guid(0f41273117e8e9f4e9d04fe8b75d540b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp02.wav using Guid(0f41273117e8e9f4e9d04fe8b75d540b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ed2afb3b9bd7e0bdb9c0a5205cd1f6') in 0.015312 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.061261 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp01.wav
-  artifactKey: Guid(c534db09940606841bd062ec08649571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp01.wav using Guid(c534db09940606841bd062ec08649571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d042af77879fbf471021bcc8238afd') in 0.013000 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 4.498585 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp08.wav
-  artifactKey: Guid(6a3e3de707b778f45b7123cfef04142f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp08.wav using Guid(6a3e3de707b778f45b7123cfef04142f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59fd0c8037c8cabb263bb366b37bb04e') in 0.014007 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.537945 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp09.wav
-  artifactKey: Guid(2f42308036151444bac9af72265eadaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp09.wav using Guid(2f42308036151444bac9af72265eadaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '609457213c1ba8f8b4c7adf38e1a6d07') in 0.013270 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.466067 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp10.wav
-  artifactKey: Guid(a7263914e21a29444905b80b497ae023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp10.wav using Guid(a7263914e21a29444905b80b497ae023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd14cc066b0a8ff85fe86150e8763043f') in 0.020698 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.202510 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp11.wav
-  artifactKey: Guid(e1ff38c282e4d6d45a3f80393ca48736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp11.wav using Guid(e1ff38c282e4d6d45a3f80393ca48736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39678a195b900fae0a5885c3e83dd706') in 0.013360 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.055056 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp12.wav
-  artifactKey: Guid(43e0dd229dc01d543a16a15c2e565c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp12.wav using Guid(43e0dd229dc01d543a16a15c2e565c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5326fe691df7eda7dbd5c8bf7aa0ab3c') in 0.014288 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.020570 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp13.wav
-  artifactKey: Guid(b814cdba059c60f4a939427277aac649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp13.wav using Guid(b814cdba059c60f4a939427277aac649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4a02b310b3855b776dafa9441e5d867') in 0.014802 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.023239 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp14.wav
-  artifactKey: Guid(6ae875db3a1221d4fbf895dbbe48eae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp14.wav using Guid(6ae875db3a1221d4fbf895dbbe48eae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '533780103ecc735800349b654f1dbfc0') in 0.010690 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.031877 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp15.wav
-  artifactKey: Guid(db0b2e6a442c48c4d8f1797512b9d2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp15.wav using Guid(db0b2e6a442c48c4d8f1797512b9d2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8b4a58438650005773eba387fc2cd66') in 0.012417 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.027075 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp16.wav
-  artifactKey: Guid(c0502c3d0824c614c9e59d63378f8553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp16.wav using Guid(c0502c3d0824c614c9e59d63378f8553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b30bde9a281cdb352a4c9ba4e138b9c') in 0.011639 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.030767 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp17.wav
-  artifactKey: Guid(589ba76c84c6cf24a91c5393241e4b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp17.wav using Guid(589ba76c84c6cf24a91c5393241e4b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14811b8092a171193fdba74a1d2302e3') in 0.016682 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.024633 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp18.wav
-  artifactKey: Guid(881a5196b53a6024dad7871ff2ef2e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp18.wav using Guid(881a5196b53a6024dad7871ff2ef2e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca51179078c20fbe4f77678bbbac5e07') in 0.011146 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.107673 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp20.wav
-  artifactKey: Guid(b931cb3427c2c6549999847f9aec1de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp20.wav using Guid(b931cb3427c2c6549999847f9aec1de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b32b06b5b51c4251def1d423a4b2a37') in 0.016463 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.025900 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp21.wav
-  artifactKey: Guid(776a0c7ed04efcb4ea24ab92ffc27393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp21.wav using Guid(776a0c7ed04efcb4ea24ab92ffc27393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6c6aeca455e590d6b27b0dd4008b27') in 0.011114 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.120786 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp23.wav
-  artifactKey: Guid(92a3d8853cbcc4c4c926640beb6dbcdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp23.wav using Guid(92a3d8853cbcc4c4c926640beb6dbcdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f034823033aece231e34138d769fb76c') in 0.010889 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.025111 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp24.wav
-  artifactKey: Guid(5162e5a6c2c3e3d438a18362d45ba404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp24.wav using Guid(5162e5a6c2c3e3d438a18362d45ba404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c5cf9b191b527f07895a80c61351d3') in 0.011738 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.055609 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp25.wav
-  artifactKey: Guid(bcacbeaa46740844db7992f963793c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp25.wav using Guid(bcacbeaa46740844db7992f963793c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '711c20b03228460ce5cc417e15d140be') in 0.012784 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.045734 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp26.wav
-  artifactKey: Guid(256f1303e61d07b4bb433deeea94525c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp26.wav using Guid(256f1303e61d07b4bb433deeea94525c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4490fea32117f780128b27c02c72dc9') in 0.013021 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.027573 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp27.wav
-  artifactKey: Guid(6861235b94113894cad5473ae7e644ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp27.wav using Guid(6861235b94113894cad5473ae7e644ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abb1e6255b33d8910328636f4c9a7425') in 0.010858 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.039160 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp28.wav
-  artifactKey: Guid(e8d64436177645f47a6eb9392773ef08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp28.wav using Guid(e8d64436177645f47a6eb9392773ef08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa84aa5e1c6615ab7bbd94320c7e5f3') in 0.011133 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.024977 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp29.wav
-  artifactKey: Guid(b811b49534c6e0c4fba246ddbbff77e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp29.wav using Guid(b811b49534c6e0c4fba246ddbbff77e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab8dd2c7c4214a8240fe9feb84bfc7f9') in 0.011185 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.024258 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp30.wav
-  artifactKey: Guid(52d80f3cef66c47409f5801effa60066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp30.wav using Guid(52d80f3cef66c47409f5801effa60066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b55d4eb144e6fcc0a6e6de9bfe4a7167') in 0.011125 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.027381 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp31.wav
-  artifactKey: Guid(8d5752c84ea540a4db180430b3897826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp31.wav using Guid(8d5752c84ea540a4db180430b3897826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '300e14e2f03099b8f4f4044dcbd6bf83') in 0.012652 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.098040 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp33.wav
-  artifactKey: Guid(039d0f2f23c189e4b86d164f2faada22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp33.wav using Guid(039d0f2f23c189e4b86d164f2faada22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c69a74a70b41b555d4a4ac2611319d0') in 0.013339 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.118572 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp35.wav
-  artifactKey: Guid(2cc2c4263a6b6234881e74a4f4882481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp35.wav using Guid(2cc2c4263a6b6234881e74a4f4882481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32762d5864c555ea3790a1d1f41c8d7f') in 0.017981 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.023452 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp36.wav
-  artifactKey: Guid(fb9a4d1b5da445d4888c78f6adfc712d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/Item PickUp/8BitRetroSFXPack1_Traditional_ItemPickUp36.wav using Guid(fb9a4d1b5da445d4888c78f6adfc712d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1acd13030dedf55adfcafcb034b7858') in 0.011130 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 25.123721 seconds.
-  path: Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/PowerUp/8BitRetroSFXPack1_Traditional_PowerUp20.wav
-  artifactKey: Guid(daff8d6aa8594034aa3f660203fb0cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/8Bit Retro Game SFX Pack - 96kHz 24Bit/02Traditional/PowerUp/8BitRetroSFXPack1_Traditional_PowerUp20.wav using Guid(daff8d6aa8594034aa3f660203fb0cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37728c1bae1ee1b524ff387b448cf752') in 0.015800 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 503.084064 seconds.
-  path: Assets/04.ArtResource/Sound/Envrionments/AccessDenied.wav
-  artifactKey: Guid(6f57730b40132964daabc55e1b616790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/04.ArtResource/Sound/Envrionments/AccessDenied.wav using Guid(6f57730b40132964daabc55e1b616790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af11c431febec6959eaa1669cceebd65') in 0.016554 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 56.251230 seconds.
-  path: Assets/Resources/Sound/8BitRetroSFXPack1_Traditional_QuestAccepted29.wav
-  artifactKey: Guid(a7c244fa9e7a3f948b73e893c748e344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sound/8BitRetroSFXPack1_Traditional_QuestAccepted29.wav using Guid(a7c244fa9e7a3f948b73e893c748e344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cefa189dcc0db0db3b3549a01a5a97fd') in 0.012953 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 6.663255 seconds.
-  path: Assets/Resources/Sound/OpenChestSound.wav
-  artifactKey: Guid(a7c244fa9e7a3f948b73e893c748e344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sound/OpenChestSound.wav using Guid(a7c244fa9e7a3f948b73e893c748e344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf1240a90838f209737173eff9a5cea6') in 0.008032 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.511 seconds
-Refreshing native plugins compatible for Editor in 9.74 ms, found 9 plugins.
+- Loaded All Assemblies, in  0.485 seconds
+Refreshing native plugins compatible for Editor in 7.20 ms, found 9 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.222 seconds
-Domain Reload Profiling: 1728ms
-	BeginReloadAssembly (148ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (301ms)
-		LoadAssemblies (335ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (38ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1222ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (449ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (80ms)
-			ProcessInitializeOnLoadAttributes (258ms)
-			ProcessInitializeOnLoadMethodAttributes (77ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Refreshing native plugins compatible for Editor in 9.64 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6707 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 79 unused Assets / (1.6 MB). Loaded Objects now: 7312.
-Memory consumption went from 233.0 MB to 231.3 MB.
-Total: 3.516600 ms (FindLiveObjects: 0.299400 ms CreateObjectMapping: 0.185800 ms MarkObjects: 2.437700 ms  DeleteObjects: 0.593000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.475 seconds
-Refreshing native plugins compatible for Editor in 7.64 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.421 seconds
-Domain Reload Profiling: 1891ms
-	BeginReloadAssembly (147ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (263ms)
-		LoadAssemblies (319ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (17ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1421ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (649ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (126ms)
-			ProcessInitializeOnLoadAttributes (378ms)
-			ProcessInitializeOnLoadMethodAttributes (97ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 14.93 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6707 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 79 unused Assets / (1.6 MB). Loaded Objects now: 7328.
-Memory consumption went from 234.8 MB to 233.3 MB.
-Total: 4.545400 ms (FindLiveObjects: 0.417600 ms CreateObjectMapping: 0.389500 ms MarkObjects: 3.071800 ms  DeleteObjects: 0.665700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.523 seconds
-Refreshing native plugins compatible for Editor in 8.73 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.227 seconds
-Domain Reload Profiling: 1743ms
-	BeginReloadAssembly (158ms)
+- Finished resetting the current domain, in  1.136 seconds
+Domain Reload Profiling: 1616ms
+	BeginReloadAssembly (142ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (23ms)
+	RebuildCommonClasses (22ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (295ms)
-		LoadAssemblies (340ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (280ms)
+		LoadAssemblies (317ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (40ms)
-			TypeCache.Refresh (10ms)
+		AnalyzeDomain (36ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1137ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (447ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (263ms)
+			ProcessInitializeOnLoadMethodAttributes (78ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 9.14 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6708 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 79 unused Assets / (1.7 MB). Loaded Objects now: 7304.
+Memory consumption went from 233.8 MB to 232.1 MB.
+Total: 3.297000 ms (FindLiveObjects: 0.308500 ms CreateObjectMapping: 0.195300 ms MarkObjects: 2.223600 ms  DeleteObjects: 0.567700 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 309.075040 seconds.
+  path: Assets/04.ArtResource/Mountain Dusk Artwork/Mountain Dusk
+  artifactKey: Guid(00dcbee8cbaa50141bdbaebc35385b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/Mountain Dusk Artwork/Mountain Dusk using Guid(00dcbee8cbaa50141bdbaebc35385b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23463efc71c3dc06ff3d144295cd591e') in 0.006117 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.486 seconds
+Refreshing native plugins compatible for Editor in 8.11 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.260 seconds
+Domain Reload Profiling: 1742ms
+	BeginReloadAssembly (142ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (283ms)
+		LoadAssemblies (316ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (37ms)
+			TypeCache.Refresh (9ms)
 				TypeCache.ScanAssembly (1ms)
 			ScanForSourceGeneratedMonoScriptInfo (17ms)
 			ResolveRequiredComponents (11ms)
-	FinalizeReload (1227ms)
+	FinalizeReload (1261ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (451ms)
+		SetupLoadedEditorAssemblies (510ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (21ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (81ms)
-			ProcessInitializeOnLoadAttributes (260ms)
-			ProcessInitializeOnLoadMethodAttributes (77ms)
+			BeforeProcessingInitializeOnLoad (85ms)
+			ProcessInitializeOnLoadAttributes (302ms)
+			ProcessInitializeOnLoadMethodAttributes (88ms)
 			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 8.68 ms, found 9 plugins.
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 9.58 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6707 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 79 unused Assets / (1.6 MB). Loaded Objects now: 7344.
-Memory consumption went from 236.8 MB to 235.2 MB.
-Total: 5.113900 ms (FindLiveObjects: 0.398000 ms CreateObjectMapping: 0.277500 ms MarkObjects: 3.593300 ms  DeleteObjects: 0.844100 ms)
+Unloading 6708 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 79 unused Assets / (1.5 MB). Loaded Objects now: 7320.
+Memory consumption went from 235.6 MB to 234.1 MB.
+Total: 3.990700 ms (FindLiveObjects: 0.372600 ms CreateObjectMapping: 0.208700 ms MarkObjects: 2.811900 ms  DeleteObjects: 0.596600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -810,9 +359,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 301.063640 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2508f925d012782454c622a64554d5b') in 0.083829 seconds
+  Time since last request: 71.825425 seconds.
+  path: Assets/04.ArtResource/FREE Parallax Forest Background HQ/Parallax Forest Background
+  artifactKey: Guid(2580d0ce933c4954798124abc0c57386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.ArtResource/FREE Parallax Forest Background HQ/Parallax Forest Background using Guid(2580d0ce933c4954798124abc0c57386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2473ae404619a5fa8620ad382e83ba11') in 0.005035 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
+Number of asset objects unloaded after import = 0

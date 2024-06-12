@@ -11,7 +11,7 @@ public class ClearChestController : MonoBehaviour
     [SerializeField]private GameObject camera;
 
     [SerializeField] private PlayerInputController player;
-    //Animator ÆÄ¶ó¹ÌÅÍÀÇ ÇØ½Ã°ª ÃßÃâ
+    //Animator íŒŒë¼ë¯¸í„°ì˜ í•´ì‹œê°’ ì¶”ì¶œ
     private readonly int hashChestOpen = Animator.StringToHash("OpenChest");
     private void Start()
     {
