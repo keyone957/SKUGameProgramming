@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/01.Scenes/Lobby.unity
     guid: 956f39e717b45014ba92255f1cc1e03a
   - enabled: 1
-    path: Assets/01.Scenes/BonusStageScene/ShootingStage/BonusStage1.unity
+    path: Assets/01.Scenes/BonusStageScene/BonusStage1.unity
     guid: 9afc42933dd357f48880200698eff74b
   - enabled: 1
     path: Assets/01.Scenes/StageScene/DungeonStage1.unity
@@ -27,16 +27,16 @@ EditorBuildSettings:
     path: Assets/01.Scenes/StageScene/DungeonStage2.unity
     guid: c6a7b3122cd628347ba4eff02a79e47e
   - enabled: 1
-    path: Assets/01.Scenes/BonusStageScene/JumpMapScene/BonusStage2.unity
+    path: Assets/01.Scenes/BonusStageScene/BonusStage2.unity
     guid: 4fc4c1f28e94e7a449f248fe37ca04af
   - enabled: 1
-    path: Assets/01.Scenes/BonusStageScene/JumpMapScene/BonusStage3.unity
+    path: Assets/01.Scenes/BonusStageScene/BonusStage3.unity
     guid: 6d2e3bfaeee265b4cbb53176b56ff4df
   - enabled: 1
-    path: Assets/01.Scenes/TestScene/BossStage.unity
+    path: Assets/01.Scenes/BossStage.unity
     guid: ce768b17f7d78194e8b5c97f85f105e8
   - enabled: 1
-    path: Assets/01.Scenes/BonusStageScene/CoinBonusStage/BonusStage4.unity
+    path: Assets/01.Scenes/BonusStageScene/BonusStage4.unity
     guid: 1c65e8c29dc39df47ad91b0c73912c90
   - enabled: 1
     path: Assets/01.Scenes/ClearScene.unity

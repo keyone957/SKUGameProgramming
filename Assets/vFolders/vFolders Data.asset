@@ -22,6 +22,7 @@ MonoBehaviour:
     - 5e9a49efec1780b489999beb5b3dc375
     - a8e1dcc6f996c524d9a0dbdad5be7689
     - b635102e95b7cf54e919a0abc9a91f63
+    - ba500fccb8b80524eb5cdc77615dbfd7
     values:
     - colorIndex: 1
       iconNameOrGuid: 
@@ -31,6 +32,8 @@ MonoBehaviour:
       iconNameOrGuid: Prefab Icon
     - colorIndex: 5
       iconNameOrGuid: Shader Icon
+    - colorIndex: 10
+      iconNameOrGuid: 
     - colorIndex: 10
       iconNameOrGuid: 
     - colorIndex: 10
