@@ -65,7 +65,8 @@ public class ShopColorToken : MonoBehaviour
         {
             SoundManager._instance.PlaySound(Define._buySuccess);
             popupText.text = "구매 완료!";
-            PlayerManager.instance.playerMoney -=price;
+            // PlayerManager.instance.playerMoney -=price;
+            SaveLoadManager.instance.UseMoney(price);
             AllSceneCanvas.instance.SetMoney(PlayerManager.instance.playerMoney);
             mode = "equip";
             PlayerPrefs.SetString(gameObject.name.ToString(),mode);

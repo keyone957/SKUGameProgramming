@@ -8,7 +8,7 @@ public class ClearChestController : MonoBehaviour
     private Animator chestAnim;
     private bool isEnter;
 
-    [SerializeField]private GameObject camera;
+    [SerializeField]private GameObject cameraZoom;
 
     [SerializeField] private PlayerInputController player;
     //Animator 파라미터의 해시값 추출
@@ -26,7 +26,7 @@ public class ClearChestController : MonoBehaviour
         {
             player.enabled = false;
             SoundManager._instance.PlaySound(Define._clearChestSound);
-            camera.SetActive(true);
+            cameraZoom.SetActive(true);
             ChestAnim();
         }
     }

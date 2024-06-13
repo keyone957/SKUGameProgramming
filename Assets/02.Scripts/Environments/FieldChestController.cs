@@ -54,7 +54,8 @@ public class FieldChestController : MonoBehaviour
     }
     public void OpenChestEndEvent()
     {
-        PlayerManager.instance.playerMoney += chestMoney;
+        // PlayerManager.instance.playerMoney += chestMoney;
+        SaveLoadManager.instance.GetMoney(chestMoney);
         AllSceneCanvas.instance.SetMoney(PlayerManager.instance.playerMoney);
         Destroy(gameObject);
     }

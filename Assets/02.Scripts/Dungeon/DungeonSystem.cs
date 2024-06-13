@@ -51,7 +51,7 @@ public class DungeonSystem : MonoBehaviour
 
     private void InitializeDungeonScene()
     {
-        PlayerManager.instance.playerPower = 2;
+        PlayerManager.instance.playerPower = 200;
         // PlayerManager.instance.playerPower = 10;
         monsterCnt = monsterSpawnPoint.Length;
         soundPlayed = false;

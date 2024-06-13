@@ -197,7 +197,8 @@ public class Monster : MonoBehaviour
         {
             SoundManager._instance.PlaySound(Define._deathWolf);
         }
-        PlayerManager.instance.playerMoney += 10;
+        // PlayerManager.instance.playerMoney += 10;
+        SaveLoadManager.instance.GetMoney(10);
         AllSceneCanvas.instance.SetMoney(PlayerManager.instance.playerMoney);
         DungeonSystem.instance.monsterCnt--;
         AllSceneCanvas.instance.SetMonsterCnt(DungeonSystem.instance.monsterCnt);

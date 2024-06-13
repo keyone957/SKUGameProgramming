@@ -21,6 +21,7 @@ public class GameOverPanel : MonoBehaviour
 
    private void OnClickTitleBtn()
    {
+      SaveLoadManager.instance.FailedMoney();
       SoundManager._instance.PlaySound(Define._gameStartBtn);
       SceneManager.LoadScene("Title");
       Destroy(AllSceneCanvas.instance.gameObject);
@@ -30,6 +31,7 @@ public class GameOverPanel : MonoBehaviour
 
    private void OnClickLobbyBtn()
    {
+      SaveLoadManager.instance.FailedMoney();
       SoundManager._instance.PlaySound(Define._gameStartBtn);
       SceneManager.LoadScene("Lobby");
       AllSceneCanvas.instance.SetMonsterCnt(0);

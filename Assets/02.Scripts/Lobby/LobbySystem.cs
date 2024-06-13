@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,11 +19,13 @@ public class LobbySystem : MonoBehaviour
 
     private void InitializeLobbyScene()
     {
+        // PlayerPrefs.SetInt("playerCoin",PlayerManager.instance.playerMoney);
+        SaveLoadManager.instance.InitialPlayerMoney();
         SceneSystem.instance.isClearStage = true;
         SceneSystem.instance._fadeOverlay.gameObject.SetActive(false);
         SceneSystem.instance.currentStage = 0;
         PlayerManager.instance.playerHp = 5;
-        PlayerManager.instance.playerMoney = 0;
+        // PlayerManager.instance.playerMoney = 0;
         PlayerManager.instance.AssignSpriteRenderers();
         PlayerManager.instance.InitializePlayer();
         PlayerManager.instance.isDiePlayer = false;
@@ -39,5 +42,5 @@ public class LobbySystem : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         SoundManager._instance.PlayBGM(Define._lobbyBgm);
     }
-
+    
 }

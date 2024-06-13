@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01.Scenes/Title.unity
     guid: f1ec9873a7561ef489af165392a79659
-  - enabled: 1
+  - enabled: 0
     path: Assets/01.Scenes/TestScene/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -41,4 +41,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01.Scenes/ClearScene.unity
     guid: 41ffc06f22ecb544d8ce99cc5ebbf4ab
+  - enabled: 1
+    path: Assets/01.Scenes/StageScene/DungeonStage5.unity
+    guid: debddb40792914e4d8eba83094e89218
+  - enabled: 1
+    path: Assets/01.Scenes/StageScene/DungeonStage6.unity
+    guid: 9b6bb4fb4bfdacd4faf96df883a0beb5
+  - enabled: 1
+    path: Assets/01.Scenes/StageScene/DungeonStage3.unity
+    guid: 2d48832a9c1609c46aea72e5a6a44b28
   m_configObjects: {}

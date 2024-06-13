@@ -39,11 +39,13 @@ public class PopUpController : MonoBehaviour
       {
          InGameMenuController.instance.gameObject.SetActive(false);
          //SceneSystem.instance.TestNextStage("Lobby");
+         SaveLoadManager.instance.FailedMoney();
          SceneManager.LoadScene("Lobby");
          AllSceneCanvas.instance.SetMonsterCnt(0);
       }
       else if (popUpMode == "title")
       {
+         SaveLoadManager.instance.FailedMoney();
          SceneManager.LoadScene("Title");
          // SceneSystem.instance.TestNextStage("Title");
          ResetInstance();

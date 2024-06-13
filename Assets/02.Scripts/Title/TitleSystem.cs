@@ -25,5 +25,12 @@ public class TitleSystem : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         SoundManager._instance.PlayBGM(Define._titleBGM);
     }
-   
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            Debug.Log("모두 삭제");
+            PlayerPrefs.DeleteAll();
+        }
+    }
 }

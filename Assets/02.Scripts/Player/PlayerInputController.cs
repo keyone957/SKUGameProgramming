@@ -37,10 +37,10 @@ public class PlayerInputController : MonoBehaviour
 
     private void Update()
     {
-        // if (PlayerManager.instance.isDiePlayer)
-        // {
-        //     return;
-        // }
+        if (PlayerManager.instance.isDiePlayer)
+        {
+            return;
+        }
 
         Idle();
         Move();
@@ -159,7 +159,8 @@ public class PlayerInputController : MonoBehaviour
             Color divideSlimeColor = divideSlimeSpr.color;
             divideSlimeColor.a = 1.0f;
             divideSlimeSpr.color = divideSlimeColor;
-            SetSlimeStat(new Vector3(6, 6, 6), true, 3, 17f, 13f, 1, true);
+            ////////////////////////////////////////////////////////////////////////////////
+            SetSlimeStat(new Vector3(6, 6, 6), true, 3, 17f, 13f, 100, true);
         }
     }
 
@@ -167,6 +168,7 @@ public class PlayerInputController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
+            /////////////////////////////////////////////////////////////////
             SetSlimeStat(new Vector3(8, 8, 8), false, 2, 20f, 10f, 2, false);
         }
     }

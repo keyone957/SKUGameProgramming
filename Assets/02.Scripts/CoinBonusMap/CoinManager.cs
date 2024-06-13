@@ -96,16 +96,17 @@ public class CoinManager : MonoBehaviour
     private void OnClickFailBtn()
     {
         AllSceneCanvas.instance.isOpenMenu = false;
-        SceneSystem.instance.GoNextStage(SceneSystem.NextStageType.Normal);
-        // SceneSystem.instance.TestNextStage("BossStage");
+        // SceneSystem.instance.GoNextStage(SceneSystem.NextStageType.Normal);
+        SceneSystem.instance.TestNextStage("DungeonStage3");
     }
 
     private void OnClicKSuccessBtn()
     {
         AllSceneCanvas.instance.isOpenMenu = false;
-        PlayerManager.instance.playerMoney += 1500;
+        SaveLoadManager.instance.GetMoney(1500);
+        // PlayerManager.instance.playerMoney += 1500;
         AllSceneCanvas.instance.SetMoney(PlayerManager.instance.playerMoney);
-        SceneSystem.instance.GoNextStage(SceneSystem.NextStageType.Normal);
-        // SceneSystem.instance.TestNextStage("BossStage");
+        // SceneSystem.instance.GoNextStage(SceneSystem.NextStageType.Normal);
+        SceneSystem.instance.TestNextStage("DungeonStage3");
     }
 }

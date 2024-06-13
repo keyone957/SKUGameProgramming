@@ -353,7 +353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 6
   damage: 1
-  traceDist: 15
+  traceDist: 10
   attackDist: 3.2
   moveSpeed: 10
   monsterAttack: {fileID: 6536908481203010067}
