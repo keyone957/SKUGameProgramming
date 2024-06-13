@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 //던전 씬에 사용될 시스템 컴포넌트추가
@@ -32,7 +34,15 @@ public class DungeonSystem : MonoBehaviour
         InitializeDungeonScene();
         PlayerManager.instance.AssignSpriteRenderers();
         PlayerManager.instance.AnotherScenePlayer();
-        StartCoroutine(SceneStartSequence());
+        if (SceneManager.GetActiveScene().name == "DungeonStage5")
+        {
+            StartCoroutine(SceneeStartBeforeBossStage());
+        }
+        else
+        {
+            StartCoroutine(SceneStartSequence());
+        }
+        
     }
     private void Update()
     {
@@ -51,8 +61,7 @@ public class DungeonSystem : MonoBehaviour
 
     private void InitializeDungeonScene()
     {
-        PlayerManager.instance.playerPower = 200;
-        // PlayerManager.instance.playerPower = 10;
+        PlayerManager.instance.playerPower = 2;
         monsterCnt = monsterSpawnPoint.Length;
         soundPlayed = false;
         AllSceneCanvas.instance.monsterCnt.SetActive(true);
@@ -70,6 +79,14 @@ public class DungeonSystem : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
         SoundManager._instance.PlayBGM(Define._dungeonBGM);
+    }
+    private IEnumerator SceneeStartBeforeBossStage()
+    {
+        SoundManager._instance.LoadBGM(Define._beforeBossBGM);
+        yield return new WaitForSeconds(0.3f);
+
+        yield return new WaitForSeconds(0.5f);
+        SoundManager._instance.PlayBGM(Define._beforeBossBGM);
     }
 
     private void SpawnMonster()

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //포탈에 닿았을때 수행해야할 동작들
 //테스트코드 추가
@@ -26,8 +27,15 @@ public class PortalController : MonoBehaviour
     {
         if (isEnter&&Input.GetKeyDown(KeyCode.W))
         {
-            SceneSystem.instance.TestNextStage(TestSceneName);
-            // SceneSystem.instance.GoNextStage(nextStageType);
+            // SceneSystem.instance.TestNextStage(TestSceneName);
+            if (SceneManager.GetActiveScene().name == "BossStage")
+            {
+                SceneSystem.instance.TestNextStage("ClearScene");
+            }
+            else
+            {
+                SceneSystem.instance.GoNextStage(nextStageType);
+            }
             SoundManager._instance.PlaySound(Define._portalSound);
         }
     }
@@ -42,6 +50,11 @@ public class PortalController : MonoBehaviour
         if (SceneSystem.instance.currentStage == SceneSystem.instance.bossStageOrder - 1)
         {
             nextStageType = SceneSystem.NextStageType.Boss;
+        }
+
+        if (SceneSystem.instance.currentStage == SceneSystem.instance.bossStageOrder - 2)
+        {
+            nextStageType = SceneSystem.NextStageType.BeforeBoss;
         }
     }
 

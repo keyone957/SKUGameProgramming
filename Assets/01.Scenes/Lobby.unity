@@ -14888,7 +14888,7 @@ MonoBehaviour:
   currentStage: 0
   isClearStage: 0
   maxStageCnt: 0
-  bonusStageOrder: 1
+  bonusStageOrder: 3
   bossStageOrder: 5
   _fadeOverlay: {fileID: 886896112}
   monsterCnt: 0

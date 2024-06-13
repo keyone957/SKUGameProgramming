@@ -27,6 +27,7 @@ public class PlayerInputController : MonoBehaviour
     private int jumpCnt;
     private float divideCooldown = 2f; //분열 스킬 쿨타임
     private float nextDivideTime = 0f;
+    
 
     private bool isInvincible = false; //무적상태 bool값
 
@@ -105,7 +106,6 @@ public class PlayerInputController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J))
         {
             anim.SetBool(hashAttack, true);
-            
         }
     }
 
@@ -169,7 +169,7 @@ public class PlayerInputController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             /////////////////////////////////////////////////////////////////
-            SetSlimeStat(new Vector3(8, 8, 8), false, 2, 20f, 10f, 2, false);
+            SetSlimeStat(new Vector3(8, 8, 8), false, 2, 20f, 10f, 200, false);
         }
     }
 
