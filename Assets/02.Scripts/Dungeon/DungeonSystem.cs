@@ -42,7 +42,6 @@ public class DungeonSystem : MonoBehaviour
         {
             StartCoroutine(SceneStartSequence());
         }
-        
     }
     private void Update()
     {

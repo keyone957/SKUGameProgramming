@@ -33,6 +33,7 @@ public class GameOverPanel : MonoBehaviour
    {
       SaveLoadManager.instance.FailedMoney();
       SoundManager._instance.PlaySound(Define._gameStartBtn);
+      SceneSystem.instance.RestList();
       SceneManager.LoadScene("Lobby");
       AllSceneCanvas.instance.SetMonsterCnt(0);
       AllSceneCanvas.instance.gameOverPanel.SetActive(false);

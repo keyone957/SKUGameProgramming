@@ -40,7 +40,7 @@ public class Monster : MonoBehaviour
     public bool isDie = false;
 
     private Transform monsterTrans;
-    private Transform playerTrans;
+    [SerializeField]private Transform playerTrans;
     private Animator anim;
     private Rigidbody2D rb;
    
@@ -53,7 +53,15 @@ public class Monster : MonoBehaviour
     void Start()
     {
         monsterTrans = GetComponent<Transform>();
-        playerTrans = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        PlayerInputController playerController = FindObjectOfType<PlayerInputController>();
+        if (playerController != null)
+        {
+            playerTrans = playerController.transform;
+        }
+        else
+        {
+            Debug.LogError("PlayerInputController not found!");
+        }
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         curHp = hp;

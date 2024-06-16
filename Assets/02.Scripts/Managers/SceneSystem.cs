@@ -115,4 +115,10 @@ public class SceneSystem : MonoBehaviour
         int randomIndex = Random.Range(0, possibleNumbers.Count);
         return possibleNumbers[randomIndex];
     }
+
+    public void RestList()
+    {
+        usedNormalStages.Clear();
+        
+    }
 }

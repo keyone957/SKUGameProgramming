@@ -40,6 +40,7 @@ public class PopUpController : MonoBehaviour
          InGameMenuController.instance.gameObject.SetActive(false);
          //SceneSystem.instance.TestNextStage("Lobby");
          SaveLoadManager.instance.FailedMoney();
+         SceneSystem.instance.RestList();
          SceneManager.LoadScene("Lobby");
          AllSceneCanvas.instance.SetMonsterCnt(0);
       }
