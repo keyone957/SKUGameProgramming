@@ -35,8 +35,6 @@ MonoBehaviour:
     - Autodesk.Fbx
     - Cinemachine
     - FbxBuildTestAssets
-    - StompyRobot.SRDebugger
-    - StompyRobot.SRF
     - UniTask
     - UniTask.Addressables
     - UniTask.DOTween
