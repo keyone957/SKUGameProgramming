@@ -42,7 +42,7 @@ public class ShootingGameSystem : MonoBehaviour
         finishObj.SetActive(false);
         // SceneSystem.instance.GoNextStage(SceneSystem.NextStageType.Normal);
         //테스트코드
-        SceneSystem.instance.TestNextStage("DungeonStage5");
+        SceneSystem.instance.TestNextStage("BonusStage2");
         // PlayerManager.instance.playerMoney += ChildGenerator.Instance.GetMonsterAttackCount() * 10;
         SaveLoadManager.instance.GetMoney(ChildGenerator.Instance.GetMonsterAttackCount()*10);
         AllSceneCanvas.instance.SetMoney(PlayerManager.instance.playerMoney);
