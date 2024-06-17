@@ -202,15 +202,15 @@ public class JumpMapSystem : MonoBehaviour
         // PlayerManager.instance.playerMoney += clearMoney;
         SaveLoadManager.instance.GetMoney(clearMoney);
         AllSceneCanvas.instance.SetMoney(PlayerManager.instance.playerMoney);
-        // SceneSystem.instance.GoNextStage(SceneSystem.NextStageType.Normal);
+        SceneSystem.instance.GoNextStage(SceneSystem.NextStageType.Normal);
         //아래는 테스트코드
-        if (SceneManager.GetActiveScene().name == "BonusStage2")
-        {
-            SceneSystem.instance.TestNextStage("BonusStage3");
-        }
-        else if (SceneManager.GetActiveScene().name == "BonusStage3")
-        {
-            SceneSystem.instance.TestNextStage("BonusStage4");
-        }
+        // if (SceneManager.GetActiveScene().name == "BonusStage2")
+        // {
+        //     SceneSystem.instance.TestNextStage("BonusStage3");
+        // }
+        // else if (SceneManager.GetActiveScene().name == "BonusStage3")
+        // {
+        //     SceneSystem.instance.TestNextStage("BonusStage4");
+        // }
     }
 }
