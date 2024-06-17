@@ -160,7 +160,7 @@ public class PlayerInputController : MonoBehaviour
             divideSlimeColor.a = 1.0f;
             divideSlimeSpr.color = divideSlimeColor;
             ////////////////////////////////////////////////////////////////////////////////
-            SetSlimeStat(new Vector3(6, 6, 6), true, 3, 17f, 13f, 100, true);
+            SetSlimeStat(new Vector3(6, 6, 6), true, 3, 17f, 13f, 10, true);
         }
     }
 
@@ -169,7 +169,7 @@ public class PlayerInputController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             /////////////////////////////////////////////////////////////////
-            SetSlimeStat(new Vector3(8, 8, 8), false, 2, 20f, 10f, 200, false);
+            SetSlimeStat(new Vector3(8, 8, 8), false, 2, 20f, 10f, 20, false);
         }
     }
 

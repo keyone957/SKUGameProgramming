@@ -53,7 +53,7 @@ public class SceneSystem : MonoBehaviour
             // _fadeOverlay.DoFadeOut(1.0f, "DungeonStage" + randomDungeonStage);
             // currentStage++;
             
-            int uniqueNumber = GetUniqueRandomNumber(1, 4, usedNormalStages);
+            int uniqueNumber = GetUniqueRandomNumber(0, 4, usedNormalStages);
             if (uniqueNumber != -1)
             {
                 Debug.Log(uniqueNumber);

@@ -15,10 +15,10 @@ EditorBuildSettings:
     path: Assets/01.Scenes/Lobby.unity
     guid: 956f39e717b45014ba92255f1cc1e03a
   - enabled: 1
-    path: Assets/01.Scenes/StageScene/DungeonStage1.unity
+    path: Assets/01.Scenes/StageScene/DungeonStage0.unity
     guid: d38a7cbbf810a4e4785c9cebb1b6c6cd
   - enabled: 1
-    path: Assets/01.Scenes/StageScene/DungeonStage2.unity
+    path: Assets/01.Scenes/StageScene/DungeonStage1.unity
     guid: c6a7b3122cd628347ba4eff02a79e47e
   - enabled: 1
     path: Assets/01.Scenes/BonusStageScene/BonusStage1.unity
@@ -36,10 +36,10 @@ EditorBuildSettings:
     path: Assets/01.Scenes/BonusStageScene/BonusStage4.unity
     guid: 1c65e8c29dc39df47ad91b0c73912c90
   - enabled: 1
-    path: Assets/01.Scenes/StageScene/DungeonStage3.unity
+    path: Assets/01.Scenes/StageScene/DungeonStage2.unity
     guid: debddb40792914e4d8eba83094e89218
   - enabled: 1
-    path: Assets/01.Scenes/StageScene/DungeonStage4.2.unity
+    path: Assets/01.Scenes/StageScene/DungeonStage4.unity
     guid: 9b6bb4fb4bfdacd4faf96df883a0beb5
   - enabled: 1
     path: Assets/01.Scenes/StageScene/DungeonStage5.unity
@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01.Scenes/ClearScene.unity
     guid: 41ffc06f22ecb544d8ce99cc5ebbf4ab
+  - enabled: 1
+    path: Assets/01.Scenes/StageScene/DungeonStage3.unity
+    guid: b2f20e63fd435d6459453ef8bde72403
   m_configObjects: {}

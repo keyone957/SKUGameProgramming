@@ -529,7 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252ac29f097b8c648b62785cd53e5328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 6
+  hp: 2
   damage: 1
   traceDist: 10
   attackDist: 4
@@ -540,6 +540,7 @@ MonoBehaviour:
   monsterType: 0
   state: 0
   isDie: 0
+  playerTrans: {fileID: 0}
 --- !u!1 &6151222450441935503
 GameObject:
   m_ObjectHideFlags: 0

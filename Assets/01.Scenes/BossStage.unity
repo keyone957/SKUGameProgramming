@@ -9976,7 +9976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnAreaSize: {x: 25, y: 18}
   bulletObj: {fileID: 2351859177325218995, guid: 74d94eb2c11ee244a8a161cfd983914a, type: 3}
-  spawnInterval: 10
+  spawnInterval: 5
   playerInput: {fileID: 1659504074}
   spawner: {fileID: 956102029}
   clearChatPanel: {fileID: 1798792253}

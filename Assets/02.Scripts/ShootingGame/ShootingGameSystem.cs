@@ -40,9 +40,9 @@ public class ShootingGameSystem : MonoBehaviour
     private void OnClickFinishBtn()
     {
         finishObj.SetActive(false);
-        SceneSystem.instance.GoNextStage(SceneSystem.NextStageType.Normal);
+        // SceneSystem.instance.GoNextStage(SceneSystem.NextStageType.Normal);
         //테스트코드
-        // SceneSystem.instance.TestNextStage("BonusStage2");
+        SceneSystem.instance.TestNextStage("BonusStage2");
         // PlayerManager.instance.playerMoney += ChildGenerator.Instance.GetMonsterAttackCount() * 10;
         SaveLoadManager.instance.GetMoney(ChildGenerator.Instance.GetMonsterAttackCount()*10);
         AllSceneCanvas.instance.SetMoney(PlayerManager.instance.playerMoney);

@@ -27,15 +27,15 @@ public class PortalController : MonoBehaviour
     {
         if (isEnter&&Input.GetKeyDown(KeyCode.W))
         {
-            // SceneSystem.instance.TestNextStage(TestSceneName);
-            if (SceneManager.GetActiveScene().name == "BossStage")
-            {
-                SceneSystem.instance.TestNextStage("ClearScene");
-            }
-            else
-            {
-                SceneSystem.instance.GoNextStage(nextStageType);
-            }
+            SceneSystem.instance.TestNextStage(TestSceneName);
+            // if (SceneManager.GetActiveScene().name == "BossStage")
+            // {
+            //     SceneSystem.instance.TestNextStage("ClearScene");
+            // }
+            // else
+            // {
+            //     SceneSystem.instance.GoNextStage(nextStageType);
+            // }
             SoundManager._instance.PlaySound(Define._portalSound);
         }
     }
